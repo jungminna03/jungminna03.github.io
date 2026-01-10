@@ -1,0 +1,102 @@
+<style>
+  /* 1. 상단 바 (Masthead) - 높이 90px로 강제 확대 */
+  .masthead {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 90px !important; /* ★ 높이 20% 증가 */
+    min-height: 90px !important;
+    background-color: #3d2b1f !important; /* 나무색 */
+    background: #3d2b1f !important;
+    border-bottom: 3px solid #2a1d15 !important;
+    z-index: 9999 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* 내부 컨테이너 높이 맞춤 */
+  .masthead__inner-wrap {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  /* 2. 범인 검거: 내부 네비게이션 바 색상 및 높이 고정 */
+  .greedy-nav {
+    background-color: transparent !important;
+    background: transparent !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  /* 3. 메뉴 글자 - 크기 20px로 확대 */
+  .masthead__menu-item {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+  }
+
+  .masthead__menu-item a {
+    color: #e0d1b1 !important; /* 양피지색 */
+    font-weight: bold !important;
+    font-size: 20px !important; /* ★ 글자 크기 20% 증가 */
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .masthead__menu-item a:hover {
+    color: #ffffff !important;
+  }
+
+  /* 4. 로고 이미지 - 크기 55px로 확대 */
+  .site-logo {
+    height: 55px !important; /* ★ 로고 크기 증가 */
+    max-height: 55px !important;
+    width: auto !important;
+    image-rendering: pixelated;
+    display: block !important;
+    margin-right: 20px !important;
+  }
+
+  /* 링크 주변 파란 박스 제거 */
+  .site-title, .site-title a {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  /* 5. 본문 여백 확보 (상단바가 커졌으므로 더 내림) */
+  .atelier-full-wrapper {
+    padding-top: 130px !important; /* ★ 90px + 여유분 */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* 배경 이미지 (main.scss가 초기화되었으니 여기서 다시 잡음) */
+  body {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                      url("{{ '/assets/images/main_bg.jpg' | relative_url }}");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* 불필요 요소 숨김 */
+  .page__footer, .page__hero, .page__title { display: none !important; }
+</style>
