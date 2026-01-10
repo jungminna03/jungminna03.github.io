@@ -1,6 +1,11 @@
 title: "Atelier KEN"
-masthead_title: null   # ★ 중요: 여기를 null로 해야 글자가 안 나옵니다.
-logo: "/assets/images/logo.png"  # 로고 이미지 경로가 맞는지 확인하세요.
+masthead_title: null 
+logo: "/assets/images/logo.png" 
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
