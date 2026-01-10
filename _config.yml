@@ -1,59 +1,6 @@
-# 1. 사이트 기본 정보 (Identity)
 title: "Atelier KEN"
-email: "your-email@example.com"
-description: >- # 사이트 설명 (SEO 및 검색 결과에 노출)
-  게임 개발 공방 'Atelier KEN'입니다. 
-  기술적 집요함과 애정을 담아 세상을 연결하는 게임을 빚어냅니다.
-baseurl: "" # GitHub Pages 주소가 '아이디.github.io/블로그명'이면 "/블로그명" 입력
-url: "https://jungminna03.github.io" # 본인의 GitHub Pages 주소
+masthead_title: null   # ★ 중요: 여기를 null로 해야 글자가 안 나옵니다.
+logo: "/assets/images/logo.png"  # 로고 이미지 경로가 맞는지 확인하세요.
 
-# 2. 테마 설정 (선택한 테마 이름을 적으세요)
-theme: minimal-mistakes-jekyll # 예시: minimal-mistakes, jekyll-theme-phantom 등
-# remote_theme: "mmistakes/minimal-mistakes" # GitHub에서 직접 불러올 경우
-
-# 3. 주소 구조 설정 (Permalinks)
-# 게시글 주소를 프로젝트별로 관리하기 좋게 설정합니다.
-permalink: /:categories/:title/ 
-
-# 4. 데이터 관리 (Collections) - 핵심!
-# '프로젝트'를 단순한 글이 아니라 하나의 '데이터'로 관리하고 싶을 때 사용합니다.
-collections:
-  projects:
-    output: true
-    permalink: /project/:name/
-
-# 5. 마크다운 및 빌드 설정
-markdown: kramdown
-highlighter: rouge # 코드 강조 라이브러리
-lsi: false
-
-# 6. 플러그인 (필요한 기능을 확장합니다)
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate # 페이징 처리
-  - jekyll-include-cache # 빌드 속도 향상
-
-# 7. 기본 레이아웃 설정 (Defaults)
-# 매번 파일 상단에 layout: post라고 적지 않아도 자동으로 적용되게 합니다.
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single" # 테마에 맞는 포스트 레이아웃 이름
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: "projects" # 위에서 만든 collections 설정과 연결
-    values:
-      layout: "project-detail" # 프로젝트 전용 레이아웃 (따로 만들어야 함)
-
-# 8. 사용자 정의 변수 (Atelier KEN만의 감성)
-# 사이트 전체에서 쓸 수 있는 변수를 만듭니다.
-studio_motto: "Crafting Worlds, One Pixel at a Time"
-opening_hours: "Always Open for Creativity"
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
