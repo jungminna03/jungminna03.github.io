@@ -3,3 +3,182 @@
 
 @charset "utf-8";
 @import "minimal-mistakes";
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    background-color: #111;
+}
+
+.minimal-footer {
+    background-color: #000; /* 깊은 검정 */
+    color: #fff;
+    padding: 80px 60px; /* 여백을 넉넉하게 줘서 답답하지 않게 */
+    border-top: 1px solid #222; /* 아주 은은한 구분선 */
+}
+
+.footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* 핵심: 모든 요소를 오른쪽 끝으로 보냄 */
+    align-items: center;
+}
+
+.footer-right-group {
+    display: flex;
+    flex-direction: column; /* 로고와 연락처를 위아래로 배치 */
+    align-items: flex-end; /* 그룹 내에서도 우측 정렬 */
+    gap: 15px; /* 로고와 연락처 사이 간격 */
+}
+
+/* 로고 스타일 */
+.footer-logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #e0d1b1;
+    letter-spacing: -0.5px;
+}
+
+/* 연락처 스타일 */
+.footer-contact {
+    display: flex;
+    gap: 15px; /* 전화번호와 메일 사이 간격 */
+    font-size: 14px;
+    color: #888; /* 너무 튀지 않게 회색 처리 */
+    font-weight: 400;
+}
+
+.footer-contact .divider {
+    color: #333; /* 구분선은 더 어둡게 */
+    font-size: 12px;
+}
+
+/* 마우스 올렸을 때 연락처가 살짝 밝아지게 (인터랙션) */
+.contact-item:hover {
+    color: #fff;
+    transition: color 0.3s;
+    cursor: default;
+}
+
+/* --- 프로젝트 섹션 전체 디자인 --- */
+.project-section {
+    background-color: #111; /* 배경 검은색 고정 */
+    width: 100%;
+    padding: 120px 20px 100px; /* 위 120, 좌우 20, 아래 100 여백 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 전체 중앙 정렬 */
+}
+
+/* 1. 헤더 영역 */
+.section-header {
+    width: 100%;
+    max-width: 1100px; /* 전체 폭을 1100px로 제한해서 너무 안 퍼지게 함 */
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 42px; /* 제목 크기 적절히 조절 */
+    color: #EAE6D1;
+    margin: 0 0 25px 0;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 2px;
+}
+
+.title-divider {
+    border: 0;
+    height: 1px;
+    background-color: #EAE6D1;
+    width: 100%;
+    opacity: 0.3; /* 선을 조금 더 은은하게 */
+}
+
+/* 2. 프로젝트 카드 그리드 (여기가 핵심!) */
+.project-grid {
+    display: flex;
+    gap: 40px; /* 카드 사이 간격 */
+    width: 100%;
+    max-width: 1100px; /* 리스트 전체 폭 제한 (이걸 해야 이미지가 무식하게 안 커짐) */
+    margin-bottom: 80px; /* 더보기 버튼과의 간격 */
+}
+
+.project-card {
+    flex: 1; /* 공간을 공평하게 나눠가짐 */
+    cursor: pointer;
+    /* 카드가 너무 작아지는 것 방지 */
+    min-width: 300px; 
+}
+
+/* 3. 이미지 스타일 (비율 고정) */
+.card-image img {
+    width: 100%;
+    /* aspect-ratio: 16 / 9; -> 가로세로 비율을 유튜브 썸네일처럼 고정! */
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; /* 비율 유지하면서 꽉 채우기 */
+    border-radius: 12px; /* 모서리 둥글게 */
+    transition: transform 0.3s ease;
+    display: block;
+    background-color: #222; /* 이미지 로딩 전 회색 배경 */
+}
+
+.project-card:hover .card-image img {
+    transform: translateY(-5px); /* 호버 시 살짝 위로 둥실 */
+}
+
+/* 4. 텍스트 정보 (간격 심폐소생술) */
+.card-info {
+    margin-top: 25px; /* 이미지와 텍스트 사이 간격 벌리기 */
+    text-align: left; /* 왼쪽 정렬 */
+}
+
+.card-info .date {
+    color: #888; /* 날짜는 회색 */
+    font-size: 14px;
+    margin-bottom: 10px; /* 날짜와 제목 사이 간격 추가 */
+    display: block; /* 줄바꿈 확실하게 */
+    font-family: sans-serif; /* 날짜는 고딕 계열이 깔끔함 */
+}
+
+.card-info h3 {
+    color: #fff; /* 제목은 흰색 */
+    font-size: 28px; /* 제목 크기 키움 */
+    font-weight: 700;
+    margin: 0; /* 불필요한 기본 여백 제거 */
+    line-height: 1.2;
+}
+
+/* 5. 더보기 버튼 */
+.view-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-view-more {
+    background: transparent;
+    border: 1px solid #555; /* 테두리를 조금 더 얌전하게 */
+    color: #EAE6D1;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-view-more:hover {
+    border-color: #EAE6D1;
+    background: #EAE6D1;
+    color: #111;
+}
+
+/* 모바일 대응 (화면 작아지면 세로로 배치) */
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+    }
+}
