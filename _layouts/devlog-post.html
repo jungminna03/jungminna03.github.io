@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="devlog-container paper-background">
+    
+    <header class="devlog-header">
+        <h1 class="project-title" style="margin-bottom: 10px;">{{ page.title }}</h1>
+        
+        <div class="post-meta" style="margin-bottom: 30px; font-size: 0.9rem; color: #5a4a3a;">
+            <span class="date">{{ page.date | date: "%Y.%m.%d" }}</span>
+        </div>
+        
+        <hr class="header-divider">
+    </header>
+
+    <section class="post-content" style="font-size: 1.1rem; line-height: 1.8;">
+        {{ content }}
+    </section>
+
+    <div style="margin-top: 60px; text-align: center; padding-top: 30px; border-top: 1px dashed rgba(61,43,31,0.2);">
+        <a href="/project-alpha/" style="text-decoration: none; color: #3d2b1f; font-weight: bold; border: 2px solid #3d2b1f; padding: 10px 20px; border-radius: 30px;">
+            ← 목록으로 돌아가기
+        </a>
+    </div>
+
+</div>

@@ -283,56 +283,97 @@ body {
     opacity: 0.3;
 }
 
+
+/* --- [수정] 프로젝트 그리드 (4열 배치) --- */
 .project-grid {
-    display: flex;
-    gap: 40px;
+    display: grid; /* 플렉스(Flex) 대신 그리드(Grid) 사용 */
+    
+    /* 핵심: 한 줄에 4개씩 똑같은 크기(1fr)로 배치 */
+    grid-template-columns: repeat(4, 1fr); 
+    
+    gap: 30px; /* 카드 사이 간격 */
     width: 100%;
-    max-width: 1100px;
+    
+    /* 4개씩 보여주려면 전체 폭이 좀 넓어야 시원함 */
+    max-width: 1400px; 
     margin-bottom: 80px;
 }
 
+/* 카드 스타일 단순화 */
 .project-card {
-    flex: 1;
-    cursor: pointer;
-    min-width: 300px;
+    /* 기존의 flex 관련 속성 제거 */
+    width: 100%; 
     text-decoration: none;
     color: inherit;
     display: block;
+    transition: transform 0.3s ease;
 }
 
+.project-card:hover {
+    transform: translateY(-10px); /* 호버 효과 */
+}
+
+/* --- [추가/수정] 카드 내부 정보 스타일 --- */
+
+/* 1. 이미지 스타일 (크기 조절) */
 .card-image img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    /* 원하는 비율로 설정 (예: 4:3, 16:9 등) */
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; /* 비율 유지하며 꽉 채우기 */
+    border-radius: 8px; /* 모서리 둥글게 */
     display: block;
-    background-color: #222;
+    background-color: #222; /* 이미지 로딩 전 배경색 */
 }
 
-.project-card:hover .card-image img {
-    transform: translateY(-5px);
-}
-
+/* 2. 정보 컨테이너 */
 .card-info {
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: left;
 }
 
+/* 3. 시작 날짜 (작고 덜 눈에 띄게) */
 .card-info .date {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 10px;
+    color: #888; /* 회색 */
+    font-size: 14px; /* 글자 크기 줄임 */
+    margin-bottom: 5px;
     display: block;
-    font-family: sans-serif;
 }
 
+/* 4. 프로젝트 이름 (크고 눈에 띄게) */
 .card-info h3 {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
+    color: #fff; /* 흰색 */
+    font-size: 24px; /* 글자 크기 키움 */
+    font-weight: 700; /* 굵게 */
     margin: 0;
     line-height: 1.2;
+}
+
+
+/* --- 반응형 (화면 줄어들면 자동 줄바꿈) --- */
+/* 노트북/태블릿 가로 (1200px 이하): 3개씩 */
+@media (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 태블릿 세로 (900px 이하): 2개씩 */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 모바일 (600px 이하): 1개씩 (크게 보기) */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    /* 모바일에서는 프로젝트 이름 약간 줄이기 */
+    .card-info h3 {
+        font-size: 20px;
+    }
 }
 
 .view-more-container {
@@ -357,13 +398,6 @@ body {
     background: #EAE6D1;
     color: #111;
 }
-
-@media (max-width: 768px) {
-    .project-grid {
-        flex-direction: column;
-    }
-}
-
 
 /* =========================================
    6. 게임 섹션 (Games - Future Use)
@@ -511,4 +545,179 @@ body {
     .minimal-footer { padding: 60px 20px; }
     .footer-container { justify-content: center; }
     .footer-right-group { align-items: center; }
+}/* --- Dev Log 리스트 페이지 디자인 --- */
+
+.devlog-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 20px 60px; /* 상단 여백 넉넉히 */
+    min-height: 80vh;
+}
+
+.devlog-header {
+    margin-bottom: 60px;
+}
+
+.project-title {
+    font-size: 3rem;
+    color: #EAE6D1;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', serif;
+}
+
+.project-desc {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.header-divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    width: 100%;
+}
+
+/* 리스트 아이템 디자인 */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #222; /* 아이템 사이 구분선 */
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.post-item:hover {
+    transform: translateX(10px); /* 호버 시 살짝 오른쪽으로 이동 */
+}
+
+.post-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.post-item:hover .post-title {
+    color: #EAE6D1; /* 호버 시 제목 색 변경 */
+}
+
+.post-excerpt {
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #666;
+    font-family: sans-serif;
+}
+
+/* 썸네일 이미지 */
+.post-thumbnail {
+    width: 200px;
+    height: 120px;
+    flex-shrink: 0; /* 이미지 크기 줄어들지 않게 고정 */
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .post-item {
+        flex-direction: column-reverse; /* 모바일은 이미지가 위로 가거나 아래로 */
+        align-items: flex-start;
+    }
+    .post-thumbnail {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .post-content {
+        padding-right: 0;
+    }
+}
+
+/* --- [최종_진짜_최종] 종이 질감 배경 --- */
+.paper-background {
+    /* 1. 배경 투명화 */
+    background-color: transparent;
+    
+    /* 2. 테두리 설정 */
+    border-style: solid;
+    border-width: 50px; 
+    border-color: transparent; 
+    
+    /* 3. 이미지 경로 */
+    border-image-source: url('../images/paper.jpg');
+    
+    /* 4. 자르는 비율 */
+    border-image-slice: 100 fill;
+    
+    /* 5. 반복 설정 */
+    border-image-repeat: round; /* stretch보다 round가 글자 배치에 더 자연스러움 */
+    
+    /* 6. 내부 스타일 */
+    color: #3d2b1f !important;
+    padding: 40px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5); /* 그림자 좀 더 진하게 */
+
+    /* ★ 7. 위치 조정 (여기가 핵심!) ★ */
+    /* 헤더 높이(90px)보다 더 아래로 내려오게 설정 */
+    margin-top: 130px !important; 
+    margin-bottom: 80px !important; /* 아래쪽도 여유 있게 */
+    
+    /* (옵션) 종이가 너무 넓게 퍼지지 않도록 폭 제한 */
+    max-width: 1000px; 
+    margin-left: auto; /* 가운데 정렬 */
+    margin-right: auto; /* 가운데 정렬 */
+}
+
+/* --- 텍스트 스타일 (그대로 유지) --- */
+.paper-background h1, 
+.paper-background h2, 
+.paper-background h3,
+.paper-background .project-title,
+.paper-background .post-title {
+    color: #2a1d15 !important;
+    text-shadow: none !important;
+    border-bottom-color: rgba(61, 43, 31, 0.3) !important; /* 제목 밑줄도 갈색으로 */
+}
+
+.paper-background p, 
+.paper-background li, 
+.paper-background span,
+.paper-background .project-desc,
+.paper-background .post-excerpt,
+.paper-background .post-meta {
+    color: #4a3b2a !important;
+    font-weight: 600;
+}
+
+.paper-background hr,
+.paper-background .header-divider,
+.paper-background .post-item {
+    border-color: rgba(61, 43, 31, 0.2) !important;
 }
