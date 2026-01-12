@@ -3,87 +3,272 @@
 
 @charset "utf-8";
 @import "minimal-mistakes";
-
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
+/* =========================================
+   1. 기본 설정 (Base)
+   ========================================= */
 body {
     margin: 0;
     font-family: 'Pretendard', sans-serif;
-    background-color: #111;
-}
-
-.minimal-footer {
-    background-color: #000; /* 깊은 검정 */
+    background-color: #1a1a1a;
     color: #fff;
-    padding: 80px 60px; /* 여백을 넉넉하게 줘서 답답하지 않게 */
-    border-top: 1px solid #222; /* 아주 은은한 구분선 */
+    overflow-y: auto !important; /* 스크롤 가능 */
+    overflow-x: hidden;
+    
+    /* 배경 이미지 설정 */
+    /* 주의: 만약 이미지가 안 나오면 url("/assets/images/main_bg.jpg") 로 경로를 직접 수정해줘 */
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                      url("{{ '/assets/images/main_bg.jpg' | relative_url }}");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.footer-container {
-    max-width: 1600px;
-    margin: 0 auto;
+/* 불필요한 기존 테마 요소 숨김 */
+.page__footer, .page__hero, .page__title { 
+    display: none !important; 
+}
+
+/* 공통 섹션 스타일 */
+.section {
+    min-height: 100vh;
     display: flex;
-    justify-content: flex-end; /* 핵심: 모든 요소를 오른쪽 끝으로 보냄 */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.footer-right-group {
+
+/* =========================================
+   2. 헤더 (Masthead) - !important 떡칠 구역
+   ========================================= */
+.masthead {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 90px !important;
+    min-height: 90px !important;
+    background-color: #3d2b1f !important;
+    border-bottom: 3px solid #2a1d15 !important;
+    z-index: 9999 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.masthead__inner-wrap {
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.greedy-nav {
+    background: transparent !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.masthead__menu-item {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+.masthead__menu-item a {
+    color: #e0d1b1 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.masthead__menu-item a:hover {
+    color: #ffffff !important;
+}
+
+.site-logo {
+    height: 55px !important;
+    max-height: 55px !important;
+    width: auto !important;
+    image-rendering: pixelated;
+    display: block !important;
+    margin-right: 20px !important;
+}
+
+.site-title, .site-title a {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================
+   3. 메인 히어로 (Landing Section)
+   ========================================= */
+.atelier-full-wrapper {
+    padding-top: 130px !important;
+    height: 100vh;
     display: flex;
-    flex-direction: column; /* 로고와 연락처를 위아래로 배치 */
-    align-items: flex-end; /* 그룹 내에서도 우측 정렬 */
-    gap: 15px; /* 로고와 연락처 사이 간격 */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-/* 로고 스타일 */
-.footer-logo {
-    font-size: 26px;
-    font-weight: 800;
+.landing-section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.pixel-logo {
+    width: 320px;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
+    margin-bottom: 20px;
+}
+
+.atelier-quote {
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.enter-button {
+    padding: 15px 45px;
+    border: 2px solid #e0d1b1;
     color: #e0d1b1;
-    letter-spacing: -0.5px;
+    background: rgba(61, 43, 31, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-/* 연락처 스타일 */
-.footer-contact {
+.enter-button:hover {
+    background: #e0d1b1;
+    color: #3d2b1f;
+}
+
+
+/* =========================================
+   4. 철학 섹션 (Philosophy Section)
+   ========================================= */
+.philosophy-section {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 100px 20px;
+}
+
+.philosophy-container {
     display: flex;
-    gap: 15px; /* 전화번호와 메일 사이 간격 */
-    font-size: 14px;
-    color: #888; /* 너무 튀지 않게 회색 처리 */
-    font-weight: 400;
-}
-
-.footer-contact .divider {
-    color: #333; /* 구분선은 더 어둡게 */
-    font-size: 12px;
-}
-
-/* 마우스 올렸을 때 연락처가 살짝 밝아지게 (인터랙션) */
-.contact-item:hover {
-    color: #fff;
-    transition: color 0.3s;
-    cursor: default;
-}
-
-/* --- 프로젝트 섹션 전체 디자인 --- */
-.project-section {
-    background-color: #111; /* 배경 검은색 고정 */
+    flex-direction: row;
+    max-width: 1200px;
     width: 100%;
-    padding: 120px 20px 100px; /* 위 120, 좌우 20, 아래 100 여백 */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.text-side {
+    flex: 1;
+    text-align: left;
+    color: #e0d1b1;
+}
+
+.text-side h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.text-side h2 span {
+    color: #e0d1b1;
+}
+
+.text-side p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.image-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid rgba(224, 209, 177, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+    transform: translateY(-10px);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .philosophy-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-side { text-align: center; }
+    .text-side h2 { font-size: 2rem; }
+}
+
+
+/* =========================================
+   5. 프로젝트 섹션 (Projects)
+   ========================================= */
+.project-section {
+    background-color: #111;
+    width: 100%;
+    padding: 120px 20px 100px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 전체 중앙 정렬 */
+    align-items: center;
 }
 
-/* 1. 헤더 영역 */
 .section-header {
     width: 100%;
-    max-width: 1100px; /* 전체 폭을 1100px로 제한해서 너무 안 퍼지게 함 */
+    max-width: 1100px;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .title {
-    font-size: 42px; /* 제목 크기 적절히 조절 */
+    font-size: 42px;
     color: #EAE6D1;
     margin: 0 0 25px 0;
     font-family: 'Times New Roman', serif;
@@ -95,64 +280,61 @@ body {
     height: 1px;
     background-color: #EAE6D1;
     width: 100%;
-    opacity: 0.3; /* 선을 조금 더 은은하게 */
+    opacity: 0.3;
 }
 
-/* 2. 프로젝트 카드 그리드 (여기가 핵심!) */
 .project-grid {
     display: flex;
-    gap: 40px; /* 카드 사이 간격 */
+    gap: 40px;
     width: 100%;
-    max-width: 1100px; /* 리스트 전체 폭 제한 (이걸 해야 이미지가 무식하게 안 커짐) */
-    margin-bottom: 80px; /* 더보기 버튼과의 간격 */
+    max-width: 1100px;
+    margin-bottom: 80px;
 }
 
 .project-card {
-    flex: 1; /* 공간을 공평하게 나눠가짐 */
+    flex: 1;
     cursor: pointer;
-    /* 카드가 너무 작아지는 것 방지 */
-    min-width: 300px; 
+    min-width: 300px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-/* 3. 이미지 스타일 (비율 고정) */
 .card-image img {
     width: 100%;
-    /* aspect-ratio: 16 / 9; -> 가로세로 비율을 유튜브 썸네일처럼 고정! */
-    aspect-ratio: 16 / 9; 
-    object-fit: cover; /* 비율 유지하면서 꽉 채우기 */
-    border-radius: 12px; /* 모서리 둥글게 */
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
     transition: transform 0.3s ease;
     display: block;
-    background-color: #222; /* 이미지 로딩 전 회색 배경 */
+    background-color: #222;
 }
 
 .project-card:hover .card-image img {
-    transform: translateY(-5px); /* 호버 시 살짝 위로 둥실 */
+    transform: translateY(-5px);
 }
 
-/* 4. 텍스트 정보 (간격 심폐소생술) */
 .card-info {
-    margin-top: 25px; /* 이미지와 텍스트 사이 간격 벌리기 */
-    text-align: left; /* 왼쪽 정렬 */
+    margin-top: 25px;
+    text-align: left;
 }
 
 .card-info .date {
-    color: #888; /* 날짜는 회색 */
+    color: #888;
     font-size: 14px;
-    margin-bottom: 10px; /* 날짜와 제목 사이 간격 추가 */
-    display: block; /* 줄바꿈 확실하게 */
-    font-family: sans-serif; /* 날짜는 고딕 계열이 깔끔함 */
+    margin-bottom: 10px;
+    display: block;
+    font-family: sans-serif;
 }
 
 .card-info h3 {
-    color: #fff; /* 제목은 흰색 */
-    font-size: 28px; /* 제목 크기 키움 */
+    color: #fff;
+    font-size: 28px;
     font-weight: 700;
-    margin: 0; /* 불필요한 기본 여백 제거 */
+    margin: 0;
     line-height: 1.2;
 }
 
-/* 5. 더보기 버튼 */
 .view-more-container {
     text-align: center;
     margin-top: 20px;
@@ -160,7 +342,7 @@ body {
 
 .btn-view-more {
     background: transparent;
-    border: 1px solid #555; /* 테두리를 조금 더 얌전하게 */
+    border: 1px solid #555;
     color: #EAE6D1;
     padding: 15px 50px;
     font-size: 15px;
@@ -176,9 +358,157 @@ body {
     color: #111;
 }
 
-/* 모바일 대응 (화면 작아지면 세로로 배치) */
 @media (max-width: 768px) {
     .project-grid {
         flex-direction: column;
     }
+}
+
+
+/* =========================================
+   6. 게임 섹션 (Games - Future Use)
+   ========================================= */
+.games-section {
+    background: rgba(20, 15, 10, 0.9);
+    padding: 60px 20px;
+    text-align: center;
+    display: block !important;
+    height: auto !important;
+}
+
+.games-title {
+    font-size: 2.5rem;
+    color: #e0d1b1;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 2px solid #e0d1b1;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.game-card {
+    background: transparent;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #3d2b1f;
+    margin-bottom: 15px;
+    background-color: #000;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-card:hover .card-thumb img {
+    transform: scale(1.05);
+}
+
+.game-card .card-info { padding: 0 5px; } /* 중복 클래스 주의: 게임 카드 내부 info */
+
+.card-date {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+    font-family: monospace;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.game-card:hover .card-title { color: #e0d1b1; }
+
+@media (max-width: 1200px) { .games-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .games-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .games-grid { grid-template-columns: 1fr; } }
+
+
+/* =========================================
+   7. 푸터 (Footer)
+   ========================================= */
+.minimal-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 60px;
+    border-top: 1px solid #222;
+}
+
+.footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-right-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #e0d1b1;
+    letter-spacing: -0.5px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+}
+
+.footer-contact .divider {
+    color: #333;
+    font-size: 12px;
+}
+
+.contact-item:hover {
+    color: #fff;
+    transition: color 0.3s;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .minimal-footer { padding: 60px 20px; }
+    .footer-container { justify-content: center; }
+    .footer-right-group { align-items: center; }
 }
