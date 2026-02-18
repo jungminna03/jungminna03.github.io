@@ -1,11 +1,18 @@
 title: "KEN's Atelier"
-masthead_title: null 
-logo: "/assets/images/logo.png" 
+email: jungminna03@gmail.com
+description: "Game Dev / Asset Discription / etc..."
+# logo: "/assets/images/logo.png" 
 
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+# 주소 설정 (이게 중요합니다!)
+baseurl: "" 
+url: "http://localhost:4000"
 
+# 플러그인
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-remote-theme
+
+# SCSS 설정
+sass:
+  sass_dir: _sass
+  style: compressed

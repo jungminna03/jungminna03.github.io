@@ -1,0 +1,65 @@
+<header class="site-header">
+    <div class="header-inner">
+        
+        <div class="header-branding">
+            <a class="site-title" href="/">KEN's Atelier</a>
+            <p class="site-description">// {{ site.description }}</p>
+        </div>
+
+        <button id="menu-toggle" class="menu-btn">
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+        </button>
+    </div>
+</header>
+
+<div id="fullscreen-menu" class="menu-overlay">
+    <div class="menu-content">
+        
+        <div class="menu-top-bar">
+            <div class="lang-switcher">
+                <a href="#" class="active">KO</a>
+                <a href="#">EN</a>
+                <a href="#">JP</a>
+            </div>
+
+            <button id="menu-close" class="close-btn">&times;</button>
+        </div>
+
+        <div class="menu-body">
+            <h3 class="menu-label">CATEGORIES</h3>
+            <ul class="category-list">
+                {% for category in site.categories %}
+                <li>
+                    <a href="/categories/#{{ category | first | slugify }}">
+                        {{ category | first }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const menuOverlay = document.getElementById('fullscreen-menu');
+
+    function toggleMenu() {
+        menuOverlay.classList.toggle('active');
+        document.body.style.overflow = menuOverlay.classList.contains('active') ? 'hidden' : '';
+    }
+
+    if(menuToggle) menuToggle.addEventListener('click', toggleMenu);
+    if(menuClose) menuClose.addEventListener('click', toggleMenu);
+    
+    // [추가] 어두운 배경 클릭 시 닫기
+    if(menuOverlay) {
+        menuOverlay.addEventListener('click', (e) => {
+            if(e.target === menuOverlay) toggleMenu();
+        });
+    }
+</script>
