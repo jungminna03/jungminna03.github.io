@@ -1,12 +1,4 @@
 ---
-layout: default
-title: "KEN's Atelier"
+layout: home
+title: Home
 ---
-
-{% include hero.html %}
-
-{% include philosophy.html %}
-
-{% include projects.html %}
-
-{% include footer_minimal.html %}

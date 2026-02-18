@@ -1,723 +1,193 @@
 ---
+# 이 대시 두 줄이 없으면 디자인이 다 터집니다! 꼭 있어야 해요.
 ---
 
-@charset "utf-8";
-@import "minimal-mistakes";
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* [1] 초기화 (Reset) */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
 
-/* =========================================
-   1. 기본 설정 (Base)
-   ========================================= */
+/* [2] 변수 설정 (베이지 테마) */
+:root {
+    --bg-color: #F8F6E8;         /* 배경: 옅은 베이지 */
+    --text-color: #55423D;       /* 글자: 진한 갈색 */
+    --point-color: #C67B5C;      /* 포인트: 오렌지 브라운 */
+    --menu-bg-color: #6B584E;    /* 메뉴창 배경 */
+    --menu-text-color: #F8F6E8;  /* 메뉴 글씨 */
+    --font-family: 'Consolas', 'Monaco', monospace; /* 개발자 폰트 */
+}
+
+/* [3] 기본 스타일 */
 body {
-    margin: 0;
-    font-family: 'Pretendard', sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-    overflow-y: auto !important; /* 스크롤 가능 */
-    overflow-x: hidden;
-    
-    /* 배경 이미지 설정 */
-    /* 주의: 만약 이미지가 안 나오면 url("/assets/images/main_bg.jpg") 로 경로를 직접 수정해줘 */
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                      url("{{ '/assets/images/main_bg.jpg' | relative_url }}");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
 }
 
-/* 불필요한 기존 테마 요소 숨김 */
-.page__footer, .page__hero, .page__title { 
-    display: none !important; 
-}
+a { text-decoration: none; color: inherit; transition: color 0.2s; }
+a:hover { color: var(--point-color); }
+ul { list-style: none; padding: 0; margin: 0; }
 
-/* 공통 섹션 스타일 */
-.section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    box-sizing: border-box;
-    position: relative;
-}
-
-
-/* =========================================
-   2. 헤더 (Masthead) - !important 떡칠 구역
-   ========================================= */
-.masthead {
-    position: fixed !important;
-    top: 0 !important;
-    width: 100% !important;
-    height: 90px !important;
-    min-height: 90px !important;
-    background-color: #3d2b1f !important;
-    border-bottom: 3px solid #2a1d15 !important;
-    z-index: 9999 !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-.masthead__inner-wrap {
-    height: 100% !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 40px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-}
-
-.greedy-nav {
-    background: transparent !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-.masthead__menu-item {
-    display: flex !important;
-    align-items: center !important;
-    height: 100% !important;
-}
-
-.masthead__menu-item a {
-    color: #e0d1b1 !important;
-    font-weight: bold !important;
-    font-size: 20px !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-.masthead__menu-item a:hover {
-    color: #ffffff !important;
-}
-
-.site-logo {
-    height: 55px !important;
-    max-height: 55px !important;
-    width: auto !important;
-    image-rendering: pixelated;
-    display: block !important;
-    margin-right: 20px !important;
-}
-
-.site-title, .site-title a {
-    background: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    padding: 0 !important;
-}
-
-
-/* =========================================
-   3. 메인 히어로 (Landing Section)
-   ========================================= */
-.atelier-full-wrapper {
-    padding-top: 130px !important;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.landing-section {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.pixel-logo {
-    width: 320px;
-    image-rendering: pixelated;
-    filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
-    margin-bottom: 20px;
-}
-
-.atelier-quote {
-    color: #ffffff;
-    font-size: 1.2rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 10px rgba(0,0,0,1);
-    margin-bottom: 40px;
-    font-weight: 300;
-}
-
-.enter-button {
-    padding: 15px 45px;
-    border: 2px solid #e0d1b1;
-    color: #e0d1b1;
-    background: rgba(61, 43, 31, 0.7);
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.enter-button:hover {
-    background: #e0d1b1;
-    color: #3d2b1f;
-}
-
-
-/* =========================================
-   4. 철학 섹션 (Philosophy Section)
-   ========================================= */
-.philosophy-section {
-    background: rgba(0, 0, 0, 0.6);
+/* [4] 헤더 (Lisyarus 스타일: 제목 + 설명글) */
+.site-header {
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    height: 120px; /* 설명글 때문에 높이 키움 */
+    background-color: rgba(248, 246, 232, 0.95);
+    border-bottom: 1px solid rgba(85, 66, 61, 0.2);
+    z-index: 9999;
+    display: flex; align-items: center;
     backdrop-filter: blur(5px);
-    padding: 100px 20px;
 }
 
-.philosophy-container {
+.header-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px;
+}
+
+/* 브랜드 영역 (제목 + 구분선 + 설명) */
+.header-branding {
     display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.text-side {
-    flex: 1;
-    text-align: left;
-    color: #e0d1b1;
-}
-
-.text-side h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 1.2;
-}
-
-.text-side h2 span {
-    color: #e0d1b1;
-}
-
-.text-side p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #ccc;
-    font-weight: 300;
-}
-
-.image-side {
-    flex: 1;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.image-card {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border: 1px solid rgba(224, 209, 177, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.image-card:hover {
-    transform: translateY(-10px);
-}
-
-.image-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 768px) {
-    .philosophy-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .text-side { text-align: center; }
-    .text-side h2 { font-size: 2rem; }
-}
-
-
-/* =========================================
-   5. 프로젝트 섹션 (Projects)
-   ========================================= */
-.project-section {
-    background-color: #111;
-    width: 100%;
-    padding: 120px 20px 100px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-header {
-    width: 100%;
-    max-width: 1100px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.title {
-    font-size: 42px;
-    color: #EAE6D1;
-    margin: 0 0 25px 0;
-    font-family: 'Times New Roman', serif;
-    letter-spacing: 2px;
-}
-
-.title-divider {
-    border: 0;
-    height: 1px;
-    background-color: #EAE6D1;
-    width: 100%;
-    opacity: 0.3;
-}
-
-
-/* --- [수정] 프로젝트 그리드 (4열 배치) --- */
-.project-grid {
-    display: grid; /* 플렉스(Flex) 대신 그리드(Grid) 사용 */
-    
-    /* 핵심: 한 줄에 4개씩 똑같은 크기(1fr)로 배치 */
-    grid-template-columns: repeat(4, 1fr); 
-    
-    gap: 30px; /* 카드 사이 간격 */
-    width: 100%;
-    
-    /* 4개씩 보여주려면 전체 폭이 좀 넓어야 시원함 */
-    max-width: 1400px; 
-    margin-bottom: 80px;
-}
-
-/* 카드 스타일 단순화 */
-.project-card {
-    /* 기존의 flex 관련 속성 제거 */
-    width: 100%; 
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px); /* 호버 효과 */
-}
-
-/* --- [추가/수정] 카드 내부 정보 스타일 --- */
-
-/* 1. 이미지 스타일 (크기 조절) */
-.card-image img {
-    width: 100%;
-    /* 원하는 비율로 설정 (예: 4:3, 16:9 등) */
-    aspect-ratio: 4 / 3; 
-    object-fit: cover; /* 비율 유지하며 꽉 채우기 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    display: block;
-    background-color: #222; /* 이미지 로딩 전 배경색 */
-}
-
-/* 2. 정보 컨테이너 */
-.card-info {
-    margin-top: 15px;
-    text-align: left;
-}
-
-/* 3. 시작 날짜 (작고 덜 눈에 띄게) */
-.card-info .date {
-    color: #888; /* 회색 */
-    font-size: 14px; /* 글자 크기 줄임 */
-    margin-bottom: 5px;
-    display: block;
-}
-
-/* 4. 프로젝트 이름 (크고 눈에 띄게) */
-.card-info h3 {
-    color: #fff; /* 흰색 */
-    font-size: 24px; /* 글자 크기 키움 */
-    font-weight: 700; /* 굵게 */
-    margin: 0;
+.site-title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: bold;
     line-height: 1.2;
+    margin-bottom: 5px; /* 제목 아래 여백 */
 }
 
-
-/* --- 반응형 (화면 줄어들면 자동 줄바꿈) --- */
-/* 노트북/태블릿 가로 (1200px 이하): 3개씩 */
-@media (max-width: 1200px) {
-    .project-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* 태블릿 세로 (900px 이하): 2개씩 */
-@media (max-width: 900px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* 모바일 (600px 이하): 1개씩 (크게 보기) */
-@media (max-width: 600px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-    /* 모바일에서는 프로젝트 이름 약간 줄이기 */
-    .card-info h3 {
-        font-size: 20px;
-    }
-}
-
-.view-more-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.btn-view-more {
-    background: transparent;
-    border: 1px solid #555;
-    color: #EAE6D1;
-    padding: 15px 50px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-}
-
-.btn-view-more:hover {
-    border-color: #EAE6D1;
-    background: #EAE6D1;
-    color: #111;
-}
-
-/* =========================================
-   6. 게임 섹션 (Games - Future Use)
-   ========================================= */
-.games-section {
-    background: rgba(20, 15, 10, 0.9);
-    padding: 60px 20px;
-    text-align: center;
-    display: block !important;
-    height: auto !important;
-}
-
-.games-title {
-    font-size: 2.5rem;
-    color: #e0d1b1;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border-bottom: 2px solid #e0d1b1;
-    padding-bottom: 10px;
-    font-weight: 800;
-}
-
-.games-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.game-card {
-    background: transparent;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    transition: transform 0.3s ease;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.game-card:hover {
-    transform: translateY(-10px);
-}
-
-.card-thumb {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #3d2b1f;
-    margin-bottom: 15px;
-    background-color: #000;
-}
-
-.card-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.game-card:hover .card-thumb img {
-    transform: scale(1.05);
-}
-
-.game-card .card-info { padding: 0 5px; } /* 중복 클래스 주의: 게임 카드 내부 info */
-
-.card-date {
-    font-size: 0.8rem;
-    color: #888;
-    display: block;
-    margin-bottom: 5px;
-    font-family: monospace;
-}
-
-.card-title {
-    font-size: 1.4rem;
-    color: #fff;
+/* 설명글 스타일 (// 주석 느낌) */
+.site-description {
+    font-family: var(--font-family);
+    font-size: 0.85rem;
+    color: rgba(85, 66, 61, 0.7); /* 흐린 갈색 */
     margin: 0;
-    font-weight: 700;
+    padding-top: 5px;
+    border-top: 1px dashed rgba(85, 66, 61, 0.3); /* 점선 구분선 */
+    width: 100%;
 }
 
-.game-card:hover .card-title { color: #e0d1b1; }
-
-@media (max-width: 1200px) { .games-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 900px) { .games-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .games-grid { grid-template-columns: 1fr; } }
-
-
-/* =========================================
-   7. 푸터 (Footer)
-   ========================================= */
-.minimal-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 80px 60px;
-    border-top: 1px solid #222;
+/* 햄버거 버튼 */
+.menu-btn {
+    background: none; border: none; cursor: pointer;
+    display: flex; flex-direction: column; gap: 6px; padding: 10px;
+}
+.menu-icon-bar {
+    width: 30px; height: 3px; background-color: var(--text-color); border-radius: 2px;
 }
 
-.footer-container {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.footer-right-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px;
-}
-
-.footer-logo {
-    font-size: 26px;
-    font-weight: 800;
-    color: #e0d1b1;
-    letter-spacing: -0.5px;
-}
-
-.footer-contact {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
-    color: #888;
-    font-weight: 400;
-}
-
-.footer-contact .divider {
-    color: #333;
-    font-size: 12px;
-}
-
-.contact-item:hover {
-    color: #fff;
-    transition: color 0.3s;
-    cursor: default;
-}
-
-@media (max-width: 768px) {
-    .minimal-footer { padding: 60px 20px; }
-    .footer-container { justify-content: center; }
-    .footer-right-group { align-items: center; }
-}/* --- Dev Log 리스트 페이지 디자인 --- */
-
-.devlog-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 120px 20px 60px; /* 상단 여백 넉넉히 */
+/* [5] 메인 컨텐츠 (헤더가 커져서 여백 조정함) */
+#main {
+    max-width: 800px;
+    
+    margin: 120px auto 40px; 
+    
+    padding: 0 20px;
     min-height: 80vh;
 }
 
-.devlog-header {
-    margin-bottom: 60px;
+/* [6] 글 리스트 스타일 */
+.post-item {
+    display: flex; padding: 15px 0;
+    border-bottom: 1px solid rgba(85, 66, 61, 0.2);
+    align-items: baseline; font-size: 1.1rem;
 }
-
-.project-title {
-    font-size: 3rem;
-    color: #EAE6D1;
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', serif;
+.post-date {
+    flex-shrink: 0; width: 140px;
+    color: var(--point-color); font-size: 0.95rem;
 }
+.post-link { font-weight: 500; color: var(--text-color); }
 
-.project-desc {
-    color: #888;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+/* [7] 슬라이드 메뉴 (Drawer Style + Top Bar Layout) */
+
+/* 1. 어두운 배경 */
+.menu-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    opacity: 0; visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
+.menu-overlay.active { opacity: 1; visibility: visible; }
 
-.header-divider {
-    border: 0;
-    height: 1px;
-    background: #333;
-    width: 100%;
-}
-
-/* 리스트 아이템 디자인 */
-.post-list {
+/* 2. 메뉴 판넬 (오른쪽 70%) */
+.menu-content {
+    position: absolute;
+    top: 0; right: 0;
+    width: 70%; max-width: 400px; height: 100%;
+    background-color: var(--menu-bg-color);
+    color: var(--menu-text-color);
+    
+    /* [중요] 레이아웃 변경: 위에서부터 차곡차곡 쌓기 */
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    padding: 40px; /* 내부 여백 */
+    
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: -10px 0 20px rgba(0,0,0,0.2);
 }
+.menu-overlay.active .menu-content { transform: translateX(0); }
 
-.post-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
-    border-bottom: 1px solid #222; /* 아이템 사이 구분선 */
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-.post-item:hover {
-    transform: translateX(10px); /* 호버 시 살짝 오른쪽으로 이동 */
-}
-
-.post-content {
-    flex: 1;
-    padding-right: 30px;
-}
-
-.post-title {
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 0 0 10px 0;
-    font-weight: 700;
-}
-
-.post-item:hover .post-title {
-    color: #EAE6D1; /* 호버 시 제목 색 변경 */
-}
-
-.post-excerpt {
-    color: #aaa;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.post-meta {
-    font-size: 0.9rem;
-    color: #666;
-    font-family: sans-serif;
-}
-
-/* 썸네일 이미지 */
-.post-thumbnail {
-    width: 200px;
-    height: 120px;
-    flex-shrink: 0; /* 이미지 크기 줄어들지 않게 고정 */
-    overflow: hidden;
-    border-radius: 8px;
-    background: #000;
-}
-
-.post-thumbnail img {
+/* [3] 상단 바 (언어선택 + X버튼) */
+.menu-top-bar {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    align-items: center;       /* 수직 중앙 정렬 */
+    margin-bottom: 60px;       /* 카테고리와의 거리 벌리기 */
+    gap: 25px;                 /* 언어선택과 X버튼 사이 간격 */
 }
 
-/* 모바일 대응 */
-@media (max-width: 768px) {
-    .post-item {
-        flex-direction: column-reverse; /* 모바일은 이미지가 위로 가거나 아래로 */
-        align-items: flex-start;
-    }
-    .post-thumbnail {
-        width: 100%;
-        height: 180px;
-        margin-bottom: 20px;
-    }
-    .post-content {
-        padding-right: 0;
-    }
+/* 언어 선택 스타일 */
+.lang-switcher a {
+    font-size: 1rem; /* 작고 심플하게 */
+    font-weight: bold;
+    color: rgba(248, 246, 232, 0.4); /* 평소엔 흐리게 */
+    margin-left: 10px;
+    transition: color 0.2s;
+}
+.lang-switcher a:hover, .lang-switcher a.active {
+    color: var(--point-color); /* 선택되거나 호버하면 포인트색 */
 }
 
-/* --- [최종_진짜_최종] 종이 질감 배경 --- */
-.paper-background {
-    /* 1. 배경 투명화 */
-    background-color: transparent;
-    
-    /* 2. 테두리 설정 */
-    border-style: solid;
-    border-width: 50px; 
-    border-color: transparent; 
-    
-    /* 3. 이미지 경로 */
-    border-image-source: url('../images/paper.jpg');
-    
-    /* 4. 자르는 비율 */
-    border-image-slice: 100 fill;
-    
-    /* 5. 반복 설정 */
-    border-image-repeat: round; /* stretch보다 round가 글자 배치에 더 자연스러움 */
-    
-    /* 6. 내부 스타일 */
-    color: #3d2b1f !important;
-    padding: 40px !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5); /* 그림자 좀 더 진하게 */
+/* 닫기 버튼 (위치 고정 해제 -> Flex 흐름 따름) */
+.close-btn {
+    position: static; /* absolute 제거 */
+    background: none; border: none;
+    color: var(--menu-text-color);
+    font-size: 2.5rem; /* 크기 조절 */
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+}
+.close-btn:hover { color: var(--point-color); transform: rotate(90deg); transition: 0.3s; }
 
-    /* ★ 7. 위치 조정 (여기가 핵심!) ★ */
-    /* 헤더 높이(90px)보다 더 아래로 내려오게 설정 */
-    margin-top: 130px !important; 
-    margin-bottom: 80px !important; /* 아래쪽도 여유 있게 */
-    
-    /* (옵션) 종이가 너무 넓게 퍼지지 않도록 폭 제한 */
-    max-width: 1000px; 
-    margin-left: auto; /* 가운데 정렬 */
-    margin-right: auto; /* 가운데 정렬 */
+/* [4] 카테고리 영역 (중앙 정렬 느낌 내기) */
+.menu-body {
+    flex-grow: 1; /* 남은 공간 차지 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center;     /* 가로 중앙 정렬 */
+    margin-bottom: 100px;    /* 시각적 균형을 위해 하단 여백 */
 }
 
-/* --- 텍스트 스타일 (그대로 유지) --- */
-.paper-background h1, 
-.paper-background h2, 
-.paper-background h3,
-.paper-background .project-title,
-.paper-background .post-title {
-    color: #2a1d15 !important;
-    text-shadow: none !important;
-    border-bottom-color: rgba(61, 43, 31, 0.3) !important; /* 제목 밑줄도 갈색으로 */
+.menu-label {
+    font-size: 0.9rem; color: var(--point-color);
+    margin-bottom: 20px; display: inline-block;
+    border-bottom: 1px solid rgba(198, 123, 92, 0.3);
 }
 
-.paper-background p, 
-.paper-background li, 
-.paper-background span,
-.paper-background .project-desc,
-.paper-background .post-excerpt,
-.paper-background .post-meta {
-    color: #4a3b2a !important;
-    font-weight: 600;
+.category-list {
+    list-style: none; padding: 0; text-align: center;
 }
-
-.paper-background hr,
-.paper-background .header-divider,
-.paper-background .post-item {
-    border-color: rgba(61, 43, 31, 0.2) !important;
-}
+.category-list li { margin: 20px 0; font-size: 1.6rem; font-weight: bold; }
+.category-list a { color: var(--menu-text-color); }
+.category-list a:hover { color: var(--point-color); }

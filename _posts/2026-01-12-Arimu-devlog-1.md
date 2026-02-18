@@ -1,10 +1,5 @@
 ---
 title: "0. 왜 아이마스+프리코네였는가?"
-categories: 
-  - Project Arimu
-header:
-  teaser: /assets/images/mao_temp.jpg
-layout: devlog-post
 ---
 
 ## 아이돌 마스터 콘솔 시리즈를 플레이하며
