@@ -1,6 +1,5 @@
 <header class="site-header">
     <div class="header-inner">
-        
         <div class="header-branding">
             <a class="site-title" href="/">KEN's Atelier</a>
             <p class="site-description">// {{ site.description }}</p>
@@ -23,20 +22,14 @@
                 <a href="#">EN</a>
                 <a href="#">JP</a>
             </div>
-
             <button id="menu-close" class="close-btn">&times;</button>
         </div>
 
         <div class="menu-body">
             <h3 class="menu-label">CATEGORIES</h3>
             <ul class="category-list">
-                {% for category in site.categories %}
-                <li>
-                    <a href="/categories/#{{ category | first | slugify }}">
-                        {{ category | first }}
-                    </a>
-                </li>
-                {% endfor %}
+                <li><a href="/#Reactive FSM">Reactive FSM</a></li>
+                <li><a href="/#Project Arimu">Project Arimu</a></li>
             </ul>
         </div>
 
@@ -56,10 +49,37 @@
     if(menuToggle) menuToggle.addEventListener('click', toggleMenu);
     if(menuClose) menuClose.addEventListener('click', toggleMenu);
     
-    // [추가] 어두운 배경 클릭 시 닫기
     if(menuOverlay) {
         menuOverlay.addEventListener('click', (e) => {
             if(e.target === menuOverlay) toggleMenu();
         });
     }
+
+    // 카테고리 필터링 로직
+    function filterPosts() {
+        const hash = decodeURIComponent(window.location.hash.substring(1)); 
+        const posts = document.querySelectorAll('.post-item');
+
+        posts.forEach(post => {
+            // 주소창에 #이 없으면(메인 화면) 모든 글을 보여줌
+            if (!hash) {
+                post.style.display = 'flex'; 
+            } else {
+                // [핵심 변경] 공백 대신 쉼표(,)를 기준으로 카테고리를 나눔
+                const postCategories = post.getAttribute('data-category').split(',');
+                if (postCategories.includes(hash)) {
+                    post.style.display = 'flex';
+                } else {
+                    post.style.display = 'none';
+                }
+            }
+        });
+
+        if (menuOverlay.classList.contains('active')) {
+            toggleMenu();
+        }
+    }
+
+    window.addEventListener('hashchange', filterPosts);
+    document.addEventListener('DOMContentLoaded', filterPosts);
 </script>
