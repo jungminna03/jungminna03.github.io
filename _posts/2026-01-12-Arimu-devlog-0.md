@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "00. 아이마스+프리코네 팬게임"
 categories: [Project Arimu]
 ---
@@ -7,7 +8,7 @@ categories: [Project Arimu]
 
 ## 아이돌 마스터 콘솔 시리즈를 플레이하며
 
-![아이마스 스탈릿 시즌 플레이 화면](/assets/images/Project/log/purikone_ingame.jpg)
+![아이마스 스탈릿 시즌 플레이 화면](/assets/images/Arimu/aimas_ingame.png)
 *[그림 1] 아이마스 스탈릿 시즌 플레이화면*
 
 '아이마스 스탈릿 시즌', '아이마스 올포유', '아이마스2'를 플레이하며 느낀 아쉬운 점이 있다.
@@ -22,7 +23,7 @@ categories: [Project Arimu]
 
 ## 프리코네를 플레이하며
 
-![프리코네 플레이 화면](/assets/images/Project/log/purikone_ingame.jpg)
+![프리코네 플레이 화면](/assets/images/Arimu/purikone_ingame.png)
 *[그림 2] 프리코네 플레이 화면*
 
 '프리코네'를 플레이하면서도 느낀 아쉬운 점이 있다.
@@ -35,20 +36,20 @@ categories: [Project Arimu]
 
 두 게임에서 내가 느낀 아쉬움의 공통점을 말하자면 인게임에서의 인터렉션이다.
 
-![아이마스 인게임 노드 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![아이마스 인게임 노드 사진](/assets/images/Arimu/aimas_node.png)
 *[그림 3] 아이마스 스탈릿 시즌 인게임 노드*
 
 아이마스 콘솔 시리즈에서는 **유저들의 조작에 관한 인터렉션**이 좋았지만 인풋에 따라 게임이 변하는 시각적인 인터렉션은 부족했다.
 
-![프리코네 인게임 캐릭터 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![프리코네 인게임 캐릭터 사진](/assets/images/Arimu/purikone_char.png)
 *[그림 4] 프리코네 인게임 캐릭터*
 
 반대로 프리코네는 **시각적인 인터렉션**은 좋았지만 인게임으로 들어간 이후 유저들의 조작에 관한 인터렉션은 부족했다.
 
 ## 아이마스+프리코네
 
-![프로토타입 사진](/assets/images/Project/main-card/arimu_prototype.png)
-*[그림 5] 프로토타입*
+![상상도 사진](/assets/images/Arimu/arimu_imagin.png)
+*[그림 5] 인게임 상상도*
 
 아이마스 콘솔의 조작과 관련된 시스템과 프리코네의 캐릭터 전투 시스템을 합치면 부족했던 인터렉션을 양쪽에서 채워주기 때문에 유저가 **즐겁게 조작하면서 시각적인 요소도 즐거운 게임**이 탄생할 것이라고 생각했다.
 
@@ -79,7 +80,8 @@ categories: [Project Arimu]
   <h3>Reference & Copyright</h3>
   <ul>
     <li>본 글에 인용된 게임 이미지의 저작권은 <strong>Bandai Namco Entertainment Inc.</strong> 및 <strong>Cygames, Inc.</strong>에 있습니다.</li>
+    <li>본 문서의 일부 도식 및 일러스트레이션은 AI 도구를 활용하여 생성되었습니다.</li>
     <li>이 프로젝트는 비상업적 팬 게임 프로젝트이며, 원작사의 권리를 침해할 의도가 없습니다.</li>
-    <li>Images cited in this post are for reference/critique purposes only.</li>
+    <li>Images and diagrams in this post include AI-generated content and are for reference/critique purposes only.</li>
   </ul>
 </div>

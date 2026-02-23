@@ -1,0 +1,33 @@
+/* [1] 초기화 (Reset) */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+
+/* [2] 변수 설정 (베이지 테마) - 이게 없어서 색상이 안 나왔던 겁니다 */
+:root {
+    --bg-color: #F8F6E8;         /* 배경: 옅은 베이지 */
+    --text-color: #55423D;       /* 글자: 진한 갈색 */
+    --point-color: #C67B5C;      /* 포인트: 오렌지 브라운 */
+    --menu-bg-color: #6B584E;    /* 메뉴창 배경 */
+    --menu-text-color: #F8F6E8;  /* 메뉴 글씨 */
+    --font-family: 'Consolas', 'Monaco', monospace; /* 개발자 폰트 */
+}
+
+/* [3] 기본 스타일 */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; transition: color 0.2s; }
+a:hover { color: var(--point-color); }
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* 메인 컨텐츠 여백 */
+#main {
+    max-width: 850px;
+    margin: 120px auto 40px; 
+    padding: 0 20px;
+    min-height: 80vh;
+}

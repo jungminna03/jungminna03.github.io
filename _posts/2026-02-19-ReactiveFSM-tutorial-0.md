@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "00. 개요"
 categories: [Reactive FSM]
 ---
@@ -35,7 +36,7 @@ categories: [Reactive FSM]
 
 1. Update 
 
-![업데이트 루프에서 FSM으로 흐름이 어렵게 흘러가는 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![업데이트 루프에서 FSM으로 흐름이 어렵게 흘러가는 사진](/assets/images/ReactiveFSM/hard_to_send_update_flow.png)
 *[그림 1] 기존 FSM의 문제점 1*
 기존 FSM에서의 귀찮은 작업 중 하나는 매 루프마다 조건을 체크하게 만들어야한다는 점이다. 
 
@@ -47,19 +48,19 @@ FSM에서 별도로 update문을 돌리거나 각 클래스의 update문에 FSM�
 
 리액티브 익스텐션을 사용하면 너무나도 깔끔하게 해결되는 상황이다. <small style="color: grey;">리액티브 익스텐션에 대한 내용은 <a href="https://qiita.com/toRisouP/items/48b9fa25df64d3c6a392" target="_blank" style="color: grey;">토리스프가 정리한 UniRx기본 강좌</a>에 잘 정리되어있다.</small>
 
-![업데이트 루프에서 FSM으로 흐름이 어렵게 흘러가는 사진에서 흐름이 끊어지고 FSM이 스스로 반응하는 듯한 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![업데이트 루프에서 FSM으로 흐름이 어렵게 흘러가는 사진에서 흐름이 끊어지고 FSM이 스스로 반응하는 듯한 사진](/assets/images/ReactiveFSM/be_reactive_fsm.png)
 *[그림 2] 기존 FSM의 문제 해결 방안 1*
 update 흐름을 흘려주기보다 자기가 변화가 필요한 상황을 스스로 감지해서 스스로 변화하는 **반응형 FSM**을 만들고자 한 것이 처음 Reactive FSM을 만들고자한 계기가 되었다. 
 
 2. 간단한 사용 
 
-![상태와 상태별로 이동하는 조건 화살표가 적힌 그림](/assets/images/Project/log/purikone_ingame.jpg)
+![상태와 상태별로 이동하는 조건 화살표가 적힌 그림](/assets/images/ReactiveFSM/)
 *[그림 3] 기존 FSM의 문제점 2*
 각 상태별로 특정 조건이 충족이 되면 다른 상태로 넘어가게 만드는 것은 각 상태별로 다른 상태로 넘어가는 조건을 각각 만들어줘야한다. 상태가 많을때는 매우 편리하겠지만, 상태가 별로 없다면 귀찮은 작업일 뿐이다. 
 
 각 상태별로가 다른 상태로 넘어가는 조건을 만드는 대신 **어떤 상태에 들어가기 위한 조건**을 만드는 것은 매우 간단할 것이다. 
 
-![스위치를 바꾸면 색이 바뀌는 GIF](/assets/images/Project/log/purikone_ingame.jpg)
+![스위치를 바꾸면 색이 바뀌는 GIF](/assets/images/ReactiveFSM/)
 *[그림 4] 기존 FSM의 문제 해결 방안 2-1*
 예를 들면 상태가 서있기, 움직이기, 점프(공중) 이렇게 3개만 있다면. 조건을 2개 만들어서 그 조건에 맞게 상태를 조절하면 간단할 것이다. 
 
@@ -70,7 +71,7 @@ update 흐름을 흘려주기보다 자기가 변화가 필요한 상황을 스�
 
 이 **조건(컨디션)을 가지고 룰을 추가해서 상태를 전이하는 것**이 이 FSM의 컨셉이다. 리엑티브 라이브러리와도 잘 어울리는 컨셉이다. 
 
-![조건 -> 룰 -> 상태 변이 그림](/assets/images/Project/log/purikone_ingame.jpg)
+![조건 -> 룰 -> 상태 변이 그림](/assets/images/ReactiveFSM/)
 *[그림 5] 기존 FSM의 문제 해결 방안 2-2*
 입력이 있는가? 라는 조건이 충족이 되면 입력 상태로 전이되라 라는 룰을 추가해주고, 공중에 있는가? 라는 조건이 충족이 되면 공중 상태로 전이하라 라는 룰을 추가하는 것이다. 
 
@@ -78,7 +79,7 @@ update 흐름을 흘려주기보다 자기가 변화가 필요한 상황을 스�
 
 만약 입력이 있는가?라는 조건도 충족이 되고, 공중에 있는가?라는 조건도 충족이 되면 어떤 룰을 따라야 할까? 
 
-![조건 -> 룰 -> 상태 변이 그림](/assets/images/Project/log/purikone_ingame.jpg)
+![조건 -> 룰 -> 상태 변이 그림](/assets/images/ReactiveFSM/)
 *[그림 6] 기존 FSM의 문제 해결 방안 2-3*
 이것을 위해서 룰간의 **우선 순위**라는 개념을 넣었다. 
 
@@ -86,7 +87,7 @@ update 흐름을 흘려주기보다 자기가 변화가 필요한 상황을 스�
 
 3. 재활용 
 
-![클래스랑 밀착되어있는 FSM이 떨어져 나와서 하나의 부품이 된 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![클래스랑 밀착되어있는 FSM이 떨어져 나와서 하나의 부품이 된 사진](/assets/images/ReactiveFSM/)
 *[그림 7] 기존 FSM의 문제 해결 방안 3*
 FSM을 적용하는 클래스별로 행동이 다 다르기 때문에 상태와 상태에 따른 행동을 FSM과 분리시키면 FSM을 재활용할 수 있다. 
 
@@ -99,7 +100,7 @@ FSM을 적용하는 클래스별로 행동이 다 다르기 때문에 상태와 
 
 도데체 지금 어떤 상태이길레 저 행동을 하고 어떤 조건이길레 저 상태로 들어갔는가를 실시간으로 확인하기가 힘들다. 로그를 찍어도 알아보기 힘든건 매한가지이다. 
 
-![윈도우 패널 사진](/assets/images/Project/log/purikone_ingame.jpg)
+![윈도우 패널 사진](/assets/images/ReactiveFSM/)
 *[그림 8] 기존 FSM의 문제 해결 방안 4*
 그래서 각 인스턴스들이 지금 어떤 상태인지, 조건들이 지금 true인지 false인지 한눈에 알아볼 수 있는 패널을 만들어서 디버깅에 편리함을 추가했다. 
 
@@ -141,4 +142,4 @@ AI의 도움을 많이 받긴 했지만 처음으로 내가 만든 코드에 자
 ---
 **References & Copyrights**
 * **Technical Reference:** 본 에셋의 리액티브 개념은 [toRisouP님의 UniRx 강좌](https://qiita.com/toRisouP/items/48b9fa25df64d3c6a392)를 참고하여 설계되었습니다.
-* **Images:** 본 문서에 사용된 도식 및 예시 이미지는 AI를 통해 생성되었습니다.
+* **Images:** 본 문서의 도식 및 예시 이미지에는 AI 기술로 생성된 리소스가 일부 포함되어 있습니다.
