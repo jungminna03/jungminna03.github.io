@@ -1,0 +1,20 @@
+.post-item {
+    display: flex; padding: 15px 0;
+    border-bottom: 1px solid rgba(85, 66, 61, 0.2);
+    align-items: baseline; font-size: 1.1rem;
+}
+
+.post-date {
+    flex-shrink: 0; width: 140px;
+    color: var(--point-color); font-size: 0.95rem;
+}
+
+.post-category {
+    color: var(--point-color);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.post-link { font-weight: 500; color: var(--text-color); }
+.post-link:hover { text-decoration: underline; }
