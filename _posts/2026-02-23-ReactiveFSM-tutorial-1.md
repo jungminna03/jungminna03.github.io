@@ -22,7 +22,13 @@ Reactive FSM를 사용하기 위해서는 다음 2가지 요소를 구현해야�
 이 FSM에서는 `IFSMState`라는 인터페이스를 제공한다. 이 **인터페이스(상태)를 구현하고 그 안에 실행될 코드(행동)를 담음**으로써 행동-상태를 구현할 수 있다. 
 
 ```
-(인터페이스대로 정의만 한 코드)
+public interface IFSMState
+{
+        CompositeDisposable Disposer { get; }
+        
+        UniTask OnEnter();
+        UniTask OnExit();
+}
 ```
 
 인터페이스만 제공하는 이유는 각 State에서 행동을 할때 필요로 하는 리소스들을 미리 준비할 수 없기 때문이다. 따라서 사용자가 각 State에서 행동을 할때 필요로 하는 리소스를 직접 설정해서 사용하면 된다. 
@@ -36,18 +42,30 @@ Update를 없앤 이유는 리액티브 프로그래밍의 특성상 실행될 �
 또한 편리하게 등록을 지우기 위해 CompositeDisposable를 사용한다. (리액티브 프로그래밍에서 자주 사용되는 패턴이다.) 
 
 ```
-(Enter에서 등록하고 Exit에서 해제하는 예시 코드)
+public class MoveGameUnitState
+{
+	public CompositeDisposable Disposer => _disposer;
+	IGameUnit _gameUnit;        
+
+        public MoveGameUnitState(IGameUnit gameUnit)
+        {
+            _gameUnit = gameUnit;
+        }
+        
+        public override async UniTask OnEnter()
+        {
+            Disposer.Add(Observable.EveryUpdate()
+                .Subscribe(_ =>
+                {
+                   _gameUnit.Move();
+                }).AddTo(_gameUnit.GO.gameObject));
+        }
+}
 ```
 
 만약 등록을 지우지 않는 실수가 일어나면 상태가 바뀔때마다 등록되어있던 스트림들이 계속 살아있게 되어 **메모리 누수**가 발생하게 된다.
 
 이는 리액티브 프로그래밍에서 자주 일어나는 실수이다. 
-
-위의 내용을 참고해 상태를 정의하면 다음과 같다. 
-
-``` 
-
-``` 
 
 ## Reactive FSM의 구현 
 
@@ -70,11 +88,6 @@ FSM의 구현은 한 함수 안에서 전부 이루어진다. (회색 글씨로)
 제작자는 partial을 적극적으로 추천하는 바이다. FSM의 구현만이라도 따로 파일을 만들어서 관리를 하면 가독성이 단번에 좋아진다.
 대신 유지보수는 여러 파일을 왔다갔다 해야하기에 조금 어려워지는 면이 있다. 
 
-예시 코드
-```
-(partial로 FSM구현부를 나눠놓은 코드)
-```
-
 ### 2. 상태 등록 
 
 FSM에게 어떤 상태가 있는지 알려줘서 FSM이 그 상태로 전이할 수 있게 해야한다. 
@@ -86,7 +99,15 @@ void AddState(IFSMState state);
 
 예시 코드
 ```
-함수를 생성하고 등록하는 코드
+public IReactiveFSM FSM => _fsm;
+private ReactiveFSM _fsm;
+
+private void InitFSM()
+{
+	var idle = new IdleGameUnitState(this);
+
+	_fsm.AddState(idle);
+}
 ```
 
 ### 3. 컨디션 등록 
@@ -96,19 +117,30 @@ void AddState(IFSMState state);
 우선 스트림에 대한 설명을 먼저 해야한다. 스트림은 이 FSM이 작동하기 위한 원천과 같다. 스트림을 통해서 FSM은 언제 조건을 체크하고 상태를 바꿀지에 대한 타이밍을 나타낸다. 
 
 ```
-(스트림을 만들어내는 코드)
+var moveStream = _gameUnitGO.RxPosition.AsUnitObservable();
 ```
 
 이제 이 스트림을 가공을 해야할 단계이다. 어떤 타이밍에 FSM을 갱신할 것인지 결정했으니 이제는 그 타이밍에 무슨 조건을 어떻게 따질 것인지에 대해 결정해야한다. 
 
 ```
-(스트림과 그 스트림을 가공한 코드)
+var moveStream = _gameUnitGO.RxPosition.AsUnitObservable();
+
+var isEnemyInRange = moveStream
+                .Select(_ =>
+                {
+                    var enemy = _gameUnitQuery.GetTarget(this, Side.Enemy, SortBy.Nearest);
+                    if (enemy == null) return false;
+                    
+                    return (GO.transform.position - enemy.GO.transform.position).magnitude <= Stats.Range;
+                })
+		.DistinctUntilChanged()
+                .ToReadOnlyReactiveProperty();
 ```
 
 가공한 스트림을 이제 FSM에 컨디션으로써 등록해서 이 스트림이 변경될때마다 FSM이 이 스트림에 맞게 상태를 전이하도록 해야한다. 
 
 ```
-컨디션을 추가하는 코드
+_fsm.RegisterCondition("IsEnemyInRange", isEnemyInRange);
 ```
 
 위에 단계를 거쳐서 컨디션을 등록하게 되는 것이다. 
@@ -120,6 +152,23 @@ void RegisterCondition(string name, Observable<bool> conditionStream);
 
 예시 코드 전체
 ``` 
+// 1. 스트림 생성
+var moveStream = _gameUnitGO.RxPosition.AsUnitObservable();
+
+// 2. 스트림 가공
+var isEnemyInRange = moveStream
+                .Select(_ =>
+                {
+                    var enemy = _gameUnitQuery.GetTarget(this, Side.Enemy, SortBy.Nearest);
+                    if (enemy == null) return false;
+                    
+                    return (GO.transform.position - enemy.GO.transform.position).magnitude <= Stats.Range;
+                })
+		.DistinctUntilChanged()
+                .ToReadOnlyReactiveProperty();
+
+// 3. 컨디션 등록
+void RegisterCondition(string name, Observable<bool> conditionStream);
 
 ``` 
 
@@ -131,12 +180,19 @@ void RegisterCondition(string name, Observable<bool> conditionStream);
 
 함수 원형
 ``` 
+void AddDecisionRule(IFSMState targetState, Func<IReadOnlyDictionary<string, bool>, bool> conditionLogic, int priority = 0);
 
 ``` 
 
 예시 코드
 ```
-룰을 추가하는 코드
+_fsm.AddDecisionRule(
+                targetState: idle,
+                conditionLogic: facts => facts["IsEnemyInRange"]
+                                                              && !facts["IsSkillExecuting"] 
+                                                              && !facts["IsSkillExecuteRequested"],
+                priority: 0 
+            );
 ```
 
 ### 5. 시작 
@@ -150,29 +206,29 @@ void SetInitialState<T>() where T : IFSMState;
 
 예시 코드
 ``` 
-
+_fsm.SetInitialState<MoveGameUnitState>();
 ``` 
 
 ## 디버깅 
 
 이렇게 생성된 FSM 인스턴스가 실제 게임 내에서 각 조건이 어떤 값인지, 또 어떤 상태인지 보고 싶으면 ~유니티에서 어디 메뉴 클릭하면 나오는지 알아보고 적기~를 통해 모니터링 에니터 윈도우를 열면 된다. 
 
-(사진) 
+// TODO : (사진) 
 
 왼쪽에 각 인스턴스의 이름이 나와있고, 그 이름의 버튼을 클릭하면 해당 인스턴스의 정보가 오른쪽에 표시된다. 
 
-(사진) 
+// TODO : (사진) 
 
 이때 각 인스턴스의 이름을 지정해주기 위해서는 ReactiveFSM의 생성자에서 이름으로 할 string을 넘겨주어야 한다. 
 
 예시 코드
 ``` 
-
+_fsm = new(_stats.UnitName);
 ``` 
 
 ## 주의점 
 
-~룰 추가할때 잘 고려해야함~
+// TODO
 
 ---
 **References & Copyrights**
