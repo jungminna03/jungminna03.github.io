@@ -189,8 +189,8 @@ void AddDecisionRule(IFSMState targetState, Func<IReadOnlyDictionary<string, boo
 _fsm.AddDecisionRule(
                 targetState: idle,
                 conditionLogic: facts => facts["IsEnemyInRange"]
-                                                              && !facts["IsSkillExecuting"] 
-                                                              && !facts["IsSkillExecuteRequested"],
+		&& !facts["IsSkillExecuting"] 
+		&& !facts["IsSkillExecuteRequested"],
                 priority: 0 
             );
 ```
