@@ -31,3 +31,27 @@ ul { list-style: none; padding: 0; margin: 0; }
     padding: 0 20px;
     min-height: 80vh;
 }
+
+/* 마비노기 폰트 등록 */
+@font-face {
+    font-family: 'Mabinogi';
+    src: url('/assets/fonts/Mabinogi_Classic_TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* [2] 변수 설정 수정 */
+:root {
+    /* ... 기존 색상 변수들 ... */
+    
+    /* 기본 폰트를 마비노기로 변경! */
+    --font-family: 'Mabinogi', 'Pretendard', sans-serif; 
+    --code-font: 'Consolas', monospace;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.1rem;      /* 마비노기 폰트는 살짝 커야 예쁩니다 */
+    letter-spacing: 0.02em; /* 고딕체와 달리 자간을 약간 넓히는 게 감성적입니다 */
+    line-height: 1.7;
+}
