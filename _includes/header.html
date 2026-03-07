@@ -28,10 +28,11 @@
         <div class="menu-body">
             <h3 class="menu-label">CATEGORIES</h3>
             <ul class="category-list">
-                <li><a href="/#Reactive FSM">Reactive FSM</a></li>
-                <li><a href="/#Project Arimu">Project Arimu</a></li>
-                <li><a href="/#Project Arimu">Project ISO</a></li>
-                <li><a href="/#Project Arimu">GameDev Insight</a></li>
+                {% for category in site.categories %}
+                <li>
+                    <a href="/#{{ category | first }}">{{ category | first }}</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
 
