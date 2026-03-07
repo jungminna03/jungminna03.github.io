@@ -4,7 +4,7 @@ title: "00. 개요"
 categories: [Reactive FSM]
 ---
 
-_이 글은 에셋 문서 입니다._
+_에셋 문서_
 
 ## 에셋 사용 대상 
 
