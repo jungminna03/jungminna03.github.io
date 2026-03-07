@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "핵심으로부터 굴려라. - 스노우볼 프로토타이핑"
-categories: [GameDev-Insight]
+categories: [GameDev Insight]
 ---
 
 _게임 개발 통찰 로그_
