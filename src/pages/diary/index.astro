@@ -71,19 +71,18 @@ for (const entry of entries) {
     grid-template-columns: 56px minmax(0, 1fr);
     gap: 16px;
     padding: 16px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px dashed var(--border);
   }
   time {
-    padding-top: 2px;
-    color: var(--faint);
-    font-family: var(--mono);
-    font-size: 14px;
+    padding-top: 1px;
+    color: var(--accent-text);
+    font-size: 15px;
+    font-variant-numeric: tabular-nums;
   }
   .entry-title {
     margin-right: 6px;
-    color: var(--text);
-    font-size: 17px;
-    font-weight: 700;
+    color: var(--ink);
+    font-size: 18.5px;
   }
   .entry-highlight {
     margin: 4px 0 0;

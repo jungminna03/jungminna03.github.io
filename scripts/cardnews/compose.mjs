@@ -3,8 +3,9 @@ import { z } from 'zod';
 import { generateObject } from '../lib/ai.mjs';
 import { truncate } from '../lib/util.mjs';
 
-// 흰 글씨가 잘 보이는 진한 색만 쓴다. 날짜마다 돌아가며 바뀐다.
-const PALETTE = ['#4f46e5', '#c2255c', '#0c8599', '#d9480f', '#2f9e44', '#1c7ed6', '#7048e8', '#e8590c'];
+// 공방 테마의 흙빛 (크림 글씨 대비 4.5:1 이상). 날짜마다 돌아가며 바뀐다.
+// 테라코타 · 올리브 · 월넛 · 데님 · 머스터드 · 포레스트 · 플럼 · 러스트
+const PALETTE = ['#a35a3e', '#6b7a3a', '#7a5235', '#3f5873', '#9a6b1f', '#3e6b54', '#6e4b5e', '#8c4a3a'];
 export const accentFor = (date) => PALETTE[Number(date.replaceAll('-', '')) % PALETTE.length];
 
 const monthDay = (date) => {

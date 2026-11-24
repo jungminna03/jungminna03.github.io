@@ -12,8 +12,7 @@ export default defineConfig({
   site: `https://${owner.toLowerCase()}.github.io`,
   base: isUserSite ? '/' : `/${repo}`,
   markdown: {
-    shikiConfig: {
-      themes: { light: 'github-light', dark: 'github-dark' },
-    },
+    // 베이지 종이 위의 어두운 칠판 — 예전 블로그처럼 코드 블록은 어둡게, 색은 따뜻하게
+    shikiConfig: { theme: 'gruvbox-dark-medium' },
   },
 });

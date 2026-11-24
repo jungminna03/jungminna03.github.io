@@ -210,15 +210,19 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
   .highlights li {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
+    gap: 10px;
     padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    font-weight: 600;
+    border-bottom: 1px dashed var(--border);
+    color: var(--ink);
+  }
+  .highlights li::before {
+    content: '✦';
+    color: var(--accent);
+    font-size: 0.8em;
   }
   .highlights .meta {
     flex-shrink: 0;
-    font-weight: 400;
+    margin-left: auto;
   }
   .project h3 {
     margin: 0;

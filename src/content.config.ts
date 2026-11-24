@@ -28,7 +28,7 @@ const cardnews = defineCollection({
     date: z.coerce.date(),
     summary: z.string().optional(),
     tags: z.array(z.string()).default([]),
-    accent: z.string().default('#4f46e5'),
+    accent: z.string().default('#a35a3e'),
     mode: z.enum(['ai', 'headlines', 'manual']).default('manual'),
     cards: z
       .array(

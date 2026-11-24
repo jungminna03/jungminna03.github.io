@@ -21,6 +21,8 @@ const nav = [
 ];
 const trim = (path: string) => path.replace(/\/+$/, '');
 const isCurrent = (href: string) => trim(Astro.url.pathname).startsWith(trim(url(href)));
+// 로고용 필기체: Brush Script MT 가 없는 기기(안드로이드 등)에서만 쓰이고, 로고 글자만 받아온다
+const scriptFont = `https://fonts.googleapis.com/css2?family=Yellowtail&display=swap&text=${encodeURIComponent(`${profile.siteTitle}Crafted in`)}`;
 ---
 
 <!doctype html>
@@ -31,6 +33,7 @@ const isCurrent = (href: string) => trim(Astro.url.pathname).startsWith(trim(url
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#f8f6e8" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
@@ -39,6 +42,8 @@ const isCurrent = (href: string) => trim(Astro.url.pathname).startsWith(trim(url
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={scriptFont} />
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
@@ -59,9 +64,10 @@ const isCurrent = (href: string) => trim(Astro.url.pathname).startsWith(trim(url
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© {new Date().getFullYear()} {profile.name}</span>
+        <span class="footer-mark">Crafted in {profile.siteTitle}</span>
         <span>
-          {profile.links.GitHub && <a href={profile.links.GitHub}>GitHub</a>}
+          © {new Date().getFullYear()} {profile.name}
+          {profile.links.GitHub && <> · <a href={profile.links.GitHub}>GitHub</a></>}
         </span>
       </div>
     </footer>

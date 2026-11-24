@@ -160,22 +160,12 @@ const searchText = (job: Job) => [job.title, job.company, job.location, job.depa
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     margin-bottom: 10px;
   }
-  .pick {
-    border-top: 3px solid var(--accent);
-  }
-  .pick-reach {
-    border-top-color: var(--hot);
+  /* 도장 색: 적정 = 올리브, 상향 = 러스트, 관심 = 테라코타 */
+  .pick-match .badge {
+    color: var(--good);
   }
   .pick-reach .badge {
-    background: var(--hot-soft);
     color: var(--hot);
-  }
-  .pick-interest {
-    border-top-color: var(--good);
-  }
-  .pick-interest .badge {
-    background: var(--good-soft);
-    color: var(--good);
   }
   .pick-company {
     margin: 12px 0 2px;
@@ -194,7 +184,8 @@ const searchText = (job: Job) => [job.title, job.company, job.location, job.depa
     font-size: 15px;
   }
   .pick strong {
-    font-size: 13px;
+    color: var(--accent-text);
+    font-size: 14px;
   }
   .pick-gaps ul {
     margin: 4px 0 12px;
@@ -214,10 +205,10 @@ const searchText = (job: Job) => [job.title, job.company, job.location, job.depa
   .filters input,
   .filters select {
     min-width: 0;
-    padding: 9px 12px;
+    padding: 9px 16px;
     border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--bg);
+    border-radius: 999px;
+    background: var(--surface);
     color: var(--text);
     font: inherit;
     font-size: 15px;
@@ -238,7 +229,7 @@ const searchText = (job: Job) => [job.title, job.company, job.location, job.depa
     justify-content: space-between;
     gap: 16px;
     padding: 16px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px dashed var(--border);
   }
   .job-main {
     min-width: 0;
@@ -249,13 +240,11 @@ const searchText = (job: Job) => [job.title, job.company, job.location, job.depa
     gap: 8px;
     margin: 0;
     color: var(--muted);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 14.5px;
   }
   .job-title {
-    color: var(--text);
-    font-size: 16px;
-    font-weight: 700;
+    color: var(--ink);
+    font-size: 17px;
   }
   .job .meta {
     margin: 2px 0 0;
