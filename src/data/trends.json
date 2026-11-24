@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:56:10.208Z",
+  "generatedAt": "2026-11-24T11:03:10.877Z",
   "window": {
     "days": 30,
     "from": "2026-10-25",
@@ -11,22 +11,22 @@
     "priceRealization": 0.7,
     "tractionReviews": 10
   },
-  "total": 6200,
+  "total": 6159,
   "indie": {
-    "releases": 2122,
-    "paid": 1954,
-    "free": 168,
-    "withTraction": 348,
+    "releases": 2105,
+    "paid": 1938,
+    "free": 167,
+    "withTraction": 344,
     "genres": [
       {
         "id": 599,
         "name": "시뮬레이션",
         "en": "Simulation",
-        "releases": 585,
-        "traction": 128,
-        "revenue": 4043851,
+        "releases": 577,
+        "traction": 127,
+        "revenue": 4039826,
         "median": 105,
-        "perRelease": 6913,
+        "perRelease": 7001,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -40,11 +40,11 @@
         "id": 9,
         "name": "전략",
         "en": "Strategy",
-        "releases": 573,
-        "traction": 75,
-        "revenue": 2004343,
+        "releases": 567,
+        "traction": 74,
+        "revenue": 2004259,
         "median": 0,
-        "perRelease": 3498,
+        "perRelease": 3535,
         "positive": 85,
         "youtube": 0,
         "top": {
@@ -58,11 +58,11 @@
         "id": 1664,
         "name": "퍼즐",
         "en": "Puzzle",
-        "releases": 403,
-        "traction": 64,
-        "revenue": 771374,
+        "releases": 400,
+        "traction": 63,
+        "revenue": 767160,
         "median": 0,
-        "perRelease": 1914,
+        "perRelease": 1918,
         "positive": 90,
         "youtube": 0,
         "top": {
@@ -76,11 +76,11 @@
         "id": 1773,
         "name": "아케이드",
         "en": "Arcade",
-        "releases": 288,
+        "releases": 286,
         "traction": 26,
         "revenue": 202722,
         "median": 0,
-        "perRelease": 704,
+        "perRelease": 709,
         "positive": 91,
         "youtube": 0,
         "top": {
@@ -94,11 +94,11 @@
         "id": 3959,
         "name": "로그라이트",
         "en": "Roguelite",
-        "releases": 251,
+        "releases": 250,
         "traction": 34,
         "revenue": 1077302,
         "median": 0,
-        "perRelease": 4292,
+        "perRelease": 4309,
         "positive": 87,
         "youtube": 0,
         "top": {
@@ -130,12 +130,12 @@
         "id": 122,
         "name": "RPG",
         "en": "RPG",
-        "releases": 215,
-        "traction": 46,
-        "revenue": 1332560,
-        "median": 32,
-        "perRelease": 6198,
-        "positive": 84,
+        "releases": 213,
+        "traction": 45,
+        "revenue": 1329095,
+        "median": 21,
+        "perRelease": 6240,
+        "positive": 83,
         "youtube": 0,
         "top": {
           "appid": 3669620,
@@ -150,7 +150,7 @@
         "en": "Idler",
         "releases": 211,
         "traction": 39,
-        "revenue": 349520,
+        "revenue": 349436,
         "median": 84,
         "perRelease": 1656,
         "positive": 81,
@@ -166,11 +166,11 @@
         "id": 1716,
         "name": "로그라이크",
         "en": "Roguelike",
-        "releases": 202,
-        "traction": 28,
-        "revenue": 1058534,
+        "releases": 200,
+        "traction": 27,
+        "revenue": 1055069,
         "median": 0,
-        "perRelease": 5240,
+        "perRelease": 5275,
         "positive": 92,
         "youtube": 0,
         "top": {
@@ -184,11 +184,11 @@
         "id": 1667,
         "name": "공포",
         "en": "Horror",
-        "releases": 181,
-        "traction": 38,
-        "revenue": 533393,
+        "releases": 179,
+        "traction": 37,
+        "revenue": 525384,
         "median": 84,
-        "perRelease": 2947,
+        "perRelease": 2935,
         "positive": 83,
         "youtube": 0,
         "top": {
@@ -202,11 +202,11 @@
         "id": 3968,
         "name": "물리",
         "en": "Physics",
-        "releases": 153,
+        "releases": 152,
         "traction": 37,
-        "revenue": 1284788,
-        "median": 84,
-        "perRelease": 8397,
+        "revenue": 1284746,
+        "median": 95,
+        "perRelease": 8452,
         "positive": 86,
         "youtube": 0,
         "top": {
@@ -220,11 +220,11 @@
         "id": 12472,
         "name": "경영",
         "en": "Management",
-        "releases": 147,
+        "releases": 146,
         "traction": 33,
-        "revenue": 1463891,
+        "revenue": 1463807,
         "median": 105,
-        "perRelease": 9958,
+        "perRelease": 10026,
         "positive": 80,
         "youtube": 0,
         "top": {
@@ -238,11 +238,11 @@
         "id": 1666,
         "name": "카드 게임",
         "en": "Card Game",
-        "releases": 143,
+        "releases": 142,
         "traction": 17,
         "revenue": 248985,
         "median": 0,
-        "perRelease": 1741,
+        "perRelease": 1753,
         "positive": 93,
         "youtube": 0,
         "top": {
@@ -256,11 +256,11 @@
         "id": 1721,
         "name": "심리적 공포",
         "en": "Psychological Horror",
-        "releases": 129,
-        "traction": 33,
-        "revenue": 454754,
-        "median": 125,
-        "perRelease": 3525,
+        "releases": 127,
+        "traction": 32,
+        "revenue": 446745,
+        "median": 105,
+        "perRelease": 3518,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -292,11 +292,11 @@
         "id": 3810,
         "name": "샌드박스",
         "en": "Sandbox",
-        "releases": 113,
-        "traction": 33,
-        "revenue": 1530123,
-        "median": 210,
-        "perRelease": 13541,
+        "releases": 111,
+        "traction": 31,
+        "revenue": 1522759,
+        "median": 200,
+        "perRelease": 13719,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -310,11 +310,11 @@
         "id": 1774,
         "name": "슈팅",
         "en": "Shooter",
-        "releases": 102,
+        "releases": 100,
         "traction": 9,
         "revenue": 705970,
         "median": 0,
-        "perRelease": 6921,
+        "perRelease": 7060,
         "positive": 95,
         "youtube": 0,
         "top": {
@@ -379,32 +379,14 @@
         }
       },
       {
-        "id": 5716,
-        "name": "미스터리",
-        "en": "Mystery",
-        "releases": 87,
-        "traction": 19,
-        "revenue": 619745,
-        "median": 105,
-        "perRelease": 7124,
-        "positive": 83,
-        "youtube": 0,
-        "top": {
-          "appid": 3370490,
-          "name": "Giggleland",
-          "url": "https://store.steampowered.com/app/3370490/",
-          "revenue": 295952
-        }
-      },
-      {
         "id": 3843,
         "name": "온라인 협동",
         "en": "Online Co-Op",
-        "releases": 87,
+        "releases": 86,
         "traction": 17,
-        "revenue": 245256,
-        "median": 126,
-        "perRelease": 2819,
+        "revenue": 245214,
+        "median": 147,
+        "perRelease": 2851,
         "positive": 81,
         "youtube": 0,
         "top": {
@@ -433,6 +415,24 @@
         }
       },
       {
+        "id": 5716,
+        "name": "미스터리",
+        "en": "Mystery",
+        "releases": 85,
+        "traction": 18,
+        "revenue": 611736,
+        "median": 84,
+        "perRelease": 7197,
+        "positive": 83,
+        "youtube": 0,
+        "top": {
+          "appid": 3370490,
+          "name": "Giggleland",
+          "url": "https://store.steampowered.com/app/3370490/",
+          "revenue": 295952
+        }
+      },
+      {
         "id": 255534,
         "name": "자동화",
         "en": "Automation",
@@ -454,11 +454,11 @@
         "id": 1738,
         "name": "숨은 그림 및 물체",
         "en": "Hidden Object",
-        "releases": 77,
-        "traction": 23,
-        "revenue": 307570,
-        "median": 126,
-        "perRelease": 3994,
+        "releases": 76,
+        "traction": 22,
+        "revenue": 303671,
+        "median": 125,
+        "perRelease": 3996,
         "positive": 86,
         "youtube": 0,
         "top": {
@@ -466,24 +466,6 @@
           "name": "Dice Hoarder",
           "url": "https://store.steampowered.com/app/3687090/",
           "revenue": 211201
-        }
-      },
-      {
-        "id": 1698,
-        "name": "포인트 앤드 클릭",
-        "en": "Point & Click",
-        "releases": 76,
-        "traction": 13,
-        "revenue": 81653,
-        "median": 0,
-        "perRelease": 1074,
-        "positive": 87,
-        "youtube": 0,
-        "top": {
-          "appid": 5035380,
-          "name": "BALL PICKER - Clean Up the Golf Yard",
-          "url": "https://store.steampowered.com/app/5035380/",
-          "revenue": 24529
         }
       },
       {
@@ -505,21 +487,21 @@
         }
       },
       {
-        "id": 3799,
-        "name": "비주얼 노벨",
-        "en": "Visual Novel",
-        "releases": 74,
-        "traction": 21,
-        "revenue": 179610,
-        "median": 144,
-        "perRelease": 2427,
-        "positive": 84,
+        "id": 1698,
+        "name": "포인트 앤드 클릭",
+        "en": "Point & Click",
+        "releases": 75,
+        "traction": 13,
+        "revenue": 81653,
+        "median": 0,
+        "perRelease": 1089,
+        "positive": 87,
         "youtube": 0,
         "top": {
-          "appid": 4236650,
-          "name": "Adultery Marriage Punisher",
-          "url": "https://store.steampowered.com/app/4236650/",
-          "revenue": 35754
+          "appid": 5035380,
+          "name": "BALL PICKER - Clean Up the Golf Yard",
+          "url": "https://store.steampowered.com/app/5035380/",
+          "revenue": 24529
         }
       },
       {
@@ -541,14 +523,32 @@
         }
       },
       {
+        "id": 3799,
+        "name": "비주얼 노벨",
+        "en": "Visual Novel",
+        "releases": 72,
+        "traction": 21,
+        "revenue": 179610,
+        "median": 165,
+        "perRelease": 2495,
+        "positive": 84,
+        "youtube": 0,
+        "top": {
+          "appid": 4236650,
+          "name": "Adultery Marriage Punisher",
+          "url": "https://store.steampowered.com/app/4236650/",
+          "revenue": 35754
+        }
+      },
+      {
         "id": 701,
         "name": "스포츠",
         "en": "Sports",
-        "releases": 72,
+        "releases": 71,
         "traction": 9,
-        "revenue": 38883,
+        "revenue": 38841,
         "median": 0,
-        "perRelease": 540,
+        "perRelease": 547,
         "positive": 83,
         "youtube": 0,
         "top": {
@@ -618,11 +618,11 @@
         "id": 3810,
         "name": "샌드박스",
         "en": "Sandbox",
-        "releases": 113,
-        "traction": 33,
-        "revenue": 1530123,
-        "median": 210,
-        "perRelease": 13541,
+        "releases": 111,
+        "traction": 31,
+        "revenue": 1522759,
+        "median": 200,
+        "perRelease": 13719,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -636,11 +636,11 @@
         "id": 12472,
         "name": "경영",
         "en": "Management",
-        "releases": 147,
+        "releases": 146,
         "traction": 33,
-        "revenue": 1463891,
+        "revenue": 1463807,
         "median": 105,
-        "perRelease": 9958,
+        "perRelease": 10026,
         "positive": 80,
         "youtube": 0,
         "top": {
@@ -1408,7 +1408,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 683906,
+        "reviews": 683907,
         "positive": 87,
         "tags": [
           "무료 플레이",
@@ -2242,10 +2242,10 @@
     ]
   },
   "majors": {
-    "generatedAt": "2026-11-24T11:01:13.664Z",
-    "model": "claude-opus-5-5",
+    "generatedAt": "2026-11-24T11:07:46.244Z",
+    "model": "claude-sonnet-5-5",
     "days": 45,
-    "headline": "GTA VI 메타 99점 역대 타이, 젤다 리메이크·CoD MW4도 호평",
+    "headline": "GTA VI가 메타스코어 99와 역대 방송 기록으로 시장을 압도",
     "games": [
       {
         "name": "Grand Theft Auto VI",
@@ -2259,145 +2259,52 @@
           "score": 99,
           "outOf": 100,
           "outlet": "Metacritic",
-          "count": 146
-        },
-        "user": null,
-        "steam": null,
-        "streams": null,
-        "sales": "Wikipedia 기준 예약판매 3,250만 장·첫날 소매 매출 37.9억 달러, GamesRadar는 예약판매 매출 약 14.5억 달러로 추정 (Take-Two 공식 발표는 미확인, 미검증 수치)",
-        "summary": "Metacritic 99점으로 원작 「시간의 오카리나」와 함께 역대 최고점 타이를 기록했고, 부정적 평론 없이 거대한 오픈월드와 디테일, 스토리가 호평받았습니다. 평론 쪽 혹평은 확인되지 않았으며 엔딩 후 미션 리플레이 기능 부재가 지적됩니다. 유저 점수는 확인되지 않았습니다.",
-        "sources": [
-          "https://www.yahoo.com/entertainment/movies/articles/gta-6-metacritic-score-did-124312618.html",
-          "https://kotaku.com/gta-6-review-scores-99-metacritic-rockstar-grand-theft-auto-vi-2000757999",
-          "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
-          "https://variety.com/2026/gaming/news/gta-6-reviews-highest-rated-video-game-1236951803/"
-        ]
-      },
-      {
-        "name": "The Legend of Zelda: Ocarina of Time",
-        "released": "2026-11-05",
-        "platforms": [
-          "Switch 2"
-        ],
-        "studio": "Nintendo EPD / Nintendo",
-        "critic": {
-          "score": 96,
-          "outOf": 100,
-          "outlet": "Metacritic",
-          "count": 70
+          "count": 158
         },
         "user": {
-          "score": 9.6,
+          "score": 5.6,
           "outOf": 10,
           "outlet": "Metacritic",
-          "count": 3900
+          "count": 85000
         },
         "steam": null,
-        "streams": null,
-        "sales": null,
-        "summary": "Metacritic 96점으로 2026년 최고 평점 게임이 됐고, 화질이 Switch 2 최고 수준이라는 호평을 받았습니다. 넓은 필드의 시머링과 DLSS 업스케일링은 아쉬운 점으로 꼽혔습니다. 유저 점수도 9.6점으로 리뷰 폭탄 시도에도 Metacritic 전체 최고 수준을 유지해 평론가와 유저 반응이 일치합니다.",
+        "streams": {
+          "peak": 7910000,
+          "scope": "전 플랫폼 합산 (Twitch 단독 약 331만 명)",
+          "source": "Streams Charts"
+        },
+        "sales": "Take-Two 발표: 첫날 소매 매출 37.9억 달러, 출시 전 판매 3,250만 장 (사전판매 포함, 소매 매출 기준). Sensor Tower 추정은 23.6억 달러",
+        "summary": "평론가들은 Metacritic 99점을 주어 『젤다의 전설 시간의 오카리나』와 역대 최고점 타이를 이뤘고, 만점 평가도 101건에 달했다. 반면 유저 점수는 5.2~5.6점대에 머물렀고 리뷰 폭탄 논란이 일었으나, 실제 불만과 리뷰 폭탄의 비중은 확인되지 않았다. 방송 시청자와 판매는 기록적이었다.",
         "sources": [
-          "https://www.videogameschronicle.com/news/the-zelda-ocarina-of-time-remake-has-shot-to-the-top-of-metacritics-best-games-of-2026-so-far-makes-its-all-time-top-30/",
-          "https://mezha.net/eng/news/mezha-5e603e76ae15841571fa972b_zelda-_ocarina_of/"
+          "https://www.metacritic.com/game/grand-theft-auto-vi/",
+          "https://variety.com/2026/gaming/news/gta-6-launch-livestream-internet-traffic-records-1236953145/",
+          "https://streamscharts.com/news/gta-6-streaming-records",
+          "https://maketecheasier.com/gta-6-day-one-sales-record/"
         ]
       },
       {
-        "name": "World of Warcraft: Forever",
-        "released": "2026-11-04",
-        "platforms": [
-          "PC"
-        ],
-        "studio": "Blizzard",
-        "critic": {
-          "score": 84,
-          "outOf": 100,
-          "outlet": "Metacritic",
-          "count": null
-        },
+        "name": "Planet Zoo 2",
+        "released": "2026-10-13",
+        "platforms": [],
+        "studio": "Frontier Developments",
+        "critic": null,
         "user": null,
         "steam": null,
-        "streams": null,
-        "sales": "Wikipedia 기준 동시접속자 기준 WoW 역대 최대 출시, 복귀 유저 역대 최다, 중국 동시접속 100만 명 (회사 발표 원문 미확인)",
-        "summary": "WoW 클래식 시대를 다시 만든 별도 브랜치로 Metacritic 84점을 받았습니다. 초반 짧은 대기열 정도만 있어 WoW 역사상 가장 매끄러운 출시라는 반응이 나왔습니다. 유저 점수는 확인되지 않았습니다.",
-        "sources": [
-          "https://en.wikipedia.org/wiki/World_of_Warcraft:_Forever",
-          "https://www.gamespot.com/articles/wow-forevers-launch-is-going-surprisingly-smooth/",
-          "https://www.windowscentral.com/gaming/blizzard/world-of-warcraft-forever-smoothest-launch-in-wow-history"
-        ]
-      },
-      {
-        "name": "Call of Duty: Modern Warfare 4",
-        "released": "2026-10-23",
-        "platforms": [
-          "PS5",
-          "Xbox Series X|S",
-          "PC",
-          "Switch 2"
-        ],
-        "studio": "Infinity Ward (PC 최적화 Beenox) / Activision",
-        "critic": {
-          "score": 85,
-          "outOf": 100,
-          "outlet": "Metacritic",
-          "count": 54
+        "streams": {
+          "peak": 69799,
+          "scope": "Twitch",
+          "source": "SteamDB"
         },
-        "user": {
-          "score": 7.6,
-          "outOf": 10,
-          "outlet": "Metacritic (PC)",
-          "count": 887
-        },
-        "steam": null,
-        "streams": null,
         "sales": null,
-        "summary": "Metacritic 85점으로 2011년 MW3 이후 시리즈 최고점이며, 한국 배경 캠페인과 새 DMZ 모드가 호평받았습니다. 매치메이킹, 들쭉날쭉한 맵 품질, 안전한 공식은 비판받았습니다. 유저 점수 7.6점과 스팀 '매우 긍정적'(약 80%)으로 평론가와 큰 차이는 없습니다.",
+        "summary": "Frontier Developments가 개발과 퍼블리싱을 맡았고 The Game Awards 2026 Best Sim/Strategy 후보에 올랐다. 평점, 스팀 평가, 방송 수치는 확인하지 못했다.",
         "sources": [
-          "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/",
-          "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/user-reviews/?platform=pc",
-          "https://exputer.com/features/modern-warfare-4-best-reviewed-call-of-duty/",
-          "https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement"
-        ]
-      },
-      {
-        "name": "Castlevania: Belmont's Curse",
-        "released": "2026-10-15",
-        "platforms": [
-          "PS5",
-          "Xbox Series X|S",
-          "PC",
-          "Switch"
-        ],
-        "studio": "Evil Empire (Motion Twin 자문) / Konami",
-        "critic": {
-          "score": 83,
-          "outOf": 100,
-          "outlet": "Metacritic",
-          "count": 74
-        },
-        "user": null,
-        "steam": null,
-        "streams": null,
-        "sales": null,
-        "summary": "Metacritic 83점으로 패링, 갈고리 채찍, 보스 디자인이 호평받았으나 흔한 메트로배니아 같다는 평과 들쭉날쭉한 전개, 가혹한 난이도가 지적됐습니다. 스팀 평가는 '복합적'으로, PC판 검은 화면 문제와 캐슬바니아다움 논쟁 때문에 평론가 평가보다 낮습니다.",
-        "sources": [
-          "https://www.metacritic.com/game/castlevania-belmonts-curse/",
-          "https://tech.yahoo.com/gaming/articles/castlevania-belmonts-curse-review-roundup-232407059.html",
-          "https://en.wikipedia.org/wiki/Castlevania:_Belmont%27s_Curse"
+          "https://en.wikipedia.org/wiki/Planet_Zoo_2",
+          "https://steamdb.info/app/3219030/charts/",
+          "https://www.metacritic.com/game/planet-zoo-2/"
         ]
       }
     ],
     "upcoming": [
-      {
-        "name": "Dragon Quest Monsters: Withered World",
-        "date": "2026-12-03",
-        "platforms": [
-          "PC",
-          "Switch",
-          "Switch 2",
-          "PS5",
-          "Xbox"
-        ]
-      },
       {
         "name": "Warhammer 40,000: Dawn of War IV",
         "date": "2026-12-03",
@@ -2406,52 +2313,36 @@
         ]
       },
       {
-        "name": "Attack on Titan 3",
-        "date": "2026-12-10",
+        "name": "Dragon Quest Monsters: The Withered World",
+        "date": "2026-12-03",
+        "platforms": []
+      },
+      {
+        "name": "Monster Hunter Wilds Switch 2판",
+        "date": "2026-12-04",
         "platforms": [
-          "PC",
-          "PS5",
-          "Xbox",
           "Switch 2"
         ]
       },
       {
         "name": "Professor Layton and the New World of Steam",
         "date": "2026-12-10",
-        "platforms": [
-          "PS5",
-          "Switch 2",
-          "Switch",
-          "PC"
-        ]
+        "platforms": []
       },
       {
-        "name": "Path of Exile 2",
-        "date": "2026-12-11",
-        "platforms": [
-          "PS5",
-          "Xbox",
-          "PC"
-        ]
+        "name": "Attack on Titan 3",
+        "date": "2026-12-10",
+        "platforms": []
       }
     ],
     "sourceTitles": {
-      "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI": "Grand Theft Auto VI",
-      "https://www.yahoo.com/entertainment/movies/articles/gta-6-metacritic-score-did-124312618.html": "GTA 6 Metacritic score: Where does it rank all time?",
-      "https://kotaku.com/gta-6-review-scores-99-metacritic-rockstar-grand-theft-auto-vi-2000757999": "GTA 6 Debuts With An Astonishing 99 Metacritic Score, Currently Tied For Best-Reviewed Game Of All Time",
-      "https://variety.com/2026/gaming/news/gta-6-reviews-highest-rated-video-game-1236951803/": "‘GTA 6’ Earns Rave Reviews and Lands 99 Metacritic Score, Tying for Highest-Rated Game of All Time",
-      "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/": "Call of Duty: Modern Warfare 4 Reviews - Metacritic",
-      "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/user-reviews/?platform=pc": "Call of Duty: Modern Warfare 4 user reviews - Metacritic",
-      "https://exputer.com/features/modern-warfare-4-best-reviewed-call-of-duty/": "Infinity Ward's Comeback: Why Modern Warfare 4 Is the Best-Reviewed Call of Duty in Over a Decade - eXputer.com",
-      "https://tech.yahoo.com/gaming/articles/castlevania-belmonts-curse-review-roundup-232407059.html": "Castlevania Belmont's Curse Review Roundup: Critics Love The Whip, But Steam Players Meet A Black Screen Of Death",
-      "https://www.metacritic.com/game/castlevania-belmonts-curse/": "Castlevania: Belmont's Curse Reviews - Metacritic",
-      "https://en.wikipedia.org/wiki/Castlevania:_Belmont%27s_Curse": "Castlevania: Belmont%27s Curse",
-      "https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement": "Announcing Call of Duty: Modern Warfare 4",
-      "https://www.videogameschronicle.com/news/the-zelda-ocarina-of-time-remake-has-shot-to-the-top-of-metacritics-best-games-of-2026-so-far-makes-its-all-time-top-30/": "The Zelda Ocarina of Time remake has shot to the top of Metacritic’s best games of 2026 so far, makes its all-time top 30",
-      "https://mezha.net/eng/news/mezha-5e603e76ae15841571fa972b_zelda-_ocarina_of/": "Zelda: Ocarina of Time remake tops Metacritic user ratings at 9.6 despite suspicious scores",
-      "https://en.wikipedia.org/wiki/World_of_Warcraft:_Forever": "World of Warcraft: Forever",
-      "https://www.gamespot.com/articles/wow-forevers-launch-is-going-surprisingly-smooth/": "WoW: Forever's Launch Is Going Surprisingly Smooth - GameSpot",
-      "https://www.windowscentral.com/gaming/blizzard/world-of-warcraft-forever-smoothest-launch-in-wow-history": "World of Warcraft: Forever has gone live, and PC gamers are calling it the smoothest launch in Blizzard's MMORPG history"
+      "https://www.metacritic.com/game/grand-theft-auto-vi/": "Grand Theft Auto VI Reviews - Metacritic",
+      "https://variety.com/2026/gaming/news/gta-6-launch-livestream-internet-traffic-records-1236953145/": "GTA 6 Launch Sets Livestream, Internet Traffic Records",
+      "https://streamscharts.com/news/gta-6-streaming-records": "GTA 6 Streaming Records: Twitch, Kick & Launch Stats",
+      "https://maketecheasier.com/gta-6-day-one-sales-record/": "GTA 6 made $3.79 billion on its first day and sold 32.5 million copies before release, Take-Two says, far above Sensor Tower's $2.36 billion estimate and nearly five times GTA 5's 2013 debut - Make Tech Easier",
+      "https://en.wikipedia.org/wiki/Planet_Zoo_2": "Planet Zoo 2",
+      "https://www.metacritic.com/game/planet-zoo-2/": "Planet Zoo 2 Reviews - Metacritic",
+      "https://steamdb.info/app/3219030/charts/": "Planet Zoo 2 Steam Charts · SteamDB"
     }
   },
   "sources": {
