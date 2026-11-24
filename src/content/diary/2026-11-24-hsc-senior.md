@@ -1,5 +1,5 @@
 ---
-title: HSC Senior — 시니어 UX와 토큰 비용
+title: HSC Senior
 date: 2026-11-24
 project: HSC Senior
 period: 교내 창업 동아리 HSC

@@ -619,51 +619,178 @@ code {
   margin: 0;
   overflow-wrap: anywhere;
 }
-.highlights {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.highlights li {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 2px dashed var(--line);
-  color: var(--ink);
-}
-.highlights li::before {
-  content: '★';
-  color: var(--accent);
-}
-.highlights .meta {
-  flex-shrink: 0;
-  margin-left: auto;
-}
 .project-grid {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
 }
 .project {
-  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0 0 16px;
+  overflow: hidden;
   background: var(--paper-2);
   box-shadow: 0 0 0 3px var(--paper-3);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.project:hover,
+.project:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 3px var(--ink), 6px 8px 0 3px var(--paper-3);
+}
+.project > :not(.project-cover) {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+.project-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 14px;
+  object-fit: contain;
+  background: var(--ink);
+}
+.project-cover-empty {
+  display: grid;
+  place-items: center;
+  background: var(--paper-3);
 }
 .project h4 {
   margin: 0;
   font-size: 18px;
 }
 .project .meta {
-  margin: 2px 0 10px;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
-.project-entries {
-  margin: 12px 0 0;
-  padding-left: 1.1em;
-  font-size: 15px;
+.project-highlight {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14.5px;
+  line-height: 1.6;
 }
-.project-entries span {
-  color: var(--muted);
+.project .chips {
+  margin-top: 12px;
+}
+.project-more {
+  margin-top: auto;
+  padding-top: 12px;
+  color: var(--accent-text);
+  font-family: var(--pixel);
+  font-size: 12px;
+}
+
+/* 자세히 보기 — 책상 아래에서 종이 한 장이 올라와 놓인다 (Sheet.astro) */
+.sheet {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+}
+html:has(.sheet[open]) {
+  overflow: hidden;
+}
+.sheet::backdrop {
+  background: rgb(20 8 2 / 0.6);
+}
+.sheet[open]::backdrop {
+  animation: sheet-fade 0.3s ease both;
+}
+.sheet.is-closing::backdrop {
+  animation: sheet-fade 0.28s ease reverse both;
+}
+.sheet-paper {
+  position: relative;
+  width: min(880px, calc(100% - 32px));
+  margin: 64px auto 72px;
+  padding: 56px 52px 56px;
+  background: var(--paper);
+  box-shadow: var(--outline), inset calc(var(--px) * -1) calc(var(--px) * -1) 0 0 var(--paper-3), var(--drop);
+  transform-origin: 50% 0;
+}
+.sheet[open] .sheet-paper {
+  animation: sheet-place 0.55s cubic-bezier(0.2, 0.75, 0.3, 1) both;
+}
+.sheet.is-closing .sheet-paper {
+  animation: sheet-take 0.28s cubic-bezier(0.5, 0, 0.75, 0.3) both;
+}
+.sheet-paper .post-head {
+  margin-bottom: 26px;
+}
+.sheet-close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+}
+.sheet-entry + .sheet-entry {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 3px dashed var(--paper-3);
+}
+.sheet-entry-title {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+/* 아래에서 기울어진 채 밀려 올라와, 살짝 넘어갔다가 제자리에 놓인다 */
+@keyframes sheet-place {
+  0% {
+    transform: translateY(100vh) rotate(6deg);
+  }
+  62% {
+    transform: translateY(-14px) rotate(-1.4deg);
+  }
+  84% {
+    transform: translateY(4px) rotate(0.5deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes sheet-take {
+  to {
+    transform: translateY(100vh) rotate(-5deg);
+  }
+}
+@keyframes sheet-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (max-width: 760px) {
+  .sheet-paper {
+    width: calc(100% - 24px);
+    margin: 64px auto 40px;
+    padding: 40px 20px 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet[open] .sheet-paper,
+  .sheet.is-closing .sheet-paper,
+  .sheet[open]::backdrop,
+  .sheet.is-closing::backdrop {
+    animation: none;
+  }
+  .project {
+    transition: none;
+  }
 }
 
 /* ───────── 채용 추천 ───────── */
@@ -1370,6 +1497,7 @@ code {
   .arrow,
   .desk-footer,
   .back-btn,
+  .sheet,
   .no-print {
     display: none !important;
   }

@@ -1,8 +1,9 @@
 ---
-title: Exterminator — 처음 완성하고 출시한 게임
+title: Exterminator
 date: 2026-11-24
 project: Exterminator
 period: 2022.07 – 2022.08
+cover: ./images/portfolio/exterminator.png
 skills: [Unity, C#]
 highlight: 처음 만든 게임을 끝까지 완성해 Steam에 무료 출시
 ---

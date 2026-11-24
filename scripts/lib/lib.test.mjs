@@ -94,16 +94,14 @@ test('buildPortfolio: 프로젝트별 묶기, 기술 대소문자 무시 집계,
   assert.deepEqual(portfolio.highlights.map((h) => h.text), ['프레임 2배']);
 });
 
-test('buildPortfolio: period 가 있으면 그 기간 시작순, 날짜 없는 period 는 맨 뒤', () => {
+test('buildPortfolio: 진행 중 → 끝난 시점 최신순, 날짜 없는 period 는 맨 뒤', () => {
   const entry = (id, project, period) => ({ id, title: id, date: new Date('2026-11-24'), tags: [], skills: [], project, period });
   const portfolio = buildPortfolio([
     entry('a', '동아리', '교내 동아리'),
     entry('b', '옛날', '2022.07 – 2022.08'),
     entry('c', '최근', '2026.03 – 진행 중'),
+    entry('d', '길게', '2025.06 – 2026.03'),
+    entry('e', '짧게', '2025.07 – 2025.12'),
   ]);
-  assert.deepEqual(portfolio.projects.map((p) => [p.name, p.period]), [
-    ['최근', '2026.03 – 진행 중'],
-    ['옛날', '2022.07 – 2022.08'],
-    ['동아리', '교내 동아리'],
-  ]);
+  assert.deepEqual(portfolio.projects.map((p) => p.name), ['최근', '길게', '짧게', '옛날', '동아리']);
 });

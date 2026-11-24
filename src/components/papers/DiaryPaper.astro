@@ -1,10 +1,13 @@
 ---
 // 기술 일기 — 줄 공책
+import { render } from 'astro:content';
 import Sprite from '../Sprite.astro';
 import { getDiary } from '../../lib/content';
 import { formatDate, url } from '../../lib/site';
 
 const entries = await getDiary();
+// 클릭하면 올라오는 종이에 넣을 본문
+const bodies = new Map(await Promise.all(entries.map(async (e) => [e.id, (await render(e)).Content] as const)));
 const years = new Map<string, typeof entries>();
 for (const entry of entries) {
   const year = formatDate(entry.data.date).slice(0, 4);
@@ -38,16 +41,11 @@ for (const entry of entries) {
             <li>
               <time datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date).slice(5)}</time>
               <div>
-                <a class="entry-title" href={url(`/diary/${entry.id}/`)}>
+                <a class="entry-title" href={url(`/diary/${entry.id}/`)} data-sheet={`diary-${entry.id}`}>
                   {entry.data.title}
                 </a>
                 {entry.data.draft && <span class="stamp maybe">초안</span>}
                 {entry.data.highlight && <p class="entry-highlight">★ {entry.data.highlight}</p>}
-                {entry.data.project && (
-                  <ul class="chips">
-                    <li class="chip chip-strong">{entry.data.project}</li>
-                  </ul>
-                )}
               </div>
             </li>
           ))}
@@ -55,4 +53,41 @@ for (const entry of entries) {
       </section>
     ))
   )
+}
+
+{
+  entries.map((entry) => {
+    const Body = bodies.get(entry.id)!;
+    const { title, date, period, highlight, skills } = entry.data;
+    return (
+      <template data-sheet-body={`diary-${entry.id}`}>
+        <header class="post-head">
+          <p class="meta">{period ?? formatDate(date)}</p>
+          <h1>{title}</h1>
+        </header>
+        {highlight && (
+          <aside class="highlight">
+            <strong>핵심 성과</strong>
+            <p>{highlight}</p>
+          </aside>
+        )}
+        <div class="prose">
+          <Body />
+        </div>
+        {skills.length > 0 && (
+          <footer class="post-skills">
+            <span class="meta">사용 기술</span>
+            <ul class="chips">
+              {skills.map((skill) => (
+                <li class="chip chip-strong">{skill}</li>
+              ))}
+            </ul>
+          </footer>
+        )}
+        <p class="meta">
+          <a href={url(`/diary/${entry.id}/`)}>노트 페이지로 열기 →</a>
+        </p>
+      </template>
+    );
+  })
 }

@@ -1,5 +1,5 @@
 ---
-title: 퐁퐁샷 — AI에게 맡길 수 있는 것과 없는 것
+title: 퐁퐁샷
 date: 2026-11-24
 project: 퐁퐁샷
 period: 2026.03 – 진행 중

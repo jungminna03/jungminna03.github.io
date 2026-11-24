@@ -1,8 +1,9 @@
 ---
-title: STARSHIP — DI는 컴파일러가 안 잡아 준다
+title: 'STARSHIP : THE TRINITY'
 date: 2026-11-24
 project: 'STARSHIP : THE TRINITY'
 period: 2025.07 – 2025.12
+cover: ./images/portfolio/starship.png
 skills: [Unity, C#, ScriptableObject]
 highlight: 9인 이상 팀에서 SO 기반 프레임워크를 맡아, DI 누락 문제를 DI 라이브러리 도입으로 해결
 ---

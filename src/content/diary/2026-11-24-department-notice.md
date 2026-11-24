@@ -1,5 +1,5 @@
 ---
-title: 학과 공지사항 웹/앱 — 공지를 안 읽는 문제
+title: 학과 공지사항 웹/앱
 date: 2026-11-24
 project: 학과 공지사항 웹/앱
 period: Emotive Play Lab

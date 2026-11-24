@@ -1,6 +1,7 @@
 ---
 // 나무 책상 — 모든 페이지의 바탕. 종이(PaperStack 또는 단일 종이)는 slot 으로 받는다.
 import '../styles/global.css';
+import Sheet from '../components/Sheet.astro';
 import Sprite from '../components/Sprite.astro';
 import profile from '../../config/profile.mjs';
 import { url } from '../lib/site';
@@ -46,6 +47,7 @@ const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle
     <main class="desk-main">
       <slot />
     </main>
+    <Sheet />
 
     <footer class="desk-footer">
       {profile.email && <a href={`mailto:${profile.email}`}>{profile.email}</a>}

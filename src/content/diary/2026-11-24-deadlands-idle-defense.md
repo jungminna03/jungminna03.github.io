@@ -1,8 +1,9 @@
 ---
-title: Deadlands — 후배가 이어받을 수 있는 코드
+title: 'Deadlands : idle defense'
 date: 2026-11-24
 project: 'Deadlands : idle defense'
 period: 2023.03 – 2023.12
+cover: ./images/portfolio/deadlands.png
 skills: [Unity, C#, ScriptableObject, Unity Ads, Unity IAP]
 highlight: Google Play 출시 후 3개월 운영. SO·추상화로 코드를 다 몰라도 새 적·강화를 추가할 수 있게 설계해 후배에게 운영을 넘김
 ---

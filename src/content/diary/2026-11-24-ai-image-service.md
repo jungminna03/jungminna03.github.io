@@ -1,5 +1,5 @@
 ---
-title: AI 이미지 생성 서비스 — 연구실 서버를 서비스로
+title: AI 이미지 생성 서비스
 date: 2026-11-24
 project: AI 이미지 생성 서비스
 period: Emotive Play Lab

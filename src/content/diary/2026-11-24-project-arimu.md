@@ -1,5 +1,5 @@
 ---
-title: Project Arimu — 객체지향에서 ECS로
+title: Project Arimu
 date: 2026-11-24
 project: Project Arimu
 period: 2025.06 – 2026.03

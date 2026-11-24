@@ -30,10 +30,15 @@ function tally(lists) {
   return [...counts.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 }
 
-/** 'YYYY.MM – …' 의 시작 시점 (정렬용). 없으면 null */
-const periodStart = (/** @type {string | undefined} */ period) => {
-  const match = period?.match(/(\d{4})\.(\d{1,2})/);
-  return match ? Number(match[1]) * 100 + Number(match[2]) : null;
+/**
+ * 기간 문자열 → 정렬 키 { end, start } (YYYYMM). '진행 중'이면 end 가 가장 크다. 날짜가 없으면 null
+ * @param {string | undefined} period
+ */
+const periodKey = (period) => {
+  const dates = [...(period ?? '').matchAll(/(\d{4})\.(\d{1,2})/g)].map((m) => Number(m[1]) * 100 + Number(m[2]));
+  if (!dates.length) return null;
+  const ongoing = /진행|현재|now|present/i.test(period ?? '');
+  return { start: dates[0], end: ongoing ? 999999 : dates[dates.length - 1] };
 };
 
 /** @param {Entry} entry @returns {Highlight[]} */
@@ -63,10 +68,11 @@ export function buildPortfolio(entries, extraSkills = []) {
       highlights: sorted.flatMap(highlightOf),
     };
   });
-  // 기간(period)이 있으면 시작 시점 최신순, 없으면 첫 일기 날짜 최신순. 기간에 날짜가 없으면('교내 동아리' 등) 맨 뒤
-  const sortKey = (/** @type {Project} */ p) =>
-    p.period ? (periodStart(p.period) ?? -1) : p.from.getFullYear() * 100 + p.from.getMonth() + 1;
-  projects.sort((a, b) => sortKey(b) - sortKey(a) || b.to.valueOf() - a.to.valueOf());
+  // 최근에 한 프로젝트가 위로: 진행 중 → 끝난 시점 최신순 → 시작 시점 최신순.
+  // period 가 없으면 일기 날짜로, period 에 날짜가 없으면('교내 동아리' 등) 맨 뒤
+  const ym = (/** @type {Date} */ d) => d.getFullYear() * 100 + d.getMonth() + 1;
+  const keyOf = (/** @type {Project} */ p) => (p.period ? (periodKey(p.period) ?? { start: -1, end: -1 }) : { start: ym(p.from), end: ym(p.to) });
+  projects.sort((a, b) => keyOf(b).end - keyOf(a).end || keyOf(b).start - keyOf(a).start || b.to.valueOf() - a.to.valueOf());
 
   return {
     count: entries.length,

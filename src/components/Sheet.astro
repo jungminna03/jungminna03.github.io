@@ -1,0 +1,57 @@
+---
+import Sprite from './Sprite.astro';
+// 아래에서 올라오는 종이 한 장.
+// 링크에 data-sheet="키" 를 달고, 같은 키의 <template data-sheet-body="키"> 에 내용을 넣어 두면
+// 클릭했을 때 그 내용이 이 종이에 담겨 올라온다. JS 가 없으면 링크대로 페이지를 연다.
+---
+
+<dialog class="sheet" data-sheet-dialog aria-label="자세히 보기">
+  <button class="px-btn sheet-close" type="button" data-sheet-close aria-label="닫기">닫기 ✕</button>
+  <article class="sheet-paper">
+    <span class="clip" aria-hidden="true"><Sprite name="clip" scale={4} /></span>
+    <div data-sheet-content></div>
+  </article>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('[data-sheet-dialog]');
+  const content = dialog?.querySelector<HTMLElement>('[data-sheet-content]');
+  if (dialog && content && typeof dialog.showModal === 'function') {
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let closing = false;
+
+    const close = () => {
+      if (!dialog.open || closing) return;
+      if (reduceMotion) return dialog.close();
+      closing = true;
+      dialog.classList.add('is-closing');
+      setTimeout(() => {
+        dialog.classList.remove('is-closing');
+        dialog.close();
+        closing = false;
+      }, 280);
+    };
+
+    // 링크는 나중에 바뀔 수도 있어서 문서 전체에서 위임으로 받는다
+    document.addEventListener('click', (event) => {
+      const link = (event.target as Element | null)?.closest<HTMLAnchorElement>('a[data-sheet]');
+      if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+      const body = document.querySelector<HTMLTemplateElement>(`template[data-sheet-body="${CSS.escape(link.dataset.sheet!)}"]`);
+      if (!body) return;
+      event.preventDefault();
+      content.replaceChildren(body.content.cloneNode(true));
+      dialog.showModal();
+      dialog.scrollTop = 0;
+    });
+
+    dialog.querySelector('[data-sheet-close]')?.addEventListener('click', close);
+    dialog.addEventListener('cancel', (event) => {
+      event.preventDefault(); // Esc 도 닫기 애니메이션을 거친다
+      close();
+    });
+    // 종이 바깥(어두운 배경)을 누르면 닫기
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) close();
+    });
+  }
+</script>
