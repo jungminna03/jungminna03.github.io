@@ -2,6 +2,7 @@
 // 기술 트렌드 — 오늘의 GitHub 트렌딩 저장소·AI 논문 카드뉴스. 데이터: scripts/technews (매일)
 // 카드를 누르면 아래에서 종이가 올라와 자세한 내용을 보여준다 (Sheet.astro).
 import Sprite from '../Sprite.astro';
+import config from '../../../config/technews.mjs';
 import { KIND_LABELS, technews, type TechCard, type TechKind } from '../../lib/technews';
 
 const { days } = technews;
@@ -21,6 +22,9 @@ const links = (c: TechCard) =>
   <Sprite name="bulb" scale={3} />
   <div>
     <h2>기술 트렌드</h2>
+    <p class="paper-sub meta">
+      출처 <a href={`${config.source}/`} target="_blank" rel="noopener">{config.sourceName} ↗</a>
+    </p>
   </div>
 </header>
 
