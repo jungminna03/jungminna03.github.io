@@ -10,6 +10,17 @@ const portfolio = buildPortfolio((await getDiary()).map(toPortfolioEntry), profi
 const month = (date: Date) => formatDate(date).slice(0, 7);
 const period = (from: Date, to: Date) => (month(from) === month(to) ? month(from) : `${month(from)} – ${month(to)}`);
 const links = Object.entries(profile.links).filter(([, href]) => href);
+
+// 기술 스택: 프로필에 적은 주력 기술을 그 순서대로 앞에, 나머지는 많이 쓴 순
+const mainKeys = profile.skills.map((s) => s.toLowerCase());
+const mainSkills = mainKeys.flatMap((key) => portfolio.skills.filter((s) => s.name.toLowerCase() === key));
+const otherSkills = portfolio.skills.filter((s) => !mainKeys.includes(s.name.toLowerCase()));
+
+// 핵심 성과: 프로젝트 순서대로, 프로젝트 없는 일기의 성과는 뒤에
+const highlights = [
+  ...portfolio.projects.flatMap((p) => p.highlights.map((h) => ({ ...h, label: p.name }))),
+  ...portfolio.highlights.filter((h) => !h.entry.project).map((h) => ({ ...h, label: formatDate(h.entry.date) })),
+];
 ---
 
 <header class="paper-head">
@@ -27,6 +38,26 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
     <p class="profile-intro">{profile.intro}</p>
   </div>
   <dl class="facts">
+    {
+      profile.email && (
+        <div>
+          <dt>이메일</dt>
+          <dd>
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+          </dd>
+        </div>
+      )
+    }
+    {
+      profile.phone && (
+        <div>
+          <dt>전화</dt>
+          <dd>
+            <a href={`tel:${profile.phone.replaceAll('-', '')}`}>{profile.phone}</a>
+          </dd>
+        </div>
+      )
+    }
     {
       profile.location && (
         <div>
@@ -69,11 +100,11 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
     <section>
       <h3 class="sec-title">기술 스택</h3>
       <ul class="chips">
-        {portfolio.skills.map((skill) => (
-          <li class="chip chip-strong">
-            {skill.name}
-            {skill.count > 1 && <b> ×{skill.count}</b>}
-          </li>
+        {mainSkills.map((skill) => (
+          <li class="chip chip-strong">{skill.name}</li>
+        ))}
+        {otherSkills.map((skill) => (
+          <li class="chip">{skill.name}</li>
         ))}
       </ul>
     </section>
@@ -90,15 +121,15 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
     </div>
   ) : (
     <>
-      {portfolio.highlights.length > 0 && (
+      {highlights.length > 0 && (
         <section>
           <h3 class="sec-title">핵심 성과</h3>
           <ul class="highlights">
-            {portfolio.highlights.slice(0, 8).map((h) => (
+            {highlights.map((h) => (
               <li>
                 <span>{h.text}</span>
                 <a class="meta" href={url(`/diary/${h.entry.id}/`)}>
-                  {formatDate(h.entry.date)}
+                  {h.label}
                 </a>
               </li>
             ))}
@@ -113,7 +144,7 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
               <article class="project">
                 <h4>{project.name}</h4>
                 <p class="meta">
-                  {period(project.from, project.to)} · 기록 {project.entries.length}개
+                  {project.period ?? period(project.from, project.to)}
                 </p>
                 {project.skills.length > 0 && (
                   <ul class="chips">
@@ -126,7 +157,6 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
                   {project.entries.map((entry) => (
                     <li>
                       <a href={url(`/diary/${entry.id}/`)}>{entry.title}</a>
-                      {entry.highlight && <span> — {entry.highlight}</span>}
                     </li>
                   ))}
                 </ul>

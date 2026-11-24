@@ -37,6 +37,7 @@ export function parseEntry(file, raw) {
     date: new Date(data.date),
     tags: data.tags ?? [],
     project: data.project,
+    period: data.period == null ? undefined : String(data.period),
     skills: data.skills ?? [],
     highlight: data.highlight,
     draft: Boolean(data.draft),

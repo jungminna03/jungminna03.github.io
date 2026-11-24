@@ -12,6 +12,7 @@ const diary = defineCollection({
     tags: z.array(z.string()).default([]),
     // ↓ 적어두면 포트폴리오·자소서로 자동 변환된다 (모두 선택)
     project: z.string().optional(), // 포트폴리오에서 프로젝트별로 묶임
+    period: z.string().optional(), // 프로젝트 기간 (예: '2023.03 – 2023.12'). 없으면 일기 날짜로 계산
     skills: z.array(z.string()).default([]), // 기술 스택 집계 · 공고 매칭
     highlight: z.string().optional(), // 한 줄 성과 → '핵심 성과' · 자소서 근거
     draft: z.boolean().default(false), // true 면 배포 사이트·포트폴리오에서 숨김

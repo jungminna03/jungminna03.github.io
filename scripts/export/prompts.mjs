@@ -132,6 +132,8 @@ export function renderBasePortfolio(profile, portfolio, date) {
   const out = [`# ${profile.name} — 포트폴리오`, '', ...(profile.headline ? [`**${profile.headline}**`, ''] : []), profile.intro, ''];
   out.push(
     ...[
+      profile.email && `- 이메일: ${profile.email}`,
+      profile.phone && `- 전화: ${profile.phone}`,
       profile.location && `- 지역: ${profile.location}`,
       profile.languages.length > 0 && `- 언어: ${profile.languages.map((l) => `${l.name} (${l.level})`).join(', ')}`,
       ...profile.education.map((e) => `- 학력: ${[e.school, e.major, e.period].filter(Boolean).join(' · ')}`),
@@ -144,7 +146,7 @@ export function renderBasePortfolio(profile, portfolio, date) {
   }
   for (const [i, project] of portfolio.projects.entries()) {
     if (i === 0) out.push('## 프로젝트', '');
-    out.push(`### ${project.name}`, '', `- 기간: ${ym(project.from)} – ${ym(project.to)}`);
+    out.push(`### ${project.name}`, '', `- 기간: ${project.period ?? `${ym(project.from)} – ${ym(project.to)}`}`);
     if (project.skills.length) out.push(`- 기술: ${project.skills.join(', ')}`);
     out.push(...project.entries.map((e) => `- ${ymd(e.date)} ${e.title}${e.highlight ? ` — ${e.highlight}` : ''}`), '');
   }

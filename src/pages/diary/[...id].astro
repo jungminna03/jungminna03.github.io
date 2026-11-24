@@ -17,7 +17,7 @@ interface Props {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const { title, date, tags, project, skills, highlight, description, draft } = entry.data;
+const { title, date, project, skills, highlight, description, draft } = entry.data;
 ---
 
 <Desk title={title} description={description ?? highlight}>
@@ -32,15 +32,6 @@ const { title, date, tags, project, skills, highlight, description, draft } = en
           {draft && <span class="stamp maybe">초안</span>}
         </p>
         <h1>{title}</h1>
-        {
-          tags.length > 0 && (
-            <ul class="chips">
-              {tags.map((tag) => (
-                <li class="chip">#{tag}</li>
-              ))}
-            </ul>
-          )
-        }
       </header>
       {
         highlight && (

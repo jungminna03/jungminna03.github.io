@@ -10,10 +10,12 @@
  * @property {string} headline         한 줄 소개
  * @property {string} intro            두세 문장 소개
  * @property {string} [location]
+ * @property {string} [email]          포트폴리오 카드·푸터에 표시
+ * @property {string} [phone]          포트폴리오 카드·푸터에 표시
  * @property {Record<string, string>} links   예) { GitHub: 'https://github.com/...' }
  * @property {{ school: string, major?: string, period?: string }[]} education
  * @property {{ name: string, level: string }[]} languages
- * @property {string[]} skills         일기에서 자동으로 모이는 기술 외에 꼭 넣고 싶은 기술
+ * @property {string[]} skills         주력 기술. 포트폴리오 기술 스택에서 이 순서로 앞에 강조 (일기의 기술은 뒤에 자동으로 붙음)
  * @property {'신입' | '1~3년' | '3년+'} experience  경력 — 시니어·리드 공고를 걸러내는 기준
  * @property {string[]} targetRoles    희망 직무 — 공고 추천 기준 (첫 번째가 1순위)
  * @property {string[]} targetLocations 희망 지역 — 공고 추천 기준
@@ -25,8 +27,8 @@
 const profile = {
   siteTitle: "KEN's Atelier",
   name: '나정민', // 포트폴리오·자소서 제목에 쓰임
-  headline: '', // 비워두면 표시 안 함
-  intro: '배운 것과 해결한 문제를 기술 일기로 기록합니다. 일본·해외 게임 회사 취업을 준비하고 있어요.',
+  headline: '게임 클라이언트 프로그래머', // 비워두면 표시 안 함
+  intro: 'Unity로 Steam·Google Play에 게임을 출시하고 운영해 봤습니다. 기획이 바뀌어도 코드를 다 뜯지 않도록 구조를 먼저 고민하고, 객체지향과 ECS를 직접 비교해 가며 프로젝트에 맞는 방식을 고릅니다.',
   location: 'Seoul, Korea',
   email: 'jungminna03@gmail.com',
   phone: '010-5761-3222',
@@ -41,7 +43,7 @@ const profile = {
     { name: '日本語', level: '비즈니스 (N1~N2)' },
     // { name: 'English', level: 'TOEIC 850' },
   ],
-  skills: ['Unity', 'C#', 'R3', 'FSM'], // 기술 일기에서 확인된 기술
+  skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 이 순서로 앞에 강조
   experience: '신입',
   targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'],
   targetLocations: ['일본 (도쿄·오사카 등)', '해외'],

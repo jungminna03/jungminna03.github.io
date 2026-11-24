@@ -45,7 +45,6 @@ npm run dev        # http://localhost:4321
 ---
 title: 오브젝트 풀링으로 GC 스파이크 잡기
 date: 2026-11-24
-tags: [최적화]
 project: 탄막 슈팅 개인 프로젝트   # 포트폴리오에서 프로젝트별로 묶임
 skills: [Unity, C#, Profiler]     # 기술 스택 집계 · 공고 적합도
 highlight: 풀링 도입으로 GC Alloc 2.1KB → 0B, 프레임 드랍 해결   # '핵심 성과' · 자소서 근거
