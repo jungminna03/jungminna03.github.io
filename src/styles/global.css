@@ -252,6 +252,7 @@ code {
   position: relative;
   z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   padding: 0 16px 40px;
@@ -343,14 +344,6 @@ code {
   transform: translate(2px, 3px);
   box-shadow: var(--outline), var(--bevel);
 }
-.stack-hint {
-  margin: 28px 0 0;
-  color: #f3e5c4;
-  font-family: var(--pixel);
-  font-size: 13px;
-  text-align: center;
-  text-shadow: 2px 2px 0 rgb(20 8 2 / 0.6);
-}
 @media (max-width: 760px) {
   .stage {
     grid-template-columns: minmax(0, 1fr);
@@ -383,8 +376,8 @@ code {
   .plate-title {
     font-size: 26px;
   }
-  .stack-hint {
-    margin-bottom: 72px;
+  .stack {
+    padding-bottom: 84px;
   }
 }
 
@@ -1238,45 +1231,51 @@ code {
   box-shadow: 0 0 0 3px var(--paper-3);
 }
 
-/* ───────── 종이 넘기기 (6프레임으로 끊어지는 레트로 움직임) ───────── */
+/* ───────── 종이 넘기기 ───────── */
 @keyframes paper-in-right {
   from {
     opacity: 0;
-    transform: translateX(70%);
+    transform: translateX(18%);
   }
 }
 @keyframes paper-in-left {
   from {
     opacity: 0;
-    transform: translateX(-70%);
+    transform: translateX(-18%);
   }
 }
 @keyframes paper-out-left {
   to {
     opacity: 0;
-    transform: translateX(-70%);
+    transform: translateX(-18%);
   }
 }
 @keyframes paper-out-right {
   to {
     opacity: 0;
-    transform: translateX(70%);
+    transform: translateX(18%);
   }
+}
+.paper.enter-right,
+.paper.enter-left,
+.paper.leave-left,
+.paper.leave-right {
+  will-change: transform, opacity;
 }
 .paper.enter-right {
   z-index: 2;
-  animation: paper-in-right 0.3s steps(6) both;
+  animation: paper-in-right 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
 }
 .paper.enter-left {
   z-index: 2;
-  animation: paper-in-left 0.3s steps(6) both;
+  animation: paper-in-left 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
 }
 .paper.leave-left {
-  animation: paper-out-left 0.3s steps(6) both;
+  animation: paper-out-left 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
   pointer-events: none;
 }
 .paper.leave-right {
-  animation: paper-out-right 0.3s steps(6) both;
+  animation: paper-out-right 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1296,7 +1295,6 @@ code {
   .decor,
   .tabs,
   .arrow,
-  .stack-hint,
   .desk-footer,
   .back-btn,
   .no-print {

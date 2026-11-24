@@ -4,6 +4,6 @@ import Desk from '../layouts/Desk.astro';
 import profile from '../../config/profile.mjs';
 ---
 
-<Desk title="포트폴리오" description={`${profile.name} · ${profile.headline}`}>
+<Desk title="포트폴리오" description={[profile.name, profile.headline].filter(Boolean).join(' · ')}>
   <PaperStack active="portfolio" />
 </Desk>

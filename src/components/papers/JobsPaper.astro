@@ -25,10 +25,7 @@ const PICK_STAMP = { match: 'good', reach: 'bad', interest: 'maybe' } as const;
   <Sprite name="letter" scale={3} />
   <div>
     <h2>채용 추천</h2>
-    <p class="paper-sub">
-      일본·해외 게임 회사 공고를 매일 아침 모아서 포트폴리오에 맞는 순서로 정리해요.
-      {updatedAt && <span class="meta"> 마지막 업데이트 {formatDateTime(updatedAt)}</span>}
-    </p>
+    {updatedAt && <p class="paper-sub meta">{formatDateTime(updatedAt)} 갱신</p>}
   </div>
 </header>
 

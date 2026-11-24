@@ -58,7 +58,6 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
       <Sprite name="arrowR" scale={5} />
     </a>
   </div>
-  <p class="stack-hint">← → 키나 화면을 좌우로 밀어서 넘길 수 있어요</p>
 </div>
 
 <script>
@@ -114,7 +113,7 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
         from.classList.remove('leave-left', 'leave-right');
         to.classList.remove('enter-right', 'enter-left');
         busy = false;
-      }, 320);
+      }, 300);
     };
 
     const go = (offset: 1 | -1) => show(at(offset).key, offset);

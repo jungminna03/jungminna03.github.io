@@ -34,7 +34,7 @@ const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle
     <header class="nameplate">
       <a class="plate" href={url('/')}>
         <span class="plate-title">{profile.siteTitle}</span>
-        <span class="plate-sub">{profile.headline}</span>
+        {profile.headline && <span class="plate-sub">{profile.headline}</span>}
       </a>
     </header>
 
@@ -48,8 +48,8 @@ const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle
     </main>
 
     <footer class="desk-footer">
-      <span>© {new Date().getFullYear()} {profile.name}</span>
-      {profile.links.GitHub && <a href={profile.links.GitHub}>GitHub</a>}
+      {profile.email && <a href={`mailto:${profile.email}`}>{profile.email}</a>}
+      {profile.phone && <a href={`tel:${profile.phone.replaceAll('-', '')}`}>{profile.phone}</a>}
     </footer>
   </body>
 </html>

@@ -24,22 +24,24 @@
 /** @type {Profile} */
 const profile = {
   siteTitle: "KEN's Atelier",
-  name: 'KEN', // TODO: 실명으로 바꿔도 됨 (포트폴리오·자소서 제목에 쓰임)
-  headline: '게임 개발 · 툴/에셋 제작', // TODO
+  name: '나정민', // 포트폴리오·자소서 제목에 쓰임
+  headline: '', // 비워두면 표시 안 함
   intro: '배운 것과 해결한 문제를 기술 일기로 기록합니다. 일본·해외 게임 회사 취업을 준비하고 있어요.',
   location: 'Seoul, Korea',
+  email: 'jungminna03@gmail.com',
+  phone: '010-5761-3222',
   links: {
     GitHub: 'https://github.com/jungminna03',
   },
   education: [
-    // { school: 'OO대학교', major: '컴퓨터공학과', period: '2022.03 – 2027.02 (졸업 예정)' },
+    { school: '호서대학교', major: '게임소프트웨어학과', period: '2022.03 – 2028.03 (졸업 예정)' },
   ],
   languages: [
     { name: '한국어', level: '모국어' },
     { name: '日本語', level: '비즈니스 (N1~N2)' },
     // { name: 'English', level: 'TOEIC 850' },
   ],
-  skills: ['Unity', 'C#', 'R3', 'UniRx', 'FSM'], // 기술 일기에서 확인된 기술
+  skills: ['Unity', 'C#', 'R3', 'FSM'], // 기술 일기에서 확인된 기술
   experience: '신입',
   targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'],
   targetLocations: ['일본 (도쿄·오사카 등)', '해외'],

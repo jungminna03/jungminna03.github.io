@@ -129,7 +129,7 @@ export function renderLetter({ answers, lang, job, model, entryCount, date }) {
 
 /** AI 없이 일기 frontmatter 만으로 만드는 기본 포트폴리오 */
 export function renderBasePortfolio(profile, portfolio, date) {
-  const out = [`# ${profile.name} — 포트폴리오`, '', `**${profile.headline}**`, '', profile.intro, ''];
+  const out = [`# ${profile.name} — 포트폴리오`, '', ...(profile.headline ? [`**${profile.headline}**`, ''] : []), profile.intro, ''];
   out.push(
     ...[
       profile.location && `- 지역: ${profile.location}`,

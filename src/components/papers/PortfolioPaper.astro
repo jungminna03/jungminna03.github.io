@@ -16,7 +16,6 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
   <Sprite name="folder" scale={3} />
   <div>
     <h2>포트폴리오</h2>
-    <p class="paper-sub">기술 일기 {portfolio.count}개에서 자동으로 정리했어요.</p>
   </div>
   <button class="px-btn no-print" type="button" data-print>PDF로 저장</button>
 </header>
@@ -24,7 +23,7 @@ const links = Object.entries(profile.links).filter(([, href]) => href);
 <div class="profile-card">
   <div>
     <p class="profile-name">{profile.name}</p>
-    <p class="profile-headline">{profile.headline}</p>
+    {profile.headline && <p class="profile-headline">{profile.headline}</p>}
     <p class="profile-intro">{profile.intro}</p>
   </div>
   <dl class="facts">
