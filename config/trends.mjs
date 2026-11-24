@@ -25,7 +25,7 @@ export default {
   youtube: { games: 20, videosPerGame: 10 }, // YOUTUBE_API_KEY 가 있을 때만 (하루 약 2,000 / 10,000 쿼터)
   aiEveryDays: 7, // AI 인사이트는 며칠마다 새로 쓸지 (숫자는 매일 갱신)
   // 대작 출시·평가 현황 — Claude 웹 검색으로 조사 (ANTHROPIC_API_KEY 가 있을 때만). 1회 약 $0.3~1
-  majors: { days: 45, everyDays: 3, maxSearches: 12 },
+  majors: { days: 45, everyDays: 3, maxSearches: 15 },
 
   // 분석할 장르 태그 (Steam 영어 태그 이름 그대로)
   genres: [

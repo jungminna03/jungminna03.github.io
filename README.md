@@ -98,7 +98,7 @@ AI 에게는 일기에 없는 경력·수치를 지어내지 말고 근거가 �
   키가 없으면 데이터상 기회 장르를 보여준다.
 - **추정 매출 = 리뷰 수 × 30 × 출시가 × 0.7** (Boxleiter 방식). 실제 매출은 공개되지 않으므로 장르·게임 간 비교용으로만 본다. 보유자 수는 SteamSpy 추정.
 - 데이터: Steam 공식 API(키 불필요), 출시일 순 신작 목록만 스토어 검색 페이지 사용(요청 사이 2초 쉬고, 막히면 기다렸다 재시도), SteamSpy, Apple RSS, YouTube Data API.
-- AI 인사이트를 지금 다시 쓰기: `npm run trends -- --force-ai` (Actions 에서는 Run workflow 의 `force_ai`). 대작 현황만 다시 조사: `npm run trends -- --force-majors`.
+- AI 인사이트를 지금 다시 쓰기: `npm run trends -- --force-ai` (Actions 에서는 Run workflow 의 `force_ai`). 대작 현황만 다시 조사: `npm run trends -- --force-majors` (Actions 에서는 `force_majors`).
 
 ## 비용 (Claude API)
 
@@ -106,7 +106,7 @@ AI 에게는 일기에 없는 경력·수치를 지어내지 말고 근거가 �
 
 - 공고 추천·적합도: 후보·프로필·일기가 바뀐 날만 호출 — 한 번에 $0.1~0.3
 - 트렌드 인사이트: 일주일에 한 번 — 한 번에 $0.2~0.5
-- 대작 출시·평가 조사: 3일마다 — 웹 검색 최대 12회($10 / 1,000회) + 토큰, 한 번에 $0.3~1
+- 대작 출시·평가 조사: 3일마다 — 웹 검색 최대 15회($10 / 1,000회) + 검색 결과 읽기(입력 약 30만 토큰), 한 번에 약 $1.5~2
 - `npm run export` 1회: 일기 양에 따라 $0.2~1
 
 실제 사용량은 Actions 로그의 `[AI] … 입력 / 출력 토큰` 줄에서 확인할 수 있다.

@@ -38,7 +38,7 @@ const MajorSchema = z.object({
         sources: z.array(z.string()).describe('근거 URL 1~4개. 아래 출처 목록에 있는 URL 만'),
       }),
     )
-    .describe('최근 출시된 대작. 출시일 최신순, 최대 6개'),
+    .describe('최근 출시된 대작. 출시일 최신순, 최대 5개'),
   upcoming: z
     .array(z.object({ name: z.string(), date: z.string().describe('출시 예정일 (YYYY-MM-DD, 미정이면 YYYY-MM)'), platforms: z.array(z.string()) }))
     .describe('앞으로 30일 안에 나올 대작. 최대 5개'),
@@ -56,14 +56,15 @@ export function buildResearchPrompt({ today, days }) {
 게임마다 확인할 것:
 - 출시일, 플랫폼, 개발사/퍼블리셔
 - 평론가 점수 (Metacritic 우선, 없으면 OpenCritic) 와 리뷰 수
-- 유저 점수 (Metacritic 유저 점수 등) — 평론가 점수와 크게 다르면 이유
+- 유저 점수: "<게임 이름> Metacritic user score" 로 따로 검색한다. 평론가 점수와 크게 다르면 이유 (리뷰 폭탄 등)
 - PC로 나왔다면 스팀 유저 평가 (긍정 비율, 리뷰 수)
-- 방송: 출시 후 최고 동시 시청자 수 (Twitch 단독인지, 여러 플랫폼 합산인지 구분)
+- 방송: "<게임 이름> peak viewers Streams Charts" 나 "<게임 이름> Twitch peak viewers" 로 따로 검색한다.
+  출시 후 최고 동시 시청자 수를 Twitch 단독과 여러 플랫폼 합산으로 구분해서 적는다 (둘 다 있으면 합산을 우선)
 - 판매·매출 발표나 신뢰할 만한 추정
 - 무엇이 호평·혹평받았는지
 
 그리고 앞으로 30일 안에 출시 예정인 대작도 몇 개 알려 줘.
-게임은 화제성 큰 순으로 최대 6개까지. 수치마다 출처를 붙여 줘.`;
+게임은 화제성 큰 순으로 최대 5개까지. 화제성이 가장 큰 게임일수록 유저 점수·방송 수치를 빠뜨리지 말 것. 수치마다 출처를 붙여 줘.`;
 }
 
 /** 정리 결과의 출처를 실제 검색에서 나온 URL 로만 제한한다 (지어낸 링크 방지) */

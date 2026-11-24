@@ -10,6 +10,10 @@ on:
         description: '트렌드 AI 인사이트를 지금 다시 쓰기 (평소엔 7일마다)'
         type: boolean
         default: false
+      force_majors:
+        description: '대작 출시·평가 현황을 지금 다시 조사 (평소엔 3일마다)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write # 데이터 커밋
@@ -43,7 +47,7 @@ jobs:
       - name: 스팀 게임 트렌드 분석
         id: trends
         continue-on-error: true
-        run: npm run trends -- ${{ inputs.force_ai && '--force-ai' || '' }}
+        run: npm run trends -- ${{ inputs.force_ai && '--force-ai' || '' }} ${{ inputs.force_majors && '--force-majors' || '' }}
 
       - name: 바뀐 데이터 커밋 후 배포
         env:
