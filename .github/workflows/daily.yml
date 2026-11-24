@@ -11,7 +11,7 @@ on:
         type: boolean
         default: false
       force_majors:
-        description: '대작 출시·평가 현황을 지금 다시 조사 (평소엔 3일마다)'
+        description: '대작 출시·평가 현황을 지금 다시 조사 (평소엔 7일마다)'
         type: boolean
         default: false
 

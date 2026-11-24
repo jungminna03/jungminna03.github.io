@@ -123,7 +123,7 @@ if (aiEnabled()) {
   console.log('ANTHROPIC_API_KEY 가 없어서 규칙 요약만 씁니다.');
 }
 
-// 7) 대작 출시·평가 — 웹 검색이라 majors.everyDays 마다 (실패하면 이전 값 유지)
+// 7) 대작 출시·평가 — 웹 검색이라 majors.everyDays 마다, majors.model 로 (실패하면 이전 값 유지)
 if (aiEnabled()) {
   const last = previous?.majors;
   const fresh = last && now.getTime() - Date.parse(last.generatedAt) < config.majors.everyDays * 86_400_000;
@@ -131,7 +131,7 @@ if (aiEnabled()) {
     console.log(`대작 현황 유지 (${last.generatedAt.slice(0, 10)} 조사)`);
   } else {
     try {
-      report.majors = await majorReleases({ today: kstDate(now), days: config.majors.days, maxSearches: config.majors.maxSearches });
+      report.majors = await majorReleases({ today: kstDate(now), days: config.majors.days, maxSearches: config.majors.maxSearches, model: config.majors.model });
       console.log(`✓ 대작 현황 ${report.majors.games.length}개 · 출시 예정 ${report.majors.upcoming.length}개`);
     } catch (err) {
       failed = true;

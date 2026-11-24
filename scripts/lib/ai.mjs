@@ -23,15 +23,15 @@ export function setClient(next) {
 /**
  * 구조화 출력(JSON)으로 받아서 zod 스키마로 검증한 객체를 돌려준다.
  * @template {import('zod').ZodType} S
- * @param {{ system: string, prompt: string, schema: S, effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max', maxTokens?: number }} options
+ * @param {{ system: string, prompt: string, schema: S, effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max', maxTokens?: number, model?: string }} options
  * @returns {Promise<import('zod').infer<S>>}
  */
-export async function generateObject({ system, prompt, schema, effort = 'medium', maxTokens = 32_000 }) {
+export async function generateObject({ system, prompt, schema, effort = 'medium', maxTokens = 32_000, model = MODEL }) {
   // parse 는 직접 부른다. SDK 자동 파싱에 맡기면 거절·잘린 응답에서도 JSON 해석부터 시도해서 진짜 원인이 가려진다.
   const { parse, ...format } = betaZodOutputFormat(schema);
   const message = await anthropic()
     .beta.messages.stream({
-      model: MODEL,
+      model,
       max_tokens: maxTokens,
       ...FALLBACK,
       output_config: { effort, format },
@@ -62,10 +62,10 @@ export async function generateText({ system, prompt, effort = 'high', maxTokens 
 /**
  * 웹 검색을 쓰게 하고 자유 텍스트로 받는다. 검색 결과·인용에 실제로 나온 URL 목록도 함께 돌려준다.
  * 서버 쪽 검색 루프가 길어져 pause_turn 으로 멈추면 그대로 이어서 요청한다.
- * @param {{ system: string, prompt: string, maxSearches?: number, effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max', maxTokens?: number }} options
+ * @param {{ system: string, prompt: string, maxSearches?: number, effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max', maxTokens?: number, model?: string }} options
  * @returns {Promise<{ text: string, sources: { url: string, title: string }[] }>}
  */
-export async function researchText({ system, prompt, maxSearches = 10, effort = 'medium', maxTokens = 64_000 }) {
+export async function researchText({ system, prompt, maxSearches = 10, effort = 'medium', maxTokens = 64_000, model = MODEL }) {
   const tools = [{ type: 'web_search_20260209', name: 'web_search', max_uses: maxSearches }];
   /** @type {any[]} */
   const messages = [{ role: 'user', content: prompt }];
@@ -73,7 +73,7 @@ export async function researchText({ system, prompt, maxSearches = 10, effort = 
   const blocks = [];
   for (let turn = 0; turn < 5; turn += 1) {
     const message = await anthropic()
-      .beta.messages.stream({ model: MODEL, max_tokens: maxTokens, ...FALLBACK, output_config: { effort }, system, tools, messages })
+      .beta.messages.stream({ model, max_tokens: maxTokens, ...FALLBACK, output_config: { effort }, system, tools, messages })
       .finalMessage();
     blocks.push(...message.content);
     if (message.stop_reason !== 'pause_turn') {

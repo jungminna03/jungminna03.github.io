@@ -1,7 +1,7 @@
 // 대작 출시 · 평가 현황 — Claude 가 웹 검색으로 조사하고(1단계), 정해진 형식으로 정리한다(2단계).
 // 숫자는 기사·집계 사이트에서 가져온 것이라 출처마다 다를 수 있다. 화면에 출처 링크를 같이 보여준다.
 import { z } from 'zod';
-import { generateObject, MODEL, researchText } from '../lib/ai.mjs';
+import { generateObject, researchText } from '../lib/ai.mjs';
 
 const Score = z.object({
   score: z.number().describe('점수 숫자 (예: 99, 4.8)'),
@@ -76,9 +76,9 @@ export function keepKnownSources(result, sources) {
   };
 }
 
-/** @param {{ today: string, days: number, maxSearches: number }} options */
-export async function majorReleases({ today, days, maxSearches }) {
-  const research = await researchText({ system: SYSTEM, prompt: buildResearchPrompt({ today, days }), maxSearches, effort: 'medium' });
+/** @param {{ today: string, days: number, maxSearches: number, model: string }} options */
+export async function majorReleases({ today, days, maxSearches, model }) {
+  const research = await researchText({ system: SYSTEM, prompt: buildResearchPrompt({ today, days }), maxSearches, effort: 'medium', model });
   if (!research.text) throw new Error('조사 결과가 비어 있습니다.');
   const sourceList = research.sources.map((s) => `- ${s.title}: ${s.url}`).join('\n');
   const result = await generateObject({
@@ -86,12 +86,13 @@ export async function majorReleases({ today, days, maxSearches }) {
     prompt: `## 조사 메모\n${research.text}\n\n## 출처 목록 (sources 에는 여기 있는 URL 만 쓸 것)\n${sourceList}`,
     schema: MajorSchema,
     effort: 'low',
+    model,
   });
   const cleaned = keepKnownSources(result, research.sources);
   const used = new Set(cleaned.games.flatMap((game) => game.sources));
   return {
     generatedAt: new Date().toISOString(),
-    model: MODEL,
+    model,
     days,
     ...cleaned,
     sourceTitles: Object.fromEntries(research.sources.filter((s) => used.has(s.url)).map((s) => [s.url, s.title])),
