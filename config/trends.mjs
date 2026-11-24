@@ -26,7 +26,8 @@ export default {
   aiEveryDays: 7, // AI 인사이트는 며칠마다 새로 쓸지 (숫자는 매일 갱신)
   // 대작 출시·평가 현황 — Claude 웹 검색으로 조사 (ANTHROPIC_API_KEY 가 있을 때만). 1회 약 $0.7~1
   // 검색 결과를 많이 읽어서(입력 약 30만 토큰) 다른 AI 작업과 달리 Sonnet 을 쓴다. CLAUDE_MODEL 과 별개
-  majors: { days: 45, everyDays: 7, maxSearches: 15, model: 'claude-sonnet-5-5' },
+  // gapGames: 화제성 상위 몇 개까지 유저 점수·방송 수치가 비면 따로 다시 찾을지 (게임마다 검색 최대 gapSearches 회)
+  majors: { days: 45, everyDays: 7, maxSearches: 15, model: 'claude-sonnet-5-5', gapGames: 3, gapSearches: 4 },
 
   // 분석할 장르 태그 (Steam 영어 태그 이름 그대로)
   genres: [

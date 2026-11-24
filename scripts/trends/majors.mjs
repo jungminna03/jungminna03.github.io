@@ -67,6 +67,29 @@ export function buildResearchPrompt({ today, days }) {
 게임은 화제성 큰 순으로 최대 5개까지. 화제성이 가장 큰 게임일수록 유저 점수·방송 수치를 빠뜨리지 말 것. 수치마다 출처를 붙여 줘.`;
 }
 
+const GapSchema = z.object({
+  user: Score.nullable().describe('유저 점수. 메모에 없으면 null'),
+  streams: z
+    .object({
+      peak: z.number().describe('최고 동시 시청자 수'),
+      scope: z.string().describe('어디 기준인지 (예: Twitch, 전체 플랫폼 합산)'),
+      source: z.string().describe('집계처 (예: Streams Charts, TwitchTracker)'),
+    })
+    .nullable()
+    .describe('방송 최고 동시 시청자. 메모에 없으면 null'),
+  sources: z.array(z.string()).describe('근거 URL 1~3개. 아래 출처 목록에 있는 URL 만'),
+});
+
+/** @param {{ name: string, released: string, user: unknown, streams: unknown }} game */
+export function buildGapPrompt(game) {
+  const wants = [
+    !game.user && `- 유저 점수: "${game.name} Metacritic user score" 로 검색해서 점수·만점·평가 수`,
+    !game.streams &&
+      `- 방송: "${game.name} peak viewers Streams Charts", "${game.name} Twitch peak viewers" 로 검색해서 출시 후 최고 동시 시청자 수 (Twitch 단독인지 여러 플랫폼 합산인지 구분, 둘 다 있으면 둘 다)`,
+  ].filter(Boolean);
+  return `${game.name} (${game.released} 출시) 에 대해 아래만 찾아 줘. 찾은 수치마다 출처를 붙이고, 못 찾으면 못 찾았다고 써.\n${wants.join('\n')}`;
+}
+
 /** 정리 결과의 출처를 실제 검색에서 나온 URL 로만 제한한다 (지어낸 링크 방지) */
 export function keepKnownSources(result, sources) {
   const known = new Set(sources.map((s) => s.url));
@@ -76,8 +99,37 @@ export function keepKnownSources(result, sources) {
   };
 }
 
-/** @param {{ today: string, days: number, maxSearches: number, model: string }} options */
-export async function majorReleases({ today, days, maxSearches, model }) {
+/**
+ * 화제성 상위 게임 중 유저 점수·방송 수치가 빈 게임만 좁게 다시 검색해서 채운다.
+ * 한 번에 여러 게임을 조사하면 이 두 가지가 자주 빠져서 따로 찾는다. 실패해도 원래 결과는 그대로 둔다.
+ */
+async function fillGaps(games, sources, { model, top, maxSearches }) {
+  for (const game of games.slice(0, top)) {
+    if (game.user && game.streams) continue;
+    try {
+      const research = await researchText({ system: SYSTEM, prompt: buildGapPrompt(game), maxSearches, effort: 'low', model });
+      const known = new Set(research.sources.map((s) => s.url));
+      const gap = await generateObject({
+        system: '조사 메모를 정해진 형식으로 옮겨 적는다. 메모에 없는 수치는 만들지 않고 null 로 둔다.',
+        prompt: `## 조사 메모\n${research.text}\n\n## 출처 목록 (sources 에는 여기 있는 URL 만 쓸 것)\n${research.sources.map((s) => `- ${s.title}: ${s.url}`).join('\n')}`,
+        schema: GapSchema,
+        effort: 'low',
+        model,
+      });
+      game.user ??= gap.user;
+      game.streams ??= gap.streams;
+      const extra = gap.sources.filter((url) => known.has(url) && !game.sources.includes(url));
+      game.sources = [...game.sources, ...extra].slice(0, 6);
+      sources.push(...research.sources);
+      console.log(`  ↳ ${game.name}: 유저 ${game.user ? '✓' : '-'} · 방송 ${game.streams ? '✓' : '-'}`);
+    } catch (err) {
+      console.warn(`  ↳ ${game.name} 빈칸 채우기 실패: ${err.message}`);
+    }
+  }
+}
+
+/** @param {{ today: string, days: number, maxSearches: number, model: string, gapGames?: number, gapSearches?: number }} options */
+export async function majorReleases({ today, days, maxSearches, model, gapGames = 3, gapSearches = 4 }) {
   const research = await researchText({ system: SYSTEM, prompt: buildResearchPrompt({ today, days }), maxSearches, effort: 'medium', model });
   if (!research.text) throw new Error('조사 결과가 비어 있습니다.');
   const sourceList = research.sources.map((s) => `- ${s.title}: ${s.url}`).join('\n');
@@ -89,12 +141,14 @@ export async function majorReleases({ today, days, maxSearches, model }) {
     model,
   });
   const cleaned = keepKnownSources(result, research.sources);
+  const sources = [...research.sources];
+  await fillGaps(cleaned.games, sources, { model, top: gapGames, maxSearches: gapSearches });
   const used = new Set(cleaned.games.flatMap((game) => game.sources));
   return {
     generatedAt: new Date().toISOString(),
     model,
     days,
     ...cleaned,
-    sourceTitles: Object.fromEntries(research.sources.filter((s) => used.has(s.url)).map((s) => [s.url, s.title])),
+    sourceTitles: Object.fromEntries(sources.filter((s) => used.has(s.url)).map((s) => [s.url, s.title])),
   };
 }

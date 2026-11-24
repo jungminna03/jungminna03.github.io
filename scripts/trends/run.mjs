@@ -131,7 +131,7 @@ if (aiEnabled()) {
     console.log(`대작 현황 유지 (${last.generatedAt.slice(0, 10)} 조사)`);
   } else {
     try {
-      report.majors = await majorReleases({ today: kstDate(now), days: config.majors.days, maxSearches: config.majors.maxSearches, model: config.majors.model });
+      report.majors = await majorReleases({ today: kstDate(now), days: config.majors.days, maxSearches: config.majors.maxSearches, model: config.majors.model, gapGames: config.majors.gapGames, gapSearches: config.majors.gapSearches });
       console.log(`✓ 대작 현황 ${report.majors.games.length}개 · 출시 예정 ${report.majors.upcoming.length}개`);
     } catch (err) {
       failed = true;

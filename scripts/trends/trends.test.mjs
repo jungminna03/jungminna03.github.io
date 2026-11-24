@@ -144,3 +144,13 @@ test('keepKnownSources: 검색에 나오지 않은 링크는 버린다', async (
   assert.deepEqual(out.games[0].sources, ['https://a.com/1']);
   assert.match(buildResearchPrompt({ today: '2026-11-24', days: 45 }), /2026-11-24.*45일/s);
 });
+
+test('buildGapPrompt: 빈 항목만 묻는다', async () => {
+  const { buildGapPrompt } = await import('./majors.mjs');
+  const both = buildGapPrompt({ name: 'GTA VI', released: '2026-11-19', user: null, streams: null });
+  assert.match(both, /Metacritic user score/);
+  assert.match(both, /peak viewers/);
+  const onlyStreams = buildGapPrompt({ name: 'GTA VI', released: '2026-11-19', user: { score: 4.8 }, streams: null });
+  assert.doesNotMatch(onlyStreams, /user score/);
+  assert.match(onlyStreams, /peak viewers/);
+});
