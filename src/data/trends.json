@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:03:10.877Z",
+  "generatedAt": "2026-11-24T11:09:27.018Z",
   "window": {
     "days": 30,
     "from": "2026-10-25",
@@ -11,22 +11,22 @@
     "priceRealization": 0.7,
     "tractionReviews": 10
   },
-  "total": 6159,
+  "total": 6204,
   "indie": {
-    "releases": 2105,
-    "paid": 1938,
-    "free": 167,
-    "withTraction": 344,
+    "releases": 2123,
+    "paid": 1954,
+    "free": 169,
+    "withTraction": 348,
     "genres": [
       {
         "id": 599,
         "name": "시뮬레이션",
         "en": "Simulation",
-        "releases": 577,
-        "traction": 127,
-        "revenue": 4039826,
+        "releases": 585,
+        "traction": 128,
+        "revenue": 4043851,
         "median": 105,
-        "perRelease": 7001,
+        "perRelease": 6913,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -40,11 +40,11 @@
         "id": 9,
         "name": "전략",
         "en": "Strategy",
-        "releases": 567,
-        "traction": 74,
-        "revenue": 2004259,
+        "releases": 573,
+        "traction": 75,
+        "revenue": 2004343,
         "median": 0,
-        "perRelease": 3535,
+        "perRelease": 3498,
         "positive": 85,
         "youtube": 0,
         "top": {
@@ -58,11 +58,11 @@
         "id": 1664,
         "name": "퍼즐",
         "en": "Puzzle",
-        "releases": 400,
-        "traction": 63,
-        "revenue": 767160,
+        "releases": 403,
+        "traction": 64,
+        "revenue": 771374,
         "median": 0,
-        "perRelease": 1918,
+        "perRelease": 1914,
         "positive": 90,
         "youtube": 0,
         "top": {
@@ -76,11 +76,11 @@
         "id": 1773,
         "name": "아케이드",
         "en": "Arcade",
-        "releases": 286,
+        "releases": 288,
         "traction": 26,
         "revenue": 202722,
         "median": 0,
-        "perRelease": 709,
+        "perRelease": 704,
         "positive": 91,
         "youtube": 0,
         "top": {
@@ -94,11 +94,11 @@
         "id": 3959,
         "name": "로그라이트",
         "en": "Roguelite",
-        "releases": 250,
+        "releases": 251,
         "traction": 34,
         "revenue": 1077302,
         "median": 0,
-        "perRelease": 4309,
+        "perRelease": 4292,
         "positive": 87,
         "youtube": 0,
         "top": {
@@ -130,12 +130,12 @@
         "id": 122,
         "name": "RPG",
         "en": "RPG",
-        "releases": 213,
-        "traction": 45,
-        "revenue": 1329095,
-        "median": 21,
-        "perRelease": 6240,
-        "positive": 83,
+        "releases": 215,
+        "traction": 46,
+        "revenue": 1332560,
+        "median": 32,
+        "perRelease": 6198,
+        "positive": 84,
         "youtube": 0,
         "top": {
           "appid": 3669620,
@@ -148,11 +148,11 @@
         "id": 615955,
         "name": "아이들러",
         "en": "Idler",
-        "releases": 211,
+        "releases": 212,
         "traction": 39,
-        "revenue": 349436,
+        "revenue": 349520,
         "median": 84,
-        "perRelease": 1656,
+        "perRelease": 1649,
         "positive": 81,
         "youtube": 0,
         "top": {
@@ -166,11 +166,11 @@
         "id": 1716,
         "name": "로그라이크",
         "en": "Roguelike",
-        "releases": 200,
-        "traction": 27,
-        "revenue": 1055069,
+        "releases": 202,
+        "traction": 28,
+        "revenue": 1058534,
         "median": 0,
-        "perRelease": 5275,
+        "perRelease": 5240,
         "positive": 92,
         "youtube": 0,
         "top": {
@@ -184,11 +184,11 @@
         "id": 1667,
         "name": "공포",
         "en": "Horror",
-        "releases": 179,
-        "traction": 37,
-        "revenue": 525384,
+        "releases": 181,
+        "traction": 38,
+        "revenue": 533393,
         "median": 84,
-        "perRelease": 2935,
+        "perRelease": 2947,
         "positive": 83,
         "youtube": 0,
         "top": {
@@ -202,11 +202,11 @@
         "id": 3968,
         "name": "물리",
         "en": "Physics",
-        "releases": 152,
+        "releases": 153,
         "traction": 37,
-        "revenue": 1284746,
-        "median": 95,
-        "perRelease": 8452,
+        "revenue": 1284788,
+        "median": 84,
+        "perRelease": 8397,
         "positive": 86,
         "youtube": 0,
         "top": {
@@ -220,11 +220,11 @@
         "id": 12472,
         "name": "경영",
         "en": "Management",
-        "releases": 146,
+        "releases": 147,
         "traction": 33,
-        "revenue": 1463807,
+        "revenue": 1463891,
         "median": 105,
-        "perRelease": 10026,
+        "perRelease": 9958,
         "positive": 80,
         "youtube": 0,
         "top": {
@@ -238,11 +238,11 @@
         "id": 1666,
         "name": "카드 게임",
         "en": "Card Game",
-        "releases": 142,
+        "releases": 143,
         "traction": 17,
         "revenue": 248985,
         "median": 0,
-        "perRelease": 1753,
+        "perRelease": 1741,
         "positive": 93,
         "youtube": 0,
         "top": {
@@ -256,11 +256,11 @@
         "id": 1721,
         "name": "심리적 공포",
         "en": "Psychological Horror",
-        "releases": 127,
-        "traction": 32,
-        "revenue": 446745,
-        "median": 105,
-        "perRelease": 3518,
+        "releases": 129,
+        "traction": 33,
+        "revenue": 454754,
+        "median": 125,
+        "perRelease": 3525,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -292,11 +292,11 @@
         "id": 3810,
         "name": "샌드박스",
         "en": "Sandbox",
-        "releases": 111,
-        "traction": 31,
-        "revenue": 1522759,
-        "median": 200,
-        "perRelease": 13719,
+        "releases": 113,
+        "traction": 33,
+        "revenue": 1530123,
+        "median": 210,
+        "perRelease": 13541,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -310,11 +310,11 @@
         "id": 1774,
         "name": "슈팅",
         "en": "Shooter",
-        "releases": 100,
+        "releases": 102,
         "traction": 9,
         "revenue": 705970,
         "median": 0,
-        "perRelease": 7060,
+        "perRelease": 6921,
         "positive": 95,
         "youtube": 0,
         "top": {
@@ -379,14 +379,32 @@
         }
       },
       {
+        "id": 5716,
+        "name": "미스터리",
+        "en": "Mystery",
+        "releases": 87,
+        "traction": 19,
+        "revenue": 619745,
+        "median": 105,
+        "perRelease": 7124,
+        "positive": 83,
+        "youtube": 0,
+        "top": {
+          "appid": 3370490,
+          "name": "Giggleland",
+          "url": "https://store.steampowered.com/app/3370490/",
+          "revenue": 295952
+        }
+      },
+      {
         "id": 3843,
         "name": "온라인 협동",
         "en": "Online Co-Op",
-        "releases": 86,
+        "releases": 87,
         "traction": 17,
-        "revenue": 245214,
-        "median": 147,
-        "perRelease": 2851,
+        "revenue": 245256,
+        "median": 126,
+        "perRelease": 2819,
         "positive": 81,
         "youtube": 0,
         "top": {
@@ -415,24 +433,6 @@
         }
       },
       {
-        "id": 5716,
-        "name": "미스터리",
-        "en": "Mystery",
-        "releases": 85,
-        "traction": 18,
-        "revenue": 611736,
-        "median": 84,
-        "perRelease": 7197,
-        "positive": 83,
-        "youtube": 0,
-        "top": {
-          "appid": 3370490,
-          "name": "Giggleland",
-          "url": "https://store.steampowered.com/app/3370490/",
-          "revenue": 295952
-        }
-      },
-      {
         "id": 255534,
         "name": "자동화",
         "en": "Automation",
@@ -454,11 +454,11 @@
         "id": 1738,
         "name": "숨은 그림 및 물체",
         "en": "Hidden Object",
-        "releases": 76,
-        "traction": 22,
-        "revenue": 303671,
-        "median": 125,
-        "perRelease": 3996,
+        "releases": 77,
+        "traction": 23,
+        "revenue": 307570,
+        "median": 126,
+        "perRelease": 3994,
         "positive": 86,
         "youtube": 0,
         "top": {
@@ -466,6 +466,24 @@
           "name": "Dice Hoarder",
           "url": "https://store.steampowered.com/app/3687090/",
           "revenue": 211201
+        }
+      },
+      {
+        "id": 1698,
+        "name": "포인트 앤드 클릭",
+        "en": "Point & Click",
+        "releases": 76,
+        "traction": 13,
+        "revenue": 81653,
+        "median": 0,
+        "perRelease": 1074,
+        "positive": 87,
+        "youtube": 0,
+        "top": {
+          "appid": 5035380,
+          "name": "BALL PICKER - Clean Up the Golf Yard",
+          "url": "https://store.steampowered.com/app/5035380/",
+          "revenue": 24529
         }
       },
       {
@@ -487,21 +505,21 @@
         }
       },
       {
-        "id": 1698,
-        "name": "포인트 앤드 클릭",
-        "en": "Point & Click",
-        "releases": 75,
-        "traction": 13,
-        "revenue": 81653,
-        "median": 0,
-        "perRelease": 1089,
-        "positive": 87,
+        "id": 3799,
+        "name": "비주얼 노벨",
+        "en": "Visual Novel",
+        "releases": 74,
+        "traction": 21,
+        "revenue": 179610,
+        "median": 144,
+        "perRelease": 2427,
+        "positive": 84,
         "youtube": 0,
         "top": {
-          "appid": 5035380,
-          "name": "BALL PICKER - Clean Up the Golf Yard",
-          "url": "https://store.steampowered.com/app/5035380/",
-          "revenue": 24529
+          "appid": 4236650,
+          "name": "Adultery Marriage Punisher",
+          "url": "https://store.steampowered.com/app/4236650/",
+          "revenue": 35754
         }
       },
       {
@@ -523,32 +541,14 @@
         }
       },
       {
-        "id": 3799,
-        "name": "비주얼 노벨",
-        "en": "Visual Novel",
-        "releases": 72,
-        "traction": 21,
-        "revenue": 179610,
-        "median": 165,
-        "perRelease": 2495,
-        "positive": 84,
-        "youtube": 0,
-        "top": {
-          "appid": 4236650,
-          "name": "Adultery Marriage Punisher",
-          "url": "https://store.steampowered.com/app/4236650/",
-          "revenue": 35754
-        }
-      },
-      {
         "id": 701,
         "name": "스포츠",
         "en": "Sports",
-        "releases": 71,
+        "releases": 72,
         "traction": 9,
-        "revenue": 38841,
+        "revenue": 38883,
         "median": 0,
-        "perRelease": 547,
+        "perRelease": 540,
         "positive": 83,
         "youtube": 0,
         "top": {
@@ -618,11 +618,11 @@
         "id": 3810,
         "name": "샌드박스",
         "en": "Sandbox",
-        "releases": 111,
-        "traction": 31,
-        "revenue": 1522759,
-        "median": 200,
-        "perRelease": 13719,
+        "releases": 113,
+        "traction": 33,
+        "revenue": 1530123,
+        "median": 210,
+        "perRelease": 13541,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -636,11 +636,11 @@
         "id": 12472,
         "name": "경영",
         "en": "Management",
-        "releases": 146,
+        "releases": 147,
         "traction": 33,
-        "revenue": 1463807,
+        "revenue": 1463891,
         "median": 105,
-        "perRelease": 10026,
+        "perRelease": 9958,
         "positive": 80,
         "youtube": 0,
         "top": {
@@ -2242,10 +2242,10 @@
     ]
   },
   "majors": {
-    "generatedAt": "2026-11-24T11:07:46.244Z",
+    "generatedAt": "2026-11-24T11:15:19.649Z",
     "model": "claude-sonnet-5-5",
     "days": 45,
-    "headline": "GTA VI가 메타스코어 99와 역대 방송 기록으로 시장을 압도",
+    "headline": "GTA 6, 평론 99점과 유저 5.6점의 극단적 온도차",
     "games": [
       {
         "name": "Grand Theft Auto VI",
@@ -2254,57 +2254,160 @@
           "PS5",
           "Xbox Series X|S"
         ],
-        "studio": "Rockstar Games",
+        "studio": "Rockstar Games / Take-Two",
         "critic": {
           "score": 99,
           "outOf": 100,
-          "outlet": "Metacritic",
-          "count": 158
+          "outlet": "Metacritic (PS5)",
+          "count": 150
         },
         "user": {
           "score": 5.6,
           "outOf": 10,
-          "outlet": "Metacritic",
+          "outlet": "Metacritic (PS5, 2차 보도 기준)",
           "count": 85000
         },
         "steam": null,
         "streams": {
-          "peak": 7910000,
-          "scope": "전 플랫폼 합산 (Twitch 단독 약 331만 명)",
+          "peak": 7914000,
+          "scope": "전 플랫폼 합산 (Twitch, YouTube, Kick), 출시 후 24시간 잠정치",
           "source": "Streams Charts"
         },
-        "sales": "Take-Two 발표: 첫날 소매 매출 37.9억 달러, 출시 전 판매 3,250만 장 (사전판매 포함, 소매 매출 기준). Sensor Tower 추정은 23.6억 달러",
-        "summary": "평론가들은 Metacritic 99점을 주어 『젤다의 전설 시간의 오카리나』와 역대 최고점 타이를 이뤘고, 만점 평가도 101건에 달했다. 반면 유저 점수는 5.2~5.6점대에 머물렀고 리뷰 폭탄 논란이 일었으나, 실제 불만과 리뷰 폭탄의 비중은 확인되지 않았다. 방송 시청자와 판매는 기록적이었다.",
+        "sales": "Take-Two 8-K 기준 출시 첫날 소매 매출 37억 9천만 달러, 사전 판매 3,250만 장 (Rockstar/Take-Two 발표, 매출 수치의 별표 정의는 미확인)",
+        "summary": "오픈월드와 Jason·Lucia 서사가 호평받아 Metacritic 99점으로 역대 최고점 타이를 기록했습니다. 반면 유저 점수는 5.2로 시작해 5.6까지 올랐고, 리뷰 폭탄 의혹과 PS5 Pro 30fps 문제 언급이 나왔습니다. 평론가와 유저 반응의 격차가 매우 큽니다.",
         "sources": [
-          "https://www.metacritic.com/game/grand-theft-auto-vi/",
-          "https://variety.com/2026/gaming/news/gta-6-launch-livestream-internet-traffic-records-1236953145/",
-          "https://streamscharts.com/news/gta-6-streaming-records",
-          "https://maketecheasier.com/gta-6-day-one-sales-record/"
+          "https://variety.com/2026/gaming/news/gta-6-reviews-highest-rated-video-game-1236951803/",
+          "https://www.gtabase.com/gta-6/articles/gta-6-review-bombed-on-metacritic",
+          "https://streamscharts.com/news/gta-6-day1-recap",
+          "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
         ]
       },
       {
-        "name": "Planet Zoo 2",
-        "released": "2026-10-13",
-        "platforms": [],
-        "studio": "Frontier Developments",
+        "name": "The Legend of Zelda: Ocarina of Time (Switch 2 리메이크)",
+        "released": "2026-11-05",
+        "platforms": [
+          "Switch 2"
+        ],
+        "studio": "Nintendo",
+        "critic": {
+          "score": 95,
+          "outOf": 100,
+          "outlet": "Metacritic",
+          "count": 139
+        },
+        "user": null,
+        "steam": null,
+        "streams": {
+          "peak": 209642,
+          "scope": "Twitch",
+          "source": "Streams Charts"
+        },
+        "sales": null,
+        "summary": "원작의 완성도와 세련된 리메이크 방식이 호평받아 2026년 최고점 게임이 되었고 Game Awards GOTY 후보에도 올랐습니다. 유저 점수는 확인되지 않아 평론가와 유저 비교는 어렵습니다.",
+        "sources": [
+          "https://www.metacritic.com/game/the-legend-of-zelda-ocarina-of-time-2026/",
+          "https://www.gamesradar.com/games/the-legend-of-zelda/the-legend-of-zelda-ocarina-of-time-remakes-metacritic-score-makes-it-the-highest-rated-game-of-2026-but-even-it-cant-reach-the-originals-near-perfect-score/",
+          "https://streamscharts.com/news/legend-zelda-ocarina-time-release-week",
+          "https://www.metacritic.com/game/the-legend-of-zelda-ocarina-of-time-2026/user-reviews/?platform=nintendo-switch-2&filter=Positive+Reviews"
+        ]
+      },
+      {
+        "name": "World of Warcraft: Forever",
+        "released": "2026-11-04",
+        "platforms": [
+          "PC"
+        ],
+        "studio": "Blizzard Entertainment",
         "critic": null,
         "user": null,
         "steam": null,
         "streams": {
-          "peak": 69799,
+          "peak": 1120000,
           "scope": "Twitch",
-          "source": "SteamDB"
+          "source": "Streams Charts"
         },
         "sales": null,
-        "summary": "Frontier Developments가 개발과 퍼블리싱을 맡았고 The Game Awards 2026 Best Sim/Strategy 후보에 올랐다. 평점, 스팀 평가, 방송 수치는 확인하지 못했다.",
+        "summary": "Metacritic 종합 점수는 확인되지 않았고 개별 평론으로 Game Informer 98점, GamePro 100점이 있습니다. MMORPG.com은 출시 후 2주를 매끄러운 출시로 평했으나, 사용자 리뷰에는 엔드게임 루프 부재를 지적하는 의견이 있습니다.",
         "sources": [
-          "https://en.wikipedia.org/wiki/Planet_Zoo_2",
-          "https://steamdb.info/app/3219030/charts/",
-          "https://www.metacritic.com/game/planet-zoo-2/"
+          "https://www.metacritic.com/game/world-of-warcraft-forever/",
+          "https://www.mmorpg.com/reviews/world-of-warcraft-forever-review-in-progress-a-smooth-launch-and-the-joy-of-taking-it-slow-2000139310",
+          "https://gamefaqs.gamespot.com/pc/714252-world-of-warcraft-forever/reviews",
+          "https://x.com/StreamsCharts/status/2119075902608851165"
+        ]
+      },
+      {
+        "name": "Call of Duty: Modern Warfare 4",
+        "released": "2026-10-23",
+        "platforms": [
+          "PC",
+          "PS5"
+        ],
+        "studio": "확인 못 함",
+        "critic": {
+          "score": 85,
+          "outOf": 100,
+          "outlet": "Metacritic",
+          "count": 54
+        },
+        "user": null,
+        "steam": null,
+        "streams": null,
+        "sales": null,
+        "summary": "캠페인, 멀티플레이, 개선된 DMZ 모드 3개 구성이 평론에서 칭찬받았고 시리즈 15년 만의 최고점이라는 보도가 나왔습니다. 유저 반응 수치는 확인되지 않았습니다.",
+        "sources": [
+          "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/",
+          "https://tech.yahoo.com/gaming/articles/call-duty-modern-warfare-4-140740567.html"
+        ]
+      },
+      {
+        "name": "Castlevania: Belmont's Curse",
+        "released": "2026-10-15",
+        "platforms": [
+          "PS5",
+          "Xbox",
+          "PC"
+        ],
+        "studio": "Konami",
+        "critic": {
+          "score": 83,
+          "outOf": 100,
+          "outlet": "Metacritic",
+          "count": 74
+        },
+        "user": null,
+        "steam": null,
+        "streams": null,
+        "sales": null,
+        "summary": "패리, 그래플링 채찍, 보스 디자인이 호평받았으나 평범한 메트로배니아 같다는 점, 불균일한 전개, 높은 난이도가 아쉬움으로 꼽혔습니다. 스팀 평가는 복합적(Mixed)으로, PC 블랙스크린 문제와 카스트바니아답지 않다는 논쟁이 원인입니다.",
+        "sources": [
+          "https://www.metacritic.com/game/castlevania-belmonts-curse/",
+          "https://tech.yahoo.com/gaming/articles/castlevania-belmonts-curse-review-roundup-232407059.html",
+          "https://www.vice.com/en/article/castlevania-belmonts-curse-review-roundup/"
         ]
       }
     ],
     "upcoming": [
+      {
+        "name": "Dragon Quest Monsters: The Withered World",
+        "date": "2026-12-03",
+        "platforms": [
+          "PS5",
+          "Xbox",
+          "Switch",
+          "Switch 2",
+          "PC"
+        ]
+      },
+      {
+        "name": "Rayman Legends Retold",
+        "date": "2026-12-03",
+        "platforms": [
+          "PS5",
+          "Xbox",
+          "Switch 2",
+          "PC"
+        ]
+      },
       {
         "name": "Warhammer 40,000: Dawn of War IV",
         "date": "2026-12-03",
@@ -2313,36 +2416,34 @@
         ]
       },
       {
-        "name": "Dragon Quest Monsters: The Withered World",
-        "date": "2026-12-03",
-        "platforms": []
-      },
-      {
-        "name": "Monster Hunter Wilds Switch 2판",
-        "date": "2026-12-04",
-        "platforms": [
-          "Switch 2"
-        ]
-      },
-      {
         "name": "Professor Layton and the New World of Steam",
         "date": "2026-12-10",
-        "platforms": []
-      },
-      {
-        "name": "Attack on Titan 3",
-        "date": "2026-12-10",
-        "platforms": []
+        "platforms": [
+          "PS5",
+          "Switch",
+          "Switch 2",
+          "PC"
+        ]
       }
     ],
     "sourceTitles": {
-      "https://www.metacritic.com/game/grand-theft-auto-vi/": "Grand Theft Auto VI Reviews - Metacritic",
-      "https://variety.com/2026/gaming/news/gta-6-launch-livestream-internet-traffic-records-1236953145/": "GTA 6 Launch Sets Livestream, Internet Traffic Records",
-      "https://streamscharts.com/news/gta-6-streaming-records": "GTA 6 Streaming Records: Twitch, Kick & Launch Stats",
-      "https://maketecheasier.com/gta-6-day-one-sales-record/": "GTA 6 made $3.79 billion on its first day and sold 32.5 million copies before release, Take-Two says, far above Sensor Tower's $2.36 billion estimate and nearly five times GTA 5's 2013 debut - Make Tech Easier",
-      "https://en.wikipedia.org/wiki/Planet_Zoo_2": "Planet Zoo 2",
-      "https://www.metacritic.com/game/planet-zoo-2/": "Planet Zoo 2 Reviews - Metacritic",
-      "https://steamdb.info/app/3219030/charts/": "Planet Zoo 2 Steam Charts · SteamDB"
+      "https://variety.com/2026/gaming/news/gta-6-reviews-highest-rated-video-game-1236951803/": "‘GTA 6’ Earns Rave Reviews and Lands 99 Metacritic Score, Tying for Highest-Rated Game of All Time",
+      "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records": "Grand Theft Auto VI Shatters Entertainment Box Office Records with $3.79 Billion in Day One Retail Sales",
+      "https://www.gtabase.com/gta-6/articles/gta-6-review-bombed-on-metacritic": "GTA 6 Review Bombed on Metacritic: 5.6 User Score vs 99 From Critics",
+      "https://streamscharts.com/news/gta-6-day1-recap": "Viewership records and top streamers from GTA 6's first 24 hours",
+      "https://www.gamesradar.com/games/the-legend-of-zelda/the-legend-of-zelda-ocarina-of-time-remakes-metacritic-score-makes-it-the-highest-rated-game-of-2026-but-even-it-cant-reach-the-originals-near-perfect-score/": "The Legend of Zelda: Ocarina of Time remake's Metacritic score makes it the highest-rated game of 2026, but even it can't reach the original's near-perfect score",
+      "https://www.metacritic.com/game/the-legend-of-zelda-ocarina-of-time-2026/": "The Legend of Zelda: Ocarina of Time Reviews - Metacritic",
+      "https://www.metacritic.com/game/world-of-warcraft-forever/": "World of Warcraft: Forever Reviews - Metacritic",
+      "https://gamefaqs.gamespot.com/pc/714252-world-of-warcraft-forever/reviews": "World of Warcraft: Forever Reviews for PC - GameFAQs",
+      "https://www.mmorpg.com/reviews/world-of-warcraft-forever-review-in-progress-a-smooth-launch-and-the-joy-of-taking-it-slow-2000139310": "World of Warcraft Forever Review-in-Progress: A Smooth Launch and the Joy of Taking It Slow",
+      "https://www.metacritic.com/game/call-of-duty-modern-warfare-4/": "Call of Duty: Modern Warfare 4 Reviews - Metacritic",
+      "https://tech.yahoo.com/gaming/articles/call-duty-modern-warfare-4-140740567.html": "The ‘Call Of Duty: Modern Warfare 4’ Metacritic Review Score Is The Best In 15 Years",
+      "https://tech.yahoo.com/gaming/articles/castlevania-belmonts-curse-review-roundup-232407059.html": "Castlevania Belmont's Curse Review Roundup: Critics Love The Whip, But Steam Players Meet A Black Screen Of Death",
+      "https://www.metacritic.com/game/castlevania-belmonts-curse/": "Castlevania: Belmont's Curse Reviews - Metacritic",
+      "https://www.vice.com/en/article/castlevania-belmonts-curse-review-roundup/": "Castlevania Belmont’s Curse Review Roundup",
+      "https://www.metacritic.com/game/the-legend-of-zelda-ocarina-of-time-2026/user-reviews/?platform=nintendo-switch-2&filter=Positive+Reviews": "The Legend of Zelda: Ocarina of Time user reviews - Metacritic",
+      "https://streamscharts.com/news/legend-zelda-ocarina-time-release-week": "The Legend of Zelda: Ocarina of Time reaches 209,642 peak viewers",
+      "https://x.com/StreamsCharts/status/2119075902608851165": "Streams Charts 🇺🇦 on X: \"⚔️ World of Warcraft: Forever reached 1.12M Peak Viewers on Twitch! WoW's second-highest Twitch peak ever and its biggest since 2019! Full breakdown 👇 https://t.co/z5ZAT4Fkwl\" / X"
     }
   },
   "sources": {
