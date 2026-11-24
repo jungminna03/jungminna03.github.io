@@ -197,11 +197,6 @@ code {
   font-size: 33px;
   line-height: 1.15;
 }
-.plate-sub {
-  color: #5a3a1c;
-  font-family: var(--pixel);
-  font-size: 14px;
-}
 
 .decor {
   position: absolute;
