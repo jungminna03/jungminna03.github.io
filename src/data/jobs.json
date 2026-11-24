@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T10:39:18.432Z",
+  "updatedAt": "2026-11-24T10:48:18.653Z",
   "jobs": [
     {
       "id": "greenhouse:scopely:5490347008",
@@ -290,5 +290,99 @@
       }
     }
   ],
-  "recommendations": null
+  "recommendations": {
+    "generatedAt": "2026-11-24T10:48:18.653Z",
+    "model": "claude-opus-5-5",
+    "inputHash": "100083f063d04192c73a1721180c2036eaaf32ec",
+    "picks": [
+      {
+        "type": "reach",
+        "jobId": "smartrecruiters:KeywordsStudios:744000138021279",
+        "reason": "C++와 C#을 핵심 언어로 하고, 게임 본체와 주변 툴을 함께 다루며 디자이너·아티스트와 협업하는 포지션입니다. Unity·C# 출시 2건, SO 기반 프레임워크 개발, C++/EnTT/Siv3D 경험, 사내 툴(ComfyUI·Electron) 제작 기록이 직무 내용과 잘 맞습니다. 다만 요구 경력이 '실무 수년'이라 신입에게는 상향 지원입니다.",
+        "gaps": [
+          "실무 경력 수년 요건 미충족(신입·2028년 졸업 예정)",
+          "C++ 프로젝트 규모와 깊이 증빙 부족(Siv3D·EnTT 버전 결과물 정리 필요)",
+          "재직 중 일본 거주 필수이므로 입사 시기·비자 계획 정리"
+        ],
+        "tip": "Google Play 출시·3개월 운영, SO 추상화로 후배에게 운영을 넘긴 사례, 프레임워크 결함 수정 제안 경험을 일본어로 '설계·테스트·문서화 역량'으로 묶어 강조하세요."
+      },
+      {
+        "type": "interest",
+        "jobId": "ashby:hoyoverse:ec6c3e5e-37da-402f-9501-1462248d14e1",
+        "reason": "관심 기업 HoYoverse의 도쿄 공고는 모두 비개발 직무이고, 그중 일본 시장 퍼블리싱 인턴이 가장 가깝습니다. 일본어 비즈니스 수준에 Steam·Google Play 직접 출시, Unity Ads·IAP 기반 BM 운영 경험이 퍼블리싱 이해도로 연결됩니다. 다만 희망 직무인 클라이언트 프로그래머와는 방향이 다릅니다.",
+        "gaps": [
+          "프로그래밍이 아닌 퍼블리싱·비즈니스 직무라 커리어 방향 확인 필요",
+          "시장 분석·마케팅 지표 관련 기록이 없음",
+          "인턴 근무 가능 기간(재학 중 일본 체류 가능 여부) 확인 필요"
+        ],
+        "tip": "직접 출시·운영하며 겪은 플레이 콘솔 대응, BM 설계, 유저 반응 경험을 '개발을 아는 퍼블리셔' 관점으로 일본어로 풀어 쓰세요."
+      }
+    ],
+    "ratings": {
+      "smartrecruiters:KeywordsStudios:744000146667289": {
+        "level": "low",
+        "reason": "UE 실무 수년·콘솔 출시 요구, UE 경험 기록 없음"
+      },
+      "smartrecruiters:KeywordsStudios:744000146664081": {
+        "level": "low",
+        "reason": "UE 실무 수년과 콘솔 출시 경력 필요, 신입·Unity 중심"
+      },
+      "smartrecruiters:KeywordsStudios:744000158458299": {
+        "level": "low",
+        "reason": "렌더링·셰이더 실무와 콘솔 출시 요구, 관련 기록 없음"
+      },
+      "smartrecruiters:KeywordsStudios:744000146665815": {
+        "level": "low",
+        "reason": "커스텀 엔진 실무 수년 요구, C++ 경험은 개인 프로젝트뿐"
+      },
+      "smartrecruiters:KeywordsStudios:744000146666791": {
+        "level": "low",
+        "reason": "엔진 프로그래머 경력 수년·콘솔 출시 필수로 신입엔 무리"
+      },
+      "smartrecruiters:KeywordsStudios:744000138021279": {
+        "level": "maybe",
+        "reason": "C#/C++·툴 작업이 맞지만 실무 수년 요건이 걸림"
+      },
+      "smartrecruiters:KeywordsStudios:744000138021024": {
+        "level": "maybe",
+        "reason": "영어판 동일 직무, 영어 능력 기록이 없어 일본어판 권장"
+      },
+      "smartrecruiters:KeywordsStudios:744000138021559": {
+        "level": "low",
+        "reason": "실시간 네트워킹 경력 수년 요구, 서버 경험 기록 없음"
+      },
+      "smartrecruiters:KeywordsStudios:744000138021509": {
+        "level": "low",
+        "reason": "네트워크·서버 경력과 영어 필요, 관련 기록 없음"
+      },
+      "greenhouse:scopely:5467729008": {
+        "level": "low",
+        "reason": "아트+기술 직무로, 아트 역량 기록이 없음"
+      },
+      "greenhouse:scopely:5180929008": {
+        "level": "low",
+        "reason": "모바일 클라이언트지만 시니어 리드급이라 신입엔 무리"
+      },
+      "greenhouse:scopely:5467727008": {
+        "level": "low",
+        "reason": "VFX 아트 직무, 이펙트·아트 경험 기록 없음"
+      },
+      "greenhouse:scopely:5395475008": {
+        "level": "low",
+        "reason": "데이터 인프라 기술 리드급, 분산 시스템 경험 없음"
+      },
+      "greenhouse:scopely:5490347008": {
+        "level": "low",
+        "reason": "시니어 보안직, 중국어·영어 필수 요건 미충족"
+      },
+      "ashby:hoyoverse:ec6c3e5e-37da-402f-9501-1462248d14e1": {
+        "level": "maybe",
+        "reason": "일본어·직접 출시·BM 경험 활용 가능하나 비개발직"
+      },
+      "ashby:hoyoverse:403cebb8-e6a6-4ae6-ad4b-146c6c17b643": {
+        "level": "low",
+        "reason": "마케팅 인턴으로 희망 직무와 멀고 관련 기록 부족"
+      }
+    }
+  }
 }
