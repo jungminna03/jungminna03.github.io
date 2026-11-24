@@ -1,0 +1,82 @@
+{
+  "title": "11월 24일 게임 업계 헤드라인",
+  "date": "2026-11-24",
+  "summary": "6개 매체에서 고른 최신 소식 6건",
+  "tags": [
+    "GamesIndustry.biz",
+    "AUTOMATON",
+    "게임인사이트",
+    "Game Developer",
+    "4Gamer.net",
+    "인벤"
+  ],
+  "accent": "#2f9e44",
+  "mode": "headlines",
+  "cards": [
+    {
+      "title": "Nicalis removes AI-generated music from The Binding of Isaac: Repentance+ after player backlash",
+      "body": "Nicalis has pulled AI-generated music from The Binding of Isaac: Repentance+ after players discovered it in the game's latest update, promp…",
+      "sources": [
+        {
+          "label": "GamesIndustry.biz",
+          "title": "Nicalis removes AI-generated music from The Binding of Isaac: Repentance+ after player backlash",
+          "url": "https://www.gamesindustry.biz/nicalis-removes-ai-generated-music-from-the-binding-of-isaac-repentance-after-player-backlash"
+        }
+      ]
+    },
+    {
+      "title": "『GTA6』にて「鳥類図鑑を爆速コンプ」する野鳥専門家あらわる。生息地は“経験”で探る、プロの本気バードウォッチング",
+      "body": "『グランド・セフト・オートVI』にて、あるプレイヤーはストーリーそっちのけで発売翌日には鳥類の進行状況をコンプリートしたそうだ。",
+      "sources": [
+        {
+          "label": "AUTOMATON",
+          "title": "『GTA6』にて「鳥類図鑑を爆速コンプ」する野鳥専門家あらわる。生息地は“経験”で探る、プロの本気バードウォッチング",
+          "url": "https://automaton-media.com/articles/newsjp/20261124-480679/"
+        }
+      ]
+    },
+    {
+      "title": "소니, GTA6 출시 4일간 3900만 유저 몰려 '역대 최고 출시 오프닝'",
+      "body": "전세계를 뒤흔들고 있는 GTA6가 PS5에서 출시 이후 4일간 3900만 유저들이 즐긴 것으로 확인됐다.소니는 플레이스테이션 블로그에 Grand Theft Auto VI(GTA 6)의 출시는 플레이스테이션 30년 역사상 가장 대단한 기록을 세웠다고…",
+      "sources": [
+        {
+          "label": "게임인사이트",
+          "title": "소니, GTA6 출시 4일간 3900만 유저 몰려 '역대 최고 출시 오프닝'",
+          "url": "https://www.gameinsight.co.kr/news/articleView.html?idxno=37015"
+        }
+      ]
+    },
+    {
+      "title": "Nvidia reinstates Jensen Huang as CEO weeks after his resignation",
+      "body": "The ousted CEO has been reinstated by the board less than two weeks after his ouster, in consultation with senior officials from the United…",
+      "sources": [
+        {
+          "label": "Game Developer",
+          "title": "Nvidia reinstates Jensen Huang as CEO weeks after his resignation",
+          "url": "https://www.gamedeveloper.com/business/nvidia-reinstates-jensen-huang-as-ceo"
+        }
+      ]
+    },
+    {
+      "title": "「NGS ヘッドライン WAVE」，本日21：00より配信。「着せ恋」コラボの続報が明らかに",
+      "sources": [
+        {
+          "label": "4Gamer.net",
+          "title": "「NGS ヘッドライン WAVE」，本日21：00より配信。「着せ恋」コラボの続報が明らかに",
+          "url": "https://www.4gamer.net/games/521/G052100/20261124018/"
+        }
+      ]
+    },
+    {
+      "title": "넥슨 아주르 프로밀리아, 사전 다운로드 시작",
+      "body": "넥슨이 신작 아주르 프로밀리아의 사전 다운로드를 24일 시작했다. 만쥬게임즈가 개발한 이 게임은 26일 정식 출시되며 글로벌 사전등록 3,000만 명을 돌파했다. 이용자는 프로밀리아 대륙에서 키보와 함께 탐험과 전투를 즐기며 다양한 콘텐츠를 경험하게…",
+      "sources": [
+        {
+          "label": "인벤",
+          "title": "넥슨 아주르 프로밀리아, 사전 다운로드 시작",
+          "url": "https://www.inven.co.kr/webzine/news/?news=323782"
+        }
+      ]
+    }
+  ]
+}

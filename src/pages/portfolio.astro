@@ -1,0 +1,241 @@
+---
+// 기술 일기 → 포트폴리오 (빌드할 때마다 자동 갱신). 'PDF로 저장' 은 브라우저 인쇄를 쓴다.
+import Base from '../layouts/Base.astro';
+import profile from '../../config/profile.mjs';
+import { getDiary, toPortfolioEntry } from '../lib/content';
+import { buildPortfolio } from '../lib/portfolio.mjs';
+import { formatDate, url } from '../lib/site';
+
+const portfolio = buildPortfolio((await getDiary()).map(toPortfolioEntry), profile.skills);
+const month = (date: Date) => formatDate(date).slice(0, 7);
+const period = (from: Date, to: Date) => (month(from) === month(to) ? month(from) : `${month(from)} – ${month(to)}`);
+const links = Object.entries(profile.links).filter(([, href]) => href);
+---
+
+<Base title="포트폴리오" description={`${profile.name} · ${profile.headline}`}>
+  <div class="toolbar no-print">
+    <p class="meta">기술 일기 {portfolio.count}개에서 자동으로 만든 페이지예요.</p>
+    <button class="btn ghost" type="button" data-print>PDF로 저장</button>
+  </div>
+
+  <header class="card profile">
+    <div>
+      <h1>{profile.name}</h1>
+      <p class="headline">{profile.headline}</p>
+      <p class="intro">{profile.intro}</p>
+    </div>
+    <dl class="facts">
+      {
+        profile.location && (
+          <div>
+            <dt>지역</dt>
+            <dd>{profile.location}</dd>
+          </div>
+        )
+      }
+      {
+        profile.languages.length > 0 && (
+          <div>
+            <dt>언어</dt>
+            <dd>{profile.languages.map((l) => `${l.name} (${l.level})`).join(' · ')}</dd>
+          </div>
+        )
+      }
+      {
+        profile.education.map((e) => (
+          <div>
+            <dt>학력</dt>
+            <dd>{[e.school, e.major, e.period].filter(Boolean).join(' · ')}</dd>
+          </div>
+        ))
+      }
+      {
+        links.map(([label, href]) => (
+          <div>
+            <dt>{label}</dt>
+            <dd>
+              <a href={href}>{href.replace(/^https?:\/\//, '')}</a>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </header>
+
+  {
+    portfolio.count === 0 ? (
+      <p class="empty">
+        기술 일기에 <code>project</code>, <code>skills</code>, <code>highlight</code> 를 적으면 여기에 자동으로 정리돼요.
+      </p>
+    ) : (
+      <>
+        {portfolio.highlights.length > 0 && (
+          <section>
+            <h2 class="section-title">핵심 성과</h2>
+            <ul class="highlights">
+              {portfolio.highlights.slice(0, 8).map((h) => (
+                <li>
+                  <span>{h.text}</span>
+                  <a class="meta" href={url(`/diary/${h.entry.id}/`)}>
+                    {formatDate(h.entry.date)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {portfolio.projects.length > 0 && (
+          <section>
+            <h2 class="section-title">프로젝트</h2>
+            <div class="grid projects">
+              {portfolio.projects.map((project) => (
+                <article class="card project">
+                  <h3>{project.name}</h3>
+                  <p class="meta">
+                    {period(project.from, project.to)} · 기록 {project.entries.length}개
+                  </p>
+                  {project.skills.length > 0 && (
+                    <ul class="chips">
+                      {project.skills.map((skill) => (
+                        <li class="chip">{skill}</li>
+                      ))}
+                    </ul>
+                  )}
+                  <ul class="project-entries">
+                    {project.entries.map((entry) => (
+                      <li>
+                        <a href={url(`/diary/${entry.id}/`)}>{entry.title}</a>
+                        {entry.highlight && <span> — {entry.highlight}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {portfolio.skills.length > 0 && (
+          <section>
+            <h2 class="section-title">기술 스택</h2>
+            <ul class="chips">
+              {portfolio.skills.map((skill) => (
+                <li class="chip">
+                  {skill.name} <b>{skill.count}</b>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {portfolio.topics.length > 0 && (
+          <section>
+            <h2 class="section-title">관심 주제</h2>
+            <ul class="chips">
+              {portfolio.topics.map((topic) => (
+                <li class="chip">#{topic.name}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </>
+    )
+  }
+</Base>
+
+<script>
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+</script>
+
+<style>
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .toolbar .meta {
+    margin: 0;
+  }
+  .profile {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    padding: 28px;
+  }
+  @media (max-width: 720px) {
+    .profile {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .profile h1 {
+    margin: 0 0 4px;
+    font-size: 30px;
+  }
+  .headline {
+    margin: 0 0 12px;
+    color: var(--accent-text);
+    font-weight: 700;
+  }
+  .intro {
+    margin: 0;
+    color: var(--muted);
+  }
+  .facts {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .facts div {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .facts dt {
+    color: var(--faint);
+  }
+  .facts dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+  .highlights {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .highlights li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+  }
+  .highlights .meta {
+    flex-shrink: 0;
+    font-weight: 400;
+  }
+  .project h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .project .meta {
+    margin: 2px 0 12px;
+  }
+  .project-entries {
+    margin: 14px 0 0;
+    padding-left: 1.1em;
+    font-size: 15px;
+  }
+  .project-entries li + li {
+    margin-top: 4px;
+  }
+  .project-entries span {
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,172 @@
+---
+import CardNewsCard from '../components/CardNewsCard.astro';
+import Base from '../layouts/Base.astro';
+import profile from '../../config/profile.mjs';
+import { getCardNews, getDiary, toPortfolioEntry } from '../lib/content';
+import { jobsData } from '../lib/jobs';
+import { buildPortfolio } from '../lib/portfolio.mjs';
+import { formatDate, url } from '../lib/site';
+
+const diary = await getDiary();
+const latestNews = (await getCardNews())[0];
+const portfolio = buildPortfolio(diary.map(toPortfolioEntry), profile.skills);
+const picks = jobsData.recommendations?.picks ?? [];
+
+const features = [
+  {
+    href: '/diary/',
+    title: '기술 일기',
+    text: '배운 것과 해결한 문제를 기록해요.',
+    stat: diary.length ? `${diary.length}개의 기록 · 최근 ${formatDate(diary[0].data.date)}` : '첫 기록을 기다리는 중',
+  },
+  {
+    href: '/portfolio/',
+    title: '포트폴리오',
+    text: '일기가 프로젝트·성과·기술 스택으로 자동 정리돼요.',
+    stat: `프로젝트 ${portfolio.projects.length}개 · 기술 ${portfolio.skills.length}개`,
+  },
+  {
+    href: '/jobs/',
+    title: '채용 추천',
+    text: '일본·해외 게임 회사 공고를 매일 모으고 세 곳을 골라요.',
+    stat: `공고 ${jobsData.jobs.length}건 · 오늘의 추천 ${picks.length}곳`,
+  },
+  {
+    href: '/cardnews/',
+    title: '게임 트렌드 카드뉴스',
+    text: '매일 아침 국내외 게임 업계 소식을 카드로 정리해요.',
+    stat: latestNews ? `최신 ${formatDate(latestNews.data.date)}` : '첫 카드뉴스를 기다리는 중',
+  },
+];
+---
+
+<Base>
+  <section class="hero">
+    <p class="eyebrow">{profile.headline}</p>
+    <h1>{profile.name}</h1>
+    <p class="lead">{profile.intro}</p>
+    <div class="hero-actions">
+      <a class="btn" href={url('/portfolio/')}>포트폴리오 보기</a>
+      {profile.links.GitHub && <a class="btn ghost" href={profile.links.GitHub}>GitHub</a>}
+    </div>
+  </section>
+
+  <section class="grid features" aria-label="메뉴">
+    {
+      features.map((feature) => (
+        <a class="card feature" href={url(feature.href)}>
+          <h2>{feature.title}</h2>
+          <p>{feature.text}</p>
+          <span class="meta">{feature.stat}</span>
+        </a>
+      ))
+    }
+  </section>
+
+  <div class="split">
+    <section>
+      <h2 class="section-title">최근 기술 일기 <a href={url('/diary/')}>전체 보기</a></h2>
+      {
+        diary.length ? (
+          <ul class="recent">
+            {diary.slice(0, 5).map((entry) => (
+              <li>
+                <a href={url(`/diary/${entry.id}/`)}>{entry.data.title}</a>
+                <span class="meta">{formatDate(entry.data.date)}</span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty">
+            <code>src/content/diary</code> 에 첫 기록을 남겨 보세요.
+          </p>
+        )
+      }
+    </section>
+    <section>
+      <h2 class="section-title">오늘의 카드뉴스 <a href={url('/cardnews/')}>전체 보기</a></h2>
+      {
+        latestNews ? (
+          <a class="news" href={url(`/cardnews/${latestNews.id}/`)} aria-label={latestNews.data.title}>
+            <CardNewsCard
+              variant="cover"
+              accent={latestNews.data.accent}
+              title={latestNews.data.title}
+              summary={latestNews.data.summary}
+              date={latestNews.data.date}
+            />
+          </a>
+        ) : (
+          <p class="empty">매일 아침 자동으로 만들어져요.</p>
+        )
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    padding: 24px 0 40px;
+  }
+  .eyebrow {
+    margin: 0 0 6px;
+    color: var(--accent-text);
+    font-weight: 700;
+  }
+  .hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(34px, 6vw, 52px);
+  }
+  .hero .lead {
+    max-width: 640px;
+  }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .feature h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+  }
+  .feature p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .split {
+    display: grid;
+    gap: 0 40px;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+  @media (max-width: 760px) {
+    .split {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .recent {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .recent li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .recent a {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .recent .meta {
+    flex-shrink: 0;
+  }
+  .news {
+    display: block;
+    max-width: 380px;
+  }
+</style>

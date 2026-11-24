@@ -1,5 +1,20 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# 포폴/자소서 export 결과 (개인 문서라서 커밋하지 않음)
+exports/
+
+# 환경 변수 (API 키)
+.env
+.env.*
+!.env.example
+
+# logs / OS / editor
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/

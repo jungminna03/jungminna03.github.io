@@ -1,0 +1,100 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getDiary } from '../../lib/content';
+import { formatDate, url } from '../../lib/site';
+
+const entries = await getDiary();
+const years = new Map<string, typeof entries>();
+for (const entry of entries) {
+  const year = formatDate(entry.data.date).slice(0, 4);
+  years.set(year, [...(years.get(year) ?? []), entry]);
+}
+---
+
+<Base title="기술 일기" description="배운 것과 해결한 문제를 기록하는 기술 일기">
+  <header class="page-head">
+    <h1>기술 일기</h1>
+    <p class="lead">배운 것, 막혔던 것, 해결한 것을 기록해요. 기록은 <a href={url('/portfolio/')}>포트폴리오</a>로 자동 정리돼요.</p>
+  </header>
+
+  {
+    entries.length === 0 ? (
+      <p class="empty">
+        아직 기록이 없어요. <code>src/content/diary</code> 에 마크다운 파일을 추가해 보세요.
+      </p>
+    ) : (
+      [...years].map(([year, list]) => (
+        <section class="year">
+          <h2>
+            {year} <span class="meta">{list.length}</span>
+          </h2>
+          <ol class="entries">
+            {list.map((entry) => (
+              <li>
+                <time datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date).slice(5)}</time>
+                <div>
+                  <a class="entry-title" href={url(`/diary/${entry.id}/`)}>
+                    {entry.data.title}
+                  </a>
+                  {entry.data.draft && <span class="badge warn">초안</span>}
+                  {entry.data.highlight && <p class="entry-highlight">{entry.data.highlight}</p>}
+                  {(entry.data.project || entry.data.tags.length > 0) && (
+                    <ul class="chips">
+                      {entry.data.project && <li class="chip project">{entry.data.project}</li>}
+                      {entry.data.tags.map((tag) => (
+                        <li class="chip">#{tag}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))
+    )
+  }
+</Base>
+
+<style>
+  .year h2 {
+    margin: 40px 0 8px;
+    font-size: 20px;
+  }
+  .entries {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .entries li {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  time {
+    padding-top: 2px;
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 14px;
+  }
+  .entry-title {
+    margin-right: 6px;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .entry-highlight {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .chips {
+    margin-top: 8px;
+  }
+  .chip.project {
+    background: var(--accent-soft);
+    color: var(--accent-text);
+  }
+</style>
