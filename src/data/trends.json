@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:22:25.867Z",
+  "generatedAt": "2026-11-24T11:36:46.845Z",
   "window": {
     "days": 30,
     "from": "2026-10-25",
@@ -11,10 +11,10 @@
     "priceRealization": 0.7,
     "tractionReviews": 10
   },
-  "total": 6207,
+  "total": 6208,
   "indie": {
-    "releases": 2123,
-    "paid": 1954,
+    "releases": 2122,
+    "paid": 1953,
     "free": 169,
     "withTraction": 348,
     "genres": [
@@ -22,11 +22,11 @@
         "id": 599,
         "name": "시뮬레이션",
         "en": "Simulation",
-        "releases": 585,
+        "releases": 584,
         "traction": 128,
-        "revenue": 4050569,
+        "revenue": 4050401,
         "median": 105,
-        "perRelease": 6924,
+        "perRelease": 6936,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -148,11 +148,11 @@
         "id": 615955,
         "name": "아이들러",
         "en": "Idler",
-        "releases": 212,
+        "releases": 211,
         "traction": 39,
-        "revenue": 349520,
+        "revenue": 349352,
         "median": 84,
-        "perRelease": 1649,
+        "perRelease": 1656,
         "positive": 81,
         "youtube": 0,
         "top": {
@@ -1491,7 +1491,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 435783,
+        "reviews": 435973,
         "positive": 55,
         "tags": [
           "1인칭 슈팅",
@@ -1910,7 +1910,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 435783,
+        "reviews": 435973,
         "positive": 55,
         "tags": [
           "1인칭 슈팅",
