@@ -59,6 +59,47 @@ export async function generateText({ system, prompt, effort = 'high', maxTokens 
   return textOf(message).trim();
 }
 
+/**
+ * 웹 검색을 쓰게 하고 자유 텍스트로 받는다. 검색 결과·인용에 실제로 나온 URL 목록도 함께 돌려준다.
+ * 서버 쪽 검색 루프가 길어져 pause_turn 으로 멈추면 그대로 이어서 요청한다.
+ * @param {{ system: string, prompt: string, maxSearches?: number, effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max', maxTokens?: number }} options
+ * @returns {Promise<{ text: string, sources: { url: string, title: string }[] }>}
+ */
+export async function researchText({ system, prompt, maxSearches = 10, effort = 'medium', maxTokens = 64_000 }) {
+  const tools = [{ type: 'web_search_20260209', name: 'web_search', max_uses: maxSearches }];
+  /** @type {any[]} */
+  const messages = [{ role: 'user', content: prompt }];
+  /** @type {any[]} */
+  const blocks = [];
+  for (let turn = 0; turn < 5; turn += 1) {
+    const message = await anthropic()
+      .beta.messages.stream({ model: MODEL, max_tokens: maxTokens, ...FALLBACK, output_config: { effort }, system, tools, messages })
+      .finalMessage();
+    blocks.push(...message.content);
+    if (message.stop_reason !== 'pause_turn') {
+      ensureFinished(message);
+      break;
+    }
+    console.log('  [AI] 검색이 길어져서 이어서 요청합니다 (pause_turn)');
+    messages.push({ role: 'assistant', content: message.content });
+  }
+  return { text: textOf({ content: blocks }).trim(), sources: sourcesOf(blocks) };
+}
+
+/** 검색 결과 블록과 텍스트 인용에서 URL 을 모은다 (중복 제거) */
+export function sourcesOf(blocks) {
+  /** @type {Map<string, string>} */
+  const found = new Map();
+  const add = (url, title) => url && !found.has(url) && found.set(url, title || url);
+  for (const block of blocks) {
+    if (block.type === 'web_search_tool_result' && Array.isArray(block.content)) {
+      for (const result of block.content) if (result.type === 'web_search_result') add(result.url, result.title);
+    }
+    if (block.type === 'text') for (const c of block.citations ?? []) add(c.url, c.title);
+  }
+  return [...found].map(([url, title]) => ({ url, title }));
+}
+
 const textOf = (message) =>
   message.content
     .filter((block) => block.type === 'text')

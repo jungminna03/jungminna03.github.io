@@ -7,6 +7,7 @@ import { kstDate, readJson, warn, writeJson } from '../lib/util.mjs';
 import { estimateRevenue, genreStats, marketSummary, normalizeGame, opportunities, rankEntry, ruleInsights, topGames } from './analyze.mjs';
 import { appleTopGrossingJP, recentNews, steamSpyOwners, youtubeBuzz, youtubeEnabled } from './external.mjs';
 import { aiInsights } from './insights.mjs';
+import { majorReleases } from './majors.mjs';
 import { mostPlayed, pause, recentReleases, tagNames, weeklyTopSellers } from './steam.mjs';
 
 const OUTPUT = 'src/data/trends.json';
@@ -96,6 +97,7 @@ const report = {
   },
   market,
   insights: null,
+  majors: previous?.majors ?? null,
   sources: { youtube: youtubeEnabled() },
 };
 
@@ -119,6 +121,23 @@ if (aiEnabled()) {
   }
 } else {
   console.log('ANTHROPIC_API_KEY 가 없어서 규칙 요약만 씁니다.');
+}
+
+// 7) 대작 출시·평가 — 웹 검색이라 majors.everyDays 마다 (실패하면 이전 값 유지)
+if (aiEnabled()) {
+  const last = previous?.majors;
+  const fresh = last && now.getTime() - Date.parse(last.generatedAt) < config.majors.everyDays * 86_400_000;
+  if (fresh && !process.argv.includes('--force-ai') && !process.argv.includes('--force-majors')) {
+    console.log(`대작 현황 유지 (${last.generatedAt.slice(0, 10)} 조사)`);
+  } else {
+    try {
+      report.majors = await majorReleases({ today: kstDate(now), days: config.majors.days, maxSearches: config.majors.maxSearches });
+      console.log(`✓ 대작 현황 ${report.majors.games.length}개 · 출시 예정 ${report.majors.upcoming.length}개`);
+    } catch (err) {
+      failed = true;
+      warn(`대작 현황 조사 실패 — 이전 값 유지: ${err.message}`);
+    }
+  }
 }
 
 await writeJson(OUTPUT, report);

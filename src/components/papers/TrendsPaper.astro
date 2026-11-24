@@ -4,7 +4,7 @@ import Sprite from '../Sprite.astro';
 import { formatDate, formatDateTime } from '../../lib/site';
 import { compact, trends, usd } from '../../lib/trends';
 
-const { indie, market, insights, window: range, method } = trends;
+const { indie, market, insights, majors, window: range, method } = trends;
 const genres = indie.genres.slice(0, 12);
 const maxReleases = Math.max(1, ...genres.map((g) => g.releases));
 const maxPer = Math.max(1, ...genres.map((g) => g.perRelease));
@@ -24,11 +24,116 @@ const percent = (value: number, max: number) => Math.max(2, Math.round((value / 
     {formatDateTime(trends.generatedAt)} 갱신
   </p>
   <nav class="report-toc" aria-label="리포트 목차">
+    {majors && majors.games.length > 0 && <a href="#trend-majors">대작 출시</a>}
     <a href="#trend-indie">인디 시장</a>
     <a href="#trend-market">전체 시장</a>
     <a href="#trend-ideas">만들어 볼 게임</a>
   </nav>
 </header>
+
+{
+  majors && majors.games.length > 0 && (
+    <section id="trend-majors">
+      <h3 class="sec-title">대작 출시 · 평가</h3>
+      <div class="insight">
+        <p class="insight-head">{majors.headline}</p>
+      </div>
+      <div class="majors">
+        {majors.games.map((game) => (
+          <article class="major">
+            <h4>{game.name}</h4>
+            <p class="meta">
+              {game.released} · {game.platforms.join(', ')} · {game.studio}
+            </p>
+            <dl class="major-stats">
+              {game.critic && (
+                <div>
+                  <dt>평론가</dt>
+                  <dd>
+                    <b>{game.critic.score}</b>
+                    <span>
+                      /{game.critic.outOf} {game.critic.outlet}
+                      {game.critic.count != null && ` · ${game.critic.count.toLocaleString()}개`}
+                    </span>
+                  </dd>
+                </div>
+              )}
+              {game.user && (
+                <div>
+                  <dt>유저</dt>
+                  <dd>
+                    <b>{game.user.score}</b>
+                    <span>
+                      /{game.user.outOf} {game.user.outlet}
+                      {game.user.count != null && ` · ${game.user.count.toLocaleString()}개`}
+                    </span>
+                  </dd>
+                </div>
+              )}
+              {game.steam && (
+                <div>
+                  <dt>스팀</dt>
+                  <dd>
+                    <b>{game.steam.positive}%</b>
+                    <span>긍정 · {compact(game.steam.reviews)}개</span>
+                  </dd>
+                </div>
+              )}
+              {game.streams && (
+                <div>
+                  <dt>방송 최고</dt>
+                  <dd>
+                    <b>{compact(game.streams.peak)}</b>
+                    <span>
+                      {game.streams.scope} · {game.streams.source}
+                    </span>
+                  </dd>
+                </div>
+              )}
+            </dl>
+            <p>{game.summary}</p>
+            {game.sales && (
+              <p>
+                <strong>판매</strong> {game.sales}
+              </p>
+            )}
+            {game.sources.length > 0 && (
+              <p class="major-sources">
+                출처{' '}
+                {game.sources.map((src, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    <a href={src} target="_blank" rel="noopener">
+                      {majors.sourceTitles[src] ?? new URL(src).hostname}
+                    </a>
+                  </>
+                ))}
+              </p>
+            )}
+          </article>
+        ))}
+      </div>
+      {
+        majors.upcoming.length > 0 && (
+          <>
+            <h4 class="sub-title">곧 나올 대작</h4>
+            <ul class="upcoming">
+              {majors.upcoming.map((u) => (
+                <li>
+                  <span class="meta">{u.date}</span> {u.name} <span class="meta">{u.platforms.join(', ')}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+      <p class="method">
+        {formatDate(majors.generatedAt)} · {majors.model} 웹 검색 조사 (최근 {majors.days}일 출시작, 3일마다 갱신) · 점수·시청자 수는 기사와 집계 사이트 기준이라 출처마다
+        다를 수 있어요
+      </p>
+    </section>
+  )
+}
 
 <section id="trend-indie">
   <h3 class="sec-title">인디 시장</h3>

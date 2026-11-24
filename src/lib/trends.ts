@@ -55,6 +55,38 @@ export interface Insights {
   ideas: { title: string; genres: string[]; why: string; scope: string; references: string[]; risks: string }[];
 }
 
+export interface MajorScore {
+  score: number;
+  outOf: number;
+  outlet: string;
+  count: number | null;
+}
+
+export interface MajorGame {
+  name: string;
+  released: string;
+  platforms: string[];
+  studio: string;
+  critic: MajorScore | null;
+  user: MajorScore | null;
+  steam: { positive: number; reviews: number } | null;
+  streams: { peak: number; scope: string; source: string } | null;
+  sales: string | null;
+  summary: string;
+  sources: string[];
+}
+
+/** 대작 출시·평가 현황 (Claude 웹 검색, 며칠마다) */
+export interface Majors {
+  generatedAt: string;
+  model: string;
+  days: number;
+  headline: string;
+  games: MajorGame[];
+  upcoming: { name: string; date: string; platforms: string[] }[];
+  sourceTitles: Record<string, string>;
+}
+
 export interface TrendsReport {
   generatedAt: string;
   window: { days: number; from: string; to: string; complete: boolean };
@@ -69,6 +101,7 @@ export interface TrendsReport {
     summary: { sellers: number; newCount: number; freeCount: number; indieCount: number; earlyAccessCount: number; topTags: { name: string; count: number }[] };
   };
   insights: Insights;
+  majors?: Majors | null;
   sources: { youtube: boolean };
 }
 

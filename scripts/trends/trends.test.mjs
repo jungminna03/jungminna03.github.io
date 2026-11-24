@@ -115,3 +115,32 @@ test('buildTrendsPrompt: 장르 표·상위 게임·시장·프로필이 들어�
   assert.match(prompt, /\[GI\] Switch 2 sales/);
   assert.match(prompt, /Unity 1인 개발/);
 });
+
+test('sourcesOf: 검색 결과와 인용에서 URL 을 중복 없이 모은다', async () => {
+  const { sourcesOf } = await import('../lib/ai.mjs');
+  const blocks = [
+    { type: 'server_tool_use', id: 's1', name: 'web_search', input: { query: 'x' } },
+    {
+      type: 'web_search_tool_result',
+      content: [
+        { type: 'web_search_result', url: 'https://a.com/1', title: 'A' },
+        { type: 'web_search_result', url: 'https://b.com/2', title: 'B' },
+      ],
+    },
+    { type: 'web_search_tool_result', content: { type: 'web_search_tool_result_error', error_code: 'max_uses_exceeded' } },
+    { type: 'text', text: '99점', citations: [{ type: 'web_search_result_location', url: 'https://a.com/1', title: 'A' }, { url: 'https://c.com/3', title: 'C' }] },
+  ];
+  assert.deepEqual(sourcesOf(blocks), [
+    { url: 'https://a.com/1', title: 'A' },
+    { url: 'https://b.com/2', title: 'B' },
+    { url: 'https://c.com/3', title: 'C' },
+  ]);
+});
+
+test('keepKnownSources: 검색에 나오지 않은 링크는 버린다', async () => {
+  const { keepKnownSources, buildResearchPrompt } = await import('./majors.mjs');
+  const result = { headline: 'h', upcoming: [], games: [{ name: 'G', sources: ['https://a.com/1', 'https://made-up.com/x'] }] };
+  const out = keepKnownSources(result, [{ url: 'https://a.com/1', title: 'A' }]);
+  assert.deepEqual(out.games[0].sources, ['https://a.com/1']);
+  assert.match(buildResearchPrompt({ today: '2026-11-24', days: 45 }), /2026-11-24.*45일/s);
+});

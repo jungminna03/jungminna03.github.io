@@ -8,6 +8,7 @@
  *  - SteamSpy: 보유자 수 추정 · Apple: 일본 모바일 매출 순위
  *  - YouTube Data API: 게임별 화제성 (YOUTUBE_API_KEY 가 있을 때만)
  *  - 게임 매체 RSS: 시장 흐름 해석용 참고 자료 (AI 인사이트에만 쓰고 화면에 기사를 늘어놓지 않음)
+ *  - Claude 웹 검색: 대작 출시·평론가/유저 점수·방송 시청자 수 (기사·집계 사이트 기준, 출처 링크 포함)
  *
  * 매출은 공개되지 않아서 '추정'이다: 리뷰 수 × reviewMultiplier × 출시가 × priceRealization (Boxleiter 방식)
  *
@@ -23,6 +24,8 @@ export default {
   topGames: 20, // 추정 매출 상위 몇 개를 보여줄지
   youtube: { games: 20, videosPerGame: 10 }, // YOUTUBE_API_KEY 가 있을 때만 (하루 약 2,000 / 10,000 쿼터)
   aiEveryDays: 7, // AI 인사이트는 며칠마다 새로 쓸지 (숫자는 매일 갱신)
+  // 대작 출시·평가 현황 — Claude 웹 검색으로 조사 (ANTHROPIC_API_KEY 가 있을 때만). 1회 약 $0.3~1
+  majors: { days: 45, everyDays: 3, maxSearches: 12 },
 
   // 분석할 장르 태그 (Steam 영어 태그 이름 그대로)
   genres: [
