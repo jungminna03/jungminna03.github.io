@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:09:27.018Z",
+  "generatedAt": "2026-11-24T11:22:25.867Z",
   "window": {
     "days": 30,
     "from": "2026-10-25",
@@ -11,7 +11,7 @@
     "priceRealization": 0.7,
     "tractionReviews": 10
   },
-  "total": 6204,
+  "total": 6207,
   "indie": {
     "releases": 2123,
     "paid": 1954,
@@ -24,9 +24,9 @@
         "en": "Simulation",
         "releases": 585,
         "traction": 128,
-        "revenue": 4043851,
+        "revenue": 4050569,
         "median": 105,
-        "perRelease": 6913,
+        "perRelease": 6924,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -42,9 +42,9 @@
         "en": "Strategy",
         "releases": 573,
         "traction": 75,
-        "revenue": 2004343,
+        "revenue": 2011061,
         "median": 0,
-        "perRelease": 3498,
+        "perRelease": 3510,
         "positive": 85,
         "youtube": 0,
         "top": {
@@ -294,9 +294,9 @@
         "en": "Sandbox",
         "releases": 113,
         "traction": 33,
-        "revenue": 1530123,
+        "revenue": 1536841,
         "median": 210,
-        "perRelease": 13541,
+        "perRelease": 13600,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -620,9 +620,9 @@
         "en": "Sandbox",
         "releases": 113,
         "traction": 33,
-        "revenue": 1530123,
+        "revenue": 1536841,
         "median": 210,
-        "perRelease": 13541,
+        "perRelease": 13600,
         "positive": 82,
         "youtube": 0,
         "top": {
@@ -737,7 +737,7 @@
         "released": "2026-11-17",
         "free": false,
         "price": 39.99,
-        "reviews": 390,
+        "reviews": 398,
         "positive": 69,
         "developer": "Code Horizon",
         "earlyAccess": false,
@@ -747,7 +747,7 @@
           "전략",
           "샌드박스"
         ],
-        "revenue": 327518
+        "revenue": 334236
       },
       {
         "appid": 3370490,
@@ -1168,7 +1168,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 51583,
+        "reviews": 51626,
         "positive": 53,
         "tags": [
           "무료 플레이",
@@ -1212,7 +1212,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 130200,
+        "reviews": 130901,
         "positive": 95,
         "tags": [
           "액션 RPG",
@@ -1689,7 +1689,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 68906,
+        "reviews": 68847,
         "positive": 76,
         "tags": [
           "무료 플레이",
@@ -1888,7 +1888,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 130200,
+        "reviews": 130901,
         "positive": 95,
         "tags": [
           "액션 RPG",

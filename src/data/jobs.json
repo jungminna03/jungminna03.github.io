@@ -1,6 +1,3236 @@
 {
-  "updatedAt": "2026-11-24T11:09:00.397Z",
+  "updatedAt": "2026-11-24T11:21:25.166Z",
   "jobs": [
+    {
+      "id": "hrmos:bandainamcoent:101102210",
+      "title": "ゲームプロデュース／IP軸でのスマートフォン向け新規ゲームアプリ開発運営",
+      "location": "東京都港区芝５丁目３７－８ バンダイナムコ未来研究所",
+      "url": "https://hrmos.co/pages/bandainamcoent/jobs/101102210",
+      "department": "コンテンツ/事業をつくる・届ける",
+      "source": "hrmos",
+      "company": "Bandai Namco Entertainment",
+      "companyKey": "hrmos:bandainamcoent",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcoent:10203000000",
+      "title": "データマーケティング担当/ゲームアプリ開発に必要な市場機会・顧客ニーズ分析",
+      "location": "東京都港区芝５丁目37-8 バンダイナムコ未来研究所",
+      "url": "https://hrmos.co/pages/bandainamcoent/jobs/10203000000",
+      "department": "コンテンツ/事業をつくる・届ける",
+      "source": "hrmos",
+      "company": "Bandai Namco Entertainment",
+      "companyKey": "hrmos:bandainamcoent",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcoent:5100522111",
+      "title": "テクニカルディレクション（ゲームオンライン仕様部分）/エンジニアリング経験を用いたテックリード",
+      "location": "東京都港区芝５丁目37-8 バンダイナムコ未来研究所",
+      "url": "https://hrmos.co/pages/bandainamcoent/jobs/5100522111",
+      "department": "事業を支える",
+      "source": "hrmos",
+      "company": "Bandai Namco Entertainment",
+      "companyKey": "hrmos:bandainamcoent",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcoent:6010241004",
+      "title": "CVC／フロント・事業開発 全般",
+      "location": "東京都港区芝５丁目37-8 バンダイナムコ未来研究所",
+      "url": "https://hrmos.co/pages/bandainamcoent/jobs/6010241004",
+      "department": "会社を強くする",
+      "source": "hrmos",
+      "company": "Bandai Namco Entertainment",
+      "companyKey": "hrmos:bandainamcoent",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en010_0100_0010",
+      "title": "家庭用ゲームエンジニア (新規格闘アクション)",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en010_0100_0010",
+      "department": "エンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en010_0500_0010",
+      "title": "家庭用ゲームエンジニア(テクニカルディレクター)",
+      "location": "東京都江東区永代2-37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en010_0500_0010",
+      "department": "エンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en010_0500_0020",
+      "title": "家庭用ゲームエンジニア (ゲーム開発・グラフィックス)",
+      "location": "東京都江東区永代2-37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en010_0500_0020",
+      "department": "エンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en010_0500_0030",
+      "title": "家庭用ゲームエンジニア（ゲーム開発・通信）",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en010_0500_0030",
+      "department": "サーバ/ビルド/QAエンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 6,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en010_0500_0040",
+      "title": "家庭用ゲームエンジニア (クライアント)",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en010_0500_0040",
+      "department": "エンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en020_0500_0010",
+      "title": "リードゲームAIエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en020_0500_0010",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0040_en020_0500_0020",
+      "title": "ゲームAIエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0040_en020_0500_0020",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0010",
+      "title": "【ゲームエンジン】エンジン基盤エンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0010",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++, ECS"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0020",
+      "title": "【ゲームエンジン】エディタエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0020",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0030",
+      "title": "【ゲームエンジン】グラフィックスエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0030",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0040",
+      "title": "【ゲームエンジン】アニメーションエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0040",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0050",
+      "title": "【ゲームエンジン】UIエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0050",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++, ECS"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0060",
+      "title": "【ゲームエンジン】サウンドエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0060",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0080",
+      "title": "【ゲームエンジン】自動テストエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0080",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0081",
+      "title": "【ゲームエンジン】テストエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0081",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0082",
+      "title": "【ゲームエンジン】CI/CDエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0082",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0083",
+      "title": "【ゲームエンジン】開発環境エンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0083",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_0090",
+      "title": "【ゲームエンジン】ツールエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0090",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, MVVM"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0050_sa010_0500_1000",
+      "title": "【ゲームエンジン】ゲームエンジン開発エンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_1000",
+      "department": "エンジニア職（内製ゲームエンジン『SOL-AVES』）",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0060_rd010_0500_0010",
+      "title": "シニアR&Dエンジニア(機械学習)",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0060_rd010_0500_0010",
+      "department": "エンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -3,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0060_rd010_0500_0020",
+      "title": "R&Dエンジニア(機械学習)",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0060_rd010_0500_0020",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0060_ta010_0500_0010",
+      "title": "テクニカルアーティスト (エンジニア部門)",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0060_ta010_0500_0010",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "techart",
+        "reason": "테크니컬 아티스트 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0060_ta020_0500_0010",
+      "title": "リードワークフローエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0060_ta020_0500_0010",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, Unity, C++, JavaScript"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0060_ta020_0500_0020",
+      "title": "ワークフローエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0060_ta020_0500_0020",
+      "department": "R＆D/テクニカルアーティスト/MoCap職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 6,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C#, Unity, C++, JavaScript"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0070_se010_0500_0010",
+      "title": "リードサーバエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0070_se010_0500_0010",
+      "department": "サーバ/ビルド/QAエンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0070_se010_0500_0020",
+      "title": "リードビルドエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0070_se010_0500_0020",
+      "department": "サーバ/ビルド/QAエンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -3,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0080_qa010_0500_0010",
+      "title": "QAエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0080_qa010_0500_0010",
+      "department": "サーバ/ビルド/QAエンジニア職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C#, C++"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0090_va030_0500_0030",
+      "title": "背景アーティスト（開発環境・ワークフロー構築）",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0090_va030_0500_0030",
+      "department": "ビジュアルアーティスト職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0130_of010_0500_0010",
+      "title": "コーポレートITエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0130_of010_0500_0010",
+      "department": "バックオフィス（IT/事務）職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0130_of010_0500_0020",
+      "title": "ITセキュリティエンジニア",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0130_of010_0500_0020",
+      "department": "バックオフィス（IT/事務）職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:bandainamcostudios:050_0130_of010_0500_0030",
+      "title": "採用担当（新卒採用／キャリア採用）",
+      "location": "東京都江東区永代2丁目37-25",
+      "url": "https://hrmos.co/pages/bandainamcostudios/jobs/050_0130_of010_0500_0030",
+      "department": "バックオフィス（IT/事務）職",
+      "source": "hrmos",
+      "company": "Bandai Namco Studios",
+      "companyKey": "hrmos:bandainamcostudios",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AA-00-info-02",
+      "title": "【新卒採用】イラストレーター職 オンライン会社説明会",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AA-00-info-02",
+      "department": "イベント・説明会",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AA-01-2027",
+      "title": "【新卒・既卒】イラストレーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AA-01-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AA-01-2nd",
+      "title": "【第二新卒】イラストレーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AA-01-2nd",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AA-02-2027",
+      "title": "【新卒インターン】イラストレーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AA-02-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AB-01-2027",
+      "title": "【新卒・既卒】背景デザイナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AB-01-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AB-01-2nd",
+      "title": "【第二新卒】背景デザイナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AB-01-2nd",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AB-02-2027",
+      "title": "【新卒インターン】背景デザイナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AB-02-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AC-01-2027",
+      "title": "【新卒・既卒】シナリオライター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AC-01-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AC-01-2nd",
+      "title": "【第二新卒】シナリオライター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AC-01-2nd",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AC-02-2027",
+      "title": "【新卒インターン】シナリオライター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AC-02-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AD-01-2027",
+      "title": "【新卒】ゲームプランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AD-01-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AD-02-2027",
+      "title": "\"カスタムインターン\"ゲームプランナー【新卒】",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AD-02-2027",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AE-01-2nd",
+      "title": "【第二新卒】プロモーションプランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AE-01-2nd",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AF-02-2026",
+      "title": "【新卒インターン】プロセカ バックエンドエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AF-02-2026",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "server",
+        "reason": "서버·인프라 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AG-02-2026",
+      "title": "【新卒インターン】プロセカ クライアントエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AG-02-2026",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 7,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 신입·인턴 대상 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AH-02-2026",
+      "title": "【新卒インターン】新規プロジェクト バックエンドエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AH-02-2026",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "server",
+        "reason": "서버·인프라 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AI-02-2026",
+      "title": "【新卒インターン】新規プロジェクト クライアントエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AI-02-2026",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 7,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 신입·인턴 대상 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:AJ-02-2026",
+      "title": "【新卒インターン】グラフィックスエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/AJ-02-2026",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "tools",
+        "reason": "툴·엔진 · 신입·인턴 대상 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BA-05-01a",
+      "title": "QA（リーダー候補）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BA-05-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -3,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군)"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BA-09-04a",
+      "title": "サーバーサイドエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BA-09-04a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-01-02a",
+      "title": "【新規開発】制作進行",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-01-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-02-01a",
+      "title": "【新規開発】エキスパートレベルデザイナー/フィールドデザイナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-02-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-02-02a",
+      "title": "【新規開発】エキスパートゲームデザイナー/プランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-02-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-02-04a",
+      "title": "【新規開発】エキスパートバトルデザイナー/プランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-02-04a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-03-01a",
+      "title": "【新規開発】プロモーションプランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-03-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-03-02a",
+      "title": "【新規開発】プロモーションプランナー（英語）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-03-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-07-01a",
+      "title": "【新規開発】コンポーザー",
+      "location": "東京都目黒区青葉台三丁目6番28号 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-07-01a",
+      "department": "【新規開発】コンポーザー",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-09-01a",
+      "title": "【新規開発】クライアントエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-09-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 6,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-09-04a",
+      "title": "【新規開発/横断】グラフィックスエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-09-04a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, Unity, C++"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-10-01a",
+      "title": "【新規開発】イラストレーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-10-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-10-02a",
+      "title": "【新規開発】2Dデザイナー（衣装・防具）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-10-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-10-04a",
+      "title": "【新規開発】コンセプトアーティスト（背景）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-10-04a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-10-05a",
+      "title": "【新規開発】アートディレクター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-10-05a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -3,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-11-01a",
+      "title": "【新規開発】UI/UXデザイナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-11-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-11-02a",
+      "title": "【新規開発】UIアニメーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-11-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-02a",
+      "title": "【新規開発】3DCGディレクター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-02a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "programmer",
+        "reason": "프로그래머 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-03a",
+      "title": "【新規開発】3DCGリードモデラー（キャラクター）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-03a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -6,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-05a",
+      "title": "【新規開発】3Dアニメーター",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-05a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-06a",
+      "title": "【新規開発/横断】テクニカルアーティスト",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-06a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "techart",
+        "reason": "테크니컬 아티스트 · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-08a",
+      "title": "【新規開発】ライティングアーティスト",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-08a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-15a",
+      "title": "【新規開発】リギングアーティスト（リード候補）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-15a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -7,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 시니어·리드 직급이라 경력이 필요해요"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-17a",
+      "title": "【新規開発】3Dアニメーター（バトル）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-17a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-13-18a",
+      "title": "【新規開発】3Dアニメーター（カットシーン）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-13-18a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-14-10a",
+      "title": "【新規開発】ローカライザー（日→簡体）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-14-10a",
+      "department": "【新規開発】ローカライザー（日→簡体）",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BB-16-01a",
+      "title": "【新規開発】エキスパートゲームデザイナー/クエストプランナー",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BB-16-01a",
+      "department": "【新規開発】エキスパートゲームデザイナー/クエストプランナー",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BD-91-05a",
+      "title": "新卒採用担当（メンバー）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BD-91-05a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BD-96-01a",
+      "title": "コーポレートシステムエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BD-96-01a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BD-96-03a",
+      "title": "プロダクトサポートエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BD-96-03a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BZ-01-03a",
+      "title": "オープンポジション（エンジニア職）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BZ-01-03a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:BZ-01-06a",
+      "title": "【未経験採用】ビジネス職（PM/プランナー/QA）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/BZ-01-06a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:Z-12a",
+      "title": "【株式会社Colorful Palette ENCORE】3Dバーチャルライブ開発（Unreal Engine）",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/Z-12a",
+      "department": "中途採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:colorfulpalette:ZZ-02-01",
+      "title": "【新卒インターン】Colorful Palette ENCORE グラフィックスエンジニア",
+      "location": "東京都目黒区青葉台3-6-28 住友不動産青葉台タワー",
+      "url": "https://hrmos.co/pages/colorfulpalette/jobs/ZZ-02-01",
+      "department": "新卒採用",
+      "source": "hrmos",
+      "company": "Colorful Palette",
+      "companyKey": "hrmos:colorfulpalette",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "tools",
+        "reason": "툴·엔진 · 신입·인턴 대상 · 기술 일치: Unity"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000016",
+      "title": "サーバーサイドエンジニア／ゲーム・Webサービス／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000016",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000019",
+      "title": "クライアントサイドエンジニア／ゲーム／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000019",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000020",
+      "title": "ゲームエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000020",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000021",
+      "title": "フロントエンドエンジニア／ゲーム・サービス／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000021",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: JavaScript, Tailwind CSS, TypeScript"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000022",
+      "title": "インフラエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000022",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000029",
+      "title": "iOSエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000029",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity, Kotlin"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000030",
+      "title": "Androidエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000030",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity, Kotlin"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000032",
+      "title": "セキュリティエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000032",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000033",
+      "title": "フォトグラメトリーエンジニア＆アーティスト／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000033",
+      "department": "CG・イラスト・デザイン",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000073",
+      "title": "グラフィックスエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000073",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000077",
+      "title": "ツールエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000077",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000079",
+      "title": "サウンドエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000079",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000082",
+      "title": "ゲームエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000082",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000112",
+      "title": "第二新卒／オープンポジション／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000112",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000143",
+      "title": "システムエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000143",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000144",
+      "title": "ツールエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000144",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000145",
+      "title": "ネットワークエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000145",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000146",
+      "title": "グラフィックスエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000146",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000147",
+      "title": "エフェクトエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000147",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000148",
+      "title": "物理シミュレーションエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000148",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000149",
+      "title": "ゲームAIエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000149",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000151",
+      "title": "サウンドエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000151",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000199",
+      "title": "アニメーションエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000199",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000228",
+      "title": "【LogicLinks】サーバーサイドエンジニア",
+      "location": "東京都渋谷区渋谷2丁目12-4 ネクストサイト渋谷ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000228",
+      "department": "株式会社LogicLinks",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000247",
+      "title": "【LogicLinks】フロントエンドエンジニア",
+      "location": "東京都渋谷区渋谷2丁目12-4 ネクストサイト渋谷ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000247",
+      "department": "株式会社LogicLinks",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000324",
+      "title": "サウンドエンジニア／MAミキシング等／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000324",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000329",
+      "title": "【LogicLinks】インフラエンジニア",
+      "location": "東京都渋谷区渋谷2丁目12-4ネクストサイト渋谷ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000329",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000349",
+      "title": "QAエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000349",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:0000443",
+      "title": "【BlazeGames】グラフィックスエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000443",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1686933079420817421",
+      "title": "ビルドエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1686933079420817421",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1707253965739917313",
+      "title": "第二新卒／技術職／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1707253965739917313",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1707253965739917317",
+      "title": "【未経験可】第二新卒／総合職／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1707253965739917317",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1707253965739917318",
+      "title": "【未経験可】第二新卒／技術職／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1707253965739917318",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1793262169510682626",
+      "title": "ビルドエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1793262169510682626",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1793262169510682631",
+      "title": "CG映像／インフラエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1793262169510682631",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1836256501621039137",
+      "title": "セキュリティエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1836256501621039137",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1836256501621039141",
+      "title": "AIエンジニア（自然言語処理）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1836256501621039141",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1941794969118494722",
+      "title": "グラフィックスエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1941794969118494722",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414155",
+      "title": "AIエンジニア（画像生成・画像処理）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414155",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414157",
+      "title": "アニメーションエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414157",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414158",
+      "title": "サウンドエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414158",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414160",
+      "title": "ツールエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414160",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414161",
+      "title": "QAエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414161",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414162",
+      "title": "ビルドエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414162",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414165",
+      "title": "アニメーションエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414165",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414178",
+      "title": "UIエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414178",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414180",
+      "title": "UIエンジニア／コンシューマー／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414180",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414194",
+      "title": "【フリーランス】サーバーサイドエンジニア／ゲーム・Webサービス／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414194",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414195",
+      "title": "【フリーランス】クライアントサイドエンジニア／ゲーム／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414195",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414196",
+      "title": "【フリーランス】ゲームエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414196",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414197",
+      "title": "【フリーランス】フロントエンドエンジニア／ゲーム・サービス／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414197",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 5,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: JavaScript, Tailwind CSS, TypeScript"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414200",
+      "title": "【フリーランス】iOSエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414200",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity, Kotlin"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414201",
+      "title": "【フリーランス】Androidエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414201",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: Unity, Kotlin"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414202",
+      "title": "【フリーランス】セキュリティエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414202",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414203",
+      "title": "【フリーランス】フォトグラメトリーエンジニア＆アーティスト／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414203",
+      "department": "CG・イラスト・デザイン",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414229",
+      "title": "【フリーランス】グラフィックスエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414229",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414230",
+      "title": "【フリーランス】ツールエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414230",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414231",
+      "title": "【フリーランス】サウンドエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414231",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414233",
+      "title": "【フリーランス】ゲームエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414233",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414241",
+      "title": "【フリーランス】システムエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414241",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414242",
+      "title": "【フリーランス】ツールエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414242",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414243",
+      "title": "【フリーランス】ネットワークエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414243",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414244",
+      "title": "【フリーランス】グラフィックスエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414244",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414245",
+      "title": "【フリーランス】エフェクトエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414245",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -2,
+        "family": "art",
+        "reason": "직군이 달라요 (아트)"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414246",
+      "title": "【フリーランス】物理シミュレーションエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414246",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414247",
+      "title": "【フリーランス】ゲームAIエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414247",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414248",
+      "title": "【フリーランス】サウンドエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414248",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414252",
+      "title": "【フリーランス】アニメーションエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414252",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414272",
+      "title": "【フリーランス】QAエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414272",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414283",
+      "title": "【フリーランス】ビルドエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414283",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414285",
+      "title": "【フリーランス】ゲームプランナー／ゲーム／新規開発プロジェクト／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414285",
+      "department": "ゲームプランナー",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "design",
+        "reason": "게임 기획"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414286",
+      "title": "【フリーランス】ビルドエンジニア／ゲームエンジン／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414286",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C++"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414288",
+      "title": "【フリーランス】CG映像／インフラエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414288",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414292",
+      "title": "【フリーランス】AIエンジニア（自然言語処理）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414292",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414294",
+      "title": "【フリーランス】グラフィックスエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414294",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414297",
+      "title": "【フリーランス】AIエンジニア（画像生成・画像処理）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414297",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414298",
+      "title": "【フリーランス】アニメーションエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414298",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414299",
+      "title": "【フリーランス】サウンドエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414299",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414301",
+      "title": "【フリーランス】ツールエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414301",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "tools",
+        "reason": "툴·엔진"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414302",
+      "title": "【フリーランス】QAエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414302",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414303",
+      "title": "【フリーランス】ビルドエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414303",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414304",
+      "title": "【フリーランス】アニメーションエンジニア／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414304",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414307",
+      "title": "【フリーランス】UIエンジニア／コンシューマー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414307",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:1984149015409414309",
+      "title": "【フリーランス】UIエンジニア／コンシューマー／大阪",
+      "location": "大阪府大阪市北区小松原町2番4号　大阪富国生命ビル",
+      "url": "https://hrmos.co/pages/cygames/jobs/1984149015409414309",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2130592181566771221",
+      "title": "【フリーランス】インフラエンジニア／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2130592181566771221",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2130592181566771228",
+      "title": "強化学習エンジニア（ゲーム自動プレイ・バランス最適化）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2130592181566771228",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2130592181566771231",
+      "title": "【フリーランス】強化学習エンジニア（ゲーム自動プレイ・バランス最適化）／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2130592181566771231",
+      "department": "エンジニア・R&D",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2130592181566771245",
+      "title": "【フリーランス】サウンドエンジニア／MAミキシング等／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2130592181566771245",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2130592181566771257",
+      "title": "第二新卒／ゲームプランナー／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2130592181566771257",
+      "department": "ゲームプランナー",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989525",
+      "title": "【Cygames AI Studio】強化学習エンジニア（ゲーム自動プレイ・バランス最適化）",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989525",
+      "department": "株式会社Cygames AI Studio",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989526",
+      "title": "【Cygames AI Studio】言語モデルエンジニア",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989526",
+      "department": "株式会社Cygames AI Studio",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989527",
+      "title": "【Cygames AI Studio】潜在拡散モデルエンジニア",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989527",
+      "department": "株式会社Cygames AI Studio",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989547",
+      "title": "第二新卒／労務担当／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989547",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989578",
+      "title": "第二新卒／デザイナー／アートディレクター・ジェネラリスト候補／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989578",
+      "department": "サポート・その他",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -7,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 시니어·리드 직급이라 경력이 필요해요"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989600",
+      "title": "サウンドエンジニア／音声収録・スタジオ運営／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989600",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:cygames:2196517413571989601",
+      "title": "【フリーランス】サウンドエンジニア／音声収録・スタジオ運営／東京",
+      "location": "東京都渋谷区南平台町16番17号　住友不動産渋谷ガーデンタワー",
+      "url": "https://hrmos.co/pages/cygames/jobs/2196517413571989601",
+      "department": "サウンド",
+      "source": "hrmos",
+      "company": "Cygames",
+      "companyKey": "hrmos:cygames",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "programmer",
+        "reason": "프로그래머"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:01_01_01",
+      "title": "【社員】Unityエンジニア",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/01_01_01",
+      "department": "エンジニア",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "good",
+        "score": 7,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:01_01_02",
+      "title": "【社員】Unityエンジニア（新規IPプロジェクト/テックリード候補）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/01_01_02",
+      "department": "エンジニア",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 2,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:01_01_03",
+      "title": "【社員】グラフィックスエンジニア（開発推進室）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/01_01_03",
+      "department": "エンジニア",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:01_01_04",
+      "title": "【社員】テクニカルアーティスト（開発推進室）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/01_01_04",
+      "department": "エンジニア",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "techart",
+        "reason": "테크니컬 아티스트 · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:01_01_05",
+      "title": "【社員】MLエンジニア（開発推進室）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/01_01_05",
+      "department": "エンジニア",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C#, Unity"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:03_01_04",
+      "title": "【社員】＜第二新卒大歓迎！＞英語力を活かせる！カジュアルゲームの企画・マーケティング",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/03_01_04",
+      "department": "企画",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "design",
+        "reason": "게임 기획 · 신입·인턴 대상"
+      }
+    },
+    {
+      "id": "hrmos:sumzap:04_01_01",
+      "title": "【社員】QA（新規IPまたは運用IP/ご経験に応じて該当プロジェクトは相談させていただきます）",
+      "location": "東京都渋谷区宇田川町40番1号 Abema Towers",
+      "url": "https://hrmos.co/pages/sumzap/jobs/04_01_01",
+      "department": "その他",
+      "source": "hrmos",
+      "company": "Sumzap",
+      "companyKey": "hrmos:sumzap",
+      "firstSeenAt": "2026-11-24T11:21:25.166Z",
+      "fit": {
+        "level": "low",
+        "score": -3,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군)"
+      }
+    },
     {
       "id": "greenhouse:scopely:5490347008",
       "title": "Senior Anticheat Engineer",
@@ -291,97 +3521,241 @@
     }
   ],
   "recommendations": {
-    "generatedAt": "2026-11-24T11:09:00.397Z",
+    "generatedAt": "2026-11-24T11:21:25.166Z",
     "model": "claude-opus-5-5",
-    "inputHash": "a15338d2c4de9cbbf16dc7859fd3e6a71f31c4e5",
+    "inputHash": "22c0de520b98b7c6fa8562f160d5c0e1b447e260",
     "picks": [
       {
-        "type": "reach",
-        "jobId": "smartrecruiters:KeywordsStudios:744000138021279",
-        "reason": "공고의 핵심 언어인 C#·C++을 둘 다 다뤘고, 게임 본체와 주변 툴 양쪽 업무가 SO 프레임워크와 FSM 에셋 경험에 이어집니다. Unity 게임 2종(Steam·Google Play) 출시 경험과 문서화·테스트 습관(Unity Test Framework)도 공고의 역할과 맞습니다. 다만 수년의 실무 경력을 요구해 신입에게는 상향 지원입니다.",
+        "type": "match",
+        "jobId": "hrmos:colorfulpalette:AI-02-2026",
+        "reason": "신입 대상 인턴으로, 게임 기능 개발과 Editor 확장 툴 개발이 주 업무입니다. Unity·C#으로 Google Play에 출시하고 운영한 경험, SO 기반 프레임워크 설계 경험과 직접 맞닿아 있습니다. 비전문가도 콘텐츠를 추가할 수 있게 만든 Deadlands 구조는 툴 관점의 강점이 됩니다.",
         "gaps": [
-          "수년의 실무 경력 요건 미충족 → 출시·운영 경험을 실무에 준하는 성과로 정리 필요",
-          "C++ 경험이 Siv3D·EnTT 개인 프로젝트 수준이라 깊이 있는 C++ 코드 샘플 보강",
-          "재직 중 일본 거주 요건(취업 비자·졸업 시기 2028.03) 확인"
+          "3D 게임 개발 경험이 기록에 없음",
+          "Editor 확장(EditorWindow·CustomInspector) 결과물이 따로 정리돼 있지 않음"
         ],
-        "tip": "후배가 코드를 몰라도 적·강화를 추가할 수 있게 한 SO 구조와 Haare Framework 결함 제안 사례를 '협업·리뷰 가능한 엔지니어'로 연결해 강조하세요."
+        "tip": "Deadlands에서 SO와 추상화로 후배가 코드를 몰라도 적과 강화를 추가할 수 있게 한 설계를 '개발 효율화' 사례로 내세우세요."
+      },
+      {
+        "type": "reach",
+        "jobId": "hrmos:cygames:0000019",
+        "reason": "iOS/Android 네이티브 게임의 설계부터 운영까지 맡는 정사원 클라이언트 포지션이라 희망 직무와 정확히 겹칩니다. 경력직 성격이 강해 문턱은 높습니다. 다만 Unity 모바일 출시·BM 탑재·운영 경험과 Unity Test Framework를 활용한 테스트 경험이 있어 도전해 볼 만합니다.",
+        "gaps": [
+          "실무(회사) 개발 경력이 없음",
+          "운영 중 성능 최적화나 부하 경감 사례가 구체적이지 않음"
+        ],
+        "tip": "Google Play 출시를 위한 SDK 버전업과 콘솔 요구사항 대응, IAP·광고 운영 경험을 '설계부터 운영까지 해 봤다'는 근거로 정리하세요."
       },
       {
         "type": "interest",
-        "jobId": "ashby:hoyoverse:ec6c3e5e-37da-402f-9501-1462248d14e1",
-        "reason": "관심 기업 HoYoverse의 후보는 모두 비개발 직무지만, 그중 일본 시장 퍼블리싱이 가장 가깝습니다. 직접 Google Play에 출시하고 Unity Ads·IAP로 BM을 붙여 3개월 운영한 경험이 퍼블리싱 업무 이해로 이어집니다. 일본어 비즈니스 수준도 강점입니다.",
+        "jobId": "hrmos:colorfulpalette:AG-02-2026",
+        "reason": "관심 기업 Colorful Palette의 신입 인턴이고, 대형 운영 타이틀인 프로세카의 클라이언트 개발을 경험할 수 있습니다. 직접 출시한 게임을 3개월 운영하고 인계까지 한 경험이 '운영도 또 하나의 신규 개발'이라는 공고 메시지와 잘 맞습니다.",
         "gaps": [
-          "희망 직무(클라이언트)와 다른 직무라 경력 방향 고려 필요",
-          "인턴 근무 가능 기간·도쿄 체류 조건 확인",
-          "운영 지표(다운로드·매출·리텐션) 수치 정리 부족"
+          "리듬게임·대규모 라이브 서비스에 대한 이해를 보여 줄 자료가 없음",
+          "캐릭터 IP 콘텐츠에 대한 애정을 보여 줄 근거를 정리할 필요가 있음"
         ],
-        "tip": "Deadlands 출시·운영 과정에서 플레이 콘솔 대응과 BM 설계를 직접 처리한 경험을 퍼블리싱 관점으로 서술하세요."
+        "tip": "프리코네·아이마스 팬게임(Project Arimu)을 예로 들어 캐릭터 콘텐츠에 대한 애정과 R3 FSM 같은 재사용 설계 역량을 함께 보여 주세요."
       }
     ],
     "ratings": {
+      "hrmos:sumzap:01_01_01": {
+        "level": "low",
+        "reason": "Unity/C# 실무 3년 이상이 필수라 신입에게는 무리"
+      },
       "smartrecruiters:KeywordsStudios:744000146667289": {
         "level": "low",
-        "reason": "UE 실무 수년·콘솔 출시 경력 필수, UE 경험 기록 없음"
+        "reason": "UE 실무 수년과 콘솔 출시 경험이 필요하고 Unity 중심 경력과 다름"
       },
       "smartrecruiters:KeywordsStudios:744000146664081": {
         "level": "low",
-        "reason": "UE 수년 경력·콘솔 출시 요구, 신입·Unity 중심과 불일치"
+        "reason": "UE·C++ 수년 경력과 콘솔 출시 경험 요구"
+      },
+      "hrmos:bandainamcostudios:050_0060_ta020_0500_0020": {
+        "level": "low",
+        "reason": "Maya 등 DCC 툴·에셋 파이프라인 경험이 기록에 없음"
+      },
+      "hrmos:colorfulpalette:AG-02-2026": {
+        "level": "good",
+        "reason": "신입 인턴이고 Unity 모바일 출시·운영 경험과 맞음"
+      },
+      "hrmos:colorfulpalette:AI-02-2026": {
+        "level": "good",
+        "reason": "신입 인턴, 기능 개발과 에디터 툴 업무가 SO 설계 경험과 일치"
+      },
+      "hrmos:bandainamcostudios:050_0040_en010_0500_0030": {
+        "level": "low",
+        "reason": "온라인 게임 통신 개발 경험이 필수인데 기록에 없음"
+      },
+      "hrmos:colorfulpalette:BB-09-01a": {
+        "level": "maybe",
+        "reason": "Unity·N1은 충족 가능하나 회사 실무경험이 필수"
       },
       "smartrecruiters:KeywordsStudios:744000158458299": {
         "level": "low",
-        "reason": "렌더링·셰이더 실무 수년 요구, 관련 기록 없음"
+        "reason": "렌더링·HLSL 경력과 콘솔 출시 경험 요구"
       },
       "smartrecruiters:KeywordsStudios:744000146665815": {
         "level": "low",
-        "reason": "커스텀 엔진 실무 수년·콘솔 출시 요구, 신입에 과함"
+        "reason": "커스텀 엔진 실무 수년과 콘솔 출시 경험 요구"
       },
       "smartrecruiters:KeywordsStudios:744000146666791": {
         "level": "low",
-        "reason": "엔진 프로그래머 경력 요구, C++ 경험이 개인 수준"
+        "reason": "C++ 엔진 실무 수년 요구로 신입에게 높음"
       },
       "smartrecruiters:KeywordsStudios:744000138021279": {
-        "level": "maybe",
-        "reason": "C#·C++·툴 업무가 맞지만 수년 경력 요건이 걸림"
+        "level": "low",
+        "reason": "C++/C# 수년 실무가 전제라 경력 부족"
       },
       "smartrecruiters:KeywordsStudios:744000138021024": {
+        "level": "low",
+        "reason": "수년 실무 경력과 일본 거주가 필요"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0010": {
+        "level": "low",
+        "reason": "C++ 실무와 콘솔 개발 경험 필수, ECS는 개인 수준"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0050": {
+        "level": "low",
+        "reason": "WPF 에디터와 로컬라이즈 실무 경험 요구"
+      },
+      "hrmos:colorfulpalette:BB-09-04a": {
+        "level": "low",
+        "reason": "그래픽스·셰이더 실무 경력직이라 기록과 무관"
+      },
+      "hrmos:cygames:0000021": {
         "level": "maybe",
-        "reason": "C#·C++ 핵심은 맞으나 경력 요건, 영어 실력 미기재"
+        "reason": "TS·Tailwind 웹 경험은 있으나 희망 직무와 다름"
+      },
+      "hrmos:cygames:1984149015409414197": {
+        "level": "low",
+        "reason": "업무위탁 형태라 해외 신입에게 부적합"
       },
       "smartrecruiters:KeywordsStudios:744000138021559": {
         "level": "low",
-        "reason": "실시간 네트워킹 수년 경력 요구, 서버 경험 없음"
+        "reason": "실시간 네트워킹 수년 경력 요구"
       },
       "smartrecruiters:KeywordsStudios:744000138021509": {
         "level": "low",
-        "reason": "저수준 네트워크·매치메이킹 경력 필요, 기록 없음"
+        "reason": "네트워크 C++ 경력과 일본 거주 요구"
       },
-      "greenhouse:scopely:5467729008": {
+      "hrmos:bandainamcostudios:050_0040_en010_0100_0010": {
         "level": "low",
-        "reason": "테크니컬 아티스트 직무, 아트 역량 기록 없음"
+        "reason": "C++ 게임 개발 3년 이상 필수"
       },
-      "greenhouse:scopely:5180929008": {
+      "hrmos:bandainamcostudios:050_0040_en010_0500_0020": {
         "level": "low",
-        "reason": "모바일 클라이언트지만 시니어 리드 직급, 신입 불가"
+        "reason": "상용 3D 그래픽스와 셰이더 경력 필수"
       },
-      "greenhouse:scopely:5467727008": {
+      "hrmos:bandainamcostudios:050_0040_en010_0500_0040": {
         "level": "low",
-        "reason": "VFX 아티스트 직무, 관련 경험 없음"
+        "reason": "C++ 콘솔 개발 5년 이상 필수"
       },
-      "greenhouse:scopely:5395475008": {
-        "level": "low",
-        "reason": "데이터 인프라 기술 리더 직무, 경력·분야 불일치"
-      },
-      "greenhouse:scopely:5490347008": {
-        "level": "low",
-        "reason": "시니어 보안직, 중국어·영어 필수 요건 미충족"
-      },
-      "ashby:hoyoverse:ec6c3e5e-37da-402f-9501-1462248d14e1": {
+      "hrmos:colorfulpalette:AJ-02-2026": {
         "level": "maybe",
-        "reason": "관심 기업·일본어 강점, 출시 운영 경험 있으나 비개발직"
+        "reason": "신입 인턴이나 셰이더·3D 그래픽스 경험이 없음"
       },
-      "ashby:hoyoverse:403cebb8-e6a6-4ae6-ad4b-146c6c17b643": {
+      "hrmos:colorfulpalette:Z-12a": {
         "level": "low",
-        "reason": "마케팅 장기 인턴, 마케팅 경험 기록 없고 직무 상이"
+        "reason": "UE 실무 경험이 필수인데 기록에 없음"
+      },
+      "hrmos:colorfulpalette:ZZ-02-01": {
+        "level": "maybe",
+        "reason": "신입 인턴이지만 그래픽스 경험 부재가 걸림"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0020": {
+        "level": "low",
+        "reason": "WPF 앱과 엔진 확장 실무 경험 요구"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0030": {
+        "level": "low",
+        "reason": "DX12·PBR·콘솔 등 렌더링 전문 경력 필요"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0060": {
+        "level": "low",
+        "reason": "사운드 개발 실무 경험이 기록에 없음"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0080": {
+        "level": "low",
+        "reason": "테스트 설계 3년 이상과 CI/CD 실무 요구"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0081": {
+        "level": "low",
+        "reason": "테스트 실무 경험이 필수, UTF 사용은 개인 수준"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0082": {
+        "level": "low",
+        "reason": "대규모 CI/CD 구축·운영 경력 필요"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0083": {
+        "level": "low",
+        "reason": "상위 설계와 CS 전문 실무 역량 요구"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_0090": {
+        "level": "low",
+        "reason": "WPF/MVVM 실무 요구, Electron 툴만으로는 부족"
+      },
+      "hrmos:bandainamcostudios:050_0050_sa010_0500_1000": {
+        "level": "low",
+        "reason": "C++ 실무와 콘솔 개발 경험 필수"
+      },
+      "hrmos:bandainamcostudios:050_0080_qa010_0500_0010": {
+        "level": "low",
+        "reason": "Jenkins 등 CI/QA 실무 경력 지향"
+      },
+      "hrmos:cygames:0000029": {
+        "level": "low",
+        "reason": "Swift·iOS 경험이 기록에 없음"
+      },
+      "hrmos:cygames:0000030": {
+        "level": "maybe",
+        "reason": "Kotlin·MVVM 앱 경험은 있으나 희망 직무와 다름"
+      },
+      "hrmos:cygames:1984149015409414200": {
+        "level": "low",
+        "reason": "업무위탁이고 Swift 경험이 없음"
+      },
+      "hrmos:cygames:1984149015409414201": {
+        "level": "low",
+        "reason": "업무위탁 형태라 신입에게 부적합"
+      },
+      "hrmos:sumzap:01_01_03": {
+        "level": "low",
+        "reason": "URP·HLSL·DCC 등 그래픽스 실무 필요"
+      },
+      "hrmos:sumzap:01_01_05": {
+        "level": "low",
+        "reason": "ML 전문 지식과 실무 경험이 필수"
+      },
+      "hrmos:sumzap:01_01_02": {
+        "level": "low",
+        "reason": "테크리드 후보로 Unity 3년 이상 필수"
+      },
+      "hrmos:colorfulpalette:BB-13-06a": {
+        "level": "low",
+        "reason": "TA·리거 실무 경험이 필수"
+      },
+      "hrmos:cygames:0000019": {
+        "level": "maybe",
+        "reason": "모바일 클라이언트로 직무는 일치하나 경력직 성격"
+      },
+      "hrmos:cygames:0000020": {
+        "level": "maybe",
+        "reason": "게임 로직 직무는 맞지만 3D·콘솔 경험이 없음"
+      },
+      "hrmos:cygames:0000082": {
+        "level": "maybe",
+        "reason": "오사카 근무 희망은 맞으나 3D·콘솔 경험 부족"
+      },
+      "hrmos:cygames:1984149015409414195": {
+        "level": "low",
+        "reason": "업무위탁 계약이라 신입에게 부적합"
+      },
+      "hrmos:cygames:1984149015409414196": {
+        "level": "low",
+        "reason": "업무위탁이고 콘솔 경험이 없음"
+      },
+      "hrmos:cygames:1984149015409414233": {
+        "level": "low",
+        "reason": "업무위탁 계약이라 신입에게 부적합"
       }
     }
   }
