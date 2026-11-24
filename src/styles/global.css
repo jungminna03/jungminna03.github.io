@@ -564,10 +564,6 @@ code {
   color: var(--ink);
   font-size: 18.5px;
 }
-.entry-highlight {
-  margin: 4px 0 6px;
-  color: var(--muted);
-}
 
 /* ───────── 포트폴리오 ───────── */
 .profile-card {
