@@ -810,6 +810,16 @@ html:has(.sheet[open]) {
 }
 
 /* ───────── 채용 추천 ───────── */
+.search-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 26px;
+}
+.search-links .px-btn {
+  font-size: 13px;
+}
 .pin {
   position: absolute;
   top: 14px;

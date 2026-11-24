@@ -56,7 +56,14 @@ const profile = {
   experience: '신입',
   targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'],
   targetLocations: ['일본 (도쿄·오사카 등)', '해외'],
-  interestCompanies: ['HoYoverse', 'Riot Games'], // TODO: config/jobs.mjs 의 회사 이름과 똑같이
+  // 관심 기업 — config/jobs.mjs 의 회사 이름(또는 manual 공고의 company)과 똑같이
+  interestCompanies: [
+    'HoYoverse', 'Riot Games',
+    // 반다이남코 산하
+    'Bandai Namco Studios', 'Bandai Namco Entertainment',
+    // 사이버에이전트 산하
+    'Cygames', 'Colorful Palette', 'Sumzap', 'Applibot', 'QualiArts', 'Craft Egg',
+  ],
   notes: '지금은 클라이언트 프로그래머가 1순위지만, 포트폴리오에 맞는 조건이 있으면 다른 직무(툴 프로그래머 등)도 추천받고 싶다.',
 };
 

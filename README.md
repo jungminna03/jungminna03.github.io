@@ -80,7 +80,7 @@ AI 에게는 일기에 없는 경력·수치를 지어내지 말고 근거가 �
 - **링크드인·마이나비는 자동으로 긁지 않는다.** 링크드인 이용약관과 [마이나비 사이트 정책](https://job.mynavi.jp/sitepolicy/index.html) 모두 크롤러로 게재 정보를 가져가는 걸 금지한다.
   두 사이트의 '새 공고 알림 메일'을 켜두고, 괜찮은 공고를 `manual` 에 옮겨 적으면 추천·적합도 대상이 된다.
   일본 게임사의 신졸(新卒) 채용은 대부분 공식 API 가 없어서 이 방법이 가장 확실하다.
-- **자동 수집**은 회사가 채용 페이지용으로 공개한 공식 API(Greenhouse · Lever · SmartRecruiters · Ashby)를 쓴다.
+- **자동 수집**은 회사가 채용 페이지용으로 공개한 공식 API(Greenhouse · Lever · SmartRecruiters · Ashby)와 HRMOS 공개 채용 페이지를 쓴다.
   회사 추가: 채용 페이지 주소의 ID 를 `companies` 에 넣는다 (`boards.greenhouse.io/<id>` 등).
 - 필터: `locations` (기본은 일본 지명), `roles` (개발·기술직 + 인턴/신졸), `exclude`. 해외 전체를 보려면 `locations: []`.
 

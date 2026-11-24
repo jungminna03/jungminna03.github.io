@@ -82,5 +82,6 @@ export const SOURCE_LABELS: Record<string, string> = {
   lever: 'Lever',
   smartrecruiters: 'SmartRecruiters',
   ashby: 'Ashby',
+  hrmos: 'HRMOS',
   manual: '직접 추가',
 };

@@ -1,5 +1,37 @@
-// 채용 공고 소스. 모두 회사가 채용 페이지용으로 공개한 공식 API 라서 인증이 필요 없다.
-import { fetchJson, htmlToText, sha1, toIso, unique } from '../lib/util.mjs';
+// 채용 공고 소스. 대부분 회사가 채용 페이지용으로 공개한 공식 API 라서 인증이 필요 없다.
+// HRMOS 만 공식 API 가 없어서 회사의 공개 채용 목록 페이지를 하루 한 번 읽는다 (페이지 사이 1초 쉼).
+import { decodeEntities, fetchJson, fetchText, htmlToText, sha1, toIso, unique } from '../lib/util.mjs';
+
+const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/**
+ * HRMOS 채용 목록 페이지 HTML → 공고 목록 (한 페이지 최대 100건)
+ * @param {string} html
+ * @param {string} id hrmos.co/pages/<id>
+ */
+export function parseHrmosList(html, id) {
+  const items = html.split('<li class="pg-list-cassette jsc-joblist-cassette">').slice(1);
+  return items.flatMap((item) => {
+    const url = item.match(/<a href="(https:\/\/hrmos\.co\/pages\/[^"]+\/jobs\/([^"/?#]+))"/);
+    const title = item.match(/<h2>([\s\S]*?)<\/h2>/);
+    if (!url || !title) return [];
+    const tags = [...item.matchAll(/<li(?: class="([^"]*)")?>([\s\S]*?)<\/li>/g)];
+    const location = tags.find((t) => t[1] === 'sg-tag-location')?.[2] ?? '';
+    const labels = tags.filter((t) => t[1] !== 'sg-tag-location').map((t) => htmlToText(t[2]));
+    const body = item.match(/<span class="pg-list-cassette-body[^"]*">([\s\S]*?)<\/span>/)?.[1] ?? '';
+    return [
+      {
+        id: `hrmos:${id}:${url[2]}`,
+        title: decodeEntities(htmlToText(title[1])).trim(),
+        location: decodeEntities(htmlToText(location)).replace(/\s+他\(\d+\)$/, '').trim(),
+        url: url[1],
+        department: labels[0],
+        postedAt: undefined,
+        description: [labels.join(' · '), htmlToText(body)].filter(Boolean).join('\n'),
+      },
+    ];
+  });
+}
 
 const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
 function countryName(code) {
@@ -12,6 +44,19 @@ function countryName(code) {
 }
 
 const ADAPTERS = {
+  // HRMOS 채용 — 공개 채용 목록 페이지 (?page=N, 한 페이지 100건)
+  async hrmos({ id }) {
+    const jobs = new Map();
+    for (let page = 1; page <= 10; page += 1) {
+      if (page > 1) await pause(1000);
+      const html = await fetchText(`https://hrmos.co/pages/${id}/jobs${page > 1 ? `?page=${page}` : ''}`);
+      const found = parseHrmosList(html, id).filter((job) => !jobs.has(job.id));
+      for (const job of found) jobs.set(job.id, job);
+      if (found.length < 100) break;
+    }
+    return [...jobs.values()];
+  },
+
   // https://developers.greenhouse.io/job-board.html
   async greenhouse({ id }) {
     const data = await fetchJson(`https://boards-api.greenhouse.io/v1/boards/${id}/jobs?content=true`);

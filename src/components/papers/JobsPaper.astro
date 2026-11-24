@@ -1,6 +1,7 @@
 ---
 // 채용 추천 — 압정으로 꽂은 게시판. 공고마다 적합도 도장과 이유를 붙인다.
 import Sprite from '../Sprite.astro';
+import jobsConfig from '../../../config/jobs.mjs';
 import { FIT_LABELS, fitOf, jobsData, PICK_LABELS, SOURCE_LABELS, sortByFit, type Job } from '../../lib/jobs';
 import { formatDate, formatDateTime } from '../../lib/site';
 
@@ -28,6 +29,19 @@ const PICK_STAMP = { match: 'good', reach: 'bad', interest: 'maybe' } as const;
     {updatedAt && <p class="paper-sub meta">{formatDateTime(updatedAt)} 갱신</p>}
   </div>
 </header>
+
+{
+  jobsConfig.searchLinks.length > 0 && (
+    <nav class="search-links" aria-label="직접 찾아보기">
+      <span class="meta">직접 찾아보기</span>
+      {jobsConfig.searchLinks.map((link) => (
+        <a class="px-btn" href={link.url} target="_blank" rel="noopener">
+          {link.label} ↗
+        </a>
+      ))}
+    </nav>
+  )
+}
 
 <section>
   <h3 class="sec-title">오늘의 추천</h3>

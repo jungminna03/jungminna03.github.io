@@ -137,3 +137,26 @@ test('manualJobs: url 로 안정적인 id', () => {
   assert.match(a.id, /^manual:[0-9a-f]{12}$/);
   assert.equal(a.companyKey, 'manual');
 });
+
+test('parseHrmosList: HRMOS 채용 목록 페이지에서 제목·근무지·링크·본문', async () => {
+  const { parseHrmosList } = await import('./sources.mjs');
+  const html = `<ul><li class="pg-list-cassette jsc-joblist-cassette"> <a href="https://hrmos.co/pages/sumzap/jobs/01_01_01"> <figure></figure>
+    <div><h2>【社員】Unityエンジニア</h2> <p> <span class="pg-list-cassette-body jsc-joblist-cassette-body">仕事内容 Unity+C#&amp;開発</span> </p></div>
+    <ul class="sg-tags cf"> <li>エンジニア</li> <li>正社員</li> <li class="sg-tag-location">東京都渋谷区宇田川町40番1号 他(1)</li> </ul> </a> </li>
+    <li class="pg-list-cassette jsc-joblist-cassette"> <a href="https://example.com/x">링크 없음</a></li></ul>`;
+  const jobs = parseHrmosList(html, 'sumzap');
+  assert.equal(jobs.length, 1);
+  assert.deepEqual(
+    { ...jobs[0], description: undefined },
+    {
+      id: 'hrmos:sumzap:01_01_01',
+      title: '【社員】Unityエンジニア',
+      location: '東京都渋谷区宇田川町40番1号',
+      url: 'https://hrmos.co/pages/sumzap/jobs/01_01_01',
+      department: 'エンジニア',
+      postedAt: undefined,
+      description: undefined,
+    },
+  );
+  assert.match(jobs[0].description, /エンジニア · 正社員\n仕事内容 Unity\+C#&開発/);
+});
