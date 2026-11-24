@@ -768,7 +768,7 @@ html:has(.sheet[open]) {
 /* 아래에서 기울어진 채 밀려 올라와, 살짝 넘어갔다가 제자리에 놓인다 */
 @keyframes sheet-place {
   0% {
-    transform: translateY(100vh) rotate(6deg);
+    transform: translateY(calc(100vh + 40px)) rotate(6deg);
   }
   62% {
     transform: translateY(-14px) rotate(-1.4deg);
@@ -782,7 +782,7 @@ html:has(.sheet[open]) {
 }
 @keyframes sheet-take {
   to {
-    transform: translateY(100vh) rotate(-5deg);
+    transform: translateY(calc(100vh + 100% + 40px)) rotate(-5deg);
   }
 }
 @keyframes sheet-fade {
@@ -1460,7 +1460,7 @@ html:has(.sheet[open]) {
 /* ───────── 종이 넘기기 — 쓰던 종이를 옆으로 치우고, 다음 종이를 끌어와 내려놓는다 ───────── */
 @keyframes paper-in-right {
   0% {
-    transform: translateX(110%) rotate(6deg);
+    transform: translateX(calc(100vw + 80px)) rotate(6deg);
   }
   62% {
     transform: translateX(-14px) rotate(-1.2deg);
@@ -1474,7 +1474,7 @@ html:has(.sheet[open]) {
 }
 @keyframes paper-in-left {
   0% {
-    transform: translateX(-110%) rotate(-6deg);
+    transform: translateX(calc(-100vw - 80px)) rotate(-6deg);
   }
   62% {
     transform: translateX(14px) rotate(1.2deg);
@@ -1488,12 +1488,12 @@ html:has(.sheet[open]) {
 }
 @keyframes paper-out-left {
   to {
-    transform: translateX(-115%) rotate(-7deg);
+    transform: translateX(calc(-100vw - 80px)) rotate(-7deg);
   }
 }
 @keyframes paper-out-right {
   to {
-    transform: translateX(115%) rotate(7deg);
+    transform: translateX(calc(100vw + 80px)) rotate(7deg);
   }
 }
 .paper.enter-right,

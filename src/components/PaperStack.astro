@@ -106,12 +106,17 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
         return;
       }
       busy = true;
+      // 종이가 길어서 가운데를 축으로 기울이면 보이는 부분이 크게 휘둘린다 → 지금 화면 한가운데를 축으로
+      for (const paper of [from, to]) {
+        paper.style.transformOrigin = `50% ${Math.round(innerHeight / 2 - paper.getBoundingClientRect().top)}px`;
+      }
       from.classList.add(direction > 0 ? 'leave-left' : 'leave-right');
       to.classList.add(direction > 0 ? 'enter-right' : 'enter-left');
       setTimeout(() => {
         from.hidden = true;
         from.classList.remove('leave-left', 'leave-right');
         to.classList.remove('enter-right', 'enter-left');
+        from.style.transformOrigin = to.style.transformOrigin = '';
         busy = false;
       }, 560);
     };
