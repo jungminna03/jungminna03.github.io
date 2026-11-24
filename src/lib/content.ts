@@ -6,12 +6,6 @@ export async function getDiary() {
   return entries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 
-/** 최신순 */
-export async function getCardNews() {
-  const sets = await getCollection('cardnews');
-  return sets.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || b.id.localeCompare(a.id));
-}
-
 /** buildPortfolio() 입력 형태로 변환 */
 export const toPortfolioEntry = ({ id, data }: CollectionEntry<'diary'>) => ({
   id,

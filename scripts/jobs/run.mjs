@@ -6,6 +6,7 @@ import { buildPortfolio } from '../../src/lib/portfolio.mjs';
 import { aiEnabled, MODEL } from '../lib/ai.mjs';
 import { loadDiary } from '../lib/diary.mjs';
 import { kstDate, readJson, sha1, warn, writeJson } from '../lib/util.mjs';
+import { assessFit } from './fit.mjs';
 import { isExpired, matchesFilters, mergeJobs, rankCandidates } from './merge.mjs';
 import { buildDigest, recommend } from './recommend.mjs';
 import { enrichDescriptions, fetchCompanyJobs, manualJobs } from './sources.mjs';
@@ -37,26 +38,33 @@ await enrichDescriptions(fetched);
 
 const jobs = mergeJobs(previous.jobs, fetched, failedCompanies, now);
 
-// 2) AI 추천 (후보·프로필·일기가 어제와 같으면 다시 부르지 않는다)
+// 2) 규칙 기반 적합도 — 키가 없어도 항상 매긴다 (프로필 희망 직무·경력 + 기술 일기 기술)
+const diary = await loadDiary();
+const skills = buildPortfolio(diary, profile.skills).skills.map((s) => s.name);
+for (const job of jobs) {
+  job.fit = assessFit(job, { targetRoles: profile.targetRoles, experience: profile.experience, skills });
+}
+const tally = (level) => jobs.filter((job) => job.fit.level === level).length;
+console.log(`적합도(규칙): 잘 맞음 ${tally('good')} · 검토 ${tally('maybe')} · 안 맞음 ${tally('low')}`);
+
+// 3) AI 추천 + 공고별 적합도 (후보·프로필·일기가 어제와 같으면 다시 부르지 않는다)
 let recommendations = previous.recommendations;
 if (!aiEnabled()) {
   console.log('ANTHROPIC_API_KEY 가 없어서 AI 추천은 건너뜁니다.');
 } else if (jobs.length === 0) {
   recommendations = null;
 } else {
-  const diary = await loadDiary();
-  const skills = buildPortfolio(diary, profile.skills).skills.map((s) => s.name);
   const candidates = rankCandidates(jobs, { skills, interestCompanies: profile.interestCompanies });
   const digest = buildDigest(diary);
-  const inputHash = sha1({ model: MODEL, profile, digest, ids: candidates.map((job) => job.id).sort() });
+  const inputHash = sha1({ v: 2, model: MODEL, profile, digest, ids: candidates.map((job) => job.id).sort() });
 
   if (inputHash === previous.recommendations?.inputHash) {
     console.log('후보·프로필·일기 변화 없음 — 이전 추천 유지');
   } else {
     try {
-      const picks = await recommend({ profile, skills, digest, candidates });
-      recommendations = { generatedAt: now, model: MODEL, inputHash, picks };
-      console.log(`✓ AI 추천 ${picks.length}건 (${picks.map((p) => p.type).join(', ') || '없음'})`);
+      const { picks, ratings } = await recommend({ profile, skills, digest, candidates });
+      recommendations = { generatedAt: now, model: MODEL, inputHash, picks, ratings };
+      console.log(`✓ AI 추천 ${picks.length}건 (${picks.map((p) => p.type).join(', ') || '없음'}) · 적합도 ${Object.keys(ratings).length}건`);
     } catch (err) {
       failed = true;
       warn(`AI 추천 실패 — 이전 추천 유지: ${err.message}`);

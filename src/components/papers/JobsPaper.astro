@@ -1,0 +1,204 @@
+---
+// 채용 추천 — 압정으로 꽂은 게시판. 공고마다 적합도 도장과 이유를 붙인다.
+import Sprite from '../Sprite.astro';
+import { FIT_LABELS, fitOf, jobsData, PICK_LABELS, SOURCE_LABELS, sortByFit, type Job } from '../../lib/jobs';
+import { formatDate, formatDateTime } from '../../lib/site';
+
+const { jobs, recommendations, updatedAt } = jobsData;
+const byId = new Map(jobs.map((job) => [job.id, job]));
+const picks = (recommendations?.picks ?? []).flatMap((pick) => {
+  const job = byId.get(pick.jobId);
+  return job ? [{ ...pick, job }] : [];
+});
+const sorted = sortByFit(jobs);
+const counts = { good: 0, maybe: 0, low: 0 };
+for (const job of jobs) counts[fitOf(job)?.level ?? 'low'] += 1;
+const companies = [...new Set(jobs.map((job) => job.company))].sort((a, b) => a.localeCompare(b));
+const searchText = (job: Job) => [job.title, job.company, job.location, job.department].join(' ').toLowerCase();
+const PICK_STAMP = { match: 'good', reach: 'bad', interest: 'maybe' } as const;
+---
+
+<span class="pin pin-left" aria-hidden="true"><Sprite name="pin" scale={4} /></span>
+<span class="pin pin-right" aria-hidden="true"><Sprite name="pin" scale={4} /></span>
+
+<header class="paper-head">
+  <Sprite name="letter" scale={3} />
+  <div>
+    <h2>채용 추천</h2>
+    <p class="paper-sub">
+      일본·해외 게임 회사 공고를 매일 아침 모아서 포트폴리오에 맞는 순서로 정리해요.
+      {updatedAt && <span class="meta"> 마지막 업데이트 {formatDateTime(updatedAt)}</span>}
+    </p>
+  </div>
+</header>
+
+<section>
+  <h3 class="sec-title">오늘의 추천</h3>
+  {
+    picks.length > 0 ? (
+      <>
+        <div class="picks">
+          {picks.map((pick) => (
+            <article class="pick">
+              <span class:list={['stamp', PICK_STAMP[pick.type]]}>{PICK_LABELS[pick.type]}</span>
+              <p class="meta">
+                {pick.job.company}
+                {pick.job.location && ` · ${pick.job.location}`}
+              </p>
+              <h4>
+                <a href={pick.job.url} target="_blank" rel="noopener">
+                  {pick.job.title}
+                </a>
+              </h4>
+              <p>{pick.reason}</p>
+              {pick.gaps.length > 0 && (
+                <div class="pick-gaps">
+                  <strong>보완할 점</strong>
+                  <ul>
+                    {pick.gaps.map((gap) => (
+                      <li>{gap}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {pick.tip && (
+                <p class="pick-tip">
+                  <strong>지원 팁</strong> {pick.tip}
+                </p>
+              )}
+            </article>
+          ))}
+        </div>
+        {recommendations && (
+          <p class="meta">
+            {formatDateTime(recommendations.generatedAt)} · {recommendations.model} 가 골랐어요.
+          </p>
+        )}
+      </>
+    ) : (
+      <div class="empty-note">
+        <p class="empty-title">아직 오늘의 추천이 없어요</p>
+        <p>AI 추천은 매일 아침 공고를 모은 뒤에 적정 지원 · 상향 지원 · 관심 기업 세 곳을 골라요.</p>
+      </div>
+    )
+  }
+</section>
+
+<section data-jobs>
+  <h3 class="sec-title">
+    전체 공고
+    <span class="count">잘 맞음 {counts.good} · 검토 {counts.maybe} · 안 맞음 {counts.low}</span>
+  </h3>
+  {
+    jobs.length === 0 ? (
+      <p class="empty-note">아직 수집된 공고가 없어요.</p>
+    ) : (
+      <>
+        <div class="filters">
+          <input type="search" placeholder="직무 · 회사 · 지역 검색" aria-label="공고 검색" data-search />
+          <select aria-label="적합도" data-fit>
+            <option value="ok">잘 맞음 + 검토</option>
+            <option value="good">잘 맞음만</option>
+            <option value="all">전체</option>
+          </select>
+          <select aria-label="회사" data-company>
+            <option value="">모든 회사</option>
+            {companies.map((company) => (
+              <option value={company}>{company}</option>
+            ))}
+          </select>
+        </div>
+        <ul class="job-list">
+          {sorted.map((job) => {
+            const fit = fitOf(job);
+            return (
+              <li
+                class="job"
+                data-job
+                data-search={searchText(job)}
+                data-company-name={job.company}
+                data-fit-level={fit?.level ?? 'low'}
+                data-first-seen={job.firstSeenAt}
+              >
+                <span class:list={['stamp', fit?.level ?? 'low']}>{FIT_LABELS[fit?.level ?? 'low']}</span>
+                <div class="job-main">
+                  <p class="job-company">
+                    {job.company}
+                    <span class="new-badge" data-new hidden>
+                      NEW
+                    </span>
+                  </p>
+                  <a class="job-title" href={job.url} target="_blank" rel="noopener">
+                    {job.title}
+                  </a>
+                  {fit && (
+                    <p class="job-fit">
+                      {fit.reason}
+                      {fit.by === 'ai' && <span class="ai-tag">AI</span>}
+                    </p>
+                  )}
+                  <p class="meta">
+                    {[job.location, job.department, SOURCE_LABELS[job.source] ?? job.source].filter(Boolean).join(' · ')}
+                    {job.deadline ? ` · ~${formatDate(job.deadline)}` : job.postedAt ? ` · ${formatDate(job.postedAt)}` : ''}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+        <p class="hidden-note" data-hidden-note hidden>
+          <span data-hidden-count />건은 안 맞아서 숨겼어요.
+          <button type="button" class="link-btn" data-show-all>
+            모두 보기
+          </button>
+        </p>
+        <p class="empty-note" data-empty hidden>
+          조건에 맞는 공고가 없어요.
+        </p>
+      </>
+    )
+  }
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-jobs]');
+  const input = root?.querySelector<HTMLInputElement>('[data-search]');
+  const fitSelect = root?.querySelector<HTMLSelectElement>('[data-fit]');
+  const companySelect = root?.querySelector<HTMLSelectElement>('[data-company]');
+  if (root && input && fitSelect && companySelect) {
+    const items = Array.from(root.querySelectorAll<HTMLElement>('[data-job]'));
+    const hiddenNote = root.querySelector<HTMLElement>('[data-hidden-note]')!;
+    const hiddenCount = root.querySelector<HTMLElement>('[data-hidden-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+
+    // 처음 수집된 지 3일 안 된 공고에 NEW 표시 (빌드 시점이 아니라 보는 시점 기준)
+    for (const item of items) {
+      if (Date.now() - Date.parse(item.dataset.firstSeen ?? '') < 3 * 86_400_000) item.querySelector('[data-new]')?.removeAttribute('hidden');
+    }
+
+    const fitOk = (level: string) => fitSelect.value === 'all' || (fitSelect.value === 'good' ? level === 'good' : level !== 'low');
+    const apply = () => {
+      const query = input.value.trim().toLowerCase();
+      let shown = 0;
+      let hiddenByFit = 0;
+      for (const item of items) {
+        const matches = (!query || (item.dataset.search ?? '').includes(query)) && (!companySelect.value || item.dataset.companyName === companySelect.value);
+        const ok = fitOk(item.dataset.fitLevel ?? 'low');
+        item.hidden = !(matches && ok);
+        if (matches && ok) shown += 1;
+        if (matches && !ok) hiddenByFit += 1;
+      }
+      hiddenCount.textContent = String(hiddenByFit);
+      hiddenNote.hidden = hiddenByFit === 0;
+      empty.hidden = shown > 0 || hiddenByFit > 0;
+    };
+    root.querySelector('[data-show-all]')?.addEventListener('click', () => {
+      fitSelect.value = 'all';
+      apply();
+    });
+    input.addEventListener('input', apply);
+    fitSelect.addEventListener('change', apply);
+    companySelect.addEventListener('change', apply);
+    apply();
+  }
+</script>

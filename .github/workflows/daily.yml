@@ -1,13 +1,13 @@
 name: Daily update
 
-# 매일 아침: 채용 공고 수집 + AI 추천, 게임 트렌드 카드뉴스 생성 → 바뀐 게 있으면 커밋하고 배포
+# 매일 아침: 채용 공고 수집 + AI 추천, 스팀 게임 트렌드 분석 → 바뀐 게 있으면 커밋하고 배포
 on:
   schedule:
     - cron: '0 22 * * *' # 매일 07:00 KST (GitHub 사정으로 몇 분~수십 분 늦을 수 있음)
   workflow_dispatch:
     inputs:
-      force_cardnews:
-        description: '오늘 카드뉴스를 다시 만들기'
+      force_ai:
+        description: '트렌드 AI 인사이트를 지금 다시 쓰기 (평소엔 7일마다)'
         type: boolean
         default: false
 
@@ -25,6 +25,7 @@ jobs:
     timeout-minutes: 20
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # 없으면 AI 없이 동작
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }} # 없으면 유튜브 화제성 생략
       CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }} # 비워두면 claude-opus-5-5
     steps:
       - uses: actions/checkout@v7
@@ -39,16 +40,16 @@ jobs:
         continue-on-error: true
         run: npm run jobs
 
-      - name: 게임 트렌드 카드뉴스
-        id: cardnews
+      - name: 스팀 게임 트렌드 분석
+        id: trends
         continue-on-error: true
-        run: npm run cardnews -- ${{ inputs.force_cardnews && '--force' || '' }}
+        run: npm run trends -- ${{ inputs.force_ai && '--force-ai' || '' }}
 
       - name: 바뀐 데이터 커밋 후 배포
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          git add src/data src/content/cardnews
+          git add src/data
           if git diff --cached --quiet; then
             echo "변경 없음 — 배포하지 않음"
             exit 0
@@ -62,7 +63,7 @@ jobs:
           gh workflow run deploy.yml --ref "$GITHUB_REF_NAME"
 
       - name: 실패한 단계 알림
-        if: steps.jobs.outcome == 'failure' || steps.cardnews.outcome == 'failure'
+        if: steps.jobs.outcome == 'failure' || steps.trends.outcome == 'failure'
         run: |
-          echo "::error::채용(${{ steps.jobs.outcome }}) · 카드뉴스(${{ steps.cardnews.outcome }}) 중 실패한 단계가 있어요. 위 로그를 확인하세요."
+          echo "::error::채용(${{ steps.jobs.outcome }}) · 트렌드(${{ steps.trends.outcome }}) 중 실패한 단계가 있어요. 위 로그를 확인하세요."
           exit 1

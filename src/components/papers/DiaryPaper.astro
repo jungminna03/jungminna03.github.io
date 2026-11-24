@@ -1,0 +1,62 @@
+---
+// 기술 일기 — 줄 공책
+import Sprite from '../Sprite.astro';
+import { getDiary } from '../../lib/content';
+import { formatDate, url } from '../../lib/site';
+
+const entries = await getDiary();
+const years = new Map<string, typeof entries>();
+for (const entry of entries) {
+  const year = formatDate(entry.data.date).slice(0, 4);
+  years.set(year, [...(years.get(year) ?? []), entry]);
+}
+---
+
+<header class="paper-head">
+  <Sprite name="quill" scale={3} />
+  <div>
+    <h2>기술 일기</h2>
+    <p class="paper-sub">배운 것, 막혔던 것, 해결한 것. 적어두면 포트폴리오로 정리돼요.</p>
+  </div>
+</header>
+
+{
+  entries.length === 0 ? (
+    <div class="empty-note">
+      <p class="empty-title">아직 첫 장이 비어 있어요</p>
+      <p>
+        <code>src/content/diary</code> 에 마크다운으로 첫 일기를 써 보세요.
+      </p>
+    </div>
+  ) : (
+    [...years].map(([year, list]) => (
+      <section class="diary-year">
+        <h3 class="sec-title">
+          {year} <span class="count">{list.length}</span>
+        </h3>
+        <ol class="notebook">
+          {list.map((entry) => (
+            <li>
+              <time datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date).slice(5)}</time>
+              <div>
+                <a class="entry-title" href={url(`/diary/${entry.id}/`)}>
+                  {entry.data.title}
+                </a>
+                {entry.data.draft && <span class="stamp maybe">초안</span>}
+                {entry.data.highlight && <p class="entry-highlight">★ {entry.data.highlight}</p>}
+                {(entry.data.project || entry.data.tags.length > 0) && (
+                  <ul class="chips">
+                    {entry.data.project && <li class="chip chip-strong">{entry.data.project}</li>}
+                    {entry.data.tags.map((tag) => (
+                      <li class="chip">#{tag}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))
+  )
+}

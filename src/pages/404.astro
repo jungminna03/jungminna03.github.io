@@ -1,12 +1,15 @@
 ---
-import Base from '../layouts/Base.astro';
+import Desk from '../layouts/Desk.astro';
 import { url } from '../lib/site';
 ---
 
-<Base title="페이지를 찾을 수 없어요" noindex>
-  <section class="page-head">
-    <h1>404</h1>
-    <p class="lead">페이지를 찾을 수 없어요. 주소가 바뀌었거나 삭제됐을 수 있어요.</p>
-  </section>
-  <a class="btn" href={url('/')}>홈으로</a>
-</Base>
+<Desk title="종이를 찾을 수 없어요" noindex>
+  <div class="single">
+    <article class="paper paper-single lost">
+      <p class="lost-code">404</p>
+      <h1>책상 위에 이 종이는 없어요</h1>
+      <p>주소가 바뀌었거나 치운 종이일 수 있어요.</p>
+      <a class="px-btn" href={url('/')}>책상으로 돌아가기</a>
+    </article>
+  </div>
+</Desk>

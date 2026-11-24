@@ -1,0 +1,160 @@
+---
+// 책상 위 종이 네 장. 좌우 버튼·탭·키보드(←/→)·스와이프로 넘긴다.
+// 자바스크립트가 없어도 탭·화살표가 각 종이 주소로 가는 링크라서 그대로 동작한다.
+import Sprite from './Sprite.astro';
+import DiaryPaper from './papers/DiaryPaper.astro';
+import JobsPaper from './papers/JobsPaper.astro';
+import PortfolioPaper from './papers/PortfolioPaper.astro';
+import TrendsPaper from './papers/TrendsPaper.astro';
+import profile from '../../config/profile.mjs';
+import { SECTIONS, type SectionKey } from '../lib/sections';
+import { url } from '../lib/site';
+
+interface Props {
+  active: SectionKey;
+}
+
+const { active } = Astro.props;
+const at = (offset: number) => SECTIONS[(SECTIONS.findIndex((s) => s.key === active) + offset + SECTIONS.length) % SECTIONS.length];
+const prev = at(-1);
+const next = at(1);
+const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.label} · ${profile.siteTitle}` }));
+---
+
+<div class="stack" data-stack data-active={active} data-sections={JSON.stringify(sections)}>
+  <h1 class="sr-only">{profile.siteTitle}</h1>
+  <nav class="tabs" aria-label="종이 고르기">
+    {
+      sections.map((s) => (
+        <a class="tab" href={s.href} data-tab={s.key} aria-current={s.key === active ? 'page' : undefined}>
+          <Sprite name={s.sprite} scale={2} />
+          <span>{s.label}</span>
+        </a>
+      ))
+    }
+  </nav>
+
+  <div class="stage">
+    <a class="arrow arrow-prev" href={url(prev.path)} data-go="-1" aria-label={`이전 종이: ${prev.label}`}>
+      <Sprite name="arrowL" scale={5} />
+    </a>
+
+    <div class="papers" data-papers>
+      <section class="paper paper-diary" data-paper="diary" aria-label="기술 일기" hidden={active !== 'diary'}>
+        <DiaryPaper />
+      </section>
+      <section class="paper paper-portfolio" data-paper="portfolio" aria-label="포트폴리오" hidden={active !== 'portfolio'}>
+        <PortfolioPaper />
+      </section>
+      <section class="paper paper-jobs" data-paper="jobs" aria-label="채용 추천" data-nosnippet hidden={active !== 'jobs'}>
+        <JobsPaper />
+      </section>
+      <section class="paper paper-trends" data-paper="trends" aria-label="게임 트렌드" hidden={active !== 'trends'}>
+        <TrendsPaper />
+      </section>
+    </div>
+
+    <a class="arrow arrow-next" href={url(next.path)} data-go="1" aria-label={`다음 종이: ${next.label}`}>
+      <Sprite name="arrowR" scale={5} />
+    </a>
+  </div>
+  <p class="stack-hint">← → 키나 화면을 좌우로 밀어서 넘길 수 있어요</p>
+</div>
+
+<script>
+  type Section = { key: string; href: string; label: string; title: string };
+
+  const stack = document.querySelector<HTMLElement>('[data-stack]');
+  if (stack) {
+    const sections: Section[] = JSON.parse(stack.dataset.sections ?? '[]');
+    const papers = new Map(Array.from(stack.querySelectorAll<HTMLElement>('[data-paper]')).map((el) => [el.dataset.paper!, el]));
+    const tabs = Array.from(stack.querySelectorAll<HTMLAnchorElement>('[data-tab]'));
+    const prevLink = stack.querySelector<HTMLAnchorElement>('[data-go="-1"]')!;
+    const nextLink = stack.querySelector<HTMLAnchorElement>('[data-go="1"]')!;
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let current = stack.dataset.active!;
+    let busy = false;
+
+    const indexOf = (key: string) => sections.findIndex((s) => s.key === key);
+    const at = (offset: number) => sections[(indexOf(current) + offset + sections.length) % sections.length];
+
+    const sync = () => {
+      for (const tab of tabs) {
+        if (tab.dataset.tab === current) tab.setAttribute('aria-current', 'page');
+        else tab.removeAttribute('aria-current');
+      }
+      const [prev, next] = [at(-1), at(1)];
+      prevLink.href = prev.href;
+      prevLink.setAttribute('aria-label', `이전 종이: ${prev.label}`);
+      nextLink.href = next.href;
+      nextLink.setAttribute('aria-label', `다음 종이: ${next.label}`);
+    };
+
+    const show = (key: string, direction: 1 | -1) => {
+      if (busy || key === current) return;
+      const from = papers.get(current)!;
+      const to = papers.get(key)!;
+      current = key;
+      sync();
+      const section = sections[indexOf(key)];
+      history.replaceState(null, '', section.href);
+      document.title = section.title;
+
+      to.hidden = false;
+      if (stack.getBoundingClientRect().top < 0) stack.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+      if (reduceMotion) {
+        from.hidden = true;
+        return;
+      }
+      busy = true;
+      from.classList.add(direction > 0 ? 'leave-left' : 'leave-right');
+      to.classList.add(direction > 0 ? 'enter-right' : 'enter-left');
+      setTimeout(() => {
+        from.hidden = true;
+        from.classList.remove('leave-left', 'leave-right');
+        to.classList.remove('enter-right', 'enter-left');
+        busy = false;
+      }, 320);
+    };
+
+    const go = (offset: 1 | -1) => show(at(offset).key, offset);
+
+    prevLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      go(-1);
+    });
+    nextLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      go(1);
+    });
+    for (const tab of tabs) {
+      tab.addEventListener('click', (event) => {
+        event.preventDefault();
+        const key = tab.dataset.tab!;
+        show(key, indexOf(key) > indexOf(current) ? 1 : -1);
+      });
+    }
+    document.addEventListener('keydown', (event) => {
+      const target = event.target as HTMLElement;
+      if (event.altKey || event.ctrlKey || event.metaKey || target.closest('input, textarea, select')) return;
+      if (event.key === 'ArrowLeft') go(-1);
+      if (event.key === 'ArrowRight') go(1);
+    });
+
+    // 스와이프 (가로로 60px 이상, 세로 움직임은 적게)
+    let start: { x: number; y: number } | null = null;
+    const area = stack.querySelector<HTMLElement>('[data-papers]')!;
+    area.addEventListener('touchstart', (e) => (start = { x: e.touches[0].clientX, y: e.touches[0].clientY }), { passive: true });
+    area.addEventListener(
+      'touchend',
+      (e) => {
+        if (!start) return;
+        const dx = e.changedTouches[0].clientX - start.x;
+        const dy = e.changedTouches[0].clientY - start.y;
+        start = null;
+        if (Math.abs(dx) > 60 && Math.abs(dy) < 50) go(dx < 0 ? 1 : -1);
+      },
+      { passive: true },
+    );
+  }
+</script>

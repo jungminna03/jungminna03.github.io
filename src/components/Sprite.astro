@@ -1,0 +1,43 @@
+---
+// 픽셀 스프라이트를 SVG 로 그린다 (같은 색이 이어지는 가로 구간을 사각형 하나로 합침)
+import { SPRITES, type SpriteName } from '../lib/sprites';
+
+interface Props {
+  name: SpriteName;
+  /** 화면 픽셀 / 스프라이트 픽셀 */
+  scale?: number;
+  class?: string;
+  /** 있으면 그림으로 읽히고, 없으면 장식으로 숨긴다 */
+  label?: string;
+}
+
+const { name, scale = 3, class: className, label } = Astro.props;
+const { rows, palette } = SPRITES[name];
+const colors = palette as Record<string, string>;
+const width = rows[0].length;
+const height = rows.length;
+
+const rects: { x: number; y: number; w: number; fill: string }[] = [];
+rows.forEach((row, y) => {
+  for (let x = 0; x < row.length; ) {
+    const ch = row[x];
+    let end = x + 1;
+    while (end < row.length && row[end] === ch) end += 1;
+    if (ch !== '.') rects.push({ x, y, w: end - x, fill: colors[ch] });
+    x = end;
+  }
+});
+---
+
+<svg
+  class:list={['sprite', className]}
+  width={width * scale}
+  height={height * scale}
+  viewBox={`0 0 ${width} ${height}`}
+  shape-rendering="crispEdges"
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}
+>
+  {rects.map((r) => <rect x={r.x} y={r.y} width={r.w} height="1" fill={r.fill} />)}
+</svg>

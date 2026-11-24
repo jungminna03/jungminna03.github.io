@@ -1,0 +1,268 @@
+---
+// 게임 트렌드 리포트 — 신문 1면. 데이터: scripts/trends (스팀 공식 API · SteamSpy · Apple · YouTube)
+import Sprite from '../Sprite.astro';
+import { formatDate, formatDateTime } from '../../lib/site';
+import { compact, trends, usd } from '../../lib/trends';
+
+const { indie, market, insights, window: range, method } = trends;
+const genres = indie.genres.slice(0, 12);
+const maxReleases = Math.max(1, ...genres.map((g) => g.releases));
+const maxPer = Math.max(1, ...genres.map((g) => g.perRelease));
+const tractionRate = indie.releases ? Math.round((indie.withTraction / indie.releases) * 100) : 0;
+const [topGame] = indie.topGames;
+const youtube = trends.sources.youtube && indie.topGames.some((g) => g.youtube);
+const percent = (value: number, max: number) => Math.max(2, Math.round((value / max) * 100));
+---
+
+<header class="masthead">
+  <p class="masthead-kicker">
+    <Sprite name="chart" scale={2} /> 주간 게임 시장 리포트
+  </p>
+  <h2>GAME TREND REPORT</h2>
+  <p class="masthead-meta">
+    {formatDate(range.from)} ~ {formatDate(range.to)} ({range.days}일) · 스팀 신작 {trends.total.toLocaleString()}개 중 인디 {indie.releases.toLocaleString()}개 ·
+    {formatDateTime(trends.generatedAt)} 갱신
+  </p>
+  <nav class="report-toc" aria-label="리포트 목차">
+    <a href="#trend-indie">인디 시장</a>
+    <a href="#trend-market">전체 시장</a>
+    <a href="#trend-ideas">만들어 볼 게임</a>
+  </nav>
+</header>
+
+<section id="trend-indie">
+  <h3 class="sec-title">인디 시장</h3>
+  <div class="insight">
+    <p class="insight-head">{insights.indie.headline}</p>
+    <ul>{insights.indie.points.map((point) => <li>{point}</li>)}</ul>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><b>{indie.releases.toLocaleString()}</b><span>인디 신작</span></div>
+    <div class="kpi"><b>{tractionRate}%</b><span>리뷰 {method.tractionReviews}개 이상</span></div>
+    <div class="kpi"><b>{topGame ? usd(topGame.revenue) : '-'}</b><span>추정 매출 1위{topGame && ` · ${topGame.name}`}</span></div>
+  </div>
+
+  <h4 class="sub-title">장르별 출시 수(경쟁) vs 출시 1개당 추정 매출(수요)</h4>
+  <div class="genre-chart">
+    {
+      genres.map((g) => (
+        <div class="g-row">
+          <span class="g-name">{g.name}</span>
+          <span class="g-bars">
+            <span class="bar bar-supply" style={`--v:${percent(g.releases, maxReleases)}%`} />
+            <span class="bar bar-demand" style={`--v:${percent(g.perRelease, maxPer)}%`} />
+          </span>
+          <span class="g-nums">
+            {g.releases}개
+            <br />
+            {usd(g.perRelease)}
+          </span>
+        </div>
+      ))
+    }
+  </div>
+  <p class="legend"><span class="swatch supply" /> 출시 수 <span class="swatch demand" /> 출시 1개당 추정 매출</p>
+
+  <h4 class="sub-title">기회 장르 — 경쟁에 비해 많이 번 곳</h4>
+  <ol class="opps">
+    {
+      indie.opportunities.map((g) => (
+        <li>
+          <b>{g.name}</b> 출시 {g.releases}개 · 1개당 {usd(g.perRelease)} · 리뷰 {method.tractionReviews}개+ {g.traction}개
+          {g.top && (
+            <>
+              {' '}
+              · 대표작{' '}
+              <a href={g.top.url} target="_blank" rel="noopener">
+                {g.top.name}
+              </a>
+            </>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+
+  <h4 class="sub-title">추정 매출 TOP 10 인디 신작</h4>
+  <div class="table-wrap">
+    <table class="px-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>게임</th>
+          <th>리뷰</th>
+          <th>추정 매출</th>
+          {youtube && <th>유튜브</th>}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          indie.topGames.slice(0, 10).map((g, i) => (
+            <tr>
+              <td class="num">{i + 1}</td>
+              <td>
+                <a href={g.url} target="_blank" rel="noopener">
+                  {g.name}
+                </a>
+                <span class="meta">
+                  {g.tags.slice(0, 3).join(' · ')} · {g.released && formatDate(g.released).slice(5)} · ${g.price}
+                  {g.owners && ` · 보유자 ${g.owners}`}
+                </span>
+              </td>
+              <td class="num">
+                {g.reviews.toLocaleString()}
+                {g.positive != null && <span class="meta">{g.positive}%</span>}
+              </td>
+              <td class="num">{usd(g.revenue)}</td>
+              {youtube && (
+                <td class="num">
+                  {g.youtube?.top ? (
+                    <a href={g.youtube.top.url} target="_blank" rel="noopener" title={g.youtube.top.title}>
+                      {compact(g.youtube.views)}
+                    </a>
+                  ) : (
+                    '-'
+                  )}
+                </td>
+              )}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="method">
+    추정 매출 = 리뷰 수 × {method.reviewMultiplier} × 출시가 × {method.priceRealization} (Boxleiter 방식이라 실제와 다를 수 있어요) · 보유자 수는 SteamSpy 추정
+    {youtube && ' · 유튜브는 출시 후 올라온 영상 중 조회수 상위 10개의 합'}
+  </p>
+</section>
+
+<section id="trend-market">
+  <h3 class="sec-title">전체 시장 · 플랫폼</h3>
+  <div class="insight">
+    <p class="insight-head">{insights.market.headline}</p>
+    <ul>{insights.market.points.map((point) => <li>{point}</li>)}</ul>
+  </div>
+  <div class="rank-cols">
+    <div>
+      <h4 class="sub-title">스팀 주간 매출 TOP 10</h4>
+      <ol class="rank">
+        {
+          market.sellers.slice(0, 10).map((s) => (
+            <li>
+              <a href={s.url} target="_blank" rel="noopener">
+                {s.name}
+              </a>
+              {s.isNew && <span class="mini">신작</span>}
+              {s.free && <span class="mini">무료</span>}
+              {s.indie && <span class="mini">인디</span>}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+    <div>
+      <h4 class="sub-title">스팀 동시 접속 TOP 10</h4>
+      <ol class="rank">
+        {
+          market.mostPlayed.slice(0, 10).map((s) => (
+            <li>
+              <a href={s.url} target="_blank" rel="noopener">
+                {s.name}
+              </a>
+              {s.peak && <span class="meta">{compact(s.peak)}</span>}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+    <div>
+      <h4 class="sub-title">일본 App Store 매출 TOP 10</h4>
+      <ol class="rank">
+        {
+          market.mobileJP.slice(0, 10).map((m) => (
+            <li>
+              <a href={m.url} target="_blank" rel="noopener">
+                {m.name}
+              </a>
+              <span class="meta">{m.publisher}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+  {
+    market.summary.topTags.length > 0 && (
+      <p class="tag-line">
+        매출 상위에 많은 장르{' '}
+        <span class="chips inline">
+          {market.summary.topTags.map((t) => (
+            <span class="chip">
+              {t.name} <b>{t.count}</b>
+            </span>
+          ))}
+        </span>
+      </p>
+    )
+  }
+</section>
+
+<section id="trend-ideas">
+  <h3 class="sec-title">만들어 볼 게임</h3>
+  {
+    insights.ideas.length > 0 ? (
+      <div class="ideas">
+        {insights.ideas.map((idea, i) => (
+          <article class="idea">
+            <p class="idea-no">IDEA {String(i + 1).padStart(2, '0')}</p>
+            <h4>{idea.title}</h4>
+            <ul class="chips">
+              {idea.genres.map((genre) => (
+                <li class="chip chip-strong">{genre}</li>
+              ))}
+            </ul>
+            <p>
+              <strong>왜 지금</strong> {idea.why}
+            </p>
+            <p>
+              <strong>첫 버전</strong> {idea.scope}
+            </p>
+            {idea.references.length > 0 && (
+              <p>
+                <strong>참고</strong> {idea.references.join(', ')}
+              </p>
+            )}
+            <p class="idea-risk">
+              <strong>주의</strong> {idea.risks}
+            </p>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="ideas">
+        {indie.opportunities.slice(0, 3).map((g, i) => (
+          <article class="idea">
+            <p class="idea-no">기회 장르 {String(i + 1).padStart(2, '0')}</p>
+            <h4>{g.name}</h4>
+            <p>
+              최근 {range.days}일 출시 {g.releases}개로 경쟁은 적은 편인데, 출시 1개당 추정 매출이 {usd(g.perRelease)}예요. 리뷰 {method.tractionReviews}개 이상 받은
+              게임이 {g.traction}개{g.positive != null && `, 평균 긍정률 ${g.positive}%`}.
+            </p>
+            {g.top && (
+              <p>
+                <strong>대표작</strong>{' '}
+                <a href={g.top.url} target="_blank" rel="noopener">
+                  {g.top.name}
+                </a>{' '}
+                ({usd(g.top.revenue)})
+              </p>
+            )}
+          </article>
+        ))}
+      </div>
+    )
+  }
+  {insights.by === 'ai' && insights.generatedAt && <p class="method">{formatDate(insights.generatedAt)} · {insights.model} 분석 (매주 갱신)</p>}
+</section>

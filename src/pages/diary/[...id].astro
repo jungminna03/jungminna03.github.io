@@ -1,6 +1,8 @@
 ---
+// 일기 한 편 — 책상 위에 종이 한 장
 import { render, type CollectionEntry } from 'astro:content';
-import Base from '../../layouts/Base.astro';
+import Sprite from '../../components/Sprite.astro';
+import Desk from '../../layouts/Desk.astro';
 import { getDiary } from '../../lib/content';
 import { formatDate, url } from '../../lib/site';
 
@@ -18,91 +20,51 @@ const { Content } = await render(entry);
 const { title, date, tags, project, skills, highlight, description, draft } = entry.data;
 ---
 
-<Base title={title} description={description ?? highlight}>
-  <article>
-    <a class="back" href={url('/diary/')}>← 기술 일기</a>
-    <header class="post-head">
-      <p class="meta">
-        <time datetime={date.toISOString()}>{formatDate(date)}</time>
-        {project && <span> · {project}</span>}
-        {draft && <span class="badge warn">초안</span>}
-      </p>
-      <h1>{title}</h1>
+<Desk title={title} description={description ?? highlight}>
+  <div class="single">
+    <a class="px-btn back-btn" href={url('/diary/')}><Sprite name="arrowL" scale={2} /> 책상으로</a>
+    <article class="paper paper-diary paper-single">
+      <span class="clip" aria-hidden="true"><Sprite name="clip" scale={4} /></span>
+      <header class="post-head">
+        <p class="meta">
+          <time datetime={date.toISOString()}>{formatDate(date)}</time>
+          {project && <span> · {project}</span>}
+          {draft && <span class="stamp maybe">초안</span>}
+        </p>
+        <h1>{title}</h1>
+        {
+          tags.length > 0 && (
+            <ul class="chips">
+              {tags.map((tag) => (
+                <li class="chip">#{tag}</li>
+              ))}
+            </ul>
+          )
+        }
+      </header>
       {
-        tags.length > 0 && (
-          <ul class="chips">
-            {tags.map((tag) => (
-              <li class="chip">#{tag}</li>
-            ))}
-          </ul>
+        highlight && (
+          <aside class="highlight">
+            <strong>핵심 성과</strong>
+            <p>{highlight}</p>
+          </aside>
         )
       }
-    </header>
-    {
-      highlight && (
-        <aside class="highlight">
-          <strong>핵심 성과</strong>
-          <p>{highlight}</p>
-        </aside>
-      )
-    }
-    <div class="prose">
-      <Content />
-    </div>
-    {
-      skills.length > 0 && (
-        <footer class="post-skills">
-          <span class="meta">사용 기술</span>
-          <ul class="chips">
-            {skills.map((skill) => (
-              <li class="chip">{skill}</li>
-            ))}
-          </ul>
-        </footer>
-      )
-    }
-  </article>
-</Base>
-
-<style>
-  article {
-    max-width: 720px;
-  }
-  .post-head {
-    margin-bottom: 28px;
-  }
-  .post-head h1 {
-    margin: 4px 0 12px;
-    font-size: clamp(28px, 4.5vw, 38px);
-  }
-  .post-head .badge {
-    margin-left: 6px;
-  }
-  /* 메모지 */
-  .highlight {
-    margin: 0 0 34px;
-    padding: 14px 20px;
-    border: 1.5px dashed var(--stitch);
-    border-radius: 12px;
-    background: var(--accent-soft);
-    transform: rotate(-0.4deg);
-  }
-  .highlight strong {
-    color: var(--accent-text);
-    font-size: 14px;
-  }
-  .highlight p {
-    margin: 2px 0 0;
-    color: var(--ink);
-    font-size: 17px;
-  }
-  .post-skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    margin-top: 48px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-  }
-</style>
+      <div class="prose">
+        <Content />
+      </div>
+      {
+        skills.length > 0 && (
+          <footer class="post-skills">
+            <span class="meta">사용 기술</span>
+            <ul class="chips">
+              {skills.map((skill) => (
+                <li class="chip chip-strong">{skill}</li>
+              ))}
+            </ul>
+          </footer>
+        )
+      }
+    </article>
+  </div>
+</Desk>

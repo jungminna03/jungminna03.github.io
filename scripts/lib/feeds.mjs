@@ -1,6 +1,6 @@
 // RSS 2.0 · RSS 1.0(RDF) · Atom 피드를 { title, link, date, summary } 로 통일한다.
 import { XMLParser } from 'fast-xml-parser';
-import { htmlToText, toIso } from '../lib/util.mjs';
+import { htmlToText, toIso } from './util.mjs';
 
 const parser = new XMLParser({
   ignoreAttributes: false,

@@ -1,0 +1,55 @@
+---
+// 나무 책상 — 모든 페이지의 바탕. 종이(PaperStack 또는 단일 종이)는 slot 으로 받는다.
+import '../styles/global.css';
+import Sprite from '../components/Sprite.astro';
+import profile from '../../config/profile.mjs';
+import { url } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** 검색 엔진 색인 제외 */
+  noindex?: boolean;
+}
+
+const { title, description = profile.intro, noindex = false } = Astro.props;
+const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#5e3d24" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="desk">
+    <header class="nameplate">
+      <a class="plate" href={url('/')}>
+        <span class="plate-title">{profile.siteTitle}</span>
+        <span class="plate-sub">{profile.headline}</span>
+      </a>
+    </header>
+
+    <div class="decor decor-mug" aria-hidden="true"><Sprite name="mug" scale={6} /></div>
+    <div class="decor decor-plant" aria-hidden="true"><Sprite name="plant" scale={6} /></div>
+    <div class="decor decor-pad" aria-hidden="true"><Sprite name="controller" scale={6} /></div>
+    <p class="decor decor-note" aria-hidden="true">오늘도<br />한 줄 쓰기!</p>
+
+    <main class="desk-main">
+      <slot />
+    </main>
+
+    <footer class="desk-footer">
+      <span>© {new Date().getFullYear()} {profile.name}</span>
+      {profile.links.GitHub && <a href={profile.links.GitHub}>GitHub</a>}
+    </footer>
+  </body>
+</html>

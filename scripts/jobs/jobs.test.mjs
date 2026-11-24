@@ -1,8 +1,62 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import { assessFit, familyOf } from './fit.mjs';
 import { isExpired, matchesFilters, mergeJobs, rankCandidates } from './merge.mjs';
-import { buildDigest, buildRecommendPrompt, validatePicks } from './recommend.mjs';
+import { buildDigest, buildRecommendPrompt, validatePicks, validateRatings } from './recommend.mjs';
 import { manualJobs } from './sources.mjs';
+
+const me = { targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'], experience: '신입', skills: ['Unity', 'C#', 'R3', 'UniRx', 'FSM'] };
+
+test('familyOf: 실제 공고 제목들의 직군', () => {
+  const cases = {
+    'Senior Anticheat Engineer': 'server',
+    'Technical VFX Artist, Pokémon GO': 'art',
+    'Technical Artist, Pokémon GO': 'techart',
+    'Rendering Engineer': 'tools',
+    'ゲームエンジンプログラマー': 'tools',
+    'Unreal Engineプログラマー': 'client',
+    'ゲームサーバープログラマー': 'server',
+    'ソフトウェアエンジニア': 'programmer',
+    'ゲームプランナー（新卒）': 'design',
+    'マーケティング担当（長期インターン）': 'other',
+    '게임 클라이언트 프로그래머 (Unity·C#)': 'client',
+  };
+  for (const [title, key] of Object.entries(cases)) assert.equal(familyOf(title).key, key, title);
+});
+
+test('assessFit: 신입 클라이언트 기준 — 시니어·아트는 안 맞음, 포트폴리오 근거가 있으면 다른 직무도 검토', () => {
+  const anticheat = assessFit({ title: 'Senior Anticheat Engineer' }, me);
+  assert.equal(anticheat.level, 'low');
+  assert.match(anticheat.reason, /시니어/);
+  assert.equal(assessFit({ title: 'Technical VFX Artist, Pokémon GO' }, me).level, 'low');
+
+  const client = assessFit({ title: 'Client Engineer (Unity)', description: 'C# required' }, me);
+  assert.equal(client.level, 'good');
+  assert.equal(client.reason, '희망 직무 (클라이언트·게임플레이) · 기술 일치: Unity, C#');
+
+  assert.equal(assessFit({ title: 'Tools Programmer', description: 'Unity editor extensions in C#' }, me).level, 'maybe');
+  assert.equal(assessFit({ title: 'Software Engineer' }, me).level, 'maybe');
+  assert.equal(assessFit({ title: 'ゲームプログラマー（新卒）' }, me).level, 'good');
+
+  // 오탐 회귀: Community 의 'unity', Engineer 의 'engine'
+  const marketing = assessFit({ title: 'マーケティング担当（長期インターン）', department: 'Marketing, Community & Business Development' }, me);
+  assert.equal(marketing.level, 'low');
+  assert.match(marketing.reason, /직군이 달라요/);
+  assert.equal(familyOf('Software Engineer, Data Infrastructure').key, 'server');
+
+  // 엔진 불일치: Unity 개발자에게 언리얼 프로그래머는 '검토'로 내려간다
+  const unreal = assessFit({ title: 'Unreal Engine Programmer', description: 'C++ / Unity experience a plus. C#' }, me);
+  assert.equal(unreal.level, 'maybe');
+  assert.match(unreal.reason, /언리얼 경험이 필요해요/);
+});
+
+test('validateRatings: 후보에 없는 id·중복을 버린다', () => {
+  const ratings = validateRatings(
+    [{ jobId: 'a', fit: 'good', reason: ' 좋음 ' }, { jobId: 'a', fit: 'low', reason: 'x' }, { jobId: 'zz', fit: 'good', reason: 'y' }],
+    [{ id: 'a' }, { id: 'b' }],
+  );
+  assert.deepEqual(ratings, { a: { level: 'good', reason: '좋음' } });
+});
 
 const job = (id, extra = {}) => ({ id, title: 'Engineer', company: 'A', companyKey: 'greenhouse:a', location: 'Tokyo, Japan', ...extra });
 

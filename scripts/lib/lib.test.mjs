@@ -2,7 +2,34 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { buildPortfolio } from '../../src/lib/portfolio.mjs';
 import { markdownToText, parseEntry } from './diary.mjs';
+import { parseFeed } from './feeds.mjs';
 import { decodeEntities, htmlToText, kstDate, toIso, truncate } from './util.mjs';
+
+test('parseFeed: RSS 2.0 (CDATA, 엔티티, 한국 시간)', () => {
+  const xml = `<?xml version="1.0"?><rss version="2.0"><channel><title>T</title>
+    <item><title><![CDATA[소니 &amp; 'GTA6']]></title><link>https://ex.com/1</link>
+      <pubDate>2026-11-24 15:57:59</pubDate><description><![CDATA[<p>요약&nbsp;입니다</p>]]></description></item>
+    <item><title>2026</title><link>https://ex.com/2</link></item>
+    <item><title>링크 없음</title></item>
+  </channel></rss>`;
+  const items = parseFeed(xml, { defaultOffset: '+09:00' });
+  assert.equal(items.length, 2);
+  assert.deepEqual(items[0], { title: "소니 & 'GTA6'", link: 'https://ex.com/1', date: '2026-11-24T06:57:59.000Z', summary: '요약 입니다' });
+  assert.equal(items[1].title, '2026');
+});
+
+test('parseFeed: RSS 1.0 (RDF) 와 Atom', () => {
+  const rdf = `<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="https://ex.jp/"><title>JP</title></channel>
+    <item rdf:about="https://ex.jp/a"><title>新作発表</title><link>https://ex.jp/a</link><dc:date>2026-11-24T16:10:20+09:00</dc:date></item>
+  </rdf:RDF>`;
+  assert.deepEqual(parseFeed(rdf), [{ title: '新作発表', link: 'https://ex.jp/a', date: '2026-11-24T07:10:20.000Z', summary: '' }]);
+  const atom = `<feed xmlns="http://www.w3.org/2005/Atom"><title>A</title>
+    <entry><title type="html">Studio &amp;lt;b&amp;gt;layoffs&amp;lt;/b&amp;gt;</title>
+      <link rel="self" href="https://ex.com/self"/><link rel="alternate" href="https://ex.com/post"/>
+      <updated>2026-11-23T10:00:00Z</updated><summary>Short</summary></entry></feed>`;
+  assert.deepEqual(parseFeed(atom), [{ title: 'Studio layoffs', link: 'https://ex.com/post', date: '2026-11-23T10:00:00.000Z', summary: 'Short' }]);
+});
 
 test('htmlToText: 이스케이프된 HTML(Greenhouse)과 일반 HTML 모두 평문으로', () => {
   assert.equal(htmlToText('&lt;p&gt;Hello &amp;amp; &lt;strong&gt;world&lt;/strong&gt;&lt;/p&gt;'), 'Hello & world');

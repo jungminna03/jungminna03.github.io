@@ -18,29 +18,4 @@ const diary = defineCollection({
   }),
 });
 
-const source = z.object({ label: z.string(), title: z.string().optional(), url: z.string() });
-
-/** 게임 트렌드 카드뉴스 — src/content/cardnews/*.json (scripts/cardnews 가 매일 생성) */
-const cardnews = defineCollection({
-  loader: glob({ base: './src/content/cardnews', pattern: '**/*.json' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date(),
-    summary: z.string().optional(),
-    tags: z.array(z.string()).default([]),
-    accent: z.string().default('#a35a3e'),
-    mode: z.enum(['ai', 'headlines', 'manual']).default('manual'),
-    cards: z
-      .array(
-        z.object({
-          title: z.string(),
-          body: z.string().optional(),
-          image: z.string().optional(),
-          sources: z.array(source).default([]),
-        }),
-      )
-      .min(1),
-  }),
-});
-
-export const collections = { diary, cardnews };
+export const collections = { diary };

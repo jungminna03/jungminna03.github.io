@@ -16,6 +16,15 @@ const ResultSchema = z.object({
       tip: z.string().describe('이력서·자소서에서 강조할 점 한 문장 (한국어)'),
     }),
   ),
+  ratings: z
+    .array(
+      z.object({
+        jobId: z.string().describe('후보 공고의 [id] 값을 그대로'),
+        fit: z.enum(['good', 'maybe', 'low']).describe('good = 잘 맞음, maybe = 검토해볼 만함, low = 안 맞음'),
+        reason: z.string().describe('판단 이유 한 줄 (한국어 45자 이내). 맞는 점이나 걸리는 점을 구체적으로'),
+      }),
+    )
+    .describe('모든 후보 공고에 대한 적합도'),
 });
 
 const SYSTEM =
@@ -43,6 +52,7 @@ export function buildDigest(entries, max = 30) {
 export function buildRecommendPrompt({ profile, skills, digest, candidates }) {
   const applicant = {
     희망직무: profile.targetRoles,
+    경력: profile.experience,
     희망지역: profile.targetLocations,
     언어: profile.languages.map((l) => `${l.name} ${l.level}`),
     학력: profile.education,
@@ -76,7 +86,23 @@ ${jobs}
 - reach (상향 지원): 요구 수준은 지원자보다 높지만 기록된 강점으로 도전해볼 만한 공고
 - interest (관심 기업): ★관심 기업 표시가 있는 공고 중 가장 잘 맞는 것. 그런 공고가 없으면 생략
 알맞은 공고가 없는 종류는 억지로 채우지 말고 생략한다.
+
+그리고 ratings 에 **모든 후보 공고**의 적합도(good / maybe / low)와 한 줄 이유를 적어라.
+- 희망 직무가 1순위지만, 기술 일기·프로필에 근거가 있으면 다른 직무(툴 프로그래머 등)도 good / maybe 로 매겨도 된다.
+- 지원자의 경력 수준에 비해 요구 경력이 크게 높으면 low 로 매기고 이유에 적는다.
+
 판단 근거는 공고 본문과 지원자 기록뿐이다. 기록에 없는 경력·능력을 가정하지 말고, 신입/경력 요건과 언어 요건(일본어·영어)을 꼭 따져라.`;
+}
+
+/** AI 적합도 검증: 후보에 없는 id·중복은 버리고 { [jobId]: { level, reason } } 로 */
+export function validateRatings(ratings, candidates) {
+  const ids = new Set(candidates.map((job) => job.id));
+  const result = {};
+  for (const { jobId, fit, reason } of ratings) {
+    if (!ids.has(jobId) || result[jobId]) continue;
+    result[jobId] = { level: fit, reason: reason.trim() };
+  }
+  return result;
 }
 
 /** AI 응답 검증: 후보에 없는 id, 중복 공고·종류, 관심 기업이 아닌 interest 는 버린다 */
@@ -103,5 +129,8 @@ export async function recommend(input) {
     schema: ResultSchema,
     effort: 'medium',
   });
-  return validatePicks(result.picks, input.candidates);
+  return {
+    picks: validatePicks(result.picks, input.candidates),
+    ratings: validateRatings(result.ratings, input.candidates),
+  };
 }

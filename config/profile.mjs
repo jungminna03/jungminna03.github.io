@@ -14,7 +14,8 @@
  * @property {{ school: string, major?: string, period?: string }[]} education
  * @property {{ name: string, level: string }[]} languages
  * @property {string[]} skills         일기에서 자동으로 모이는 기술 외에 꼭 넣고 싶은 기술
- * @property {string[]} targetRoles    희망 직무 — 공고 추천 기준
+ * @property {'신입' | '1~3년' | '3년+'} experience  경력 — 시니어·리드 공고를 걸러내는 기준
+ * @property {string[]} targetRoles    희망 직무 — 공고 추천 기준 (첫 번째가 1순위)
  * @property {string[]} targetLocations 희망 지역 — 공고 추천 기준
  * @property {string[]} interestCompanies 관심 기업. 공고의 회사명과 같으면 '관심 기업' 추천 후보가 된다
  * @property {string} notes            자소서에 반영할 메모 (가치관, 지원 이유 등 일기에 안 쓰는 것). 사이트에는 표시되지 않음
@@ -35,14 +36,15 @@ const profile = {
   ],
   languages: [
     { name: '한국어', level: '모국어' },
-    // { name: '日本語', level: 'JLPT N2' },
+    { name: '日本語', level: '비즈니스 (N1~N2)' },
     // { name: 'English', level: 'TOEIC 850' },
   ],
-  skills: [],
-  targetRoles: ['게임 클라이언트 프로그래머', '게임플레이 프로그래머', '엔진·툴 프로그래머'], // TODO
+  skills: ['Unity', 'C#', 'R3', 'UniRx', 'FSM'], // 기술 일기에서 확인된 기술
+  experience: '신입',
+  targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'],
   targetLocations: ['일본 (도쿄·오사카 등)', '해외'],
   interestCompanies: ['HoYoverse', 'Riot Games'], // TODO: config/jobs.mjs 의 회사 이름과 똑같이
-  notes: '',
+  notes: '지금은 클라이언트 프로그래머가 1순위지만, 포트폴리오에 맞는 조건이 있으면 다른 직무(툴 프로그래머 등)도 추천받고 싶다.',
 };
 
 export default profile;

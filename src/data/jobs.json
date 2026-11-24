@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T07:43:31.827Z",
+  "updatedAt": "2026-11-24T08:52:41.392Z",
   "jobs": [
     {
       "id": "greenhouse:scopely:5490347008",
@@ -11,7 +11,13 @@
       "source": "greenhouse",
       "company": "Scopely",
       "companyKey": "greenhouse:scopely",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": -4,
+        "family": "server",
+        "reason": "서버·인프라 · 시니어·리드 직급이라 경력이 필요해요"
+      }
     },
     {
       "id": "greenhouse:scopely:5467727008",
@@ -23,7 +29,13 @@
       "source": "greenhouse",
       "company": "Scopely",
       "companyKey": "greenhouse:scopely",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": 0,
+        "family": "art",
+        "reason": "직군이 달라요 (아트) · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "greenhouse:scopely:5467729008",
@@ -35,7 +47,13 @@
       "source": "greenhouse",
       "company": "Scopely",
       "companyKey": "greenhouse:scopely",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "techart",
+        "reason": "테크니컬 아티스트 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000158458299",
@@ -47,7 +65,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "ashby:hoyoverse:ec6c3e5e-37da-402f-9501-1462248d14e1",
@@ -59,7 +83,13 @@
       "source": "ashby",
       "company": "HoYoverse",
       "companyKey": "ashby:hoyoverse",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
     },
     {
       "id": "ashby:hoyoverse:403cebb8-e6a6-4ae6-ad4b-146c6c17b643",
@@ -71,7 +101,13 @@
       "source": "ashby",
       "company": "HoYoverse",
       "companyKey": "ashby:hoyoverse",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": -1,
+        "family": "other",
+        "reason": "직군이 달라요 (비개발 직군) · 신입·인턴 대상"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000146665815",
@@ -83,7 +119,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000146666791",
@@ -95,7 +137,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "tools",
+        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000146667289",
@@ -107,7 +155,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 언리얼 경험이 필요해요 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000146664081",
@@ -119,7 +173,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 언리얼 경험이 필요해요 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "greenhouse:scopely:5395475008",
@@ -131,7 +191,13 @@
       "source": "greenhouse",
       "company": "Scopely",
       "companyKey": "greenhouse:scopely",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000138021559",
@@ -143,7 +209,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "server",
+        "reason": "서버·인프라 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000138021509",
@@ -155,7 +227,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 3,
+        "family": "server",
+        "reason": "서버·인프라 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000138021279",
@@ -167,7 +245,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "smartrecruiters:KeywordsStudios:744000138021024",
@@ -179,7 +263,13 @@
       "source": "smartrecruiters",
       "company": "Keywords Studios",
       "companyKey": "smartrecruiters:KeywordsStudios",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "maybe",
+        "score": 4,
+        "family": "programmer",
+        "reason": "프로그래머 · 기술 일치: C#, Unity"
+      }
     },
     {
       "id": "greenhouse:scopely:5180929008",
@@ -191,7 +281,13 @@
       "source": "greenhouse",
       "company": "Scopely",
       "companyKey": "greenhouse:scopely",
-      "firstSeenAt": "2026-11-24T07:43:31.827Z"
+      "firstSeenAt": "2026-11-24T07:43:31.827Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "client",
+        "reason": "희망 직무 (클라이언트·게임플레이) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, Unity"
+      }
     }
   ],
   "recommendations": null

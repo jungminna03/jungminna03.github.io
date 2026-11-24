@@ -1,0 +1,145 @@
+---
+// 포트폴리오 — 기술 일기에서 자동으로 정리된 서류
+import Sprite from '../Sprite.astro';
+import profile from '../../../config/profile.mjs';
+import { getDiary, toPortfolioEntry } from '../../lib/content';
+import { buildPortfolio } from '../../lib/portfolio.mjs';
+import { formatDate, url } from '../../lib/site';
+
+const portfolio = buildPortfolio((await getDiary()).map(toPortfolioEntry), profile.skills);
+const month = (date: Date) => formatDate(date).slice(0, 7);
+const period = (from: Date, to: Date) => (month(from) === month(to) ? month(from) : `${month(from)} – ${month(to)}`);
+const links = Object.entries(profile.links).filter(([, href]) => href);
+---
+
+<header class="paper-head">
+  <Sprite name="folder" scale={3} />
+  <div>
+    <h2>포트폴리오</h2>
+    <p class="paper-sub">기술 일기 {portfolio.count}개에서 자동으로 정리했어요.</p>
+  </div>
+  <button class="px-btn no-print" type="button" data-print>PDF로 저장</button>
+</header>
+
+<div class="profile-card">
+  <div>
+    <p class="profile-name">{profile.name}</p>
+    <p class="profile-headline">{profile.headline}</p>
+    <p class="profile-intro">{profile.intro}</p>
+  </div>
+  <dl class="facts">
+    {
+      profile.location && (
+        <div>
+          <dt>지역</dt>
+          <dd>{profile.location}</dd>
+        </div>
+      )
+    }
+    {
+      profile.languages.length > 0 && (
+        <div>
+          <dt>언어</dt>
+          <dd>{profile.languages.map((l) => `${l.name} (${l.level})`).join(' · ')}</dd>
+        </div>
+      )
+    }
+    {
+      profile.education.map((e) => (
+        <div>
+          <dt>학력</dt>
+          <dd>{[e.school, e.major, e.period].filter(Boolean).join(' · ')}</dd>
+        </div>
+      ))
+    }
+    {
+      links.map(([label, href]) => (
+        <div>
+          <dt>{label}</dt>
+          <dd>
+            <a href={href}>{href.replace(/^https?:\/\//, '')}</a>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+</div>
+
+{
+  portfolio.skills.length > 0 && (
+    <section>
+      <h3 class="sec-title">기술 스택</h3>
+      <ul class="chips">
+        {portfolio.skills.map((skill) => (
+          <li class="chip chip-strong">
+            {skill.name}
+            {skill.count > 1 && <b> ×{skill.count}</b>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+{
+  portfolio.count === 0 ? (
+    <div class="empty-note">
+      <p class="empty-title">프로젝트가 아직 없어요</p>
+      <p>
+        기술 일기에 <code>project</code> · <code>skills</code> · <code>highlight</code> 를 적으면 여기에 프로젝트와 핵심 성과가 쌓여요.
+      </p>
+    </div>
+  ) : (
+    <>
+      {portfolio.highlights.length > 0 && (
+        <section>
+          <h3 class="sec-title">핵심 성과</h3>
+          <ul class="highlights">
+            {portfolio.highlights.slice(0, 8).map((h) => (
+              <li>
+                <span>{h.text}</span>
+                <a class="meta" href={url(`/diary/${h.entry.id}/`)}>
+                  {formatDate(h.entry.date)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {portfolio.projects.length > 0 && (
+        <section>
+          <h3 class="sec-title">프로젝트</h3>
+          <div class="project-grid">
+            {portfolio.projects.map((project) => (
+              <article class="project">
+                <h4>{project.name}</h4>
+                <p class="meta">
+                  {period(project.from, project.to)} · 기록 {project.entries.length}개
+                </p>
+                {project.skills.length > 0 && (
+                  <ul class="chips">
+                    {project.skills.map((skill) => (
+                      <li class="chip">{skill}</li>
+                    ))}
+                  </ul>
+                )}
+                <ul class="project-entries">
+                  {project.entries.map((entry) => (
+                    <li>
+                      <a href={url(`/diary/${entry.id}/`)}>{entry.title}</a>
+                      {entry.highlight && <span> — {entry.highlight}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+    </>
+  )
+}
+
+<script>
+  document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+</script>

@@ -41,7 +41,7 @@ const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const keywordPattern = (word) => new RegExp(`(?<![A-Za-z0-9+#])${escapeRegExp(word)}(?![A-Za-z0-9+#])`, 'i');
 
 /**
- * AI 에게 보낼 후보를 고른다: 기술 키워드 점수 상위 limit 개 + 관심 기업 공고(최대 10개).
+ * AI 에게 보낼 후보를 고른다: (규칙 적합도 + 기술 키워드) 점수 상위 limit 개 + 관심 기업 공고(최대 10개).
  * 공고가 많아도 프롬프트 크기와 비용을 일정하게 유지하기 위함.
  */
 export function rankCandidates(jobs, { skills = [], interestCompanies = [] } = {}, limit = 40) {
@@ -50,7 +50,8 @@ export function rankCandidates(jobs, { skills = [], interestCompanies = [] } = {
 
   const scored = jobs.map((job) => {
     const body = `${job.department ?? ''}\n${job.description ?? ''}`;
-    const score = patterns.reduce((sum, re) => sum + (re.test(job.title) ? 3 : 0) + (re.test(body) ? 1 : 0), 0);
+    const keywords = patterns.reduce((sum, re) => sum + (re.test(job.title) ? 3 : 0) + (re.test(body) ? 1 : 0), 0);
+    const score = keywords + 2 * (job.fit?.score ?? 0);
     return { ...job, score, interest: interest.has(lower(job.company)) };
   });
   scored.sort((a, b) => b.score - a.score || (b.postedAt ?? '').localeCompare(a.postedAt ?? ''));
