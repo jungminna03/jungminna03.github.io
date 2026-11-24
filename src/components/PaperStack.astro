@@ -113,7 +113,7 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
         from.classList.remove('leave-left', 'leave-right');
         to.classList.remove('enter-right', 'enter-left');
         busy = false;
-      }, 300);
+      }, 560);
     };
 
     const go = (offset: 1 | -1) => show(at(offset).key, offset);

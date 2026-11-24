@@ -1452,51 +1452,65 @@ html:has(.sheet[open]) {
   box-shadow: 0 0 0 3px var(--paper-3);
 }
 
-/* ───────── 종이 넘기기 ───────── */
+/* ───────── 종이 넘기기 — 쓰던 종이를 옆으로 치우고, 다음 종이를 끌어와 내려놓는다 ───────── */
 @keyframes paper-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(18%);
+  0% {
+    transform: translateX(110%) rotate(6deg);
+  }
+  62% {
+    transform: translateX(-14px) rotate(-1.2deg);
+  }
+  84% {
+    transform: translateX(4px) rotate(0.4deg);
+  }
+  100% {
+    transform: none;
   }
 }
 @keyframes paper-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-18%);
+  0% {
+    transform: translateX(-110%) rotate(-6deg);
+  }
+  62% {
+    transform: translateX(14px) rotate(1.2deg);
+  }
+  84% {
+    transform: translateX(-4px) rotate(-0.4deg);
+  }
+  100% {
+    transform: none;
   }
 }
 @keyframes paper-out-left {
   to {
-    opacity: 0;
-    transform: translateX(-18%);
+    transform: translateX(-115%) rotate(-7deg);
   }
 }
 @keyframes paper-out-right {
   to {
-    opacity: 0;
-    transform: translateX(18%);
+    transform: translateX(115%) rotate(7deg);
   }
 }
 .paper.enter-right,
 .paper.enter-left,
 .paper.leave-left,
 .paper.leave-right {
-  will-change: transform, opacity;
+  will-change: transform;
 }
 .paper.enter-right {
   z-index: 2;
-  animation: paper-in-right 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+  animation: paper-in-right 0.55s cubic-bezier(0.2, 0.75, 0.3, 1) both;
 }
 .paper.enter-left {
   z-index: 2;
-  animation: paper-in-left 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+  animation: paper-in-left 0.55s cubic-bezier(0.2, 0.75, 0.3, 1) both;
 }
 .paper.leave-left {
-  animation: paper-out-left 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+  animation: paper-out-left 0.4s cubic-bezier(0.5, 0, 0.75, 0.3) both;
   pointer-events: none;
 }
 .paper.leave-right {
-  animation: paper-out-right 0.28s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+  animation: paper-out-right 0.4s cubic-bezier(0.5, 0, 0.75, 0.3) both;
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
