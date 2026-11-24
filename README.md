@@ -61,7 +61,6 @@ highlight: 풀링 도입으로 GC Alloc 2.1KB → 0B, 프레임 드랍 해결   
 ```
 
 - 이미지는 `src/content/diary/images/<프로젝트>/` 에 넣고 `![설명](./images/<프로젝트>/파일.png)` 로 쓴다. 빌드할 때 WebP 로 최적화된다.
-- 예전 Jekyll 블로그(KEN's Atelier)의 글 6개는 여기로 옮겨 왔다. 시리즈 이름이 `project`·`tags` 로 들어가 있으니 `skills`·`highlight` 를 더 적으면 포트폴리오가 풍성해진다. 예전 블로그 파일은 git 기록에 남아 있다.
 - **`/portfolio`** 는 빌드할 때마다 자동으로 다시 만들어진다. `PDF로 저장` 버튼은 브라우저 인쇄(PDF)를 쓴다.
 - **`npm run export`** 는 `exports/` 에 문서를 만든다. 이 폴더는 `.gitignore` 에 있어서 공개 레포에 올라가지 않는다.
 
