@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T08:52:41.392Z",
+  "updatedAt": "2026-11-24T10:39:18.432Z",
   "jobs": [
     {
       "id": "greenhouse:scopely:5490347008",
@@ -14,9 +14,9 @@
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
         "level": "low",
-        "score": -4,
+        "score": -2,
         "family": "server",
-        "reason": "서버·인프라 · 시니어·리드 직급이라 경력이 필요해요"
+        "reason": "서버·인프라 · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C++, Kotlin"
       }
     },
     {
@@ -67,10 +67,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 5,
         "family": "tools",
-        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+        "reason": "툴·엔진 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -121,10 +121,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 5,
         "family": "tools",
-        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+        "reason": "툴·엔진 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -139,10 +139,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 5,
         "family": "tools",
-        "reason": "툴·엔진 · 기술 일치: C#, Unity"
+        "reason": "툴·엔진 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -157,10 +157,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 7,
         "family": "client",
-        "reason": "희망 직무 (클라이언트·게임플레이) · 언리얼 경험이 필요해요 · 기술 일치: C#, Unity"
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -175,10 +175,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 7,
         "family": "client",
-        "reason": "희망 직무 (클라이언트·게임플레이) · 언리얼 경험이 필요해요 · 기술 일치: C#, Unity"
+        "reason": "희망 직무 (클라이언트·게임플레이) · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -212,9 +212,9 @@
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
         "level": "maybe",
-        "score": 3,
+        "score": 4,
         "family": "server",
-        "reason": "서버·인프라 · 기술 일치: C#, Unity"
+        "reason": "서버·인프라 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -230,9 +230,9 @@
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
         "level": "maybe",
-        "score": 3,
+        "score": 4,
         "family": "server",
-        "reason": "서버·인프라 · 기술 일치: C#, Unity"
+        "reason": "서버·인프라 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -247,10 +247,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 5,
         "family": "programmer",
-        "reason": "프로그래머 · 기술 일치: C#, Unity"
+        "reason": "프로그래머 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -265,10 +265,10 @@
       "companyKey": "smartrecruiters:KeywordsStudios",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "maybe",
-        "score": 4,
+        "level": "good",
+        "score": 5,
         "family": "programmer",
-        "reason": "프로그래머 · 기술 일치: C#, Unity"
+        "reason": "프로그래머 · 기술 일치: C#, Unity, C++"
       }
     },
     {
@@ -283,10 +283,10 @@
       "companyKey": "greenhouse:scopely",
       "firstSeenAt": "2026-11-24T07:43:31.827Z",
       "fit": {
-        "level": "low",
-        "score": 1,
+        "level": "maybe",
+        "score": 2,
         "family": "client",
-        "reason": "희망 직무 (클라이언트·게임플레이) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, Unity"
+        "reason": "희망 직무 (클라이언트·게임플레이) · 시니어·리드 직급이라 경력이 필요해요 · 기술 일치: C#, Unity, C++"
       }
     }
   ],
