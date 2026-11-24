@@ -1,5 +1,6 @@
 // 포트폴리오 · 자기소개서 export 용 프롬프트와 Markdown 렌더링 (순수 함수)
 import { z } from 'zod';
+import { groupSkills } from '../../src/lib/portfolio.mjs';
 
 export const LANGS = { ko: '한국어', ja: '日本語', en: 'English' };
 
@@ -150,8 +151,9 @@ export function renderBasePortfolio(profile, portfolio, date) {
     if (project.skills.length) out.push(`- 기술: ${project.skills.join(', ')}`);
     out.push(...project.entries.map((e) => `- ${ymd(e.date)} ${e.title}${e.highlight ? ` — ${e.highlight}` : ''}`), '');
   }
-  if (portfolio.skills.length) {
-    out.push('## 기술 스택', '', portfolio.skills.map((s) => `${s.name} (${s.count})`).join(' · '), '');
+  const groups = groupSkills(profile.skillGroups ?? [], portfolio.skills);
+  if (groups.length) {
+    out.push('## 기술 스택', '', ...groups.map((g) => `- **${g.name}**: ${g.skills.join(', ')}`), '');
   }
   out.push('---', '', `기술 일기 ${portfolio.count}개에서 자동 생성 · ${date}`);
   return out.join('\n');

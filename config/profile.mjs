@@ -15,7 +15,8 @@
  * @property {Record<string, string>} links   예) { GitHub: 'https://github.com/...' }
  * @property {{ school: string, major?: string, period?: string }[]} education
  * @property {{ name: string, level: string }[]} languages
- * @property {string[]} skills         주력 기술. 포트폴리오 기술 스택에서 이 순서로 앞에 강조 (일기의 기술은 뒤에 자동으로 붙음)
+ * @property {string[]} skills         주력 기술. 포트폴리오 기술 스택에서 진하게 강조하고, 공고 추천 기준이 된다
+ * @property {{ name: string, skills: string[] }[]} skillGroups  포트폴리오 기술 스택 분야. 일기에만 있고 여기 없는 기술은 '기타'로 붙는다
  * @property {'신입' | '1~3년' | '3년+'} experience  경력 — 시니어·리드 공고를 걸러내는 기준
  * @property {string[]} targetRoles    희망 직무 — 공고 추천 기준 (첫 번째가 1순위)
  * @property {string[]} targetLocations 희망 지역 — 공고 추천 기준
@@ -43,7 +44,15 @@ const profile = {
     { name: '日本語', level: '비즈니스 (N1~N2)' },
     // { name: 'English', level: 'TOEIC 850' },
   ],
-  skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 이 순서로 앞에 강조
+  skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 진하게 강조
+  skillGroups: [
+    { name: '언어', skills: ['C#', 'C++', 'JavaScript', 'TypeScript', 'Kotlin'] },
+    { name: '엔진·라이브러리', skills: ['Unity', 'Siv3D', 'EnTT', 'R3', 'Phaser'] },
+    { name: '설계·테스트', skills: ['ECS', 'ScriptableObject', 'MVVM', 'Unity Test Framework'] },
+    { name: '출시·서비스', skills: ['Unity Ads', 'Unity IAP', 'Electron', 'Instant DB', 'Tailwind CSS', 'Tailscale Funnel', 'OrangeUI'] },
+    { name: 'AI 활용', skills: ['Claude Code', 'ComfyUI', 'TTS'] },
+    { name: '협업 툴', skills: ['Git', 'GitHub', 'GitLab', 'Notion', 'Slack'] },
+  ],
   experience: '신입',
   targetRoles: ['게임 클라이언트 프로그래머 (Unity·C#)'],
   targetLocations: ['일본 (도쿄·오사카 등)', '해외'],

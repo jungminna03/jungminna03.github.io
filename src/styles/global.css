@@ -619,6 +619,31 @@ code {
   margin: 0;
   overflow-wrap: anywhere;
 }
+.skill-groups {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+.skill-groups div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+.skill-groups dt {
+  color: var(--faint);
+  font-family: var(--pixel);
+  font-size: 13px;
+}
+.skill-groups dd {
+  margin: 0;
+}
+@media (max-width: 760px) {
+  .skill-groups div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+}
 .project-grid {
   display: grid;
   gap: 18px;

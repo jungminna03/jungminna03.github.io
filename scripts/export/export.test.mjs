@@ -19,7 +19,7 @@ test('renderBasePortfolio: 프로필·성과·프로젝트·기술 섹션', () =
   assert.match(md, /- 학력: OO대 · 컴공/);
   assert.match(md, /## 핵심 성과\n\n- GC 0B \(2026-03-01\)/);
   assert.match(md, /### 슈팅\n\n- 기간: 2026-03 – 2026-03\n- 기술: Unity\n- 2026-03-01 풀링 — GC 0B/);
-  assert.match(md, /## 기술 스택\n\nUnity \(1\)/);
+  assert.match(md, /## 기술 스택\n\n- \*\*기타\*\*: Unity/);
   assert.match(md, /기술 일기 2개에서 자동 생성 · 2026-11-24$/);
 });
 

@@ -82,3 +82,16 @@ export function buildPortfolio(entries, extraSkills = []) {
     highlights: entries.flatMap(highlightOf),
   };
 }
+
+/**
+ * 기술 스택을 분야별로 묶는다. 프로필에 적은 분야 순서·기술 순서를 따르고,
+ * 일기에만 나오고 어느 분야에도 없는 기술은 '기타'로 (많이 쓴 순).
+ * @param {{ name: string, skills: string[] }[]} groups
+ * @param {Tally[]} tallied buildPortfolio().skills
+ * @returns {{ name: string, skills: string[] }[]}
+ */
+export function groupSkills(groups, tallied) {
+  const grouped = new Set(groups.flatMap((g) => g.skills.map((s) => s.toLowerCase())));
+  const rest = tallied.map((t) => t.name).filter((name) => !grouped.has(name.toLowerCase()));
+  return [...groups, { name: '기타', skills: rest }].filter((g) => g.skills.length > 0);
+}

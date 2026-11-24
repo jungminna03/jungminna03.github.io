@@ -105,3 +105,20 @@ test('buildPortfolio: 진행 중 → 끝난 시점 최신순, 날짜 없는 peri
   ]);
   assert.deepEqual(portfolio.projects.map((p) => p.name), ['최근', '길게', '짧게', '옛날', '동아리']);
 });
+
+test('groupSkills: 분야 순서대로, 분야에 없는 일기 기술은 기타로', async () => {
+  const { groupSkills } = await import('../../src/lib/portfolio.mjs');
+  const out = groupSkills(
+    [
+      { name: '언어', skills: ['C#'] },
+      { name: '툴', skills: ['Git'] },
+      { name: '빈 칸', skills: [] },
+    ],
+    [{ name: 'c#', count: 3 }, { name: 'Phaser', count: 1 }],
+  );
+  assert.deepEqual(out, [
+    { name: '언어', skills: ['C#'] },
+    { name: '툴', skills: ['Git'] },
+    { name: '기타', skills: ['Phaser'] },
+  ]);
+});

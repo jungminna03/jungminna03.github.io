@@ -3,7 +3,7 @@ title: Project Arimu
 date: 2026-11-24
 project: Project Arimu
 period: 2025.06 – 2026.03
-skills: [Unity, C#, R3, Unity Test Framework, C++, Siv3D, EnTT]
+skills: [Unity, C#, R3, Unity Test Framework, C++, Siv3D, EnTT, ECS]
 highlight: R3로 재사용 가능한 FSM 에셋을 만들고, Haare Framework를 테스트하며 에셋 로딩 중 빈 UI가 노출되는 결함을 찾아 수정 제안
 ---
 
