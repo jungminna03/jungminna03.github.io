@@ -11,6 +11,7 @@
     "test": "node --test \"scripts/**/*.test.mjs\"",
     "jobs": "node --env-file-if-exists=.env scripts/jobs/run.mjs",
     "trends": "node --env-file-if-exists=.env scripts/trends/run.mjs",
+    "technews": "node --env-file-if-exists=.env scripts/technews/run.mjs",
     "export": "node --env-file-if-exists=.env scripts/export/run.mjs"
   },
   "dependencies": {

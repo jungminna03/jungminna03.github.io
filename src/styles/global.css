@@ -1293,6 +1293,75 @@ html:has(.sheet[open]) {
   margin-top: 4px;
 }
 
+/* ───────── 기술 트렌드 ───────── */
+.tech-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+.tech-dates .chip {
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tech-dates .chip[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.tech-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+}
+.tech-card {
+  display: block;
+  min-width: 0;
+  padding: 16px 18px;
+  background: var(--paper-2);
+  box-shadow: 0 0 0 3px var(--paper-3);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.tech-card:hover,
+.tech-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 3px var(--ink), 6px 8px 0 3px var(--paper-3);
+}
+.tech-card .meta {
+  margin: 0;
+}
+.tech-card h4 {
+  margin: 4px 0 0;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+.tech-card p:not(.meta) {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+.tech-oneline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+.tech-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-card {
+    transition: none;
+  }
+}
+
 /* ───────── 종이 한 장 (일기 본문 · 404) ───────── */
 .back-btn {
   margin: 10px 0 22px;

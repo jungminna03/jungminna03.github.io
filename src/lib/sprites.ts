@@ -86,6 +86,27 @@ export const SPRITES = {
       '................',
     ],
   },
+  bulb: {
+    palette: { o: INK, y: '#f5cf5f', w: '#fff6d2', g: '#a9a39a', d: '#7d766c' },
+    rows: [
+      '......oooo......',
+      '....oowwyyoo....',
+      '...owwyyyyyyo...',
+      '..owwyyyyyyyyo..',
+      '..owyyyyyyyyyo..',
+      '..oyyyyyyyyyyo..',
+      '..oyyyyyyyyyyo..',
+      '...oyyyyyyyyo...',
+      '....oyyyyyyo....',
+      '.....oyyyyo.....',
+      '.....oggggo.....',
+      '.....oddddo.....',
+      '.....oggggo.....',
+      '.....oddddo.....',
+      '......oooo......',
+      '................',
+    ],
+  },
   mug: {
     palette: { o: INK, m: '#efe3c8', s: '#cdb48c', c: '#5a3420', r: '#b5533c', w: '#f7f1e3' },
     rows: [

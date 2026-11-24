@@ -100,6 +100,14 @@ AI 에게는 일기에 없는 경력·수치를 지어내지 말고 근거가 �
 - 데이터: Steam 공식 API(키 불필요), 출시일 순 신작 목록만 스토어 검색 페이지 사용(요청 사이 2초 쉬고, 막히면 기다렸다 재시도), SteamSpy, Apple RSS, YouTube Data API.
 - AI 인사이트를 지금 다시 쓰기: `npm run trends -- --force-ai` (Actions 에서는 Run workflow 의 `force_ai`). 대작 현황만 다시 조사: `npm run trends -- --force-majors` (Actions 에서는 `force_majors`).
 
+## 기술 트렌드
+
+설정: [`config/technews.mjs`](config/technews.mjs) — 원본 카드뉴스 서버 주소, 보여줄 날짜 수(기본 7일).
+
+- 매일 아침 `npm run technews` 가 원본 카드뉴스 서버의 `data/dates.json` · `data/<날짜>.json` 을 가져와 `src/data/technews.json` 으로 저장한다 (README·초록 원문 같은 큰 필드는 버림).
+- GitHub 트렌딩 저장소 · 오늘의 논문 · 주목받는 논문을 날짜별로 보여주고, 카드를 누르면 상세 종이가 올라온다.
+- 원본 서버가 꺼져 있으면 어제 데이터를 그대로 둔다. 받아 둔 파일로 만들기: `npm run technews -- --from <폴더>`.
+
 ## 비용 (Claude API)
 
 기본 모델 `claude-opus-5-5` ($4 / $20 per 1M tokens) 기준 대략적인 예상치:

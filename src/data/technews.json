@@ -1,0 +1,3940 @@
+{
+  "generatedAt": "2026-11-24T11:34:30.071Z",
+  "days": [
+    {
+      "date": "2026-11-24",
+      "cards": [
+        {
+          "id": "2026-11-24_repo_google-labs-code_stitch-skills",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 11,
+          "score": 12.65,
+          "title": "google-labs-code / stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "lang": "TypeScript",
+          "stars": 12232,
+          "gain": 425,
+          "oneLine": "Google Labs의 Stitch Skills 라이브러리",
+          "points": [
+            "Agent Skills 표준 준수",
+            "다양한 코딩 에이전트와 호환",
+            "Stitch MCP 서버와 함께 사용"
+          ],
+          "why": "Stitch MCP와 호환되는 다양한 에이전트 스킬을 쉽게 사용할 수 있습니다.",
+          "overview": "Google Labs에서 만든 Stitch Skills 라이브러리입니다. Agent Skills 표준을 준수하여 Codex, Antigravity, Gemini CLI 등 다양한 코딩 에이전트와 호환됩니다.",
+          "features": [
+            "Stitch Design Skills, Build Skills, Utility Skills 등 다양한 스킬 제공",
+            "Codex, Antigravity, Gemini CLI 등 다양한 코딩 에이전트와 호환",
+            "Stitch MCP 서버와 함께 사용 가능",
+            "선택적으로 스킬 설치 가능",
+            "간단한 설치 절차",
+            "도움 문서 제공"
+          ],
+          "how": "Stitch Skills Marketplace를 추가하거나 직접 스킬 폴더를 복사하여 설치합니다. Stitch MCP 서버도 별도로 설정해야 합니다.",
+          "useCases": [
+            "Stitch MCP와 호환되는 다양한 코딩 에이전트를 사용할 때",
+            "Stitch Design Skills, Build Skills, Utility Skills 등 다양한 스킬을 사용할 때",
+            "선택적으로 필요한 스킬만 설치할 때"
+          ],
+          "caveats": "Stitch Design Skills는 종종 서로 의존성이 있으므로, 선택적으로 설치할 때 모든 의존성을 포함해야 합니다."
+        },
+        {
+          "id": "2026-11-24_repo_cursor_plugins",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 5,
+          "score": 12.47,
+          "title": "cursor / plugins",
+          "url": "https://github.com/cursor/plugins",
+          "lang": "TypeScript",
+          "stars": 18770,
+          "gain": 395,
+          "oneLine": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인 집합체",
+          "points": [
+            "각 플러그인은 독립된 디렉토리로 구성",
+            "타입스크립트로 작성",
+            "다양한 기능 제공"
+          ],
+          "why": "개발자 도구와 SaaS 제품과의 통합을 돕고 효율적인 작업을 가능하게 함",
+          "overview": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인을 제공합니다. 각 플러그인은 독립된 디렉토리로 구성되어 있으며, 타입스크립트로 작성되어 있습니다. 다양한 기능을 제공하여 개발자들이 효율적으로 작업할 수 있도록 도움을 줍니다.",
+          "features": [
+            "각 플러그인은 독립된 디렉토리로 구성되어 있습니다.",
+            "타입스크립트로 작성되어 있습니다.",
+            "다양한 기능을 제공합니다.",
+            "각 플러그인은 `.cursor-plugin/plugin.json` 매니페스트 파일을 포함하고 있습니다.",
+            "각 플러그인은 개발 도구와 SaaS 제품과의 통합을 돕고 효율적인 작업을 가능하게 합니다."
+          ],
+          "how": "각 플러그인은 독립된 디렉토리로 구성되어 있으며, 타입스크립트로 작성되어 있습니다. 각 플러그인은 `.cursor-plugin/plugin.json` 매니페스트 파일을 포함하고 있습니다.",
+          "useCases": [
+            "개발 도구와 SaaS 제품과의 통합을 돕고 효율적인 작업을 가능하게 함",
+            "각 플러그인은 개발 도구와 SaaS 제품과의 통합을 돕고 효율적인 작업을 가능하게 합니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_repo_cathrynlavery_diagram-design",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 9,
+          "score": 11.74,
+          "title": "cathrynlavery / diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "lang": "HTML",
+          "stars": 70893,
+          "gain": 624,
+          "oneLine": "그리프를 생성하는 Agent 스킬",
+          "points": [
+            "52개의 다이어그램 유형",
+            "HTML + SVG 형식",
+            "브랜드 일치"
+          ],
+          "why": "다양한 플랫폼에서 다이어그램을 쉽게 생성하고 관리할 수 있습니다.",
+          "overview": "이 스킬은 Claude Code, Codex, GitHub Copilot 등 다양한 플랫폼에서 다이어그램을 생성하고 관리할 수 있는 Agent 스킬입니다. 52개의 다이어그램 유형을 제공하며, HTML + SVG 형식으로 생성됩니다.",
+          "features": [
+            "52개의 다이어그램 유형 지원",
+            "브랜드 일치를 위한 팔레트 및 폰트 지원",
+            "간단한 설치 및 사용",
+            "다양한 플랫폼에서 작동",
+            "오픈 소스로 공개"
+          ],
+          "how": "Agent 스킬을 통해 플랫폼에서 직접 다이어그램을 생성하고 관리할 수 있습니다. 필요한 다이어그램 유형을 선택하면 HTML + SVG 파일이 생성됩니다.",
+          "useCases": [
+            "앱의 아키텍처 다이어그램 생성",
+            "프로젝트의 영향력과 노력을 나타내는 사분면 다이어그램",
+            "401 에러 발생 시 토큰 재발급 과정의 시퀀스 다이어그램"
+          ],
+          "caveats": "네트워크 통신에 대한 정보는 PRIVACY.md를 참조하세요."
+        },
+        {
+          "id": "2026-11-24_repo_Tracer-Cloud_opensre",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 13,
+          "score": 11.73,
+          "title": "Tracer-Cloud / opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "lang": "Python",
+          "stars": 14773,
+          "gain": 438,
+          "oneLine": "CI/CD 품질 향상에 도움을 주는 오픈 소스 에이전트",
+          "points": [
+            "CI/CD 품질 향상",
+            "오픈 소스",
+            "자신의 모델 사용"
+          ],
+          "why": "CI가 실패했을 때 원인과 해결 방법을 알려주므로 팀의 효율성을 높일 수 있습니다.",
+          "overview": "CI/CD 품질 향상을 위한 오픈 소스 에이전트로, 실패한 런을 분석하여 원인을 추적하고 수정 제안을 제공합니다.",
+          "features": [
+            "CI/CD 품질 향상",
+            "자신의 모델 사용",
+            "CI-caused와 code-caused 구분",
+            "실제 작업과 명확한 피드백을 요구",
+            "프로덕션 사고 분석",
+            "다양한 인테그레이션 지원"
+          ],
+          "how": "CLI로 사용하며, 설치 후 실패한 런을 분석하여 원인을 추적하고 수정 제안을 제공합니다.",
+          "useCases": [
+            "CI/CD 품질 분석",
+            "프로덕션 사고 분석",
+            "CI 실패 수정 제안"
+          ],
+          "caveats": "공개 알파 단계이므로 완전한 안정성이 보장되지 않습니다."
+        },
+        {
+          "id": "2026-11-24_repo_zhouxiaoka_autoclip",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 16,
+          "score": 11.03,
+          "title": "zhouxiaoka / autoclip",
+          "url": "https://github.com/zhouxiaoka/autoclip",
+          "lang": "Python",
+          "stars": 14334,
+          "gain": 908,
+          "oneLine": "오픈소스 AI 비디오 클립 및 재활용 도구",
+          "points": [
+            "오픈소스",
+            "AI 기반",
+            "비디오 클립"
+          ],
+          "why": "비디오 클립 및 재활용을 쉽게 할 수 있는 도구",
+          "overview": "AutoClip은 오픈소스로 제공되는 AI 기반 비디오 클립 및 재활용 도구입니다. 다양한 플랫폼에 맞게 비디오를 자동으로 클립하고, 자막, 캐버스, 발행 텍스트를 생성하여 SNS 플랫폼에 최적화된 비디오를 쉽게 만듭니다.",
+          "features": [
+            "다양한 플랫폼 지원 (TikTok, YouTube Shorts, B站 등)",
+            "자동 비디오 클립 및 자막 생성",
+            "원본 비디오의 화면과 대본을 따라 자동으로 캐버스 생성",
+            "자유롭게 비디오를 클립하고 재구성",
+            "클라우드 모델로 비용 효율적",
+            "사용자 정의 설정 가능"
+          ],
+          "how": "링크를 붙여주고 플랫폼을 선택하면 자동으로 비디오를 클립하고 자막, 캐버스, 발행 텍스트를 생성합니다.",
+          "useCases": [
+            "브로드캐스팅 및 인터뷰 비디오 클립",
+            "교육 콘텐츠 재활용",
+            "SNS 플랫폼에 최적화된 비디오 생성"
+          ],
+          "caveats": "클라우드 모델 사용 시 추가 비용 발생, 사용자 설정에 따라 성능이 다를 수 있음"
+        },
+        {
+          "id": "2026-11-24_repo_XiaoYouChR_Ghost-Downloader-3",
+          "date": "2026-11-24",
+          "kind": "repo",
+          "rank": 15,
+          "score": 10.71,
+          "title": "XiaoYouChR / Ghost-Downloader-3",
+          "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+          "lang": "Python",
+          "stars": 16226,
+          "gain": 1078,
+          "oneLine": "다양한 프로토콜을 지원하는 다중 플랫폼 다운로더",
+          "points": [
+            "다양한 다운로드 프로토콜 지원",
+            "하나의 앱으로 모든 기능",
+            "실시간 스트리밍 다운로드"
+          ],
+          "why": "다양한 다운로드 프로토콜을 지원하여 사용자 편의성을 높입니다.",
+          "overview": "Ghost-Downloader-3는 HTTP, Magnet/BT, FTP, M3U8, MPEG-DASH, eD2k 등 다양한 다운로드 프로토콜을 지원하는 다중 플랫폼 다운로더입니다. 실시간 스트리밍 다운로드와 같은 고급 기능을 제공합니다.",
+          "features": [
+            "실시간 스트리밍 다운로드",
+            "다양한 다운로드 프로토콜 지원",
+            "하나의 앱으로 모든 기능",
+            "실시간 TLS 지문 감지",
+            "다운로드 진행 상황 유지",
+            "Qt 6.6+ 지원"
+          ],
+          "how": "다양한 플랫폼에서 동작하며, 사용자가 원하는 다운로드 프로토콜을 선택하여 다운로드할 수 있습니다.",
+          "useCases": [
+            "다양한 다운로드 프로토콜을 지원하여 다양한 파일 다운로드",
+            "실시간 스트리밍 다운로드",
+            "다양한 플랫폼에서 동작하여 편리한 다운로드 관리"
+          ],
+          "caveats": "Qt 6.6+는 AVX 지시자 없는 CPU를 지원하지 않습니다."
+        },
+        {
+          "id": "2026-11-24_paper_2611_26954",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 2,
+          "score": 14.59,
+          "title": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+          "url": "https://huggingface.co/papers/2611.26954",
+          "arxiv": "https://arxiv.org/abs/2611.26954",
+          "code": "https://github.com/Jingchensun/future-opsd",
+          "stars": 8,
+          "gain": 19,
+          "oneLine": "비디오 예측 능력을 향상시키는 온정책 자기-학습 프레임워크",
+          "points": [
+            "온정책 자기-학습",
+            "비디오 예측",
+            "비주얼 상태"
+          ],
+          "why": "비주얼 데이터만으로도 효율적인 비디오 예측 모델을 학습할 수 있게 함",
+          "overview": "Future-OPSD는 비디오 예측을 위한 비주얼-언어 모델을 온정책 자기-학습을 통해 훈련시킵니다. 이 방법은 추가적인 주석이나 대형 언어 모델의 지도 없이도 비디오의 미래 이벤트를 예측하는 데 도움이 됩니다.",
+          "features": [
+            "비주얼 상태를 기반으로한 예측",
+            "비주얼-언어 모델 훈련",
+            "온정책 자기-학습",
+            "비주얼 상태의 중요성 평가",
+            "결정에 관련된 정보 강화",
+            "비관련 정보 억제"
+          ],
+          "how": "과거-미래 비디오 쌍을 사용하여 자연스러운 자기-학습 신호를 생성하고, 이를 통해 모델이 가장 중요한 미래 정보를 학습하도록 유도합니다.",
+          "useCases": [
+            "비디오 분석 시스템에서 미래 이벤트 예측",
+            "비디오 콘텐츠 생성 시스템에서 미래 동작 예측",
+            "비디오 보안 시스템에서 위협 예측"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_paper_2611_25252",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 7,
+          "score": 13,
+          "title": "Moving Generality from Model to Modeler: LLM Agents for PHM on a Deployment-Style Benchmark",
+          "url": "https://huggingface.co/papers/2611.25252",
+          "arxiv": "https://arxiv.org/abs/2611.25252",
+          "code": "https://github.com/JialingRichard/nextunit-bench",
+          "stars": 1,
+          "gain": 4,
+          "oneLine": "LLM 기반의 코딩 에이전트가 PHM에서 모델의 일반성을 어떻게 이끌어내는지 연구",
+          "points": [
+            "LLM 기반의 코딩 에이전트",
+            "PHM에서의 일반성",
+            "NextUnit-Bench"
+          ],
+          "why": "모델의 일반성이 어떻게 변화하는지 이해하고, 이를 활용하는 방법을 알아보자.",
+          "overview": "LLM 기반의 코딩 에이전트가 PHM에서 모델의 일반성을 어떻게 이끌어내는지 연구한 논문입니다. NextUnit-Bench를 통해 다양한 데이터셋에서 에이전트의 성능을 평가하며, 일반성의 이동과 관련된 결과를 분석합니다.",
+          "features": [
+            "LLM 기반의 코딩 에이전트의 개발",
+            "NextUnit-Bench의 사용",
+            "모델의 일반성 이동의 실험",
+            "AutoML과의 성능 비교",
+            "데이터에 따라 설계된 모델의 일반성",
+            "실행 가능한 예측 모델의 개발"
+          ],
+          "how": "LLM을 기반으로한 코딩 에이전트를 개발하고, NextUnit-Bench를 통해 각 에이전트의 성능을 평가하며, 데이터에 따라 설계된 모델의 일반성을 분석합니다.",
+          "useCases": [
+            "PHM 분야에서의 모델 개발",
+            "새로운 작업에 대한 모델 생성",
+            "실행 가능한 예측 모델의 개발"
+          ],
+          "caveats": "실험 결과는 특정 데이터셋에 따라 달라질 수 있으며, 일반성의 이동은 모든 상황에서 적용될 수는 없습니다."
+        },
+        {
+          "id": "2026-11-24_paper_2611_19247",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 8,
+          "score": 12.35,
+          "title": "GameWM: Toward Next-Generation Video Games with Interaction-Centric World Models",
+          "url": "https://huggingface.co/papers/2611.19247",
+          "arxiv": "https://arxiv.org/abs/2611.19247",
+          "code": "https://github.com/hebing-sjtu/GameWM",
+          "stars": 5,
+          "gain": 2,
+          "oneLine": "GameWM은 엔진과 비디오 모델의 분리로 개인화된 게임을 만드는 방식을 제안합니다.",
+          "points": [
+            "엔진은 정확한 규칙과 상태를 유지",
+            "비디오 모델은 시각적 및 상호작용적 세부 정보를 생성",
+            "사용자별로 새로운 게임 경험 제공"
+          ],
+          "why": "현존의 게임 시스템이 비디오 모델의 생성 능력을 활용하지 못하고 있어 게임 다양성이 제한된다는 이유",
+          "overview": "GameWM은 엔진과 비디오 모델의 분리로 게임 생성을 분리하여 개인화된 게임을 만들 수 있는 설계를 제안합니다. 엔진은 게임의 규칙과 상태를 정확하게 유지하며, 비디오 모델은 시각적 및 상호작용적 세부 정보를 생성합니다.",
+          "features": [
+            "엔진은 정확한 규칙과 상태 유지",
+            "비디오 모델은 시각적 및 상호작용적 세부 정보 생성",
+            "사용자별로 새로운 게임 경험 제공",
+            "실시간 캐시 모델 제공",
+            "5B에서 33B 파라미터의 모델 가족"
+          ],
+          "how": "GameWM은 데이터 엔진과 인터페이스를 중심으로, 인터랙션 기반으로 설계되었습니다. 인터페이스를 통해 작가가 작성한 캐릭터 시트, 장면 아트, 기술 설명이 모델에 입력됩니다.",
+          "useCases": [
+            "개인화된 게임 경험 제공",
+            "다양한 시각적 및 물리적 구조의 게임 메커니즘 제공",
+            "실시간 플레이에 적합한 모델 제공"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_paper_2611_24025",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 10,
+          "score": 11.5,
+          "title": "Intent Contracts: Taking Tools Away from Agents",
+          "url": "https://huggingface.co/papers/2611.24025",
+          "arxiv": "https://arxiv.org/abs/2611.24025",
+          "code": "https://github.com/zwang-devv/intent-contracts",
+          "stars": 1,
+          "gain": 4,
+          "oneLine": "Intent Contracts는 사용자의 의도를 기록하고 신뢰할 수 있는 모델이 도구 호출을 작성하는 인증 인터페이스",
+          "points": [
+            "계획 모델은 도구를 보유하지 않음",
+            "계획 모델이 제출한 짧은 로그된 계약을 검증",
+            "신뢰할 수 있는 모델이 계약을 기반으로 도구 호출을 작성"
+          ],
+          "why": "계획 모델의 영향을 제한하고 더 적은 부정적인 행동을 수행할 수 있음을 보여줍니다.",
+          "overview": "Intent Contracts는 사용자의 의도를 기록하고 신뢰할 수 있는 모델이 도구 호출을 작성하는 인증 인터페이스입니다. 계획 모델은 도구를 보유하지 않고, 사용자의 의도와 명령어를 기록한 짧은 계약을 제출합니다. 신뢰할 수 있는 모델은 이 계약을 기반으로 도구 호출을 작성합니다.",
+          "features": [
+            "계획 모델의 영향을 제한",
+            "부정적인 행동을 줄임",
+            "계획 모델의 의도를 명확히 전달"
+          ],
+          "how": "계획 모델이 제출한 짧은 계약을 검증하고, 신뢰할 수 있는 모델이 계약을 기반으로 도구 호출을 작성합니다.",
+          "useCases": [
+            "계획 모델의 의도를 명확히 전달하여 부정적인 행동을 줄임"
+          ],
+          "caveats": "계획 모델의 의도를 명확히 전달해야 함"
+        },
+        {
+          "id": "2026-11-24_paper_2611_26809",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 4,
+          "score": 11.35,
+          "title": "Search From the Start: Search-Native Pretraining for Language Models",
+          "url": "https://huggingface.co/papers/2611.26809",
+          "arxiv": "https://arxiv.org/abs/2611.26809",
+          "stars": 0,
+          "gain": 2,
+          "oneLine": "Search-Native Pretraining은 언어 모델의 사전 학습 단계에서 검색 기능을 배우는 방법",
+          "points": [
+            "검색 기능 사전 학습",
+            "웹 검색 쿼리 사용",
+            "언어 모델 성능 향상"
+          ],
+          "why": "언어 모델이 검색 도구를 사용할 수 있도록 사전 학습 단계에서 검색 기능을 배우는 것이 중요",
+          "overview": "Search-Native Pretraining은 일반 텍스트 코퍼스에서 검색 기능을 사전 학습하는 방법을 제안합니다. 웹 검색 쿼리를 사용하여 사전 학습 코퍼스를 확장하고, 로컬 인덱스를 사용하여 웹 응답을 검색하여 언어 모델이 검색 호출을 생성하고 검색된 증거를 언어 모델링에 통합하도록 훈련합니다.",
+          "features": [
+            "웹 검색 쿼리 확장",
+            "로컬 인덱스 사용",
+            "검색 호출 생성",
+            "검색된 증거 통합",
+            "성능 향상",
+            "기억력 향상"
+          ],
+          "how": "웹 검색 쿼리를 사용하여 사전 학습 코퍼스를 확장하고, 로컬 인덱스를 사용하여 웹 응답을 검색하여 언어 모델을 훈련합니다.",
+          "useCases": [
+            "지식 집약적인 작업에서의 성능 향상",
+            "검색된 증거에 대한 제어력 향상",
+            "기억력 향상"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_paper_2611_27973",
+          "date": "2026-11-24",
+          "kind": "paper",
+          "rank": 12,
+          "score": 11.03,
+          "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+          "url": "https://huggingface.co/papers/2611.27973",
+          "arxiv": "https://arxiv.org/abs/2611.27973",
+          "code": "https://github.com/Clare-Nie/MemOnce",
+          "stars": 18,
+          "gain": 17,
+          "oneLine": "MemOnce는 대규모 언어 모델의 장기적이고 지속적인 상호작용에서 재사용 가능한 메모리 상태를 유지하는 데 도움이 되는 확장 가능한 메모리 아키텍처입니다.",
+          "points": [
+            "확장 가능한 메모리 상태",
+            "메모리 인코더-디코더",
+            "메모리 스파스 어텐션"
+          ],
+          "why": "기존 아키텍처에서 대규모 언어 모델의 메모리 관리가 어려워질 때 MemOnce를 사용하면 효율적인 메모리 관리가 가능해집니다.",
+          "overview": "MemOnce는 대규모 언어 모델에서 재사용 가능한 메모리 상태를 학습하는 기반 아키텍처입니다. 이 아키텍처는 메모리 인코더-디코더와 메모리 스파스 어텐션 두 가지 핵심 디자인을 기반으로 합니다.",
+          "features": [
+            "메모리 인코더-디코더: 최종 레이어의 일부 히든 상태를 압축된 메모리 표현으로 캐시하고, 어텐션 레이어로 동적으로 디코딩합니다.",
+            "메모리 스파스 어텐션: 각 지속적인 입력에 대해 관련 메모리 표현을 적응적으로 검색하며, 레이어 간에 한 번만 스파스 인덱스를 계산합니다.",
+            "효율적인 메모리 로딩과 KV 캐시 디코딩: GPU 메모리 사용량을 크게 줄이고 선형 시간 복잡도를 달성합니다.",
+            "대규모 모델, 다양한 문맥 길이 및 훈련 파라다임에서 우수한 성능을 보입니다.",
+            "Qwen3.5-4B에서 1M 문맥에서 메모리 상태 캐시를 1313배 줄이고 사전 채우기 지연을 6.9배 줄입니다.",
+            "전처리 및 후처리 적응에서 통과율을 3.5배 향상시키고 전체 메모리 성능을 +5.77% 향상시킵니다."
+          ],
+          "how": "두 개의 핵심 디자인을 결합하여 효율적인 메모리 로딩과 KV 캐시 디코딩을 가능하게 합니다.",
+          "useCases": [
+            "대규모 언어 모델의 장기적이고 지속적인 상호작용에서 메모리 관리",
+            "다양한 모델 크기, 문맥 길이 및 훈련 파라다임에서의 성능 향상",
+            "다운스트림 표현 작업에서 zero-shot 일반화"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_trending_2604_05018",
+          "date": "2026-11-24",
+          "kind": "trending",
+          "rank": 1,
+          "score": 13.5,
+          "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
+          "url": "https://huggingface.co/papers/2604.05018",
+          "arxiv": "https://arxiv.org/abs/2604.05018",
+          "code": "https://github.com/google-research/paper-orchestra",
+          "stars": 6128,
+          "gain": 16,
+          "oneLine": "PaperOrchestra는 자동화된 AI 연구 논문 쓰기 위한 다중 에이전트 프레임워크",
+          "points": [
+            "다중 에이전트 기반",
+            "논문 자동화",
+            "문헌 합성"
+          ],
+          "why": "AI 연구 논문 쓰기의 효율성과 질 향상에 중점을 두고 있습니다.",
+          "overview": "PaperOrchestra는 다양한 형식의 연구 자료를 받아 자동으로 LaTeX 형식의 논문을 작성하고, 문헌 합성과 시각적 요소를 포함합니다.",
+          "features": [
+            "다중 에이전트 시스템으로 유연성 높임",
+            "문헌 합성과 시각적 요소 자동 생성",
+            "LaTeX 형식의 최적화된 논문 생성",
+            "200개 이상의 AI 학술 논문에서 학습한 표준화된 데이터셋 사용",
+            "사람 평가에서 우수한 성과 보여주기"
+          ],
+          "how": "연구 자료를 입력으로 받아, 다중 에이전트가 협력하여 논문을 자동으로 작성하고, 문헌 합성과 시각적 요소를 포함합니다.",
+          "useCases": [
+            "연구자들이 시간을 절약하고 효율적으로 논문을 쓸 수 있게 함",
+            "AI 연구의 질 향상",
+            "학술 발전을 위한 자동화된 논문 작성 도구"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_trending_2606_23050",
+          "date": "2026-11-24",
+          "kind": "trending",
+          "rank": 2,
+          "score": 11.62,
+          "title": "Unlimited OCR Works",
+          "url": "https://huggingface.co/papers/2606.23050",
+          "arxiv": "https://arxiv.org/abs/2606.23050",
+          "code": "https://github.com/baidu/Unlimited-OCR",
+          "stars": 32515,
+          "gain": 110,
+          "oneLine": "Unlimited OCR는 긴 시퀀스 OCR 작업 중 메모리 소비를 줄이는 데 사용하는 Reference Sliding Window Attention을 도입하여 효율적인 다 페이지 텍스트 인식을 가능하게 합니다.",
+          "points": [
+            "Reference Sliding Window Attention",
+            "메모리 효율성",
+            "다 페이지 OCR"
+          ],
+          "why": "기존 OCR 모델의 메모리 문제를 해결하고 효율성을 높이는 데 도움이 될 수 있습니다.",
+          "overview": "Unlimited OCR은 Reference Sliding Window Attention(R-SWA)을 사용하여 긴 시퀀스 OCR 작업 중 메모리 소비를 줄이는 데 초점을 맞추고 있습니다. 이는 기존 OCR 모델의 메모리 문제를 해결하고 효율성을 높이는 데 도움이 될 수 있습니다.",
+          "features": [
+            "R-SWA를 사용하여 메모리 효율성 향상",
+            "다 페이지 OCR을 단일 전방 패스에서 처리",
+            "ASR 및 번역 등 다양한 작업에 적용 가능"
+          ],
+          "how": "R-SWA는 모든 어텐션 레이어를 대체하여 어텐션 계산 비용을 줄이고, 전체 디코딩 과정에서 일관된 KV 캐시를 유지합니다.",
+          "useCases": [
+            "다 페이지 문서의 OCR",
+            "ASR",
+            "번역"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_trending_2611_26603",
+          "date": "2026-11-24",
+          "kind": "trending",
+          "rank": 3,
+          "score": 11.52,
+          "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+          "url": "https://huggingface.co/papers/2611.26603",
+          "arxiv": "https://arxiv.org/abs/2611.26603",
+          "code": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+          "stars": 590,
+          "gain": 37,
+          "oneLine": "이미지와 비디오의 고해상도에서 정밀한 거리 측정을 위한 단일 확장 가능한 네트워크",
+          "points": [
+            "고해상도 거리 측정",
+            "시간 일관성",
+            "경계 선명성"
+          ],
+          "why": "이미지와 비디오에서 정밀한 거리 측정이 필요한 분야에서 활용 가능",
+          "overview": "Depth Pro 2는 이미지와 비디오에서 고해상도의 정밀한 거리 측정을 제공하는 단일 확장 가능한 네트워크입니다. 이 네트워크는 시간 일관성과 경계 선명성을 동시에 유지하면서 정밀도를 향상시킵니다.",
+          "features": [
+            "고해상도 거리 측정",
+            "시간 일관성 유지",
+            "경계 선명성 향상",
+            "실시간 성능",
+            "확장 가능",
+            "다양한 모델 제공"
+          ],
+          "how": "이미지와 비디오를 동시에 처리하여 원본 해상도의 깊이 맵을 예측합니다.",
+          "useCases": [
+            "실시간 비디오 분석",
+            "가상 현실 및 증강 현실",
+            "자율주행 차량"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-24_trending_2309_06180",
+          "date": "2026-11-24",
+          "kind": "trending",
+          "rank": 9,
+          "score": 10.69,
+          "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+          "url": "https://huggingface.co/papers/2309.06180",
+          "arxiv": "https://arxiv.org/abs/2309.06180",
+          "code": "https://github.com/vllm-project/vllm",
+          "stars": 86094,
+          "gain": 77,
+          "oneLine": "PagedAttention 알고리즘과 vLLM 시스템은 대규모 언어 모델의 메모리 관리 효율성을 높여서 처리량을 향상시킵니다.",
+          "points": [
+            "PagedAttention 알고리즘",
+            "vLLM 시스템",
+            "메모리 관리 효율성"
+          ],
+          "why": "대규모 언어 모델의 처리량을 높이고 메모리 사용을 최적화하기 위해",
+          "overview": "PagedAttention 알고리즘과 vLLM 시스템은 대규모 언어 모델의 key-value 캐시 메모리 관리를 효율적으로 관리하여 처리량을 향상시키는 데 초점을 맞춥니다.",
+          "features": [
+            "PagedAttention 알고리즘은 클래식 가상 메모리와 운영 체제의 페이지 교체 기술을 영감받아 설계되었습니다.",
+            "vLLM 시스템은 near-zero waste in KV cache 메모리와 flexible sharing of KV cache를 통해 메모리 사용을 최적화합니다.",
+            "vLLM은 FasterTransformer와 Orca와 같은 최신 시스템과 비교해 2-4배의 처리량 향상을 보여줍니다.",
+            "vLLM은 긴 시퀀스, 큰 모델, 복잡한 디코딩 알고리즘에서 더욱 명확한 향상을 보여줍니다."
+          ],
+          "how": "PagedAttention 알고리즘은 key-value 캐시 메모리를 효율적으로 관리하여 메모리 낭비를 최소화하고, vLLM 시스템은 이를 기반으로 flexible sharing of KV cache를 통해 메모리 사용을 최적화합니다.",
+          "useCases": [
+            "대규모 언어 모델의 실시간 서비스",
+            "대규모 언어 모델의 성능 향상"
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "cards": [
+        {
+          "id": "2026-11-23_repo_mjmirza_app-store-compliance",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 12,
+          "score": 13.21,
+          "title": "mjmirza / app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "lang": "Shell",
+          "stars": 3907,
+          "gain": 617,
+          "oneLine": "App Store 및 Google Play 제출 전에 문제를 미리 찾아 해결하는 도구",
+          "points": [
+            "124개의 거절 패턴과 수정 방법",
+            "프라이버시 명단 및 데이터 안전 검사",
+            "112개의 기준 추적"
+          ],
+          "why": "제출 전에 문제를 미리 찾아 수정하여 거절을 피할 수 있습니다.",
+          "overview": "이 저장소는 iOS 및 Android 앱의 App Store 및 Google Play 제출 전에 문제를 미리 찾아 해결하는 도구입니다. 124개의 거절 패턴과 수정 방법, 프라이버시 명단 및 데이터 안전 검사를 포함하고 있습니다.",
+          "features": [
+            "124개의 거절 패턴과 수정 방법",
+            "프라이버시 명단 및 데이터 안전 검사",
+            "112개의 기준 추적",
+            "AI 코딩 에이전트 기술 지원",
+            "터미널에서 간편하게 사용 가능",
+            "제출 전에 문제를 미리 찾아 수정"
+          ],
+          "how": "터미널에서 두 개의 명령어를 실행하여 앱을 스캔합니다. 첫 번째 명령어는 플레이북을 다운로드하고, 두 번째 명령어는 앱을 스캔합니다. 스캔 결과는 터미널에 출력됩니다.",
+          "useCases": [
+            "새로운 앱 제출 전에 문제를 미리 찾아 수정",
+            "이미 거절된 앱에 대해 수정 사항을 확인",
+            "AI 코딩 도구를 사용하여 앱 제출 전에 문제를 미리 찾아 수정"
+          ],
+          "caveats": "플레이북은 앱의 모든 문제를 보장하지는 않습니다. 리뷰어가 확인할 수 없는 부분도 포함됩니다."
+        },
+        {
+          "id": "2026-11-23_repo_cursor_plugins",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 5,
+          "score": 11.84,
+          "title": "cursor / plugins",
+          "url": "https://github.com/cursor/plugins",
+          "lang": "TypeScript",
+          "stars": 18405,
+          "gain": 301,
+          "oneLine": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인을 제공합니다.",
+          "points": [
+            "각 플러그인은 독립된 디렉토리로 구성되어 있습니다.",
+            "유형스크립트로 작성된 플러그인입니다.",
+            "다양한 카테고리의 플러그인이 있습니다."
+          ],
+          "why": "개발자 도구와 SaaS 제품의 기능을 확장하고 효율성을 높이기 위해.",
+          "overview": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인을 제공합니다. 각 플러그인은 독립된 디렉토리로 구성되어 있으며, 유형스크립트로 작성되었습니다. 다양한 카테고리의 플러그인이 있으며, 플러그인은 개발자 도구와 SaaS 제품의 기능을 확장합니다.",
+          "features": [
+            "각 플러그인은 독립된 디렉토리로 구성되어 있습니다.",
+            "유형스크립트로 작성된 플러그인입니다.",
+            "다양한 카테고리의 플러그인이 있습니다.",
+            "플러그인은 개발자 도구와 SaaS 제품의 기능을 확장합니다.",
+            "각 플러그인은 독립된 디렉토리로 구성되어 있습니다.",
+            "유형스크립트로 작성된 플러그인입니다."
+          ],
+          "how": "각 플러그인은 독립된 디렉토리로 구성되어 있으며, 유형스크립트로 작성되었습니다. 각 플러그인은 개발자 도구와 SaaS 제품의 기능을 확장합니다.",
+          "useCases": [
+            "개발 도구와 SaaS 제품의 기능을 확장하고 효율성을 높이기 위해.",
+            "각 플러그인은 독립된 디렉토리로 구성되어 있습니다.",
+            "유형스크립트로 작성된 플러그인입니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_repo_Tracer-Cloud_opensre",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 13,
+          "score": 11.47,
+          "title": "Tracer-Cloud / opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "lang": "Python",
+          "stars": 14361,
+          "gain": 395,
+          "oneLine": "CI/CD 품질 향상을 위한 오픈소스 에이전트",
+          "points": [
+            "CI/CD 품질 향상",
+            "오픈소스",
+            "자신의 모델 사용"
+          ],
+          "why": "CI가 실패했지만 그 이유나 수정 방법을 알려주지 않는 문제를 해결하기 위해",
+          "overview": "CI/CD 품질 향상을 위한 오픈소스 에이전트로, CI가 실패했을 때 그 이유를 분석하고 수정 방법을 제안합니다. 자체 호스팅 가능하며, 사용자가 자신의 모델을 사용할 수 있습니다.",
+          "features": [
+            "빨리 빨간 빌드 복구",
+            "CI와 코드의 원인 분리",
+            "CI 비용 분석",
+            "모든 엔지니어에게 동일한 분석 깊이 제공",
+            "실제적인 작업과 명확한 피드백을 요구",
+            "클라우드 백업 시나리오에서의 실제 테스트 실행"
+          ],
+          "how": "CLI를 통해 설치하고 시작하며, 자체 호스팅 가능합니다. 지원 플랫폼과 문제 해결 방법은 공식 문서를 참조하세요.",
+          "useCases": [
+            "CI/CD 품질 분석",
+            "PR에서 실패한 검사를 수정",
+            "CI가 항상 녹색을 유지하는 에이전트 설정"
+          ],
+          "caveats": "공개 알파 버전이므로 완전한 안정성이 보장되지 않습니다. API와 통합이 진화할 수 있습니다."
+        },
+        {
+          "id": "2026-11-23_repo_cathrynlavery_diagram-design",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 9,
+          "score": 11.16,
+          "title": "cathrynlavery / diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "lang": "HTML",
+          "stars": 70239,
+          "gain": 513,
+          "oneLine": "HTML + SVG 기반의 다이어그램 생성 도구",
+          "points": [
+            "다양한 다이어그램 유형 지원",
+            "브랜드에 맞춤형 디자인",
+            "단일 HTML + SVG 파일로 생성"
+          ],
+          "why": "코드와 문서에 다이어그램을 쉽게 추가하고 관리할 수 있어요.",
+          "overview": "Claude Code, Codex, GitHub Copilot 등 다양한 플랫폼에서 다이어그램을 생성하고 관리할 수 있는 기능을 제공합니다. 45가지 이상의 다이어그램 유형을 지원하며, 단일 HTML + SVG 파일로 생성하여 쉽게 공유할 수 있습니다.",
+          "features": [
+            "45가지 이상의 다이어그램 유형 지원",
+            "브랜드에 맞춤형 디자인",
+            "단일 HTML + SVG 파일로 생성",
+            "자동 업데이트 지원",
+            "플랫폼 간 호환성",
+            "간단한 사용 방법"
+          ],
+          "how": "플랫폼에서 스킬을 추가하고, 플래그먼트를 사용하여 다이어그램을 생성합니다. 예를 들어, 'Make me an architecture diagram of my app'과 같은 문구를 입력하면 플랫폼이 자동으로 다이어그램을 생성하고 HTML 파일로 제공합니다.",
+          "useCases": [
+            "소프트웨어 아키텍처 다이어그램",
+            "프로젝트 관리 다이어그램",
+            "API 호출 시퀀스 다이어그램"
+          ],
+          "caveats": "네트워크 통신에 대한 개인 정보 전송에 대한 내용이 포함되어 있으므로, 관련 사항을 확인해야 합니다."
+        },
+        {
+          "id": "2026-11-23_repo_zhouxiaoka_autoclip",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 16,
+          "score": 9.82,
+          "title": "zhouxiaoka / autoclip",
+          "url": "https://github.com/zhouxiaoka/autoclip",
+          "lang": "Python",
+          "stars": 13377,
+          "gain": 640,
+          "oneLine": "오픈 소스 AI 비디오 클립 및 재활용 도구",
+          "points": [
+            "비디오 자동 클립",
+            "다양한 플랫폼 지원",
+            "자막 및 콘텐츠 생성"
+          ],
+          "why": "비디오 클립 작업을 빠르고 쉽게 할 수 있는 도구",
+          "overview": "AutoClip은 오픈 소스로, 비디오 클립 및 재활용을 위한 AI 도구입니다. 다양한 플랫폼에 맞게 비디오를 자동으로 클립하고, 자막과 콘텐츠를 생성하여 편리하게 공유할 수 있습니다.",
+          "features": [
+            "비디오 클립 자동화",
+            "다양한 플랫폼 지원",
+            "자막 및 콘텐츠 생성",
+            "오프라인에서 작업 가능",
+            "유료 클라우드 모델 사용",
+            "편리한 사용자 인터페이스"
+          ],
+          "how": "링크를 붙여주고 플랫폼을 선택하면 자동으로 비디오를 클립하고 자막, 콘텐츠를 생성합니다.",
+          "useCases": [
+            "브로드캐스트 프로그램 클립",
+            "웹 콘텐츠 재활용",
+            "교육 동영상 자동화"
+          ],
+          "caveats": "유료 클라우드 모델 사용 시 비용 발생, 온라인에서 작업 시 인터넷 연결 필요"
+        },
+        {
+          "id": "2026-11-23_repo_nginx_nginx",
+          "date": "2026-11-23",
+          "kind": "repo",
+          "rank": 7,
+          "score": 9.74,
+          "title": "nginx / nginx",
+          "url": "https://github.com/nginx/nginx",
+          "lang": "C",
+          "stars": 32868,
+          "gain": 168,
+          "oneLine": "NGINX의 오픈 소스 버전 저장소",
+          "points": [
+            "웹 서버",
+            "로드 밸런서",
+            "리버스 프록시"
+          ],
+          "why": "웹 서버 및 관련 기능을 효율적으로 관리하고 확장할 수 있는 도구",
+          "overview": "NGINX는 웹 서버, 로드 밸런서, 리버스 프록시, API 게이트웨이 및 콘텐츠 캐시를 제공하는 오픈 소스 소프트웨어입니다.",
+          "features": [
+            "웹 서버 및 로드 밸런서",
+            "리버스 프록시 및 API 게이트웨이",
+            "콘텐츠 캐싱",
+            "SSL/TLS 암호화",
+            "동적 모듈 지원"
+          ],
+          "how": "GitHub에서 클론하고 빌드하여 사용합니다.",
+          "useCases": [
+            "웹 서버 설정",
+            "로드 밸런싱",
+            "API 게이트웨이 구현"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_paper_2611_15941",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 4,
+          "score": 14.25,
+          "title": "Lang-SVG: Hierarchical Image Vectorization with Language Priors",
+          "url": "https://huggingface.co/papers/2611.15941",
+          "arxiv": "https://arxiv.org/abs/2611.15941",
+          "stars": 0,
+          "gain": 1,
+          "oneLine": "Lang-SVG는 래스터 이미지를 효율적인 벡터 그래픽(SVG)으로 변환하는 기술로, 객체 부분 계층 구조와 일치하도록 설계되었습니다.",
+          "points": [
+            "계층 구조",
+            "세미틱 라벨",
+            "MLLM"
+          ],
+          "why": "사람이 인식하는 객체 부분 계층 구조와 일치하도록 이미지를 벡터화하는 데 도움이 필요할 때",
+          "overview": "Lang-SVG는 래스터 이미지를 SVG로 변환하여 이미지의 구조적이고 편집 가능한 코드 표현을 제공합니다. 이를 위해 계층 구조와 세미틱 라벨을 사용하여 SVG 원시 요소를 조직하고, MLLM을 활용하여 라벨을 할당하며, 간소화와 구조적 품질 향상을 위해 여러 기술을 도입합니다.",
+          "features": [
+            "계층 구조와 세미틱 라벨을 사용하여 객체 부분 계층 구조를 유지합니다.",
+            "MLLM을 활용하여 라벨을 자동으로 할당합니다.",
+            "간소화 기술을 사용하여 SVG 노드의 중복을 제거하고 복잡도를 줄입니다.",
+            "Tree-Guided Pruning and Merging을 사용하여 불필요한 SVG 노드를 제거합니다.",
+            "L1-SAM-Prompting을 사용하여 빠진 영역을 복구하여 재구성의 신뢰성과 구조적 완성도를 향상시킵니다.",
+            "새로운 평가 프로토콜을 도입하여 구조적 품질과 세미틱 부분 정합성을 측정합니다."
+          ],
+          "how": "Lang-SVG는 계층 구조와 세미틱 라벨을 사용하여 SVG 원시 요소를 조직하고, MLLM을 활용하여 라벨을 자동으로 할당하며, 간소화와 구조적 품질 향상을 위해 여러 기술을 도입합니다.",
+          "useCases": [
+            "디자인 도구에서 이미지를 쉽게 편집하고 재구성할 수 있습니다.",
+            "웹 페이지에서 이미지를 높은 품질로 표시할 수 있습니다.",
+            "그래픽 디자인에서 이미지의 구조적 정보를 유지할 수 있습니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_paper_2611_25567",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 10,
+          "score": 13.37,
+          "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+          "url": "https://huggingface.co/papers/2611.25567",
+          "arxiv": "https://arxiv.org/abs/2611.25567",
+          "stars": 0,
+          "gain": 12,
+          "oneLine": "인공지능이 실시간으로 수행 중인 절차에서 실수를 감지하는 기술",
+          "points": [
+            "실시간 감지",
+            "지시문 사용",
+            "모듈화된 파이프라인"
+          ],
+          "why": "실수를 빠르게 감지하여 복구할 수 있는 도구가 필요함",
+          "overview": "이 논문은 인공지능이 실시간으로 수행 중인 절차에서 실수를 감지하는 기술을 연구하고, 이를 실시간으로 수행 중인 개인의 동영상을 사용하여 실수를 감지하는 방법을 제안함",
+          "features": [
+            "지시문과 동영상만 사용하여 실수를 감지",
+            "모듈화된 파이프라인과 통합 모델을 비교하여 성능을 평가",
+            "모든 스플릿에 오류 동영상을 포함하여 지도 학습 지원",
+            "실수 분류에 대한 높은 정확도를 달성"
+          ],
+          "how": "지시문과 동영상에서 수행된 동작을 분석하여 실수를 감지하고 분류",
+          "useCases": [
+            "수술 동영상에서 실수 감지",
+            "요리 동영상에서 실수 감지",
+            "산업 생산 과정에서 실수 감지"
+          ],
+          "caveats": "모듈화된 접근 방식의 정확도가 통합 모델보다 낮음"
+        },
+        {
+          "id": "2026-11-23_paper_2611_26232",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 1,
+          "score": 12.85,
+          "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+          "url": "https://huggingface.co/papers/2611.26232",
+          "arxiv": "https://arxiv.org/abs/2611.26232",
+          "code": "https://github.com/jmaasch/itpd",
+          "stars": 1,
+          "gain": 2,
+          "oneLine": "시간 시리즈의因果 구조 학습을 위한 로컬 캐주얼 부모 검출의 반복적 접근",
+          "points": [
+            "시간 시리즈의 고유한 도전",
+            "로컬-글로벌 학습 접근",
+            "고차 조건 독립성 테스트 교체"
+          ],
+          "why": "시간 시리즈의 복잡성과 계산 비용을 줄여因果 관계를 더 효과적으로 학습할 수 있다.",
+          "overview": "ITPD는 시간 시리즈의因果 구조를 학습하는 데 사용되는 반복적 접근을 제안한다. 이 방법은 각 변수의 부모 집합을 순차적으로 발견하여 전역 그래프를 구성한다.",
+          "features": [
+            "로컬-글로벌 학습 접근",
+            "시간적 구조적 사전 활용",
+            "그래프 분할",
+            "로컬 마코브 조건 활용",
+            "고차 조건 독립성 테스트 교체",
+            "정확한 오라클을 사용한 최적의 성능"
+          ],
+          "how": "각 변수의 부모 집합을 순차적으로 발견하여 전역 그래프를 구성하는 반복적 접근을 사용한다.",
+          "useCases": [
+            "시간 시리즈 데이터의因果 관계 분석",
+            "비상태적 시스템의 모델링",
+            "실시간 데이터의 예측 및 예방"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_paper_2611_19230",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 46,
+          "score": 12.83,
+          "title": "CompoundingKernel: Self-Improving from Zero to First",
+          "url": "https://huggingface.co/papers/2611.19230",
+          "arxiv": "https://arxiv.org/abs/2611.19230",
+          "stars": 0,
+          "gain": 11,
+          "oneLine": "CompoundingKernel은 GPU 커널을 생성하는 자동화된 시스템으로, 검색을 통해 자기 개선을 진행합니다.",
+          "points": [
+            "자기 개선",
+            "GPU 커널 생성",
+            "검색 기반"
+          ],
+          "why": "최신 연구나 기술에 대한 이해를 돕고, 효율적인 GPU 커널 생성을 가능하게 합니다.",
+          "overview": "CompoundingKernel는 GPU 커널을 검색을 통해 자동으로 생성하는 시스템입니다. 초기에는 아무런 커널이나 점수도 없이 시작하며, 각 문제의 PyTorch 정의만 제공받습니다. LLM 컨트롤러는 이전의 커널과 디자인을 바탕으로 새로운 커널을 생성하고, 각 병렬 작업에 방향을 주어 최적화된 커널을 생성합니다.",
+          "features": [
+            "자기 개선: 초기에는 아무런 정보도 없이 시작하여 점차 개선됩니다.",
+            "GPU 커널 생성: PyTorch 정의를 기반으로 GPU 커널을 생성합니다.",
+            "검색 기반: 검색을 통해 최적의 커널을 찾습니다.",
+            "효율성: 검색을 통해 더 많은 시도를 하여 더 빠른 커널을 생성합니다.",
+            "병렬 처리: 여러 개의 병렬 작업을 통해 효율적으로 커널을 생성합니다.",
+            "확장성: 검색 성능이 최대한 높아야 확장성이 높습니다."
+          ],
+          "how": "LLM 컨트롤러가 문제의 PyTorch 정의를 기반으로 새로운 커널을 생성하고, 각 병렬 작업에 방향을 주어 최적화된 커널을 생성합니다. 검색 성능이 최대한 높아야 확장성이 높습니다.",
+          "useCases": [
+            "GPU 커널 최적화: GPU 성능을 높이기 위해 최적의 커널을 생성합니다.",
+            "연구 개발: 새로운 연구를 위한 GPU 커널을 자동으로 생성합니다.",
+            "기계 학습: GPU를 활용한 학습 속도를 높이기 위해 최적의 커널을 생성합니다."
+          ],
+          "caveats": "검색 성능이 최대한 높아야 확장성이 높습니다."
+        },
+        {
+          "id": "2026-11-23_paper_2611_21053",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 9,
+          "score": 12.11,
+          "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+          "url": "https://huggingface.co/papers/2611.21053",
+          "arxiv": "https://arxiv.org/abs/2611.21053",
+          "code": "https://github.com/eltzanis/SystemOneAgents",
+          "stars": 15,
+          "gain": 6,
+          "oneLine": "지역 System 1 에이전트는 텍스트 생성 없이 신뢰성 있고 빠른 의료 도구 호출을 가능하게 하는 AI 방법",
+          "points": [
+            "지역적",
+            "신뢰성",
+            "빠름"
+          ],
+          "why": "의료 데이터 분석 자동화를 위한 안전하고 신뢰성 있는 AI 방법",
+          "overview": "지역 System 1 에이전트는 도구 스키마와 요청을 다중 선택 문제로 변환하여 텍스트 생성 없이 의료 도구를 신속하게 호출합니다. 이 방법은 클라우드 LLM과 비교해 훨씬 더 높은 정확도를 보여줍니다.",
+          "features": [
+            "텍스트 생성 없이 의료 도구 호출",
+            "신뢰성 있는 분석 자동화",
+            "빠른 응답 시간",
+            "다중 선택 문제로 도구 호출",
+            "정확도가 높은 결정 모델",
+            "오픈 소스로 공개"
+          ],
+          "how": "도구 스키마와 요청을 다중 선택 문제로 변환하고, 이를 한 번 통과하는 결정 모델이 답변합니다.",
+          "useCases": [
+            "의료 데이터 분석 자동화",
+            "의료 도구 호출의 신뢰성 향상",
+            "빠른 의료 분석 솔루션"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_paper_2611_26239",
+          "date": "2026-11-23",
+          "kind": "paper",
+          "rank": 2,
+          "score": 11.21,
+          "title": "Teaching Vision-Language-Action Models to Stop Safely",
+          "url": "https://huggingface.co/papers/2611.26239",
+          "arxiv": "https://arxiv.org/abs/2611.26239",
+          "code": "https://github.com/franciscoliu/SAFI",
+          "stars": 1,
+          "gain": 8,
+          "oneLine": "VLA 모델을 안전하게 중단하고 물리적 반응을 제어하는 방법",
+          "points": [
+            "SAFI",
+            "State-Aware Fallback Imitation",
+            "VLA 모델"
+          ],
+          "why": "VLA 모델의 안전한 중단과 물리적 반응 제어에 대한 연구",
+          "overview": "SAFI는 VLA 모델에서 금지된 행동을 중단하고 물리적 반응을 제어하는 방법을 제안합니다. 이 방법은 초기 상태에서 작업을 억제하는 정책이 실행 중단을 완료할 수 있음을 보여주며, 작업이 완료되지 않더라도 로봇이 보유한 물체를 떨어뜨리는 등의 문제를 해결합니다.",
+          "features": [
+            "State-Aware Fallback Imitation (SAFI)의 도입",
+            "금지된 작업 중단 시 안전한 물리적 반응 제어",
+            "두 단계로 구성된 학습 프로세스",
+            "중간 실행 상태에서 명시적인 대체 응답 학습",
+            "기존 작업의 기술 유지",
+            "LIBERO 및 BadLIBERO 작업에서의 평가"
+          ],
+          "how": "SAFI는 금지된 작업의 보정 목표 생성과 함께 보존된 작업의 원래 행동과 함께 학습합니다. 이 학습은 중간 실행 상태에서 명시적인 대체 응답을 가르치며, 로봇의 다른 기술을 유지합니다.",
+          "useCases": [
+            "로봇이 보유한 물체를 안전하게 떨어뜨리는 방법",
+            "금지된 행동 중단 시 물리적 반응 제어",
+            "VLA 모델의 안전한 실행을 보장하는 방법"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_trending_2606_23050",
+          "date": "2026-11-23",
+          "kind": "trending",
+          "rank": 2,
+          "score": 11.57,
+          "title": "Unlimited OCR Works",
+          "url": "https://huggingface.co/papers/2606.23050",
+          "arxiv": "https://arxiv.org/abs/2606.23050",
+          "code": "https://github.com/baidu/Unlimited-OCR",
+          "stars": 32005,
+          "gain": 106,
+          "oneLine": "Unlimited OCR는 긴 시퀀스 OCR 작업 중 메모리 소비를 줄이는 데 사용하는 Reference Sliding Window Attention을 도입하여 효율적인 다 페이지 텍스트 인식을 가능하게 합니다.",
+          "points": [
+            "Reference Sliding Window Attention",
+            "메모리 효율성",
+            "다 페이지 OCR"
+          ],
+          "why": "기존 OCR 모델의 메모리 문제를 해결하고 효율성을 높이는 데 도움이 될 수 있습니다.",
+          "overview": "Unlimited OCR은 Reference Sliding Window Attention을 사용하여 긴 시퀀스 OCR 작업 중 메모리 소비를 줄이는 모델입니다. 이 모델은 DeepSeek OCR을 기반으로 하며, 디코더의 모든 어텐션 레이어를 R-SWA로 대체하여 메모리 효율성을 높이고, 다 페이지 텍스트 인식을 단일 전방 패스에서 가능하게 합니다.",
+          "features": [
+            "Reference Sliding Window Attention 사용으로 메모리 효율성 향상",
+            "다 페이지 OCR 작업에서 단일 전방 패스에서 인식 가능",
+            "ASR 및 번역 등 다양한 작업에 적용 가능",
+            "코드와 모델 가중치 공개"
+          ],
+          "how": "디코더의 모든 어텐션 레이어를 Reference Sliding Window Attention으로 대체하여 메모리 효율성을 높이고, 인식 과정에서 KV 캐시를 유지하여 효율적인 인식을 가능하게 합니다.",
+          "useCases": [
+            "다 페이지 문서의 OCR 인식",
+            "ASR (음성 인식)",
+            "번역"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_trending_2611_26603",
+          "date": "2026-11-23",
+          "kind": "trending",
+          "rank": 3,
+          "score": 11.46,
+          "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+          "url": "https://huggingface.co/papers/2611.26603",
+          "arxiv": "https://arxiv.org/abs/2611.26603",
+          "code": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+          "stars": 444,
+          "gain": 34,
+          "oneLine": "이미지와 비디오에서 높은 해상도의 정밀도를 가진 깊이 맵을 추정하는 단일 확장 가능한 네트워크",
+          "points": [
+            "단일 네트워크",
+            "확장 가능",
+            "정밀도"
+          ],
+          "why": "이미지와 비디오에서 높은 정밀도의 깊이 맵을 효율적으로 추정할 수 있어요.",
+          "overview": "Depth Pro 2는 이미지와 비디오에서 높은 해상도의 정밀도를 가진 깊이 맵을 추정하는 단일 확장 가능한 네트워크입니다. 이 네트워크는 시간 일관성과 경계 선명성을 동시에 유지하면서 정밀도를 높입니다.",
+          "features": [
+            "단일 확장 가능한 네트워크: 이미지와 비디오 모두 처리 가능",
+            "높은 해상도의 정밀도: 원본 해상도에서 깊이 맵 생성",
+            "시간 일관성: 여러 프레임에서도 깊이 정보 유지",
+            "경계 선명: 경계 선을 명확하게 표현",
+            "효율적: 런타임이 적음",
+            "새로운 성능 경계: 정밀도, 선명성, 시간 일관성 모두 최적화"
+          ],
+          "how": "네트워크는 이미지와 비디오를 동시에 처리하여 원본 해상도에서 깊이 맵을 예측합니다. 이를 통해 시간 일관성과 경계 선명성을 유지하면서 정밀도를 높입니다.",
+          "useCases": [
+            "실시간 비디오 분석",
+            "AR/VR 애플리케이션",
+            "자율주행 차량"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_trending_2608_16157",
+          "date": "2026-11-23",
+          "kind": "trending",
+          "rank": 12,
+          "score": 9.62,
+          "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+          "url": "https://huggingface.co/papers/2608.16157",
+          "arxiv": "https://arxiv.org/abs/2608.16157",
+          "code": "https://github.com/FlashML-org/FreeToken",
+          "stars": 17648,
+          "gain": 110,
+          "oneLine": "FreeToken은 개인 컴퓨터를 효율적인 모델 서버로 활용하는 시스템",
+          "points": [
+            "모델 서버",
+            "모델 상태",
+            "하eterogeneous 하드웨어"
+          ],
+          "why": "데이터 센터 인프라를 사용하지 않고 개인 컴퓨터에서도 최적의 모델 서버를 제공할 수 있어요.",
+          "overview": "FreeToken은 개인 컴퓨터를 모델 서버로 활용하는 시스템으로, 모델 상태와 하eterogeneous 하드웨어를 동적으로 매핑하여 대형 모델을 실행할 수 있습니다.",
+          "features": [
+            "모델 상태와 하eterogeneous 하드웨어를 동적으로 매핑",
+            "대형 모델을 지원",
+            "CPU-GPU 실행 지원",
+            "런타임 메모리 관리",
+            "대형 모델 실행 가능",
+            "개인 컴퓨터에서 최적의 모델 서버 제공"
+          ],
+          "how": "모델 레이아웃과 로딩, 전문가 거주, CPU-GPU 실행, 상태 재사용, 런타임 메모리 관리 등을 통합하여 설계",
+          "useCases": [
+            "개인 컴퓨터에서 대형 모델 실행",
+            "하eterogeneous 하드웨어 활용",
+            "대형 모델의 실시간 실행"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-23_trending_2611_23144",
+          "date": "2026-11-23",
+          "kind": "trending",
+          "rank": 7,
+          "score": 7.59,
+          "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
+          "url": "https://huggingface.co/papers/2611.23144",
+          "arxiv": "https://arxiv.org/abs/2611.23144",
+          "code": "https://github.com/yyfz/Pi4",
+          "stars": 429,
+          "gain": 19,
+          "oneLine": "π^4: 4D 장면의 기하학과 운동을 추출하는 통합 기반 모델",
+          "points": [
+            "4D 장면에서 기하학과 카메라 포즈 추출",
+            "다양한 비정밀 RGB 관찰에서 정보 복원",
+            "효율적인 파라미터 수와 단일 전방 패스에서의 재구성"
+          ],
+          "why": "다양한 장면에서의 정보 추출과 효율적인 파라미터 관리에 관심이 있는 독자에게 유용",
+          "overview": "π^4는 4D 장면에서의 기하학과 카메라 포즈, 객체 추적을 통합적으로 추출하는 모델입니다. 다양한 비정밀 RGB 관찰에서 정보를 복원하며, 효율적인 파라미터 수와 단일 전방 패스에서의 재구성을 통해 높은 성능을 발휘합니다.",
+          "features": [
+            "다양한 비정밀 관찰에서 정보 복원",
+            "효율적인 파라미터 관리",
+            "단일 전방 패스에서의 재구성",
+            "대규모 장면 재구성",
+            "다양한 벤치마크에서의 최고 성능"
+          ],
+          "how": "기하학과 운동을 분리된 브랜치로 구조화하여, 기하학을 기반으로 한 운동 예측을 수행하고, 이를 3D로 끌어올립니다. 공유된 뱀백을 사용하여 전체 시스템의 파라미터 수를 줄이고, 단일 전방 패스에서 재구성과 추적을 수행합니다.",
+          "useCases": [
+            "실제 환경에서의 장면 분석",
+            "다양한 비정밀 데이터에서의 정보 추출",
+            "대규모 장면의 재구성과 추적"
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "cards": [
+        {
+          "id": "2026-11-22_repo_firecrawl_firecrawl",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 6,
+          "score": 17.9,
+          "title": "firecrawl / firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "lang": "TypeScript",
+          "stars": 206085,
+          "gain": 999,
+          "oneLine": "웹사이트 데이터를 수집하고 AI 에이전트를 향상시키는 도구",
+          "points": [
+            "Firecrawl Local",
+            "Firecrawl Cloud",
+            "Self-hosting"
+          ],
+          "why": "웹 데이터 수집과 AI 에이전트의 효율성을 높여주는 도구",
+          "overview": "Firecrawl은 웹사이트에서 데이터를 수집하고, AI 에이전트를 향상시키는 도구입니다. Local, Cloud, Self-hosting 세 가지 방식으로 사용할 수 있습니다.",
+          "features": [
+            "웹사이트에서 데이터를 수집하여 마크다운 형식으로 저장",
+            "크로스 플랫폼 지원 (Windows, macOS, Linux)",
+            "크로스 브라우저 지원 (Chrome, Chromium)",
+            "PDF와 Office 문서의 로컬 파싱",
+            "크로스 플랫폼 지원 (Windows, macOS, Linux)",
+            "크로스 브라우저 지원 (Chrome, Chromium)"
+          ],
+          "how": "Rust 언어로 작성된 Firecrawl Local을 로컬에서 실행하거나, Firecrawl Cloud를 사용하여 규모를 확장하거나, 자체 호스팅으로 사용할 수 있습니다.",
+          "useCases": [
+            "AI 에이전트의 데이터 수집 및 처리",
+            "웹 사이트의 데이터를 마크다운 형식으로 저장",
+            "크로스 플랫폼에서 웹 데이터를 수집"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_repo_openvinotoolkit_openvino",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 8,
+          "score": 17.05,
+          "title": "openvinotoolkit / openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "lang": "C++",
+          "stars": 11912,
+          "gain": 202,
+          "oneLine": "OpenVINO는 AI 추론을 최적화하고 배포하는 오픈소스 툴킷",
+          "points": [
+            "인프라 최적화",
+            "다양한 모델 지원",
+            "플랫폼 호환성"
+          ],
+          "why": "AI 모델의 성능을 높이고 효율적으로 배포하기 위해",
+          "overview": "OpenVINO는 인공지능 추론을 최적화하고 배포하는 오픈소스 툴킷입니다. 다양한 인공지능 모델을 지원하며, CPU, GPU, NPU 등 다양한 하드웨어에서 효율적으로 실행할 수 있습니다.",
+          "features": [
+            "인프라 최적화: CPU, GPU, NPU 등 다양한 하드웨어에서 성능 향상",
+            "다양한 모델 지원: PyTorch, TensorFlow, ONNX 등 다양한 프레임워크 지원",
+            "플랫폼 호환성: 엣지에서 클라우드까지 다양한 플랫폼 지원",
+            "커뮤니티 활성화: 활발한 커뮤니티로 지속적인 업데이트와 지원",
+            "성능 최적화: 다양한 AI 작업에 대한 성능 향상",
+            "유연한 모델 변환: 원래 프레임워크 없이 모델 변환 및 배포 가능"
+          ],
+          "how": "C++ API를 통해 모델을 로드하고 추론을 실행하며, 다양한 하드웨어에서 효율적으로 실행됩니다.",
+          "useCases": [
+            "컴퓨터 비전",
+            "음성 인식",
+            "생성형 AI"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_repo_jingyaogong_minimind",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 4,
+          "score": 16.52,
+          "title": "jingyaogong / minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "lang": "Python",
+          "stars": 68106,
+          "gain": 488,
+          "oneLine": "2小时从0训练出64M超小语言模型",
+          "points": [
+            "开源项目",
+            "轻量级",
+            "全阶段开源"
+          ],
+          "why": "适合个人快速训练和理解大语言模型",
+          "overview": "MiniMind是一个开源项目，旨在用极低的成本和时间（3块成本，2小时）训练出规模约为64M的超小语言模型。它提供了完整的结构代码、训练链路和数据集，并支持多种模型扩展。",
+          "features": [
+            "全阶段开源，包括预训练、微调、LoRA等",
+            "轻量级，体积仅为GPT-3的1/2700",
+            "支持多种模型扩展，如视觉、多模态和扩散语言模型",
+            "使用PyTorch原生实现，不依赖第三方库",
+            "提供完整的训练流程和数据集",
+            "支持单机单卡或多卡训练，可视化和动态启停训练"
+          ],
+          "how": "通过PyTorch实现，提供完整的训练代码和数据集，用户只需按照步骤进行训练。",
+          "useCases": [
+            "个人学习和研究大语言模型",
+            "快速原型开发和测试",
+            "扩展和定制模型以满足特定需求"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_repo_mjmirza_app-store-compliance",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 12,
+          "score": 13.73,
+          "title": "mjmirza / app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "lang": "Shell",
+          "stars": 3318,
+          "gain": 724,
+          "oneLine": "App Store Compliance Playbook: 자동화된 가이드로 iOS와 Android 앱의 App Store 및 Google Play 거부를 방지합니다.",
+          "points": [
+            "117개의 거부 패턴과 수정 방법",
+            "개인 정보 보안 및 데이터 보안 검사",
+            "95개의 기준 준수"
+          ],
+          "why": "앱 거부를 최소화하고 개발 시간을 절약할 수 있습니다.",
+          "overview": "이 저장소는 자동화된 가이드로 iOS와 Android 앱의 App Store 및 Google Play 거부를 방지합니다. 117개의 거부 패턴과 수정 방법, 개인 정보 보안 및 데이터 보안 검사, 그리고 95개의 기준 준수를 제공합니다.",
+          "features": [
+            "117개의 거부 패턴과 수정 방법을 포함",
+            "개인 정보 보안 및 데이터 보안 검사 도구",
+            "95개의 기준 준수를 체크",
+            "AI 코딩 도구 지원",
+            "즉시 앱 거부를 방지",
+            "개발 시간 절약"
+          ],
+          "how": "터미널에서 두 개의 명령어를 실행하여 앱의 거부 위험을 검사하고 수정합니다. 자동화된 가이드를 통해 앱의 문제를 빠르게 찾아 수정할 수 있습니다.",
+          "useCases": [
+            "새로운 앱 제출 전에 거부 위험을 검사하여 시간을 절약합니다.",
+            "이미 거부된 앱에 대해 재제출 전에 문제를 수정합니다.",
+            "개인 정보 보안 및 데이터 보안을 확인하여 앱 승인 확률을 높입니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_repo_google-labs-code_stitch-skills",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 11,
+          "score": 12,
+          "title": "google-labs-code / stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "lang": "TypeScript",
+          "stars": 11370,
+          "gain": 324,
+          "oneLine": "Google Labs의 Stitch Skills 라이브러리",
+          "points": [
+            "Agent Skills 표준 준수",
+            "다양한 코딩 에이전트와 호환",
+            "Stitch MCP 서버와 함께 사용"
+          ],
+          "why": "Stitch MCP와 호환되는 다양한 에이전트 스킬을 쉽게 사용할 수 있게 함",
+          "overview": "Google Labs에서 만든 Stitch Skills는 Agent Skills 표준을 준수하는 에이전트 스킬과 플러그인의 모음을 제공합니다. Codex, Antigravity, Gemini CLI 등 다양한 코딩 에이전트와 호환됩니다.",
+          "features": [
+            "Agent Skills 표준 준수",
+            "Codex, Antigravity, Gemini CLI 등 다양한 에이전트와 호환",
+            "Stitch MCP 서버와 함께 사용 가능",
+            "설치 방법이 명확",
+            "선택적 설치 가능",
+            "도움 문서 제공"
+          ],
+          "how": "Stitch Skills Marketplace를 추가하고 필요한 플러그인을 설치하거나, OpenCode의 경우 수동으로 스킬과 Stitch MCP 서버를 설치합니다.",
+          "useCases": [
+            "Stitch MCP 서버와 함께 사용하여 에이전트 스킬을 관리",
+            "Codex, Antigravity, Gemini CLI 등 다양한 코딩 에이전트와 함께 작업",
+            "선택적 설치로 필요한 스킬만 설치하여 리소스 절약"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_repo_Tracer-Cloud_opensre",
+          "date": "2026-11-22",
+          "kind": "repo",
+          "rank": 13,
+          "score": 11.8,
+          "title": "Tracer-Cloud / opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "lang": "Python",
+          "stars": 13941,
+          "gain": 450,
+          "oneLine": "CI/CD 품질 향상을 위한 오픈소스 에이전트",
+          "points": [
+            "CI/CD 품질 향상",
+            "오픈소스",
+            "자신의 모델 사용"
+          ],
+          "why": "CI가 실패했을 때 원인과 해결 방법을 자동으로 찾아주는 편리한 도구",
+          "overview": "CI/CD 품질을 높이기 위한 오픈소스 에이전트로, 실패한 CI를 자동으로 분석하고 수정 제안을 제공합니다.",
+          "features": [
+            "실패 원인 분석",
+            "자동 수정 제안",
+            "자신의 모델 사용",
+            "다양한 인프라와 통합 가능",
+            "실제 작업과 명확한 피드백을 요구"
+          ],
+          "how": "CLI를 통해 설치하고 시작하며, 실패한 CI를 분석하고 수정 제안을 제공합니다.",
+          "useCases": [
+            "CI/CD 품질 향상",
+            "프로덕션 사고 분석",
+            "CI 실패 원인 분석"
+          ],
+          "caveats": "공개 알파 버전으로, 완전한 안정성은 아직 제공되지 않습니다."
+        },
+        {
+          "id": "2026-11-22_paper_2611_15941",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 4,
+          "score": 14.25,
+          "title": "Lang-SVG: Hierarchical Image Vectorization with Language Priors",
+          "url": "https://huggingface.co/papers/2611.15941",
+          "arxiv": "https://arxiv.org/abs/2611.15941",
+          "stars": 0,
+          "gain": 1,
+          "oneLine": "Lang-SVG는 언어 사전을 활용한 계층적 이미지 벡터화 기술",
+          "points": [
+            "계층적 구조",
+            "언어 사전",
+            "SVG 벡터화"
+          ],
+          "why": "사람이 인식하는 객체 부분 계층 구조와 잘 맞추어져 있어 조작이 용이하다",
+          "overview": "Lang-SVG는 계층적 구조를 가진 SVG를 생성하여 이미지를 벡터화하는 기술로, 픽셀 단위의 렌더링 정확성을 최적화하는 대신 객체 부분 계층 구조와 잘 맞추어져 있어 조작이 용이하다",
+          "features": [
+            "계층적 SVG 생성",
+            "언어 사전 활용",
+            "그리도 조절 가능한 세그멘테이션",
+            "다중 모달 대형 언어 모델 활용",
+            "깊이 적응형 단순화",
+            "트리 지도 합병 및 제거"
+          ],
+          "how": "SVG 트리 구조를 사용하여 객체 부분 계층 구조를 명시적으로 정의하고, 다중 모달 대형 언어 모델을 활용하여 라벨을 할당하며, 깊이 적응형 단순화와 트리 지도 합병 및 제거를 통해 중복을 줄인다",
+          "useCases": [
+            "디자인 도구에서 이미지 편집",
+            "웹 페이지에서 이미지 최적화",
+            "그래픽 디자인에서 이미지 재사용"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_paper_2611_25567",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 10,
+          "score": 13.33,
+          "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+          "url": "https://huggingface.co/papers/2611.25567",
+          "arxiv": "https://arxiv.org/abs/2611.25567",
+          "stars": 0,
+          "gain": 11,
+          "oneLine": "인공지능이 실시간으로 진행 중인 절차를 감독하고 실수를 탐지하는 기술",
+          "points": [
+            "실시간 감독",
+            "지시문 사용",
+            "오류 탐지"
+          ],
+          "why": "실수를 빠르게 탐지하여 복구할 수 있는 능력이 중요",
+          "overview": "이 논문은 인공지능이 실시간으로 진행 중인 절차를 감독하고 실수를 탐지하는 기술을 연구합니다. 논문에서는 지시문을 사용하여 실시간으로 실수를 탐지하는 방법을 제안하고, 이를 실시한 모델의 성능을 평가합니다.",
+          "features": [
+            "지시문을 사용하여 실시간으로 실수를 탐지",
+            "모듈화된 파이프라인과 통합 모델을 비교하여 성능 평가",
+            "오류 탐지 성능 향상",
+            "오류 전파를 고려한 성능 개선"
+          ],
+          "how": "실시간으로 진행 중인 절차를 감독하고 실수를 탐지하는 모델은 지시문, 관찰된 비디오 및 이전 예측을 사용하여 완료된 행동 시도를 식별하고 위치를 정확히 지정합니다.",
+          "useCases": [
+            "의료 절차에서의 실수 감지",
+            "산업 생산 과정에서의 실수 감지",
+            "교육 과정에서의 실수 감지"
+          ],
+          "caveats": "오류 전파가 모듈화된 접근 방식의 성능에 영향을 미칠 수 있음"
+        },
+        {
+          "id": "2026-11-22_paper_2611_26232",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 1,
+          "score": 12.85,
+          "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+          "url": "https://huggingface.co/papers/2611.26232",
+          "arxiv": "https://arxiv.org/abs/2611.26232",
+          "code": "https://github.com/jmaasch/itpd",
+          "stars": 1,
+          "gain": 2,
+          "oneLine": "시간 시리즈에서의因果 구조 학습을 위한 로컬 캐주얼 부모 탐색 기반의 반복적 시간적 부모 탐색(Iterative Temporal Parent Discovery)",
+          "points": [
+            "로컬-글로벌 학습 접근",
+            "시간적 구조적 사전",
+            "그래프 분할"
+          ],
+          "why": "시간 시리즈에서의因果 관계 학습의 어려움을 해결하기 위해 제안됨",
+          "overview": "이 연구는 시간 시리즈에서의因果 구조 학습을 위한 반복적 시간적 부모 탐색(Iterative Temporal Parent Discovery, ITPD)을 제안함. ITPD는 각 변수의 부모 세트를 순차적으로 발견하여 글로벌 그래프를 학습하는 로컬-글로벌 접근 방식을 사용함.",
+          "features": [
+            "시간적 구조적 사전 활용",
+            "그래프 분할 기법",
+            "로컬 마코브 조건 적용",
+            "고차 조건 독립성 테스트 대신 저차 조건 독립성 테스트 사용",
+            "정확한 오라클을 사용한 최소 테스트 수",
+            "평균 조건 집합 크기 최소화"
+          ],
+          "how": "각 변수의 부모 세트를 순차적으로 발견하여 글로벌 그래프를 학습하는 로컬-글로벌 접근 방식을 사용함.",
+          "useCases": [
+            "시간 시리즈에서의因果 관계 분석",
+            "비상태적 시스템의 예측",
+            "실시간 데이터에서의 패턴 인식"
+          ],
+          "caveats": "정확한 오라클이 필요함"
+        },
+        {
+          "id": "2026-11-22_paper_2611_19230",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 46,
+          "score": 12.83,
+          "title": "CompoundingKernel: Self-Improving from Zero to First",
+          "url": "https://huggingface.co/papers/2611.19230",
+          "arxiv": "https://arxiv.org/abs/2611.19230",
+          "stars": 0,
+          "gain": 11,
+          "oneLine": "CompoundingKernel은 GPU 커널을 자동으로 생성하는 자기 개선형 에이전트 시스템입니다.",
+          "points": [
+            "자기 개선",
+            "GPU 커널 생성",
+            "검색 기반"
+          ],
+          "why": "최신 연구나 기술에 대한 이해를 돕고, 효율적인 GPU 커널 개발을 가능하게 합니다.",
+          "overview": "CompoundingKernel는 GPU 커널을 자동으로 생성하는 자기 개선형 에이전트 시스템입니다. 에이전트들은 문제의 PyTorch 정의만을 가지고 있고, 참조 커널이나 공식 점수 없이 시작합니다. 각 문제에 대한 올바른 커널과 그 라인지를 보관하는 외부 저장소가 있으며, 이 저장소를 통해 에이전트들은 새로운 디자인을 선택하거나 부모 커널을 사용하여 커널을 개선합니다. 검색 결과는 외부 검사에 의해 확인됩니다.",
+          "features": [
+            "자기 개선: 에이전트들은 지속적으로 개선됩니다.",
+            "GPU 커널 생성: PyTorch 정의를 기반으로 GPU 커널을 생성합니다.",
+            "검색 기반: 에이전트들은 문제를 해결하기 위해 검색을 사용합니다.",
+            "외부 저장소: 각 문제에 대한 올바른 커널과 그 라인지를 보관합니다.",
+            "외부 검사: 생성된 커널의 올바른성은 외부 검사에 의해 확인됩니다.",
+            "고성능: 검색 결과는 기존의 UCB 스타일 트리보다 2.4배 더 많은 올바른 시도를 통해 성공합니다."
+          ],
+          "how": "각 에이전트는 문제의 PyTorch 정의만을 가지고 있고, 참조 커널이나 공식 점수 없이 시작합니다. 외부 저장소를 통해 올바른 커널과 그 라인지를 보관하며, LLM 컨트롤러는 이 저장소를 통해 에이전트들에게 새로운 디자인을 선택하거나 부모 커널을 사용하여 커널을 개선합니다. 검색 결과는 외부 검사에 의해 확인됩니다.",
+          "useCases": [
+            "GPU 커널 개발: 새로운 GPU 커널을 자동으로 생성하여 개발 효율성을 높입니다.",
+            "성능 최적화: 기존의 GPU 커널보다 더 빠른 성능을 가진 커널을 생성합니다.",
+            "연구 및 개발: 연구에서 필요한 GPU 커널을 자동으로 생성하여 연구 속도를 높입니다."
+          ],
+          "caveats": "정확한 측정률이 높아야만 검색이 효과적으로 확장됩니다."
+        },
+        {
+          "id": "2026-11-22_paper_2611_21053",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 9,
+          "score": 12.11,
+          "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+          "url": "https://huggingface.co/papers/2611.21053",
+          "arxiv": "https://arxiv.org/abs/2611.21053",
+          "code": "https://github.com/eltzanis/SystemOneAgents",
+          "stars": 12,
+          "gain": 6,
+          "oneLine": "지역적이고 신뢰성 높은 AI 에이전트 시스템",
+          "points": [
+            "지역적 AI",
+            "신뢰성",
+            "빠른 응답"
+          ],
+          "why": "감정적 데이터 분석 자동화를 위한 안전한 AI 솔루션",
+          "overview": "시스템 1 에이전트는 지역적인 AI 에이전트 프레임워크로, 텍스트 생성 없이 도구 호출을 가능하게 합니다. 이는 클라우드 LLM에 의존하는 현재 에이전트보다 훨씬 정확하고 안전합니다.",
+          "features": [
+            "텍스트 생성 없이 도구 호출",
+            "정확한 의료 도구 호출",
+            "신뢰성 높은 결정 모델",
+            "1회 통과로 결정",
+            "대규모 데이터셋에서의 뛰어난 성능",
+            "오픈 소스로 공개"
+          ],
+          "how": "도구 스키마와 요청을 여러 선택 문제로 변환하고, 결정 모델이 이를 답변하여 도구를 호출합니다.",
+          "useCases": [
+            "의료 분석 자동화",
+            "감정적 데이터 분석",
+            "보안이 요구되는 환자 데이터 분석"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_paper_2611_26239",
+          "date": "2026-11-22",
+          "kind": "paper",
+          "rank": 2,
+          "score": 11.06,
+          "title": "Teaching Vision-Language-Action Models to Stop Safely",
+          "url": "https://huggingface.co/papers/2611.26239",
+          "arxiv": "https://arxiv.org/abs/2611.26239",
+          "code": "https://github.com/franciscoliu/SAFI",
+          "stars": 0,
+          "gain": 5,
+          "oneLine": "VLA 모델을 안전하게 중단하는 방법을 가르치는 연구",
+          "points": [
+            "SAFI",
+            "State-Aware Fallback Imitation",
+            "VLA 모델"
+          ],
+          "why": "VLA 모델의 안전한 중단과 물리적 반응 제어를 위한 새로운 접근법을 이해하고 싶을 때",
+          "overview": "SAFI는 VLA 모델에서 금지된 행동을 중단하고 물리적 반응을 제어하는 데 사용되는 새로운 방법을 제안합니다. 이 방법은 초기 상태에서 작업을 억제하는 정책이 실행 중단 후에도 작업을 완료할 수 있다는 평가를 통해 개발되었습니다.",
+          "features": [
+            "두 단계로 구성됨: fallback target construction(중단 대상 생성)과 joint policy adaptation(공유 정책 적응)",
+            "중단 대상 생성은 금지된 작업의 보정을 위한 정지된 팔 명령어와 일관된 잡퍼 대상 할당",
+            "공유 정책 적응은 보존된 작업의 원래 동작과 함께 보정 대상 학습",
+            "중간 실행 단계에서 명시적인 대체 응답을 가르치며, 다른 기술을 유지",
+            "LIBERO 및 BadLIBERO 작업에서 평가를 통해 안전한 중단과 물리적 사고를 개선"
+          ],
+          "how": "SAFI는 VLA 모델에서 금지된 행동을 중단하고 물리적 반응을 제어하는 데 사용됩니다. 두 단계로 구성되어 있으며, 첫 번째 단계에서는 금지된 작업의 보정을 위한 정지된 팔 명령어와 일관된 잡퍼 대상이 할당되고, 두 번째 단계에서는 보존된 작업의 원래 동작과 함께 보정 대상이 학습됩니다.",
+          "useCases": [
+            "로봇이 물건을 잡고 있는 상태에서 금지된 행동을 중단해야 할 때",
+            "로봇이 물리적 사고를 일으킬 수 있는 행동을 중단해야 할 때",
+            "로봇이 작업을 중단하고 다른 작업을 수행해야 할 때"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_trending_2609_18063",
+          "date": "2026-11-22",
+          "kind": "trending",
+          "rank": 8,
+          "score": 13.52,
+          "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+          "url": "https://huggingface.co/papers/2609.18063",
+          "arxiv": "https://arxiv.org/abs/2609.18063",
+          "code": "https://github.com/Edge0-AI/edge0",
+          "stars": 12186,
+          "gain": 37,
+          "oneLine": "소비자 하드웨어에서 효율적인 MoE 추론을 가능하게 하는 Edge0",
+          "points": [
+            "MoE 추론 효율성 향상",
+            "SSD 활용",
+            "Prerouter 사용"
+          ],
+          "why": "소비자 하드웨어에서 대규모 모델을 효율적으로 추론할 수 있도록 하는 방법",
+          "overview": "Edge0는 소비자 하드웨어에서 MoE 추론을 효율적으로 수행하는 엔진으로, Prerouter를 사용하여 레이어 간의 전문가 라우팅을 예측하고, 복구 어댑터를 통해 최소한의 활성 메모리로 품질을 유지합니다.",
+          "features": [
+            "Prerouter를 사용하여 레이어 간 전문가 라우팅 예측",
+            "SSD 활용으로 메모리 효율성 향상",
+            "복구 어댑터를 통한 품질 보장",
+            "대규모 모델(35B)을 20tok/s로 추론",
+            "오픈 소스로 제공되는 프레임워크, 체크포인트 및 어댑터"
+          ],
+          "how": "Prerouter는 각 레이어의 헤드가 다음 레이어의 라우팅을 한 토큰 앞에서 예측하고, 이 예측이 라우팅 자체로 사용됩니다. 복구 어댑터는 int4 정밀도로 인한 품질 손실을 보상합니다.",
+          "useCases": [
+            "소비자 하드웨어에서 대규모 모델의 효율적인 추론",
+            "대규모 언어 모델의 실시간 서비스 제공",
+            "하드웨어 리소스 최적화"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_trending_2611_26603",
+          "date": "2026-11-22",
+          "kind": "trending",
+          "rank": 2,
+          "score": 11.87,
+          "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+          "url": "https://huggingface.co/papers/2611.26603",
+          "arxiv": "https://arxiv.org/abs/2611.26603",
+          "code": "https://github.com/apple-aiml-research/ml-depth-pro-2",
+          "stars": 284,
+          "gain": 30,
+          "oneLine": "이미지와 비디오의 고해상도에서 정밀한 거리 측정을 위한 단일 확장 가능한 네트워크",
+          "points": [
+            "정밀한 거리 측정",
+            "고해상도",
+            "시간적 일관성"
+          ],
+          "why": "이미지와 비디오의 거리 측정 정확성과 경계 선의 선명성을 크게 향상시킬 수 있습니다.",
+          "overview": "Depth Pro 2는 이미지와 비디오의 고해상도에서 정밀한 거리 측정을 위한 단일 확장 가능한 네트워크입니다. 이 네트워크는 시간적 일관성과 경계 선의 선명성을 동시에 향상시켜 이전 연구보다 우수한 성능을 보여줍니다.",
+          "features": [
+            "단일 확장 가능한 네트워크",
+            "이미지와 비디오 처리",
+            "고해상도 거리 맵 예측",
+            "시간적 일관성 유지",
+            "경계 선의 선명성 향상",
+            "새로운 Pareto 경계 정의"
+          ],
+          "how": "네트워크는 이미지와 비디오를 동시에 처리하여 원본 해상도에서 거리 맵을 예측합니다. 이는 시간적 일관성과 경계 선의 선명성을 동시에 향상시킵니다.",
+          "useCases": [
+            "실시간 비디오 분석",
+            "AR/VR 애플리케이션",
+            "자율주행 자동차"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_trending_2309_06180",
+          "date": "2026-11-22",
+          "kind": "trending",
+          "rank": 10,
+          "score": 10.21,
+          "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+          "url": "https://huggingface.co/papers/2309.06180",
+          "arxiv": "https://arxiv.org/abs/2309.06180",
+          "code": "https://github.com/vllm-project/vllm",
+          "stars": 86094,
+          "gain": 78,
+          "oneLine": "PagedAttention 알고리즘과 vLLM 시스템은 대규모 언어 모델의 메모리 관리 효율성을 높여서 처리량을 향상시킵니다.",
+          "points": [
+            "PagedAttention 알고리즘",
+            "vLLM 시스템",
+            "메모리 관리 효율성"
+          ],
+          "why": "대규모 언어 모델의 처리량을 높이고 메모리 사용을 최적화하기 위해",
+          "overview": "PagedAttention 알고리즘과 vLLM 시스템은 대규모 언어 모델의 key-value 캐시 메모리 관리를 효율적으로 관리하여 처리량을 향상시키는 데 초점을 맞춥니다.",
+          "features": [
+            "near-zero waste in KV cache memory",
+            "flexible sharing of KV cache",
+            "2-4 times throughput improvement",
+            "longer sequences, larger models, and more complex decoding algorithms"
+          ],
+          "how": "PagedAttention 알고리즘은 클래식 가상 메모리와 운영 체제의 페이지 교체 기술을 영감받아 설계되었습니다. vLLM 시스템은 이 알고리즘을 기반으로 하여 key-value 캐시 메모리의 낭비를 최소화하고 요청 내부 및 간의 key-value 캐시 공유를 유연하게 수행합니다.",
+          "useCases": [
+            "대규모 언어 모델의 실시간 서비스",
+            "대규모 언어 모델의 성능 향상"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-22_trending_2608_16157",
+          "date": "2026-11-22",
+          "kind": "trending",
+          "rank": 11,
+          "score": 10.12,
+          "title": "FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution",
+          "url": "https://huggingface.co/papers/2608.16157",
+          "arxiv": "https://arxiv.org/abs/2608.16157",
+          "code": "https://github.com/FlashML-org/FreeToken",
+          "stars": 17560,
+          "gain": 110,
+          "oneLine": "FreeToken은 개인 컴퓨터를 효율적인 모델 서버로 활용하는 시스템",
+          "points": [
+            "모델 서버",
+            "효율성",
+            "개인 컴퓨터 활용"
+          ],
+          "why": "데이터 센터 외에도 모델을 실행할 수 있는 플랫폼을 제공하려고",
+          "overview": "FreeToken은 개인 컴퓨터를 모델 서버로 활용하는 시스템으로, 모델과 계산을 동적으로 분배하여 다양한 하드웨어에서 대규모 오픈 모델을 실행할 수 있게 합니다.",
+          "features": [
+            "모델 레이아웃과 로딩, 전문가 거주지, CPU-GPU 실행, 상태 재사용, 런타임 메모리 관리 지원",
+            "20개 이상의 모델과 실제 코드 및 도구 사용을 지원",
+            "가장 큰 모델까지 실행 가능",
+            "개인 컴퓨터에서 최신 인공지능을 실행할 수 있는 플랫폼 제공"
+          ],
+          "how": "지역 인공지능의 두 가지 현실을 고려하여 전체 서버 스택을 공동 설계합니다. 즉, 에이전트 작업 로드가 지속적으로 실행 패턴을 변경하고, 엣지 하드웨어는 각기 다른 균형의 다형적 리소스를 노출합니다.",
+          "useCases": [
+            "가장 큰 모델까지 실행 가능",
+            "개인 컴퓨터에서 최신 인공지능을 실행할 수 있는 플랫폼 제공",
+            "모델과 계산을 동적으로 분배하여 다양한 하드웨어에서 대규모 오픈 모델을 실행할 수 있게 합니다."
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "cards": [
+        {
+          "id": "2026-11-21_repo_obra_superpowers",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 2,
+          "score": 19.45,
+          "title": "obra / superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "lang": "Shell",
+          "stars": 322781,
+          "gain": 888,
+          "oneLine": "코드 에이전트를 위한 전략적 개발 방법론",
+          "points": [
+            "스킬 기반",
+            "자동 트리거",
+            "TDD 강조"
+          ],
+          "why": "코드 생산성과 품질 향상",
+          "overview": "코드 에이전트가 프로젝트를 시작할 때부터 스킬을 활용하여 효과적인 개발을 돕는 전략적 개발 방법론",
+          "features": [
+            "자동 트리거된 스킬",
+            "TDD 강조",
+            "독립적인 하위 에이전트 개발",
+            "유연한 플랫폼 지원"
+          ],
+          "how": "코드 에이전트가 프로젝트 시작 시 스킬을 활용하여 설계를 제안하고, 승인 후 구현 계획을 세우고, 하위 에이전트가 개발 작업을 수행",
+          "useCases": [
+            "기업용 소프트웨어 개발",
+            "프로젝트 관리",
+            "코드 리뷰"
+          ],
+          "caveats": "상업 지원 필요, 플랫폼별 설치 필요"
+        },
+        {
+          "id": "2026-11-21_repo_firecrawl_firecrawl",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 6,
+          "score": 18.75,
+          "title": "firecrawl / firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "lang": "TypeScript",
+          "stars": 205153,
+          "gain": 1226,
+          "oneLine": "웹 데이터 수집 및 처리를 위한 인프라",
+          "points": [
+            "다양한 데이터 제공자 지원",
+            "지역 및 클라우드 기반 실행",
+            "AI 에이전트와의 통합"
+          ],
+          "why": "웹 데이터를 효율적으로 수집하고 처리하여 AI 에이전트의 지식을 확장할 수 있습니다.",
+          "overview": "Firecrawl은 웹 데이터를 수집, 크롤링, 맵핑하고, PDF 및 Office 문서를 파싱하며, 검색 및 다양한 데이터 제공자를 통해 지식을 확장하는 인프라를 제공합니다.",
+          "features": [
+            "550+ 데이터 제공자 지원",
+            "지역 및 클라우드 기반 실행",
+            "AI 에이전트와의 통합",
+            "PDF 및 Office 문서 파싱",
+            "검색 기능",
+            "Alexandria 통합"
+          ],
+          "how": "Rust 언어로 작성된 Firecrawl Local을 로컬에서 실행하거나 Firecrawl Cloud를 사용하여 규모를 확장할 수 있습니다. SDK를 통해 다양한 언어에서 사용할 수 있습니다.",
+          "useCases": [
+            "웹 데이터 수집 및 분석",
+            "AI 에이전트의 지식 확장",
+            "기업 내부 정보 관리"
+          ],
+          "caveats": "Rust 언어와 C 컴파일러가 필요하며, 클라우드 사용 시 요금이 발생할 수 있습니다."
+        },
+        {
+          "id": "2026-11-21_repo_HKUDS_CLI-Anything",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 3,
+          "score": 18.46,
+          "title": "HKUDS / CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "lang": "Python",
+          "stars": 61309,
+          "gain": 774,
+          "oneLine": "CLI-Anything는 AI 에이전트와 소프트웨어를 연결하는 도구입니다.",
+          "points": [
+            "AI 에이전트 지원",
+            "커뮤니티 기여 가능",
+            "다양한 소프트웨어 지원"
+          ],
+          "why": "AI 에이전트를 활용한 소프트웨어 개발과 관리에 도움이 필요할 때",
+          "overview": "CLI-Anything는 AI 에이전트가 사용할 수 있는 모든 소프트웨어를 쉽게 사용할 수 있게 하는 도구입니다. 사용자는 CLI-Hub를 통해 다양한 CLI를 설치, 관리할 수 있습니다.",
+          "features": [
+            "AI 에이전트 호환",
+            "커뮤니티 기여 가능",
+            "다양한 소프트웨어 지원",
+            "데모 제공",
+            "기능 추가 요청 가능"
+          ],
+          "how": "CLI-Hub를 설치한 후 `cli-hub install` 명령어를 사용하여 CLI를 설치하고 관리합니다.",
+          "useCases": [
+            "AI 에이전트를 활용한 CAD 구축",
+            "3D 장면 생성",
+            "도면 그리기"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_repo_jingyaogong_minimind",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 4,
+          "score": 18.25,
+          "title": "jingyaogong / minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "lang": "Python",
+          "stars": 67654,
+          "gain": 841,
+          "oneLine": "2시간 내 64M 규모의 LLM을 학습할 수 있는 오픈소스 프로젝트",
+          "points": [
+            "2시간 내 학습 가능",
+            "64M 규모의 LLM",
+            "모든 코드 오픈소스"
+          ],
+          "why": "개인용 GPU에서도 빠르게 학습 가능",
+          "overview": "MiniMind는 3만 달러의 비용과 2시간 내에 64M 규모의 LLM을 학습할 수 있는 오픈소스 프로젝트입니다. 모든 코드가 PyTorch를 기반으로 하여 직접 학습 가능합니다.",
+          "features": [
+            "2시간 내 64M LLM 학습 가능",
+            "모든 코드 오픈소스",
+            "MoE, 데이터 전처리, 사전 학습 등 모든 과정 포함",
+            "다양한 모달 모델 지원",
+            "PyTorch 기반 직접 학습 가능",
+            "LLM 학습에 대한 자세한 튜토리얼 제공"
+          ],
+          "how": "PyTorch를 기반으로 하여 직접 학습 가능하며, 사전 학습, 사후 조정 등 모든 과정을 포함합니다.",
+          "useCases": [
+            "개인용 GPU에서 LLM 학습",
+            "LLM 학습에 대한 자세한 이해",
+            "다양한 모달 모델의 학습"
+          ],
+          "caveats": "GPU 비용과 시간이 필요하며, 학습 과정이 복잡할 수 있습니다."
+        },
+        {
+          "id": "2026-11-21_repo_openvinotoolkit_openvino",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 8,
+          "score": 17.2,
+          "title": "openvinotoolkit / openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "lang": "C++",
+          "stars": 11763,
+          "gain": 219,
+          "oneLine": "OpenVINO는 AI 추론을 최적화하고 배포하는 오픈소스 툴킷입니다.",
+          "points": [
+            "추론 최적화",
+            "다양한 모델 지원",
+            "플랫폼 호환성"
+          ],
+          "why": "AI 모델의 성능을 높이고 효율적으로 배포하기 위해 사용됩니다.",
+          "overview": "OpenVINO는 PyTorch, TensorFlow 등 인기 있는 프레임워크에서 훈련된 모델을 최적화하고 배포할 수 있는 오픈소스 툴킷입니다. 다양한 플랫폼에서 실행 가능하며, 커뮤니티 활성화를 통해 지속적인 개선이 이루어지고 있습니다.",
+          "features": [
+            "추론 성능 향상",
+            "PyTorch, TensorFlow 등 다양한 모델 지원",
+            "CPU, GPU, NPU 등 다양한 플랫폼 호환",
+            "GenAI API를 통한 최적화된 모델 파이프라인",
+            "커뮤니티 활성화와 업데이트",
+            "사용자 및 개발자 문서 제공"
+          ],
+          "how": "C++와 Python API를 통해 사용할 수 있으며, 설치 후 간단한 코드로 모델 추론을 실행할 수 있습니다.",
+          "useCases": [
+            "컴퓨터 비전",
+            "음성 인식",
+            "생성형 AI"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_repo_mjmirza_app-store-compliance",
+          "date": "2026-11-21",
+          "kind": "repo",
+          "rank": 12,
+          "score": 14.39,
+          "title": "mjmirza / app-store-compliance",
+          "url": "https://github.com/mjmirza/app-store-compliance",
+          "lang": "Shell",
+          "stars": 2659,
+          "gain": 874,
+          "oneLine": "App Store Compliance Playbook: iOS/Android 앱 제출 전에 앱 스토어 및 Google Play 거부 사항을 방지하는 자동화된 도구",
+          "points": [
+            "117개의 거부 패턴과 수정 방법",
+            "프라이버시 명단 및 데이터 안전 검사",
+            "95개의 기준 준수"
+          ],
+          "why": "앱 제출 과정에서 자주 발생하는 거부 사항을 미리 방지하고 시간을 절약할 수 있습니다.",
+          "overview": "이 저장소는 iOS 및 Android 앱 제출 전에 앱 스토어 및 Google Play 거부 사항을 방지하는 자동화된 도구입니다. 117개의 거부 패턴과 수정 방법, 프라이버시 명단 및 데이터 안전 검사를 포함하고 있습니다.",
+          "features": [
+            "117개의 거부 패턴과 수정 방법 제공",
+            "프라이버시 명단 및 데이터 안전 검사",
+            "95개의 기준 준수",
+            "AI 코딩 에이전트 지원",
+            "즉시 앱 스캔 및 결과 출력",
+            "거부 사항을 미리 방지하여 시간 절약"
+          ],
+          "how": "두 개의 명령어를 실행하여 앱 스토어 및 Google Play 거부 사항을 자동으로 검사하고 수정 방법을 제공합니다. Xcode 프로젝트 또는 Android 앱 폴더를 지정하면 즉시 실행됩니다.",
+          "useCases": [
+            "새로운 앱 제출 전에 거부 사항을 검사하여 시간을 절약합니다.",
+            "이미 거부된 앱에 대해 재제출 전에 수정 사항을 확인합니다.",
+            "AI 코딩 도구와 함께 사용하여 모든 제출에 대해 자동으로 검사를 실행합니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_paper_2611_15941",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 1,
+          "score": 15.75,
+          "title": "Lang-SVG: Hierarchical Image Vectorization with Language Priors",
+          "url": "https://huggingface.co/papers/2611.15941",
+          "arxiv": "https://arxiv.org/abs/2611.15941",
+          "stars": 0,
+          "gain": 1,
+          "oneLine": "Lang-SVG는 래스터 이미지를 효율적인 벡터 그래픽으로 변환하며, 객체 부분 계층 구조를 유지하는 데 초점을 맞춘 이미지 벡터화 기술입니다.",
+          "points": [
+            "계층 구조 유지",
+            "세미틱 라벨링",
+            "MLLM 활용"
+          ],
+          "why": "사람이 인식하는 객체 부분 계층 구조와 잘 맞는 벡터 그래픽을 생성하여 이미지를 쉽게 조작할 수 있습니다.",
+          "overview": "Lang-SVG는 이미지를 SVG로 변환하여 벡터 그래픽으로 효율적으로 저장하고 편집할 수 있게 합니다. 이 기술은 계층 구조를 유지하고, 세미틱 라벨을 사용하여 객체 부분을 구분하며, MLLM을 활용하여 빈 부분을 복원합니다.",
+          "features": [
+            "계층 구조 유지: SVG 원시 요소를 세미틱 라벨과 부모-자식 관계로 조직합니다.",
+            "세미틱 라벨링: MLLM을 사용하여 라벨이 없는 노드에 세미틱 라벨을 할당합니다.",
+            "간략화 및 병합: 깊이에 따라 적응하는 간략화와 트리 지침 병합을 사용하여 불필요한 노드를 제거합니다.",
+            "L1-SAM-Prompting: 빠진 영역을 복원하여 재구성의 신뢰성과 구조적 완성도를 향상시킵니다.",
+            "새로운 평가 프로토콜: 구조적 품질과 세미틱 부분 정렬을 측정합니다."
+          ],
+          "how": "Lang-SVG는 SVG 트리 구조를 사용하여 래스터 이미지를 벡터 그래픽으로 변환하고, 세미틱 라벨과 부모-자식 관계를 유지합니다. MLLM을 활용하여 빈 부분을 복원하고, 간략화 및 병합을 사용하여 불필요한 노드를 제거합니다.",
+          "useCases": [
+            "디자인 도구에서 이미지를 쉽게 편집하고 조작할 수 있습니다.",
+            "웹 페이지에서 이미지를 높은 품질로 표시할 수 있습니다.",
+            "AI 시스템에서 이미지 데이터를 효율적으로 처리할 수 있습니다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_paper_2611_25567",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 7,
+          "score": 14.75,
+          "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+          "url": "https://huggingface.co/papers/2611.25567",
+          "arxiv": "https://arxiv.org/abs/2611.25567",
+          "stars": 0,
+          "gain": 9,
+          "oneLine": "영상에서 실수를 실시간으로 감지하는 기술",
+          "points": [
+            "실시간 감지",
+            "명령어 기반",
+            "모듈화된 접근"
+          ],
+          "why": "영상에서 실수를 빠르게 감지하여 복구할 수 있는 기술이 필요하다",
+          "overview": "이 논문은 개인이 절차를 수행하면서 실수를 실시간으로 감지하는 기술을 연구한다. 모듈화된 접근과 통합된 모델을 비교하여 가장 높은 정확도를 보이는 방법을 찾았다.",
+          "features": [
+            "실시간 실수 감지",
+            "명령어 기반 실수 분류",
+            "모듈화된 파이프라인",
+            "통합된 모델",
+            "오류 전파 분석",
+            "정확한 실수 분류"
+          ],
+          "how": "영상, 명령어, 이전 예측을 사용하여 완료된 행동 시도를 식별하고 위치를 정확히 잡고, 올바른, 수정된, 슬립, 수정, 추가로 분류한다. 모듈화된 접근은 각 단계별로 분리하여 진행하고, 통합된 모델은 모든 출력을 한 번에 예측한다.",
+          "useCases": [
+            "의료 절차에서 실수 감지",
+            "요리 레시피 수행 시 실수 확인",
+            "기술 지원에서 실수 파악"
+          ],
+          "caveats": "모듈화된 접근은 오류 전파로 인해 감지 정확도가 낮을 수 있다."
+        },
+        {
+          "id": "2026-11-21_paper_2611_21053",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 6,
+          "score": 13.35,
+          "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+          "url": "https://huggingface.co/papers/2611.21053",
+          "arxiv": "https://arxiv.org/abs/2611.21053",
+          "code": "https://github.com/eltzanis/SystemOneAgents",
+          "stars": 10,
+          "gain": 2,
+          "oneLine": "지역 System 1 에이전트: 텍스트 생성 없이 신뢰성 있고 빠른 의료 도구 호출을 위한 AI 방법",
+          "points": [
+            "지역적",
+            "신뢰성",
+            "빠름"
+          ],
+          "why": "의료 데이터 분석 자동화를 위한 안전한 AI 솔루션",
+          "overview": "지역 System 1 에이전트는 텍스트 생성 없이 의료 도구를 신뢰성 있게 호출하는 방법을 제시합니다. 이 방법은 대규모 언어 모델에 의존하지 않고, 데이터 보안과 정확성을 높입니다.",
+          "features": [
+            "텍스트 생성 없이 의료 도구 호출",
+            "정확한 의료 도구 선택",
+            "1회 통과 의사결정 모델",
+            "확실성 높은 결과",
+            "오픈 소스로 공개",
+            "대규모 실험에서 우수한 성능"
+          ],
+          "how": "도구 스키마와 요청을 여러 선택 문제로 변환하고, 1회 통과 의사결정 모델이 이를 답변합니다.",
+          "useCases": [
+            "의료 데이터 분석 자동화",
+            "의료 도구 호출의 신뢰성 향상",
+            "감시 데이터 분석"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_paper_2611_19230",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 43,
+          "score": 12.71,
+          "title": "CompoundingKernel: Self-Improving from Zero to First",
+          "url": "https://huggingface.co/papers/2611.19230",
+          "arxiv": "https://arxiv.org/abs/2611.19230",
+          "stars": 0,
+          "gain": 8,
+          "oneLine": "CompoundingKernel은 GPU 커널을 생성하는 자기 개선형 에이전트 시스템",
+          "points": [
+            "자기 개선",
+            "GPU 커널 생성",
+            "검색 기반"
+          ],
+          "why": "최신 연구나 기술을 파악하고 이해하는데 도움이 될 수 있습니다.",
+          "overview": "CompoundingKernel는 GPU 커널을 생성하는 자기 개선형 에이전트 시스템입니다. 검색 기반으로 작동하여 최적의 커널을 생성하고, 검증된 커널을 기반으로 지속적으로 개선합니다.",
+          "features": [
+            "자기 개선: 에이전트가 문제를 해결하면서 스스로 개선합니다.",
+            "GPU 커널 생성: PyTorch 정의를 기반으로 GPU 커널을 생성합니다.",
+            "검색 기반: 검색을 통해 최적의 커널을 찾습니다.",
+            "효율성: 검증된 커널을 기반으로 4.40x 빠르게 실행됩니다.",
+            "대규모 병렬 처리: 1000개 이상의 에이전트를 동시에 실행할 수 있습니다.",
+            "결과 확인: 외부 검증을 통해 커널의 정확성을 확인합니다."
+          ],
+          "how": "각 문제의 PyTorch 정의를 제공받고, 검증된 커널과 그 라인지를 기반으로 새로운 디자인을 생성하거나 기존 디자인을 선택합니다. 각 에이전트는 방향을 받아 병렬로 작업합니다.",
+          "useCases": [
+            "GPU 커널 최적화: GPU 성능을 높이기 위해 커널을 최적화합니다.",
+            "연구 및 개발: 새로운 알고리즘을 검증하고 개선하기 위해 GPU 커널을 생성합니다.",
+            "성능 향상: 기존 커널보다 더 빠른 실행을 위해 새로운 커널을 생성합니다."
+          ],
+          "caveats": "정확한 측정률이 중요하며, 에이전트 수가 많다고 반드시 성능이 향상되지 않을 수 있습니다."
+        },
+        {
+          "id": "2026-11-21_paper_2611_25200",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 2,
+          "score": 12.25,
+          "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
+          "url": "https://huggingface.co/papers/2611.25200",
+          "arxiv": "https://arxiv.org/abs/2611.25200",
+          "stars": 0,
+          "gain": 1,
+          "oneLine": "UX-1 모델이 과거 웹사이트 A/B 테스트에서 사용자 예측을 통해 웹사이트 변경 사항을 선택하는 데 도움이 되는지 평가한 연구",
+          "points": [
+            "UX-1 모델의 성능",
+            "A/B 테스트 결과 분석",
+            "실시간 테스트 결과"
+          ],
+          "why": "웹사이트 변경 사항을 효과적으로 선택하는 데 도움이 될 수 있는 방법을 찾고자 할 때",
+          "overview": "UX-1 모델과 Qwen3 Next 80B 등 여러 시스템이 과거 318개의 A/B 테스트에서 예측한 결과를 분석하여 UX-1의 성능을 평가한 연구입니다.",
+          "features": [
+            "UX-1 모델은 인간의 웹 브라우징 데이터를 기반으로 훈련되었습니다.",
+            "1,000명의 가상 사용자를 각 테스트에 대해 시뮬레이션하여 결과를 분석합니다.",
+            "UX-1은 84.0%의 정확도로 결과를 분류할 수 있습니다.",
+            "Qwen3 Next 80B는 일반적인 경우에서 가장 높은 정확도를 보여줍니다.",
+            "UX-1은 126개의 테스트에서 변형 버전을 선호했습니다.",
+            "실시간 테스트에서는 변형 버전이 93.7%의 경우에 승리했습니다."
+          ],
+          "how": "UX-1 모델은 과거 A/B 테스트에서 사용자 행동을 기반으로 예측을 생성하고, 실제 결과와 비교하여 성능을 평가합니다.",
+          "useCases": [
+            "웹사이트 변경 사항을 선택하는 데 도움이 되는 시스템 개발",
+            "A/B 테스트 결과 분석 및 최적화",
+            "웹사이트 개선을 위한 사용자 경험 분석"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_paper_2611_23875",
+          "date": "2026-11-21",
+          "kind": "paper",
+          "rank": 4,
+          "score": 11.35,
+          "title": "In Situ Training of Optical Neural Networks by Coding Agents",
+          "url": "https://huggingface.co/papers/2611.23875",
+          "arxiv": "https://arxiv.org/abs/2611.23875",
+          "stars": 0,
+          "gain": 2,
+          "oneLine": "소프트웨어가 실험적 측정을 통해 광학 신경망을 학습하는 기술",
+          "points": [
+            "소프트웨어 기반 학습",
+            "광학 요소 재구성",
+            "효율적 학습"
+          ],
+          "why": "소프트웨어를 사용해 광학 신경망을 학습하면 장비별로 별도의 학습이 필요하지 않으며, 비용과 성능을 개선할 수 있다.",
+          "overview": "소프트웨어인 '코딩 에이전트'가 광학 신경망을 직접 학습하는 기술로, 실험적 측정만으로 신경망을 재구성하여 더 나은 분류와 이미지 인코딩을 달성한다.",
+          "features": [
+            "소프트웨어 기반 학습: 디지털 신경망의 가중치를 이해하고 수정할 수 있는 기능",
+            "광학 요소 재구성: 광학 요소를 재구성하여 신경망을 학습",
+            "효율적 학습: 장비별로 별도의 학습이 필요하지 않고 비용을 절감",
+            "분류 및 이미지 인코딩 향상: 기존 방법보다 더 나은 성능",
+            "비용 절감: 계산 비용을 크게 줄여 학습 가능",
+            "일반적 도구: 광학 실험의 기준과 최적화 도구로 활용 가능"
+          ],
+          "how": "코딩 에이전트는 실험적 측정을 통해 광학 신경망을 학습하며, 실험 결과를 바탕으로 신경망을 재구성한다. 이를 통해 광학 요소를 재구성하여 신경망을 학습한다.",
+          "useCases": [
+            "광학 신경망의 학습: 장비별로 별도의 학습이 필요하지 않으며, 비용을 절감할 수 있다.",
+            "광학 실험의 기준과 최적화: 광학 실험의 성능을 향상시키고 비용을 절감할 수 있다."
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_trending_2502_11880",
+          "date": "2026-11-21",
+          "kind": "trending",
+          "rank": 6,
+          "score": 18.67,
+          "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+          "url": "https://huggingface.co/papers/2502.11880",
+          "arxiv": "https://arxiv.org/abs/2502.11880",
+          "code": "https://github.com/microsoft/BitNet",
+          "stars": 42312,
+          "gain": 22,
+          "oneLine": "Bitnet.cpp는 터너리 LLMs의 효율적인 엣지 인퍼런스를 위한 새로운 mpGEMM 라이브러리를 사용하여 개선된 인퍼런스 시스템입니다.",
+          "points": [
+            "새로운 mpGEMM 라이브러리",
+            "터너리 LLMs의 성능 향상",
+            "공개 소스"
+          ],
+          "why": "터너리 LLMs의 엣지 인퍼런스 효율성 향상에 관심이 있는 독자들에게 유용합니다.",
+          "overview": "Bitnet.cpp는 BitNet b1.58과 터너리 LLMs의 엣지 인퍼런스를 최적화한 시스템입니다. 이 시스템은 새로운 mpGEMM 라이브러리를 사용하여 sub-2-bits-per-weight의 효율적이고 손실 없는 인퍼런스를 가능하게 합니다.",
+          "features": [
+            "Ternary Lookup Table (TL)로 공간 효율성 향상",
+            "Int2 with Scale (I2_S)로 손실 없는 엣지 인퍼런스 보장",
+            "6.25x의 성능 향상",
+            "2.32x의 성능 향상",
+            "ELUT 확장으로 저비트 LLMs의 성능 향상",
+            "공개 소스로 사용 가능"
+          ],
+          "how": "Bitnet.cpp는 새로운 mpGEMM 라이브러리를 사용하여 Ternary Lookup Table (TL)과 Int2 with Scale (I2_S)를 통한 sub-2-bits-per-weight의 효율적이고 손실 없는 인퍼런스를 가능하게 합니다.",
+          "useCases": [
+            "터너리 LLMs의 엣지 인퍼런스 속도 향상",
+            "저비트 LLMs의 효율적인 배포",
+            "BitNet b1.58과의 성능 비교"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_trending_2609_18063",
+          "date": "2026-11-21",
+          "kind": "trending",
+          "rank": 7,
+          "score": 14,
+          "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+          "url": "https://huggingface.co/papers/2609.18063",
+          "arxiv": "https://arxiv.org/abs/2609.18063",
+          "code": "https://github.com/Edge0-AI/edge0",
+          "stars": 12140,
+          "gain": 36,
+          "oneLine": "소비자 하드웨어에서 효율적인 Expert Mixture-of-Experts 추론을 가능하게 하는 Edge0 소개",
+          "points": [
+            "예측된 라우팅 사용",
+            "소프트웨어 복구 어댑터",
+            "35B MoE 지원"
+          ],
+          "why": "소비자 하드웨어에서 MoE 추론의 효율성을 향상시키고 메모리 사용을 최적화하기 위함",
+          "overview": "Edge0는 소비자 하드웨어에서 Mixture-of-Experts (MoE) 추론을 효율적으로 수행하는 엔진입니다. 예측된 라우팅을 사용하여 계산과 메모리 사용을 최적화합니다.",
+          "features": [
+            "예측된 라우팅 사용으로 계산과 메모리 효율성 향상",
+            "소프트웨어 복구 어댑터를 통해 품질 유지",
+            "35B MoE를 20tok/s의 속도로 처리",
+            "소프트웨어, 체크포인트 및 어댑터 오픈 소스",
+            "FP16 가르처와의 평균 5개의 공개 벤치마크에서 약간의 차이",
+            "8B 티어도 동일한 프레임워크에서 실행 가능"
+          ],
+          "how": "각 계층의 헤드가 다음 계층의 라우팅을 한 토큰 앞에 예측하고, 이 예측이 라우팅 자체로 사용되므로 스테이지된 Expert 세트가 라우팅된 세트와 동일해지며, 아무것도 버려지지 않습니다.",
+          "useCases": [
+            "소비자 하드웨어에서 대규모 MoE 모델의 추론",
+            "메모리 효율적인 AI 서비스 제공",
+            "실시간 인퍼런스 애플리케이션"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_trending_2610_14224",
+          "date": "2026-11-21",
+          "kind": "trending",
+          "rank": 9,
+          "score": 13.59,
+          "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+          "url": "https://huggingface.co/papers/2610.14224",
+          "arxiv": "https://arxiv.org/abs/2610.14224",
+          "code": "https://github.com/google-research/harness2",
+          "stars": 24570,
+          "gain": 70,
+          "oneLine": "Recursive Agent Harnessing Framework for Open-World Settings",
+          "points": [
+            "Recursive Task-Level Refinement",
+            "Continual Harness-Level Learning",
+            "Plug-and-Play Design"
+          ],
+          "why": "오픈 월드 환경에서 LLM 에이전트의 성능을 향상시키는 데 도움이 필요할 때",
+          "overview": "Harness²는 LLM 에이전트의 실행 헤이스를 재귀적으로 개선하고 지속적으로 학습하여 오픈 월드 환경에서의 성능을 향상시킵니다.",
+          "features": [
+            "Recursive Task-Level Refinement: Contrastive Propose-Probe-Compose 스텝을 사용하여 헤이스를 신뢰성 있게 수정합니다.",
+            "Continual Harness-Level Learning: 편집에서 경험을 추출하여 지속적인 향상 헤이스를 업데이트합니다.",
+            "Plug-and-Play Design: 쉽게 사용할 수 있는 플러그-앤-플레이 디자인입니다.",
+            "Parallel or Sequential Recursion: 병렬 또는 순차적 재귀를 통해 확장할 수 있습니다."
+          ],
+          "how": "재귀적인 헤이스 개선 과정을 통해 LLM 에이전트의 성능을 향상시킵니다.",
+          "useCases": [
+            "WorkBuddy-Bench에서 11.5 점의 성능 향상",
+            "JobBench에서 4.5 점의 성능 향상",
+            "LAB에서 11.8 퍼센트의 성능 향상"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-21_trending_2508_16279",
+          "date": "2026-11-21",
+          "kind": "trending",
+          "rank": 12,
+          "score": 12.14,
+          "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic Applications",
+          "url": "https://huggingface.co/papers/2508.16279",
+          "arxiv": "https://arxiv.org/abs/2508.16279",
+          "code": "https://github.com/agentscope-ai/agentscope",
+          "stars": 36360,
+          "gain": 73,
+          "oneLine": "AgentScope 1.0은 Large Language Models(LLMs) 기반의 Agent의 발전을 지원하는 개발자 중심의 프레임워크",
+          "points": [
+            "유연한 도구 기반 상호작용",
+            "통합된 인터페이스",
+            "ReAct 패러다임 기반의 고급 인프라"
+          ],
+          "why": "대형 언어 모델의 발전을 반영하여 Agent의 실용성을 높이는 데 도움이 필요하다는 이유",
+          "overview": "AgentScope는 Large Language Models(LLMs) 기반의 Agent의 발전을 지원하는 개발자 중심의 프레임워크로, 유연한 도구 기반 상호작용과 통합된 인터페이스를 제공하며, ReAct 패러다임 기반의 고급 인프라를 통해 Agent의 실용성을 높입니다.",
+          "features": [
+            "유연한 도구 기반 상호작용 지원",
+            "통합된 인터페이스와 확장 가능한 모듈 제공",
+            "ReAct 패러다임 기반의 고급 인프라",
+            "대규모 평가 모듈과 Visual Studio 인터페이스",
+            "런타임 샌드박스로 안전한 Agent 실행 보장",
+            "실시간 배포 지원"
+          ],
+          "how": "AgentScope는 Large Language Models(LLMs) 기반의 Agent의 발전을 반영하여 개발자 중심의 프레임워크를 제공하며, 유연한 도구 기반 상호작용과 통합된 인터페이스를 제공하며, ReAct 패러다임 기반의 고급 인프라를 통해 Agent의 실용성을 높입니다.",
+          "useCases": [
+            "대규모 자연어 처리 애플리케이션 개발",
+            "실시간 데이터 분석 및 처리",
+            "인공지능 기반의 고객 서비스"
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "cards": [
+        {
+          "id": "2026-11-20_repo_obra_superpowers",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 2,
+          "score": 23.26,
+          "title": "obra / superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "lang": "Shell",
+          "stars": 321997,
+          "gain": 2029,
+          "oneLine": "코드 에이전트를 위한 전략적 개발 방법론",
+          "points": [
+            "스킬 기반",
+            "자동 트리거",
+            "TDD 강조"
+          ],
+          "why": "코드 생산성과 품질 향상",
+          "overview": "코드 에이전트가 프로젝트를 시작할 때부터 스킬을 활용하여 효과적인 개발을 지원하는 전략적 개발 방법론",
+          "features": [
+            "스킬 기반의 개발 프레임워크",
+            "자동 트리거된 스킬 사용",
+            "TDD 강조",
+            "자신감 있는 개발 환경",
+            "서브 에이전트 기반 개발",
+            "실시간 피드백과 리뷰"
+          ],
+          "how": "코드 에이전트가 프로젝트를 시작하면 스킬을 활용하여 요구사항을 분석하고, 설계를 단계별로 보여주며, 구현 계획을 세우고, 서브 에이전트가 개발 작업을 수행합니다.",
+          "useCases": [
+            "기업에서의 코드 생산성 향상",
+            "프로젝트 관리와 리뷰의 자동화",
+            "신입 개발자도 쉽게 참여할 수 있는 개발 환경"
+          ],
+          "caveats": "상업 지원이 필요할 수 있으며, 특정 플랫폼에 따라 설치 방법이 다를 수 있습니다."
+        },
+        {
+          "id": "2026-11-20_repo_HKUDS_CLI-Anything",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 3,
+          "score": 19,
+          "title": "HKUDS / CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "lang": "Python",
+          "stars": 60479,
+          "gain": 899,
+          "oneLine": "CLI-Anything: AI가 사용 가능한 모든 소프트웨어를 커맨드라인으로 제어할 수 있게 하는 도구",
+          "points": [
+            "AI가 사용 가능한 모든 소프트웨어를 커맨드라인으로 제어",
+            "커뮤니티에서 만든 CLI를 쉽게 관리",
+            "새로운 CLI를 쉽게 추가할 수 있음"
+          ],
+          "why": "AI가 사용 가능한 모든 소프트웨어를 커맨드라인으로 제어할 수 있게 하는 도구로, 향후 사용자들이 에이전트가 될 수 있도록 준비하고 있습니다.",
+          "overview": "CLI-Anything는 AI 에이전트가 사용 가능한 모든 소프트웨어를 커맨드라인으로 제어할 수 있게 하는 도구입니다. 커뮤니티에서 만든 CLI를 쉽게 관리하고, 새로운 CLI를 쉽게 추가할 수 있습니다.",
+          "features": [
+            "AI가 사용 가능한 모든 소프트웨어를 커맨드라인으로 제어",
+            "커뮤니티에서 만든 CLI를 쉽게 관리",
+            "새로운 CLI를 쉽게 추가할 수 있음",
+            "AI 에이전트와의 상호작용을 쉽게 가능",
+            "실제 아티팩트 생성을 지원",
+            "기능적인 문서와 테스트를 제공"
+          ],
+          "how": "CLI-Hub를 통해 설치하고, CLI를 검색, 설치, 관리할 수 있습니다. 새로운 CLI를 추가하려면 PR을 제출하면 됩니다.",
+          "useCases": [
+            "AI 에이전트와의 상호작용을 쉽게 가능",
+            "실제 아티팩트 생성을 지원",
+            "커뮤니티에서 만든 CLI를 쉽게 관리"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_repo_openvinotoolkit_openvino",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 8,
+          "score": 17.42,
+          "title": "openvinotoolkit / openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "lang": "C++",
+          "stars": 11534,
+          "gain": 246,
+          "oneLine": "OpenVINO는 인공지능 추론을 최적화하고 배포하기 위한 오픈 소스 툴킷",
+          "points": [
+            "인공지능 추론 최적화",
+            "다양한 모델 지원",
+            "플랫폼 호환성"
+          ],
+          "why": "AI 모델의 성능을 높이고 효율적으로 배포하기 위해 사용",
+          "overview": "OpenVINO는 인공지능 모델의 추론 성능을 최적화하고 다양한 플랫폼에서 배포할 수 있도록 하는 오픈 소스 툴킷입니다. PyTorch, TensorFlow 등 인기 있는 머신러닝 프레임워크와 호환되며, CPU, GPU, NPU 등 다양한 하드웨어에서 실행됩니다.",
+          "features": [
+            "인공지능 추론 최적화: 다양한 AI 작업에 대한 성능 향상",
+            "다양한 모델 지원: PyTorch, TensorFlow, ONNX 등 다양한 프레임워크와 호환",
+            "플랫폼 호환성: CPU, GPU, NPU 등 다양한 하드웨어에서 실행 가능",
+            "커뮤니티 활성화: 활발한 커뮤니티로 지속적인 개발과 지원"
+          ],
+          "how": "설치 후 인공지능 모델을 쉽게 배포하고 최적화할 수 있습니다. PyTorch, TensorFlow 등 다양한 프레임워크의 모델을 OpenVINO와 함께 사용할 수 있습니다.",
+          "useCases": [
+            "컴퓨터 비전",
+            "음성 인식",
+            "대형 언어 모델"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_repo_firecrawl_firecrawl",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 6,
+          "score": 17.05,
+          "title": "firecrawl / firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "lang": "TypeScript",
+          "stars": 204070,
+          "gain": 795,
+          "oneLine": "웹사이트 데이터를 수집하고 AI 에이전트를 향상시키는 도구",
+          "points": [
+            "Firecrawl Local",
+            "Firecrawl Cloud",
+            "Self-hosting"
+          ],
+          "why": "웹 데이터를 효율적으로 수집하고 AI 에이전트를 강화할 수 있는 도구",
+          "overview": "Firecrawl은 웹사이트에서 데이터를 수집하고 AI 에이전트를 향상시키는 도구입니다. Local, Cloud, Self-hosting 세 가지 방식으로 사용할 수 있습니다.",
+          "features": [
+            "웹사이트에서 마크다운, HTML, 원시 HTML 및 링크를 수집",
+            "크롤링, 맵핑 및 배치 스크래핑 기능",
+            "PDF 및 Office 문서를 로컬로 파싱",
+            "Firecrawl Cloud를 통한 검색 및 550+ 데이터 제공자",
+            "AI 에이전트와 상호작용 및 모니터링"
+          ],
+          "how": "Firecrawl Local은 로컬 머신에서 실행되며, Firecrawl Cloud는 클라우드 서비스를 제공합니다. Self-hosting은 자체 인프라에서 전체 Firecrawl 서버를 배포할 수 있습니다.",
+          "useCases": [
+            "웹 데이터 수집 및 분석",
+            "AI 에이전트의 지식 확장",
+            "크롤링 및 스크래핑 작업의 효율화"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_repo_mvanhorn_last30days-skill",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 10,
+          "score": 15.71,
+          "title": "mvanhorn / last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "lang": "Python",
+          "stars": 70727,
+          "gain": 952,
+          "oneLine": "AI 기반의 검색 엔진으로 Reddit, X, YouTube 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약합니다.",
+          "points": [
+            "AI 기반 검색 엔진",
+            "다양한 플랫폼 지원",
+            "실시간 정보 수집"
+          ],
+          "why": "실시간 정보를 정확하게 수집하고 요약하여 시간과 노력을 절약할 수 있습니다.",
+          "overview": "이 저장소는 Reddit, X, YouTube 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약하는 AI 기반 검색 엔진입니다. 사용자는 특정 주제에 대한 정보를 빠르게 수집하고 요약하여 시간과 노력을 절약할 수 있습니다.",
+          "features": [
+            "다양한 플랫폼 지원 (Reddit, X, YouTube, HN, Polymarket 등)",
+            "실시간 정보 수집",
+            "요약 기능",
+            "AI 기반 검색 엔진",
+            "커스텀 플랫폼 지원 가능",
+            "유료 정보 포함"
+          ],
+          "how": "AI 기반의 검색 엔진을 통해 실시간 정보를 수집하고, 이를 바탕으로 요약을 생성합니다.",
+          "useCases": [
+            "회사의 최근 동향을 파악하기",
+            "회의 전에 상대방의 최근 트위터나 파드캐스트 녹음 내용 읽기",
+            "박물관 방문 전에 열린 전시 정보 확인하기"
+          ],
+          "caveats": "유료 정보 포함, 플랫폼별 API 키 필요"
+        },
+        {
+          "id": "2026-11-20_repo_jingyaogong_minimind",
+          "date": "2026-11-20",
+          "kind": "repo",
+          "rank": 4,
+          "score": 15.34,
+          "title": "jingyaogong / minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "lang": "Python",
+          "stars": 66803,
+          "gain": 301,
+          "oneLine": "64M 규모의 대형 언어 모델을 2시간 내에 학습하는 오픈소스 프로젝트",
+          "points": [
+            "2시간 내 학습",
+            "64M 모델",
+            "오픈소스"
+          ],
+          "why": "대형 언어 모델 학습이 어려운 사람들을 위한 접근성 높은 프로젝트",
+          "overview": "MiniMind는 64M 규모의 대형 언어 모델을 2시간 내에 학습할 수 있는 오픈소스 프로젝트입니다. 프로젝트는 GPT-3의 1/2700의 크기를 가진 MiniMind를 통해 일반적인 개인 GPU에서도 빠르게 학습과 재현이 가능합니다.",
+          "features": [
+            "2시간 내 64M 모델 학습",
+            "MoE, 데이터 전처리, 사전 학습 등 전반적인 코드 오픈",
+            "비교적 작은 모델 크기",
+            "PyTorch 기반 원시 코드 사용",
+            "전체적인 대형 언어 모델 학습 흐름 제공",
+            "다양한 모달리티 모델 지원"
+          ],
+          "how": "PyTorch를 사용하여 직접 코드를 작성하고 실행하여 모델을 학습합니다. 사전 학습 데이터와 전처리 과정을 포함하여 전체 흐름을 따릅니다.",
+          "useCases": [
+            "개인용 대형 언어 모델 학습",
+            "AI 기술에 대한 이해를 위한 학습",
+            "대형 언어 모델의 작동 원리 연구"
+          ],
+          "caveats": "GPU 비용이 3달러 정도이며, 학습 시간은 단일 NVIDIA 3090 GPU에서 1 에폭을 실행하는 데 걸립니다."
+        },
+        {
+          "id": "2026-11-20_paper_2611_21553",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 4,
+          "score": 16.21,
+          "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+          "url": "https://huggingface.co/papers/2611.21553",
+          "arxiv": "https://arxiv.org/abs/2611.21553",
+          "stars": 0,
+          "gain": 8,
+          "oneLine": "BLIP-Live는 실시간 스트리밍 비디오 이해를 위한 프로액티브성과 정확성을 균형잡힌 프레임워크",
+          "points": [
+            "프로액티브성과 정확성 균형",
+            "PAUC-F 메트릭",
+            "BLIP-Live-780K 데이터셋"
+          ],
+          "why": "실시간 상호작용 시스템에서 자연스러운 인간과의 상호작용을 가능하게 하기 위해",
+          "overview": "BLIP-Live는 프로액티브성과 정확성을 균형잡힌 프레임워크로, 실시간 스트리밍 비디오 이해를 위한 데이터, 메트릭, 인퍼런스, 훈련을 통합합니다.",
+          "features": [
+            "PAUC-F 메트릭: 프로액티브성과 정확성을 균형잡힌 측정",
+            "BLIP-Live-780K 데이터셋: 인간의 프로액티브 응답 내용과 시간에 대한 주석",
+            "모델-agnostic 인퍼런스 허브: 오프라인 VLM의 프로액티브성 개선",
+            "슬라이딩 시각 윈도우, 온라인 상호작용 메모리, 구조화된 응답 출력: 프로액티브 성능 향상",
+            "BLIP-Live-Qwen 모델: 4개의 프로액티브 스트리밍 벤치마크에서 최고 성능",
+            "44%의 성능 향상: 기준선과 여러 닫힌 API 모델을 초월"
+          ],
+          "how": "PAUC-F 메트릭을 사용하여 프로액티브성과 정확성을 균형잡히게 하며, 모델-agnostic 인퍼런스 허브와 훈련 파이프라인을 통합하여 프로액티브성을 개선합니다.",
+          "useCases": [
+            "실시간 비디오 콘텐츠 분석",
+            "실시간 상호작용 시스템",
+            "실시간 비디오 인터페이스 개선"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_paper_2611_17605",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 1,
+          "score": 15.85,
+          "title": "Choosing Quantized Code LLMs by File Size and Energy per Solved Task",
+          "url": "https://huggingface.co/papers/2611.17605",
+          "arxiv": "https://arxiv.org/abs/2611.17605",
+          "stars": 0,
+          "gain": 2,
+          "oneLine": "코드 도우미를 실행하는 개발자가 노트북에서 모델 파일을 다운로드하고 로컬 인퍼런스는 각 요청의 에너지를 해당 기기로 이동시킵니다.",
+          "points": [
+            "모델 크기와 에너지 효율성",
+            "Qwen2.5-Coder 모델",
+            "GGUF 파일"
+          ],
+          "why": "코드 도우미의 에너지 효율성과 성능을 최적화하는 방법을 이해하고 싶을 때",
+          "overview": "노트북에서 코드 도우미를 실행하는 개발자가 선택해야 하는 Qwen2.5-Coder 모델의 GGUF 파일을 최적의 크기와 에너지 효율성으로 선택하는 방법을 설명합니다.",
+          "features": [
+            "24개의 GGUF 파일을 사용하여 Qwen2.5-Coder 모델의 성능과 에너지 효율성을 평가했습니다.",
+            "1GB와 2GB에서는 q4_K_M 파일을 선택하여 가장 높은 정확성과 에너지 효율성을 제공합니다.",
+            "3GB에서는 7B-q2_K 파일을 선택하지만, 에너지 효율성이 떨어져 성능 향상이 미미합니다.",
+            "8GB에서는 7B-q6_K 파일을 선택하여 에너지 비용이 높아도 성능 향상이 발생합니다.",
+            "90% CI를 사용하여 성능 차이를 분석합니다."
+          ],
+          "how": "fanless MacBook Air M2에서 24개의 GGUF 파일을 실행하고, 각 파일의 에너지 효율성을 542개의 EvalPlus 작업에 대해 측정합니다.",
+          "useCases": [
+            "노트북에서 코드 도우미를 실행하는 개발자가 모델 파일을 선택할 때",
+            "코드 도우미의 에너지 효율성을 최적화하려는 경우",
+            "Qwen2.5-Coder 모델의 성능과 에너지 효율성을 비교하려는 경우"
+          ],
+          "caveats": "7B-q2_K 파일의 에너지 효율성이 떨어져 성능 향상이 미미한 점"
+        },
+        {
+          "id": "2026-11-20_paper_2611_22382",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 3,
+          "score": 14.93,
+          "title": "RICoT: Recurrent Interleaved Chain-of-Thought for Page Stream Segmentation",
+          "url": "https://huggingface.co/papers/2611.22382",
+          "arxiv": "https://arxiv.org/abs/2611.22382",
+          "stars": 0,
+          "gain": 3,
+          "oneLine": "Page Stream Segmentation을 위한 반복적 연결의 사고 과정(RICoT)",
+          "points": [
+            "전체 페이지 스트림에 대한 순차적 처리",
+            "페이지별 사고와 결정",
+            "비용 효율적인 메커니즘"
+          ],
+          "why": "페이지 분할 알고리즘의 효율성과 정확성을 향상시키기 위해",
+          "overview": "RICoT은 페이지 스트림을 전체적으로 처리하는 반복적 연결의 사고 과정을 제안하여, 페이지별로 사고하고 결정을 내리며, 이 과정에서 비용을 효율적으로 관리합니다.",
+          "features": [
+            "전체 페이지 스트림에 대한 순차적 처리",
+            "페이지별 사고와 결정 내리기",
+            "비용 효율적인 메커니즘 유지",
+            "FinancePSS-205 데이터셋 사용",
+            "다양한 LLM에 대한 성능 향상"
+          ],
+          "how": "슬라이딩 윈도우 내에서 각 페이지를 사고하고 결정을 내리며, 윈도우 간에 읽은 내용의 요약을 유지하여 비용을 관리합니다.",
+          "useCases": [
+            "다양한 분야의 문서 분할",
+            "금융 문서의 효율적 분류",
+            "대규모 문서의 자동 분할"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_paper_2611_23994",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 7,
+          "score": 11.66,
+          "title": "WaveView: The Novel View Is in the Noise",
+          "url": "https://huggingface.co/papers/2611.23994",
+          "arxiv": "https://arxiv.org/abs/2611.23994",
+          "stars": 0,
+          "gain": 7,
+          "oneLine": "WaveView는 사전 훈련된 생성기의 초기 노이즈의 신호로 변형된 소스를 주입하여 신생 시각 합성을 개선하는 기술입니다.",
+          "points": [
+            "신호의 신호로 변형된 소스를 주입",
+            "Dual-Tree Complex Wavelet Packet Transform 사용",
+            "생성기의 불필요한 제약 제거"
+          ],
+          "why": "기존 기술의 단점인 오버헤드와 생성된 레이아웃의 오차를 개선하여 성능 향상이 필요할 때",
+          "overview": "WaveView는 NVS(Novel View Synthesis)에서 사용되는 생성 모델에 변형된 소스를 신호의 신호로 주입하여 신생 시각 합성을 개선하는 기술입니다. 이 기술은 Dual-Tree Complex Wavelet Packet Transform을 사용하여 지역적이고 익명적인 신호 주입을 가능하게 하여 생성기의 불필요한 제약을 제거합니다.",
+          "features": [
+            "신호의 신호로 변형된 소스 주입",
+            "Dual-Tree Complex Wavelet Packet Transform 사용",
+            "생성기 불필요한 제약 제거",
+            "PSNR 향상",
+            "빠른 실행 속도"
+          ],
+          "how": "사전 훈련된 생성기의 초기 노이즈의 신호로 변형된 소스를 주입하여 신생 시각 합성을 개선합니다. Dual-Tree Complex Wavelet Packet Transform을 사용하여 지역적이고 익명적인 신호 주입을 가능하게 합니다.",
+          "useCases": [
+            "정적 또는 동적 장면의 신생 시각 합성"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_paper_2611_23257",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 6,
+          "score": 10.71,
+          "title": "StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software",
+          "url": "https://huggingface.co/papers/2611.23257",
+          "arxiv": "https://arxiv.org/abs/2611.23257",
+          "code": "https://github.com/pzy2000/State_Portal",
+          "stars": 0,
+          "gain": 8,
+          "oneLine": "StatePortal는 GUI 기반의 인터랙티브 소프트웨어의 깊은 상태를 테스트하는 데 사용되는 에이전트입니다.",
+          "points": [
+            "GUI 기반의 인터랙티브 소프트웨어의 깊은 상태 테스트",
+            "자연어 기반의 테스트 케이스를 사용한 체크포인트 생성",
+            "오프라인 소스 코드 접근만으로 체크포인트 생성"
+          ],
+          "why": "GUI 기반의 인터랙티브 소프트웨어의 깊은 상태 테스트가 어려워지며, 자동화 도구가 사용할 수 없는 경우에 유용합니다.",
+          "overview": "StatePortal는 GUI 기반의 인터랙티브 소프트웨어의 깊은 상태를 테스트하는 데 사용되는 에이전트입니다. 이 에이전트는 자연어 기반의 테스트 케이스를 사용하여 체크포인트를 생성하고, 이 체크포인트를 통해 상태를 복원하고 재생할 수 있습니다.",
+          "features": [
+            "자연어 기반의 테스트 케이스를 사용한 체크포인트 생성",
+            "오프라인 소스 코드 접근만으로 체크포인트 생성",
+            "프로그램matic-state와 시각적 평가를 결합한 체크포인트 점검",
+            "오프라인에서 체크포인트를 생성하고 재생할 수 있는 기능",
+            "GUI 기반의 인터랙티브 소프트웨어의 깊은 상태 테스트를 자동화"
+          ],
+          "how": "StatePortal는 자연어 기반의 테스트 케이스를 사용하여 체크포인트를 생성하고, 이 체크포인트를 통해 상태를 복원하고 재생할 수 있습니다. 체크포인트는 오프라인 소스 코드 접근만으로 생성되며, 프로그램matic-state와 시각적 평가를 결합한 체크포인트 점검을 통해 검증됩니다.",
+          "useCases": [
+            "GUI 기반의 인터랙티브 소프트웨어의 깊은 상태 테스트",
+            "오프라인 소스 코드 접근만으로 체크포인트 생성",
+            "프로그램matic-state와 시각적 평가를 결합한 체크포인트 점검"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_paper_2611_24154",
+          "date": "2026-11-20",
+          "kind": "paper",
+          "rank": 35,
+          "score": 10.25,
+          "title": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+          "url": "https://huggingface.co/papers/2611.24154",
+          "arxiv": "https://arxiv.org/abs/2611.24154",
+          "code": "https://github.com/game2player/Game2Player",
+          "stars": 22,
+          "gain": 25,
+          "oneLine": "Game2Player는 기존 웹 게임을 활용해 다양한 및 검증 가능한 게임 플레이 경험을 확대하는 프레임워크",
+          "points": [
+            "기존 웹 게임 활용",
+            "환경과 플레이어 동시 개발",
+            "다양한 게임 플레이 경험 수집"
+          ],
+          "why": "현존 데이터셋의 한계를 극복하고, 비용 효율적인 게임 플레이 데이터 수집을 가능하게 함",
+          "overview": "Game2Player는 Builder, Coding Player, VLM Player를 통해 기존 웹 게임을 수정하고, 플레이어가 해당 게임을 수행하면서 문제를 보고 수정하는 방식으로, 다양한 게임 플레이 경험을 수집하고, 이를 통해 VLM 에이전트를 훈련시킵니다.",
+          "features": [
+            "기존 웹 게임의 내부 상태 노출",
+            "상태 기반의 진행도와 성공 체크 정의",
+            "플레이어의 문제 보고와 수정",
+            "진행도 기반의 SFT 훈련"
+          ],
+          "how": "Builder는 기존 웹 게임을 수정하고, Coding Player와 VLM Player는 해당 게임을 수행하며 문제를 보고 수정합니다. Builder는 플레이어의 문제를 통해 게임 환경의 유효성을 검증하고, 동시에 훈련 데이터를 수집합니다.",
+          "useCases": [
+            "기존 게임의 확장 및 수정",
+            "신규 게임의 생성",
+            "비용 효율적인 게임 데이터 수집"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_trending_2502_11880",
+          "date": "2026-11-20",
+          "kind": "trending",
+          "rank": 6,
+          "score": 18.59,
+          "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+          "url": "https://huggingface.co/papers/2502.11880",
+          "arxiv": "https://arxiv.org/abs/2502.11880",
+          "code": "https://github.com/microsoft/BitNet",
+          "stars": 42152,
+          "gain": 19,
+          "oneLine": "Bitnet.cpp는 1비트 LLM의 효율적인 엣지 추론을 위한 새로운 mpGEMM 라이브러리를 사용하여 성능을 향상시킨 엣지 인퍼런스 시스템입니다.",
+          "points": [
+            "1비트 LLM의 엣지 추론",
+            "mpGEMM 라이브러리",
+            "TL과 I2_S 기법"
+          ],
+          "why": "1비트 LLM의 엣지 추론이 중요하며, Bitnet.cpp는 이를 효율적으로 처리하는 데 도움이 될 수 있습니다.",
+          "overview": "Bitnet.cpp는 BitNet b1.58과 1비트 LLMs에 최적화된 엣지 인퍼런스 시스템입니다. 이 시스템은 mpGEMM 라이브러리를 사용하여 sub-2비트-per-weight의 효율적이고 손실 없는 추론을 가능하게 합니다.",
+          "features": [
+            "TL(Ternary Lookup Table): 공간 효율성을 개선",
+            "I2_S(Int2 with a Scale): 손실 없는 엣지 추론을 보장",
+            "mpGEMM 라이브러리: sub-2비트-per-weight 추론 가능",
+            "6.25x의 성능 향상",
+            "2.32x의 성능 향상",
+            "ELUT(Element-wise Lookup Table) 확장"
+          ],
+          "how": "TL과 I2_S 기법을 사용하여 mpGEMM 라이브러리를 통한 sub-2비트-per-weight 추론을 구현",
+          "useCases": [
+            "1비트 LLM의 실시간 추론",
+            "移动 기기에서의 LLM 추론",
+            "IoT 기기에서의 LLM 추론"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_trending_2412_20138",
+          "date": "2026-11-20",
+          "kind": "trending",
+          "rank": 7,
+          "score": 15.75,
+          "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+          "url": "https://huggingface.co/papers/2412.20138",
+          "arxiv": "https://arxiv.org/abs/2412.20138",
+          "code": "https://github.com/tauricresearch/tradingagents",
+          "stars": 123164,
+          "gain": 169,
+          "oneLine": "대형 언어 모델 기반의 다중 에이전트 금융 거래 프레임워크",
+          "points": [
+            "다중 에이전트 시스템",
+            "대형 언어 모델",
+            "실제 거래 회사의 동작 방식"
+          ],
+          "why": "실제 거래 회사의 동작 방식을 모방하여 성능 향상",
+          "overview": "대형 언어 모델을 활용한 다중 에이전트 시스템으로, 주식 거래를 시뮬레이션하여 실제 거래 회사의 동작 방식을 모방하고 성능을 향상시킵니다.",
+          "features": [
+            "분석가, 감성 분석가, 기술 분석가, 리스크 프로파일이 다양한 에이전트",
+            "시장 조건 평가, 리스크 관리, 정보 통합",
+            "동적, 협력적인 거래 환경 시뮬레이션",
+            "누적 수익률, 샤르피 레이토, 최대 드로다운 향상"
+          ],
+          "how": "대형 언어 모델을 활용한 에이전트 생성 및 시뮬레이션",
+          "useCases": [
+            "실제 거래 회사의 동작 방식을 모방한 거래 시뮬레이션",
+            "성능 향상된 거래 전략 개발",
+            "리스크 관리와 정보 통합"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_trending_2609_18063",
+          "date": "2026-11-20",
+          "kind": "trending",
+          "rank": 5,
+          "score": 14.98,
+          "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+          "url": "https://huggingface.co/papers/2609.18063",
+          "arxiv": "https://arxiv.org/abs/2609.18063",
+          "code": "https://github.com/Edge0-AI/edge0",
+          "stars": 12081,
+          "gain": 35,
+          "oneLine": "소비자 하드웨어에서 효율적인 Expert Mixture-of-Experts 추론을 가능하게 하는 Edge0",
+          "points": [
+            "예측된 라우팅 사용",
+            "소프트웨어 복구 어댑터",
+            "최소한의 활성 메모리 유지"
+          ],
+          "why": "소비자 하드웨어에서 대규모 모델을 효율적으로 추론할 수 있게 하는 방법을 찾고자 할 때",
+          "overview": "Edge0는 소비자 하드웨어에서 Expert Mixture-of-Experts 추론을 효율적으로 수행하는 엔진입니다. 예측된 라우팅을 사용하여 계산과 메모리 사용을 최적화합니다.",
+          "features": [
+            "예측된 라우팅 사용으로 계산과 메모리 효율성 향상",
+            "소프트웨어 복구 어댑터를 통해 품질 유지",
+            "단일 24GB 머신에서 35B MoE를 20tok/s로 처리",
+            "FP16 가르처와 유사한 성능",
+            "8B 티어도 동일한 프레임워크에서 실행 가능",
+            "오픈 소스로 프레임워크, 체크포인트 및 어댑터 공유"
+          ],
+          "how": "각 레이어의 헤드가 다음 레이어의 라우팅을 한 토큰 앞에 예측하고, 이 예측이 라우팅 자체로 사용되므로, 스테이지된 전문 집합이 라우팅된 전문 집합과 동일해집니다.",
+          "useCases": [
+            "대규모 모델의 소비자 하드웨어에서의 추론",
+            "효율적인 AI 서비스 제공",
+            "실시간 인프라에서의 높은 성능 유지"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-20_trending_2610_14224",
+          "date": "2026-11-20",
+          "kind": "trending",
+          "rank": 8,
+          "score": 14.09,
+          "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+          "url": "https://huggingface.co/papers/2610.14224",
+          "arxiv": "https://arxiv.org/abs/2610.14224",
+          "code": "https://github.com/google-research/harness2",
+          "stars": 24468,
+          "gain": 70,
+          "oneLine": "Recursive Agent Harnessing Framework for Open-World Settings",
+          "points": [
+            "Recursive Task-Level Refinement",
+            "Continual Harness-Level Learning",
+            "Plug-and-Play Design"
+          ],
+          "why": "Harness²는 오픈 월드 환경에서 LLM 에이전트의 성능을 향상시키는 데 효과적입니다.",
+          "overview": "Harness²는 RSI를 통해 에이전트의 실행 헤이스를 자동으로 개선하는 데 초점을 맞추고 있습니다. 이는 오픈 월드 환경에서 훈련 데이터가 부족한 문제를 해결하며, 다양한 상황에 대한 일반화 능력을 향상시킵니다.",
+          "features": [
+            "Recursive Task-Level Refinement: Contrastive Propose-Probe-Compose step for reliable edits without ground-truth verifiers.",
+            "Continual Harness-Level Learning: Extracts experience from task-level edits to update a continual improvement harness.",
+            "Plug-and-Play Design: Easy to use and integrate with existing LLM agents.",
+            "Parallel or Sequential Recursion: Scalable for large-scale applications.",
+            "Cross-Professional Benchmarks: Demonstrated improvements across WorkBuddy-Bench, JobBench, and LAB."
+          ],
+          "how": "Harness²는 두 개의 연결된 레벨의 재귀를 통해 작동합니다. Task-level recursion은 대조적 제안-조사-조합 단계를 사용하여 헤이스를 개선하고, Harnessing-level recursion은 이러한 편집에서 경험을 추출하여 지속적인 개선 헤이스를 업데이트합니다.",
+          "useCases": [
+            "오픈 월드 환경에서의 LLM 에이전트 성능 향상",
+            "다양한 상황에 대한 일반화 능력 향상",
+            "기존 LLM 에이전트와 쉽게 통합 가능"
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "cards": [
+        {
+          "id": "2026-11-19_repo_elementalsouls_Claude-BugHunter",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 1,
+          "score": 21.55,
+          "title": "elementalsouls / Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "lang": "Python",
+          "stars": 11216,
+          "gain": 2322,
+          "oneLine": "Claude-BugHunter: 83 기술 스킬과 15 명령어로 버그 탐지와 외부 레드팀 작업을 위한 클라우드 코드 플러그인",
+          "points": [
+            "83 기술 스킬",
+            "15 명령어",
+            "681 개의 공개된 보안 패턴"
+          ],
+          "why": "버그 탐지와 레드팀 작업을 위한 강력한 도구로, 자동화된 기능으로 효율성을 높입니다.",
+          "overview": "Claude-BugHunter는 버그 탐지와 레드팀 작업을 위한 클라우드 코드 플러그인으로, 83개의 기술 스킬과 15개의 명령어를 제공합니다. 이 플러그인은 자동화된 기능으로 버그 탐지와 레드팀 작업을 효율적으로 수행할 수 있습니다.",
+          "features": [
+            "83개의 버그 탐지 기술 스킬",
+            "15개의 명령어로 빠르게 작업 수행",
+            "681개의 공개된 보안 패턴",
+            "레드팀 작업 지원",
+            "자동화된 기능으로 효율성 높임",
+            "플러그인으로 간편한 설치"
+          ],
+          "how": "Claude Code 플러그인으로 설치하거나 복사하여 설치할 수 있습니다. 플러그인 설치 시 스킬과 명령어는 `claude-bughunter:`으로 이름이 지정됩니다.",
+          "useCases": [
+            "웹 애플리케이션 버그 탐지",
+            "기업 인프라스트럭처 보안 테스트",
+            "레드팀 연습 및 공식 훈련"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_repo_mvanhorn_last30days-skill",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 4,
+          "score": 19.15,
+          "title": "mvanhorn / last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "lang": "Python",
+          "stars": 69912,
+          "gain": 1062,
+          "oneLine": "AI 기반의 검색 엔진으로 Reddit, X, YouTube 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약합니다.",
+          "points": [
+            "AI 기반의 실시간 검색 엔진",
+            "다양한 플랫폼 지원",
+            "실제 참여자들의 투표와 좋아요로 정보 평가"
+          ],
+          "why": "실시간 정보 수집과 요약이 필요한 다양한 상황에서 유용합니다.",
+          "overview": "실시간으로 Reddit, X, YouTube 등 다양한 플랫폼에서 정보를 수집하고, 실제 참여자들의 투표와 좋아요를 기반으로 정보를 평가하고 요약합니다.",
+          "features": [
+            "다양한 플랫폼 지원 (Reddit, X, YouTube, HN, Polymarket 등)",
+            "실시간 정보 수집",
+            "실제 참여자들의 투표와 좋아요로 정보 평가",
+            "AI 기반의 실시간 검색 엔진",
+            "설정이 필요하지 않음",
+            "X, YouTube, TikTok 등 추가 플랫폼 지원"
+          ],
+          "how": "AI 기반의 실시간 검색 엔진으로 Reddit, X, YouTube 등 다양한 플랫폼에서 정보를 수집하고, 실시간으로 정보를 요약합니다.",
+          "useCases": [
+            "업계 동향 파악",
+            "회의 준비",
+            "기사 요약"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_repo_google-research_paper-orchestra",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 9,
+          "score": 18.28,
+          "title": "google-research / paper-orchestra",
+          "url": "https://github.com/google-research/paper-orchestra",
+          "lang": "Python",
+          "stars": 4184,
+          "gain": 1529,
+          "oneLine": "다중 에이전트 프레임워크로 AI 연구 논문 자동화",
+          "points": [
+            "다중 에이전트",
+            "논문 자동화",
+            "LaTeX 자동화"
+          ],
+          "why": "연구자들이 시간을 절약하고 효율적으로 논문을 작성할 수 있게 도움",
+          "overview": "PaperOrchestra는 아이디어와 실험 로그를 사용하여 제출 준비된 LaTeX 논문을 자동으로 생성하는 다중 에이전트 프레임워크입니다. 에이전트는 개요 생성, 문헌 검토, 섹션 작성, 내용 개선 및 플롯 생성을 처리하여 원시 연구 자료와 제출 준비된 논문 사이의 간격을 닫습니다.",
+          "features": [
+            "다중 에이전트 파이프라인: 개요, 문헌 검토, 섹션 작성, 내용 개선, 플롯 생성을 위한 전문 에이전트를 조정합니다.",
+            "포괄적인 문헌 합성: 관련 문헌을 자동으로 검색, 우선순위를 설정하고 논문에 통합합니다.",
+            "플롯 및 개념 다이어그램 생성",
+            "LaTeX 자동화: 대상 학술 회의 템플릿을 준수하는 제출 준비된 LaTeX 논문을 생성합니다."
+          ],
+          "how": "Conda 환경 설정 후 필요한 의존성 설치. Bash 스크립트 또는 Python CLI를 사용하여 논문 생성 파이프라인을 실행합니다.",
+          "useCases": [
+            "연구자들이 시간을 절약하고 효율적으로 논문을 작성할 수 있게 도움",
+            "대규모 연구 프로젝트에서 논문 자동화를 적용하여 생산성을 향상시킬 수 있습니다."
+          ],
+          "caveats": "논문 생성에 사용되는 데이터셋은 별도로 공개될 예정입니다."
+        },
+        {
+          "id": "2026-11-19_repo_NVIDIA_SkillEvaluator",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 6,
+          "score": 17.49,
+          "title": "NVIDIA / SkillEvaluator",
+          "url": "https://github.com/NVIDIA/SkillEvaluator",
+          "lang": "Python",
+          "stars": 3665,
+          "gain": 323,
+          "oneLine": "NVIDIA SkillEvaluator: AI 능력 평가 및 향상 도구",
+          "points": [
+            "AI 능력 평가",
+            "질량 검사",
+            "세미틱 겹침 감지"
+          ],
+          "why": "AI 능력의 품질과 안전성을 자동으로 평가하고 개선할 수 있습니다.",
+          "overview": "NVIDIA SkillEvaluator는 AI 에이전트의 능력과 플러그인을 평가하고, 그 효과를 측정하는 다단계 프레임워크입니다. 이를 통해 에이전트의 성능을 향상시키고, 불필요한 능력을 사전에 감지할 수 있습니다.",
+          "features": [
+            "500개 이상의 정적 규칙과 감지 패턴을 기반으로한 품질 검사",
+            "세미틱 겹침 감지",
+            "합성 평가 데이터셋 생성",
+            "실시간 에이전트 평가",
+            "CI 템플릿 통합",
+            "NVIDIA Verified Skills 파이프라인의 일부"
+          ],
+          "how": "Python 3.12–3.14 환경에서 CLI 설치 후, 터미널, CI, 에이전트에서 능력을 체크합니다. NVIDIA Build 키를 사용하면 세 가지 단계를 모두 실행할 수 있습니다.",
+          "useCases": [
+            "AI 에이전트의 능력 향상",
+            "능력의 효과 측정",
+            "능력의 불필요성 감지"
+          ],
+          "caveats": "API 키가 필요하지만, 추가적인 보안 및 에이전트 영향 검사는 필요합니다."
+        },
+        {
+          "id": "2026-11-19_repo_HKUDS_CLI-Anything",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 3,
+          "score": 16.4,
+          "title": "HKUDS / CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "lang": "Python",
+          "stars": 59641,
+          "gain": 384,
+          "oneLine": "CLI-Anything: AI 에이전트와 소프트웨어를 연결하는 도구",
+          "points": [
+            "AI 에이전트 지원",
+            "커뮤니티 기여 가능",
+            "다양한 소프트웨어 지원"
+          ],
+          "why": "AI 에이전트를 사용하는 사용자에게 도움이 될 수 있어 볼 만함",
+          "overview": "AI 에이전트가 사용할 수 있도록 소프트웨어를 쉽게 변환하고 관리할 수 있는 도구",
+          "features": [
+            "AI 에이전트 호환",
+            "커뮤니티 기여 가능",
+            "다양한 CLI 지원",
+            "데모 제공",
+            "신규 CLI 추가 가능"
+          ],
+          "how": "CLI-Hub를 통해 설치하고 관리하며, 필요하면 직접 PR을 통해 기여 가능",
+          "useCases": [
+            "AI 에이전트가 CAD, 3D 시나리오, 다이어그램, 게임 플레이, 자막 등 생성"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_repo_cursor_plugins",
+          "date": "2026-11-19",
+          "kind": "repo",
+          "rank": 2,
+          "score": 13.44,
+          "title": "cursor / plugins",
+          "url": "https://github.com/cursor/plugins",
+          "lang": "TypeScript",
+          "stars": 17163,
+          "gain": 315,
+          "oneLine": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인입니다.",
+          "points": [
+            "각 플러그인은 독립된 디렉토리에 위치",
+            "타입스크립트로 작성",
+            "다양한 기능 제공"
+          ],
+          "why": "개발 도구와 SaaS 제품과의 연동을 돕고 효율적인 작업을 가능하게 합니다.",
+          "overview": "Cursor 플러그인은 개발 도구와 SaaS 제품에 대한 공식 플러그인으로, 각 플러그인은 독립된 디렉토리에 위치하고 타입스크립트로 작성됩니다. 다양한 기능을 제공하여 개발 효율성을 높입니다.",
+          "features": [
+            "기술 매핑 및 연습 계획",
+            "증강된 메모리 업데이트",
+            "CI/CD 팀 워크플로",
+            "안전한 코드 검토",
+            "새 플러그인 생성",
+            "반복적인 AI 루프"
+          ],
+          "how": "각 플러그인은 `.cursor-plugin/plugin.json` 매니페스트 파일을 통해 관리됩니다. 타입스크립트로 작성되어 있으며, 개발 도구와 SaaS 제품과의 연동을 돕습니다.",
+          "useCases": [
+            "개발 도구와 SaaS 제품과의 연동",
+            "효율적인 코드 검토",
+            "CI/CD 팀 워크플로"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_paper_2611_15671",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 13,
+          "score": 17.5,
+          "title": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
+          "url": "https://huggingface.co/papers/2611.15671",
+          "arxiv": "https://arxiv.org/abs/2611.15671",
+          "code": "https://github.com/Level5Tech/clef-quant-bench",
+          "stars": 0,
+          "gain": 4,
+          "oneLine": "8비트와 4비트를 사용한 양자화 모델의 성능 변화를 측정한 연구",
+          "points": [
+            "양자화 모델의 비교",
+            "엔진, 재시작, 배치, 커널 변동",
+            "양자화 효과 측정"
+          ],
+          "why": "양자화 모델의 성능 변화를 정확히 파악하여 최적화에 도움이 될 수 있다.",
+          "overview": "양자화 모델의 성능을 8비트와 4비트를 기준으로 비교하여 엔진, 재시작, 배치, 커널 변동 등 다양한 요인에 따른 변화를 측정한 연구입니다.",
+          "features": [
+            "2,400개의 공개적인 결정 데이터를 사용하여 측정",
+            "Clef-flash(9B)와 Clef(27B) 두 개의 Cloudflare의 결정 모델을 대상으로 분석",
+            "엔진 변경, 재시작, 배치 크기 변경, 커널 선택 등 다양한 요인의 영향 측정",
+            "양자화 효과를 비양자화 효과와 비교하여 정확한 변화를 파악",
+            "FP8, NVFP4 등 다양한 양자화 형식의 변화를 분석",
+            "모델의 정확도 변화도 함께 분석하여 양자화의 실제 영향을 평가"
+          ],
+          "how": "NVIDIA GB10 장비에서 두 모델을 실행하고, 각 요인에 따른 변화를 측정하여 양자화 효과를 분석하였습니다.",
+          "useCases": [
+            "양자화 모델의 성능 최적화",
+            "양자화 모델의 안정성 평가",
+            "양자화 모델의 성능 변화 모니터링"
+          ],
+          "caveats": "양자화 모델의 성능 변화는 모델의 구체적인 구현과 환경에 따라 달라질 수 있습니다."
+        },
+        {
+          "id": "2026-11-19_paper_2611_23140",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 4,
+          "score": 15.75,
+          "title": "GameRealm: Grounding Visual Learning in Interactive Games",
+          "url": "https://huggingface.co/papers/2611.23140",
+          "arxiv": "https://arxiv.org/abs/2611.23140",
+          "code": "https://github.com/weiguangzhao/GameRealm",
+          "stars": 8,
+          "gain": 1,
+          "oneLine": "GameRealm은 동기화된 게임 내 시각적 관찰을 기반으로 한 대규모 다모달 게임 플레이 데이터셋",
+          "points": [
+            "대규모 데이터셋",
+            "동기화된 게임 내 지도",
+            "다모달 지도 제공"
+          ],
+          "why": "분산된 훈련 데이터셋, 불일치된 주석 품질, 제한된 다모달 지도로 인한 시각적 기본 모델 개발 제한",
+          "overview": "GameRealm은 게임 내 시각적 관찰을 기반으로 한 대규모 다모달 게임 플레이 데이터셋으로, 시각적 생성 및 기하학적 학습을 위한 시각적 기본 모델 개발을 향상시킵니다.",
+          "features": [
+            "120만 개 이상의 RGB 프레임",
+            "1,000시간 이상의 게임 플레이 영상",
+            "메트릭 깊이, 카메라 파라미터, 동기화된 오디오, 제어 입력, 3D 포인트 트래킹 포함",
+            "단일 뷰, 스테레오, 다중 뷰 및 팬오미니 촬영 방식 지원",
+            "유니버설한 데이터 수집 파이프라인 개발",
+            "다양한 시각 학습 작업에서 일관된 성능 향상"
+          ],
+          "how": "사람이 조작한 상호작용과 에이전트의 탐색을 결합한 유니버설한 데이터 수집 파이프라인을 개발하여 다양한 게임 환경에서 확대 가능하게 함",
+          "useCases": [
+            "시각적 생성 모델 훈련",
+            "기하학적 학습 모델 훈련",
+            "게임 내 시각적 인식 시스템 개발"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_paper_2611_21925",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 5,
+          "score": 13.93,
+          "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+          "url": "https://huggingface.co/papers/2611.21925",
+          "arxiv": "https://arxiv.org/abs/2611.21925",
+          "code": "https://github.com/J-sandler/DNeo",
+          "stars": 4,
+          "gain": 3,
+          "oneLine": "DNeo는 대규모 언어 모델의 추론 속도를 높이기 위해 제안된 경청 메모리와 구조적 개선을 사용하는 가볍고 효율적인 특징 인코딩 방법입니다.",
+          "points": [
+            "경청 메모리",
+            "구조적 개선",
+            "MoFA"
+          ],
+          "why": "대규모 언어 모델의 추론 속도를 높이고, 품질을 유지하면서도 효율성을 향상시키기 위함입니다.",
+          "overview": "DNeo는 경청 메모리와 구조적 개선을 사용하여 대규모 언어 모델의 추론 속도를 높이는 경청 메모리 기반의 특징 인코딩 방법입니다. 이를 통해 DNeo는 SoTA(DFlash-2)보다 1.3배 빠르게 생성할 수 있습니다.",
+          "features": [
+            "경청 메모리: 이전에 거부된 제안을 인코딩하여 반복적인 작업을 줄입니다.",
+            "MoFA: 경청 메모리와 함께 사용하여 특징 인코딩을 개선합니다.",
+            "2-tap causal convolutions: 시간 순서를 유지하면서 특징을 처리합니다.",
+            "prefix-only cross-attention: 텍스트의 시작 부분에 초점을 맞추어 효율적인 인코딩을 합니다.",
+            "비균일한 대상 계층 선택: 중요한 숨겨진 상태를 포함하여 품질을 향상시킵니다."
+          ],
+          "how": "DNeo는 경청 메모리와 MoFA를 사용하여 대규모 언어 모델의 추론 속도를 높입니다. 이를 통해 DNeo는 SoTA(DFlash-2)보다 1.3배 빠르게 생성할 수 있습니다.",
+          "useCases": [
+            "대규모 언어 모델의 실시간 추론",
+            "대규모 언어 모델의 성능 향상",
+            "대규모 언어 모델의 효율성 향상"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_paper_2611_21382",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 9,
+          "score": 13.61,
+          "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
+          "url": "https://huggingface.co/papers/2611.21382",
+          "arxiv": "https://arxiv.org/abs/2611.21382",
+          "code": "https://github.com/Accio-Lab/VisualArtifactSpec",
+          "stars": 6,
+          "gain": 6,
+          "oneLine": "VisualArtifactSpec 1.0은 다양한 미디어에서 작업 요구사항을 충족시키는 능력을 평가하는 기준입니다.",
+          "points": [
+            "작업 요구사항 평가",
+            "미디어별 강점 분석",
+            "작업 성과 및 미디어 성능 평가"
+          ],
+          "why": "작업 요구사항을 충족시키는 능력과 미디어별 강점을 분석하여 효율적인 미디어 생성을 지원합니다.",
+          "overview": "VisualArtifactSpec 1.0은 발표, 정적 그래픽, 애니메이션, 비디오 및 웹 인터페이스를 포함한 다양한 미디어에서의 작업 요구사항을 평가하는 표준을 제시합니다. 각 작업은 작성 목표, 원본 자료, 제약 조건 및 제공물로 구성됩니다.",
+          "features": [
+            "211개의 작업을 포함하여 다양한 미디어를 대상으로 합니다.",
+            "작업 충족도와 미디어 성능을 분리하여 평가합니다.",
+            "작업별 평가 기준을 설정하여 공통의 기준을 적용합니다.",
+            "모델-하스퍼 구성에 대한 평가를 제공합니다.",
+            "작업 성과와 미디어 성능에 대한 평가 결과를 제공합니다."
+          ],
+          "how": "각 작업은 작성 목표, 원본 자료, 제약 조건 및 제공물로 구성되며, 모델-하스퍼 구성에 따라 평가됩니다.",
+          "useCases": [
+            "미디어 생성 및 수정 작업의 효율성을 평가합니다.",
+            "작업 요구사항을 충족시키는 능력을 분석하여 미디어 생성 도구를 개선합니다.",
+            "미디어별 강점을 분석하여 다양한 미디어에서의 효율적인 작업 수행을 지원합니다."
+          ],
+          "caveats": "평가 결과는 모델-하스퍼 구성에 따라 다르므로, 다양한 구성에 대한 평가를 권장합니다."
+        },
+        {
+          "id": "2026-11-19_paper_2611_22563",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 7,
+          "score": 13.25,
+          "title": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
+          "url": "https://huggingface.co/papers/2611.22563",
+          "arxiv": "https://arxiv.org/abs/2611.22563",
+          "code": "https://github.com/kulibinai/cadmageddon",
+          "stars": 4,
+          "gain": 9,
+          "oneLine": "CADMAGEDDON은 단일 GPU 시스템과 노트북에서 로컬로 CAD 모델 재구성하는 오픈 소스 에이전트",
+          "points": [
+            "오픈 소스",
+            "단일 GPU/Laptop",
+            "로컬 실행"
+          ],
+          "why": "CADMAGEDDON은 개인과 소규모 회사가 직접 작업을 수행할 수 있게 하며, 전용 부품을 공유하지 않아도 됩니다.",
+          "overview": "CADMAGEDDON은 단일 GPU 시스템과 노트북에서 로컬로 CAD 모델을 재구성하는 오픈 소스 에이전트입니다. 이는 CAD 전문가들이 전용 부품을 공유하지 않아도 직접 작업을 수행할 수 있게 합니다.",
+          "features": [
+            "오픈 소스로 사용자들이 자유롭게 수정 및 확장 가능",
+            "단일 GPU/Laptop에서 로컬 실행 가능",
+            "고성능 재구성: Qwen3.8-27B 모델을 사용하여 모든 주요 벤치마크에서 우수한 재구성 성능",
+            "FreeCAD 통합: CADMAGEDDON의 재구성 결과를 기존의 CAD 워크플로우에 쉽게 통합",
+            "간단한 시각적 결정을 통해 복잡한 작업 분해",
+            "기하학적 도구를 사용하여 정확한 구축 가능"
+          ],
+          "how": "CADMAGEDDON은 단순한 시각적 결정을 통해 복잡한 작업을 분해하고, 기하학적 도구를 사용하여 정확한 구축을 수행합니다. 이를 통해 CAD 모델을 로컬에서 재구성할 수 있습니다.",
+          "useCases": [
+            "개인 및 소규모 회사가 직접 CAD 작업을 수행할 수 있게 함",
+            "전용 부품을 공유하지 않아도 CAD 작업을 수행할 수 있게 함",
+            "FreeCAD와 통합하여 기존의 CAD 워크플로우에 쉽게 재구성 결과를 통합할 수 있음"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_paper_2611_20003",
+          "date": "2026-11-19",
+          "kind": "paper",
+          "rank": 1,
+          "score": 12.75,
+          "title": "The novelty exposed: ablation, reproducibility and transparency in 40 technical reports of open-weight large language models (LLMs)",
+          "url": "https://huggingface.co/papers/2611.20003",
+          "arxiv": "https://arxiv.org/abs/2611.20003",
+          "code": "https://github.com/bturkoglu/llm-novelty-exposed",
+          "stars": 0,
+          "gain": 1,
+          "oneLine": "LLM 기술 보고서의 신선성, 재현성 및 투명성에 대한 분석",
+          "points": [
+            "신선성 확인",
+            "재현성 분석",
+            "투명성 평가"
+          ],
+          "why": "LLM 기술 보고서의 신뢰성과 품질을 평가하기 위함",
+          "overview": "2025년에 추가된 48개의 LLM 기술 보고서를 분석하여 신선성, 재현성 및 투명성을 평가합니다. 기존 모델과의 차이, 신선성 증거, 재현성 지원 여부, 투명성 정보를 분석합니다.",
+          "features": [
+            "신선성 확인: 기존 모델과의 차이점 분석",
+            "재현성 분석: 실험 재현 가능성 평가",
+            "투명성 평가: 데이터, 토큰 수, 컴퓨팅 자원 공개",
+            "신선성 증거: ablation 연구 포함 여부",
+            "재현성 지원: 여러 학습 실행 및 재실행",
+            "신선성 증거: 새로운 이름으로 알려진 기존 구성 요소 감지"
+          ],
+          "how": "참조 코드 분석, 랜덤 샘플링 보고서 분석, 신선성 증거 및 재현성 정보 확인",
+          "useCases": [
+            "LLM 기술 보고서의 신뢰성 평가",
+            "재현 가능한 연구 설계",
+            "투명한 모델 개발 및 공유"
+          ],
+          "caveats": "모델 품질 평가는 제외, 테스트되지 않은 주장이 사실일 수도 있음"
+        },
+        {
+          "id": "2026-11-19_trending_2611_18397",
+          "date": "2026-11-19",
+          "kind": "trending",
+          "rank": 5,
+          "score": 20.84,
+          "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+          "url": "https://huggingface.co/papers/2611.18397",
+          "arxiv": "https://arxiv.org/abs/2611.18397",
+          "code": "https://github.com/RainBowLuoCS/Gamer",
+          "stars": 701,
+          "gain": 129,
+          "oneLine": "Gamer: 복잡한 인터랙티브 환경에서 장기적인 실시간 게임 에이전트를 위한 일반화된 시각-언어-행동 기반 모델",
+          "points": [
+            "일반화된 에이전트 프레임워크",
+            "장기적인 태스크 지원",
+            "시각, 메모리, 다단계 사고 통합"
+          ],
+          "why": "복잡한 게임 환경에서 효율적인 에이전트를 만드는 데 도움이 될 수 있습니다.",
+          "overview": "Gamer는 2D 및 3D 환경에서 장기적인 태스크를 수행할 수 있는 일반화된 에이전트 프레임워크입니다. 이 프레임워크는 시각 인식, 메모리 관리 및 다단계 사고를 통합하고, 장기적인 상호작용을 위한 강화 학습을 통해 효율적으로 작동합니다.",
+          "features": [
+            "일반화된 에이전트 프레임워크",
+            "2D 및 3D 환경 지원",
+            "다단계 사고 통합",
+            "스파스한 사고 지침 튜닝",
+            "안정적인 다턴 강화 학습",
+            "클라우드-엣지 인프라스트럭처"
+          ],
+          "how": "장기적인 상호작용을 위한 강화 학습과 스팸스한 사고 지침 튜닝을 통한 사전 학습, 그리고 클라우드-엣지 인프라스트럭처를 사용하여 실시간 상호작용을 지원합니다.",
+          "useCases": [
+            "복잡한 게임 환경에서의 에이전트 기반 인공지능",
+            "실시간 게임 플레이의 최적화",
+            "다양한 게임 플랫폼에서의 에이전트 활용"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_trending_2502_11880",
+          "date": "2026-11-19",
+          "kind": "trending",
+          "rank": 9,
+          "score": 17.06,
+          "title": "Bitnet.cpp: Efficient Edge Inference for Ternary LLMs",
+          "url": "https://huggingface.co/papers/2502.11880",
+          "arxiv": "https://arxiv.org/abs/2502.11880",
+          "code": "https://github.com/microsoft/BitNet",
+          "stars": 41877,
+          "gain": 18,
+          "oneLine": "Bitnet.cpp는 터너리 LLMs의 효율적인 엣지 인프런스를 위한 새로운 mpGEMM 라이브러리를 사용하여 개발된 C++ 코드입니다.",
+          "points": [
+            "새로운 mpGEMM 라이브러리",
+            "Ternary Lookup Table (TL)",
+            "Int2 with a Scale (I2_S)"
+          ],
+          "why": "터너리 LLMs의 엣지 인프런스 효율성을 향상시키기 위해 개발되었습니다.",
+          "overview": "Bitnet.cpp는 BitNet b1.58과 터너리 LLMs의 엣지 인프런스를 최적화한 C++ 코드입니다. 이 코드는 새로운 mpGEMM 라이브러리를 사용하여 sub-2-bits-per-weight의 효율적이고 손실 없는 인프런스를 가능하게 합니다.",
+          "features": [
+            "Ternary Lookup Table (TL)",
+            "Int2 with a Scale (I2_S)",
+            "sub-2-bits-per-weight 인프런스",
+            "6.25x 속도 향상"
+          ],
+          "how": "Bitnet.cpp는 Ternary Lookup Table (TL)과 Int2 with a Scale (I2_S)를 사용하여 mpGEMM을 수행하여 터너리 LLMs의 인프런스를 효율적으로 수행합니다.",
+          "useCases": [
+            "터너리 LLMs의 엣지 인프런스를 필요로 하는 다양한 응용 분야"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_trending_2412_20138",
+          "date": "2026-11-19",
+          "kind": "trending",
+          "rank": 6,
+          "score": 16.24,
+          "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+          "url": "https://huggingface.co/papers/2412.20138",
+          "arxiv": "https://arxiv.org/abs/2412.20138",
+          "code": "https://github.com/tauricresearch/tradingagents",
+          "stars": 123068,
+          "gain": 168,
+          "oneLine": "대형 언어 모델을 활용한 다중 에이전트 기반의 주식 거래 시뮬레이션 프레임워크",
+          "points": [
+            "다중 에이전트 시스템",
+            "대형 언어 모델",
+            "실제 거래 기업의 동작 모방"
+          ],
+          "why": "대형 언어 모델을 활용한 다중 에이전트 시스템이 주식 거래에서의 성능 향상에 중요한 역할을 할 수 있다는 이유",
+          "overview": "TradingAgents는 대형 언어 모델을 활용한 다중 에이전트 기반의 주식 거래 시뮬레이션 프레임워크로, 실무에서의 동작 방식을 모방하여 성능을 향상시킵니다.",
+          "features": [
+            "분석가, 감성 분석가, 기술 분석가, 리스크 프로파일이 다양한 에이전트로 구성",
+            "시장 조건을 평가하는 Bull과 Bear 연구 에이전트",
+            "위험 관리 팀으로 구성된 리스크 관리 기능",
+            "이야기와 역사적 데이터를 통합하여 결정을 내리는 거래 에이전트",
+            "대규모 실험을 통해 성능 향상 확인",
+            "누적 수익률, 샤르피 레이토, 최대 손실 감소 등 성과 개선"
+          ],
+          "how": "대형 언어 모델을 활용한 에이전트들이 다양한 역할을 수행하며, 시장 조건을 평가하고 거래 결정을 내립니다.",
+          "useCases": [
+            "금융 기관의 주식 거래 향상",
+            "실제 거래 기업의 동작 방식을 모방한 시뮬레이션",
+            "대규모 실험을 통한 성능 향상 확인"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-19_trending_2610_14224",
+          "date": "2026-11-19",
+          "kind": "trending",
+          "rank": 7,
+          "score": 14.58,
+          "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+          "url": "https://huggingface.co/papers/2610.14224",
+          "arxiv": "https://arxiv.org/abs/2610.14224",
+          "code": "https://github.com/google-research/harness2",
+          "stars": 24387,
+          "gain": 69,
+          "oneLine": "Recursive Agent Harnessing for Open World",
+          "points": [
+            "Recursive Task-Level Refinement",
+            "Continual Harness-Level Learning",
+            "Plug-and-Play Framework"
+          ],
+          "why": "오픈 월드 환경에서 LLM 에이전트의 성능 향상",
+          "overview": "Harness²는 LLM 에이전트의 실행 헤이스를 재귀적으로 개선하고 지속적으로 학습하여 오픈 월드 환경에서 성능을 향상시킵니다.",
+          "features": [
+            "재귀적인 태스크 레벨 개선",
+            "지속적인 헤이스 레벨 학습",
+            "플러그 앤 플레이 프레임워크",
+            "대조적 제안-조사-구성 단계",
+            "병렬 또는 순차적 재귀",
+            "타스크 레벨 재귀를 통한 지속적인 향상"
+          ],
+          "how": "태스크 레벨 재귀는 대조적 제안-조사-구성 단계를 사용하여 현재 태스크의 헤이스를 개선하고, 헤이스 레벨 재귀는 이러한 편집에서 경험을 추출하여 지속적인 향상 헤이스를 업데이트합니다.",
+          "useCases": [
+            "프로페셔널 벤치마크에서의 성능 향상",
+            "GLM-5 및 Gemini 3.5 Flash의 성능 향상",
+            "WorkBuddy-Bench, JobBench, LAB에서의 성능 향상"
+          ],
+          "caveats": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "cards": [
+        {
+          "id": "2026-11-18_repo_mvanhorn_last30days-skill",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 2,
+          "score": 18.95,
+          "title": "mvanhorn / last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "lang": "Python",
+          "stars": 68928,
+          "gain": 772,
+          "oneLine": "AI 기반의 검색 엔진으로, Reddit, X, YouTube 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약합니다.",
+          "points": [
+            "AI 기반",
+            "다양한 플랫폼 지원",
+            "실시간 정보 수집"
+          ],
+          "why": "실시간 정보를 정확하게 수집하고 요약하여, 의사결정에 도움이 됩니다.",
+          "overview": "mvanhorn의 GitHub 저장소인 'last30days-skill'은 AI 기반의 검색 엔진으로, Reddit, X, YouTube 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약합니다. 이는 실시간 정보를 정확하게 수집하고 요약하여 의사결정에 도움이 됩니다.",
+          "features": [
+            "AI 기반 검색 엔진",
+            "다양한 플랫폼 지원",
+            "실시간 정보 수집",
+            "요약 기능",
+            "실제 사용자 참여 기반의 점수화",
+            "AI 기반 평가"
+          ],
+          "how": "Claude Code, Codex, Cursor, Copilot, Gemini CLI 또는 Agent Skills 호스트를 통해 설치 가능합니다. 설정 후, Reddit, HN, Polymarket, GitHub 등 다양한 플랫폼에서 실시간 정보를 수집하고 요약합니다.",
+          "useCases": [
+            "업계 동향 파악",
+            "소셜 미디어 트렌드 분석",
+            "회사 정보 수집"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_repo_ag-ui-protocol_ag-ui",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 10,
+          "score": 17.5,
+          "title": "ag-ui-protocol / ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "lang": "TypeScript",
+          "stars": 19938,
+          "gain": 1444,
+          "oneLine": "AG-UI: 오픈 소스의 Agent-User Interaction Protocol",
+          "points": [
+            "이벤트 기반의 오픈 프로토콜",
+            "AI 에이전트와 사용자 애플리케이션 연결",
+            "다양한 플랫폼 지원"
+          ],
+          "why": "다양한 플랫폼에서 AI 에이전트를 쉽게 통합하고 사용할 수 있게 함",
+          "overview": "AG-UI는 AI 에이전트와 사용자 애플리케이션 간의 표준화된 이벤트 기반 프로토콜입니다. 에이전트는 토큰 스트리밍, 도구 호출, 상태 업데이트, 인간 대기, 하위 에이전트 생성 등 다양한 기능을 지원합니다.",
+          "features": [
+            "이벤트 기반의 양방향 통신",
+            "플랫폼 독립적인 에이전트",
+            "다양한 애플리케이션 지원",
+            "오픈 소스 및 오픈 스펙",
+            "다양한 언어 SDK 지원",
+            "기존 에이전트와의 호환성"
+          ],
+          "how": "CLI를 사용하여 프론트엔드를 생성하고 에이전트와 연결합니다. 에이전트는 HTTP 엔드포인트로 작동하며, 클라이언트는 TypeScript로 작성됩니다.",
+          "useCases": [
+            "웹 애플리케이션",
+            "모바일 애플리케이션",
+            "터미널"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_repo_elementalsouls_Claude-BugHunter",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 1,
+          "score": 17.43,
+          "title": "elementalsouls / Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "lang": "Python",
+          "stars": 9033,
+          "gain": 1007,
+          "oneLine": "Claude-BugHunter: 83 기술 스킬과 15 명령어로 버그 헌팅과 외부 빨간 팀 작업을 위한 클로드 코드 플러그인",
+          "points": [
+            "83 기술 스킬",
+            "15 명령어",
+            "681 개의 공개 보고 패턴"
+          ],
+          "why": "버그 헌팅과 외부 빨간 팀 작업에 필요한 다양한 기술을 제공",
+          "overview": "Claude-BugHunter는 버그 헌팅과 외부 빨간 팀 작업을 위한 클로드 코드 플러그인으로, 83 개의 기술 스킬과 15 개의 명령어를 제공합니다. 이 플러그인은 버그 헌팅 전략, 웹 애플리케이션 탐색, 경계 진입, 보안 전략 등 다양한 기능을 포함하고 있습니다.",
+          "features": [
+            "5 단계 비선형 워크플로",
+            "681 개의 공개 보고 패턴",
+            "24 개의 핵심 취약성 클래스",
+            "기업 인증 및 인프라스트럭처 공격 행렬",
+            "배틀테스트된 빨간 팀 및 버그 헌팅 활동",
+            "공인 정보 제거 기능"
+          ],
+          "how": "클로드 코드 플러그인으로 설치하거나 복사 설치를 통해 사용할 수 있습니다. 플러그인 설치는 가장 빠르며, 복사 설치는 명령어를 별도로 설치해야 합니다.",
+          "useCases": [
+            "웹 애플리케이션 보안 테스트",
+            "기업 인증 및 인프라스트럭처 보안 테스트",
+            "외부 빨간 팀 활동"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_repo_Tencent_LoopForge",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 4,
+          "score": 17.07,
+          "title": "Tencent / LoopForge",
+          "url": "https://github.com/Tencent/LoopForge",
+          "lang": "Go",
+          "stars": 3054,
+          "gain": 590,
+          "oneLine": "Tencent LoopForge는 팀이 소프트웨어를 배포하는 데 사용하는 자체 호스팅 워크스페이스입니다.",
+          "points": [
+            "자체 호스팅",
+            "코드 에이전트 사용",
+            "반복 가능한 워크플로우"
+          ],
+          "why": "팀이 소프트웨어를 신뢰할 수 있도록 반복 가능한 워크플로우를 제공합니다.",
+          "overview": "LoopForge는 팀이 소프트웨어를 배포하는 데 사용하는 자체 호스팅 워크스페이스입니다. 코드 에이전트를 사용하여 반복 가능한 워크플로우를 설정하고 관리할 수 있습니다.",
+          "features": [
+            "자체 호스팅",
+            "코드 에이전트 지원",
+            "반복 가능한 워크플로우",
+            "사람이 참여하는 검토 게이트",
+            "노드 상태 및 로그 관리"
+          ],
+          "how": "Main Bot과 SOP를 통해 워크플로우를 실행할 수 있습니다. Main Bot은 Docker 샌드박스에서 코드 에이전트를 호출하고 프로젝트 역할을 분배합니다. SOP는 각 노드에서 순차적으로 실행됩니다.",
+          "useCases": [
+            "팀이 소프트웨어를 신속하게 배포해야 할 때",
+            "반복 가능한 워크플로우를 필요로 하는 경우",
+            "코드 에이전트를 사용하여 버그를 수정해야 할 때"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_repo_obra_superpowers",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 9,
+          "score": 14.61,
+          "title": "obra / superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "lang": "Shell",
+          "stars": 319235,
+          "gain": 598,
+          "oneLine": "코드 개발 방법론과 기술 프레임워크",
+          "points": [
+            "코드 에이전트 지원",
+            "기술 스킬 기반",
+            "자동 트리거"
+          ],
+          "why": "코드 생산성 향상과 효과적인 개발 방법론",
+          "overview": "코드 에이전트가 기술 스킬을 사용하여 프로젝트를 관리하고 개발하는 방법론입니다.",
+          "features": [
+            "기술 스킬의 자동 트리거",
+            "디자인 검토 후 구현 계획 생성",
+            "TDD, YAGNI, DRY 강조",
+            "서브 에이전트 기반 개발",
+            "유연한 설치 옵션"
+          ],
+          "how": "코드 에이전트를 실행하면, 스킬을 자동으로 사용하여 프로젝트를 관리하고 개발합니다.",
+          "useCases": [
+            "기업에서의 코드 개발 지원",
+            "프로젝트 관리와 코드 생산성 향상",
+            "기술 스킬의 효율적인 활용"
+          ],
+          "caveats": "상업 지원이 필요한 경우 연락처 제공"
+        },
+        {
+          "id": "2026-11-18_repo_google-labs-code_stitch-skills",
+          "date": "2026-11-18",
+          "kind": "repo",
+          "rank": 7,
+          "score": 14.18,
+          "title": "google-labs-code / stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "lang": "TypeScript",
+          "stars": 10052,
+          "gain": 350,
+          "oneLine": "Google Labs의 Stitch Skills 라이브러리",
+          "points": [
+            "Agent Skills 표준 준수",
+            "다양한 코딩 에이전트와 호환",
+            "Stitch MCP 서버와 함께 사용"
+          ],
+          "why": "Stitch MCP와 호환되는 다양한 코딩 에이전트를 위한 스킬 라이브러리",
+          "overview": "Stitch Skills는 Google의 Stitch MCP 서버와 호환되는 다양한 에이전트 스킬과 플러그인을 제공합니다. 각 스킬은 Agent Skills 오픈 표준을 따르며, Codex, Antigravity, Gemini CLI 등 다양한 코딩 에이전트와 호환됩니다.",
+          "features": [
+            "Agent Skills 오픈 표준 준수",
+            "Codex, Antigravity, Gemini CLI 등 다양한 에이전트와 호환",
+            "디자인, 빌드, 유틸리티 등 다양한 스킬 제공",
+            "Stitch MCP 서버와 함께 사용 가능",
+            "선택적 설치 옵션 제공",
+            "간단한 설치 과정"
+          ],
+          "how": "Stitch Skills Marketplace를 추가하고 필요한 플러그인을 설치하거나, OpenCode의 경우 수동으로 스킬과 Stitch MCP 서버를 설치합니다.",
+          "useCases": [
+            "Stitch MCP 서버와 함께 사용하여 다양한 코딩 에이전트를 지원하는 스킬을 관리",
+            "Codex, Antigravity 등 다양한 코딩 에이전트와의 호환성을 확인",
+            "디자인, 빌드, 유틸리티 등 다양한 스킬을 선택적으로 설치하여 필요한 기능만 사용"
+          ],
+          "caveats": "Stitch Design Skills는 종종 서로 의존성이 있으므로, 선택적 설치 시 모든 의존 스킬도 함께 설치해야 합니다."
+        },
+        {
+          "id": "2026-11-18_paper_2611_17610",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 2,
+          "score": 18.25,
+          "title": "More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs",
+          "url": "https://huggingface.co/papers/2611.17610",
+          "arxiv": "https://arxiv.org/abs/2611.17610",
+          "code": "https://github.com/mahmoudsajjadi/pace",
+          "stars": 1,
+          "gain": 1,
+          "oneLine": "다중 에이전트 언어 모델의 평가에서 의사소통 아키텍처와 단일 그리디 패스를 비교하는 방법의 문제점을 분석하고 해결 방안을 제시하는 논문",
+          "points": [
+            "다중 에이전트 모델의 평가 방법",
+            "의사소통과 샘플의 다양성의 구분",
+            "그리디 패스와 샘플 기반의 성능 비교"
+          ],
+          "why": "다중 에이전트 모델의 성능 평가를 더 정확하게 이해하고 개선하기 위함",
+          "overview": "다중 에이전트 언어 모델의 성능을 평가할 때 의사소통 아키텍처와 단일 그리디 패스를 비교하는 방법의 문제점을 분석하고, 이를 해결하기 위한 연구를 제시합니다. 실험 결과, 다중 에이전트 모델의 성능은 그리디 패스와 비교할 때 보통 낮아지며, 의사소통이 동일한 증거를 공유할 때는 긍정적인 효과를 가져야 합니다.",
+          "features": [
+            "9개의 주요 실험 평가를 통합하여 다중 에이전트 모델의 성능을 분석",
+            "리소스 벡터 R과 베이스라인 계층을 사용하여 다양한 다중 에이전트 구성에 대한 평가",
+            "그리디 패스와 샘플 기반의 성능 차이를 분석하여 의사소통의 중요성 확인",
+            "다중 에이전트 모델의 성능이 그리디 패스보다 낮은 경우가 많으며, 연구 평균이 대부분 음수",
+            "의사소통이 동일한 증거를 공유할 때는 긍정적인 효과를 가져야 함",
+            "리뷰어 체크리스트와 계정 유틸리티 제공"
+          ],
+          "how": "다중 에이전트 모델의 성능을 그리디 패스와 비교하여 평가하고, 의사소통의 중요성을 분석하여 성능 개선 방안 제시",
+          "useCases": [
+            "다중 에이전트 언어 모델의 성능을 정확하게 평가하여 개선",
+            "의사소통의 중요성을 이해하여 모델 설계 시 고려",
+            "그리디 패스와 샘플 기반의 성능 차이를 분석하여 모델 개발 전략 결정"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_paper_2611_20595",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 4,
+          "score": 14.35,
+          "title": "Invariant-Aware Harness Enforcement to Protect LLM Agents from Silent API Failures",
+          "url": "https://huggingface.co/papers/2611.20595",
+          "arxiv": "https://arxiv.org/abs/2611.20595",
+          "code": "https://github.com/Sajib-006/silentguard",
+          "stars": 1,
+          "gain": 2,
+          "oneLine": "API 실패를 감지하고 처리하는 LLM 에이전트 보호 도구",
+          "points": [
+            "API 실패 감지",
+            "인вар리 테스트",
+            "결과 필터링"
+          ],
+          "why": "API 실패로 인한 오류를 줄이고 LLM 에이전트의 신뢰성을 높이는 데 도움이 필요할 때",
+          "overview": "LLM 에이전트가 API를 호출하여 질문에 답하는데, API가 조용히 실패할 수 있다는 문제를 해결하기 위해 제안된 SilentGuard는 API 결과를 인вар리에 따라 필터링하여 오류를 감지하고 처리합니다.",
+          "features": [
+            "API 결과에 대한 인вар리 테스트",
+            "오류 결과 제거",
+            "모델의 오류 감지 능력 향상",
+            "신뢰성 높은 답변 제공",
+            "새로운 오류 유형에 대한 효과적인 처리"
+          ],
+          "how": "LLM 에이전트가 API를 호출할 때마다 결과를 인вар리에 따라 필터링하여 오류를 감지하고 처리합니다.",
+          "useCases": [
+            "공공 연구 API에서의 오류 감지",
+            "신뢰성 높은 답변 제공",
+            "새로운 오류 유형에 대한 효과적인 처리"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_paper_2611_21412",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 1,
+          "score": 12.5,
+          "title": "Flexible Multi-Stack Super-Resolution of Clinical Brain MRI Using Hetero-Orientation Variational Encoding: Expert Reader Evaluation in a Nigerian Cohort",
+          "url": "https://huggingface.co/papers/2611.21412",
+          "arxiv": "https://arxiv.org/abs/2611.21412",
+          "code": "https://github.com/cai4cai/ms-hved",
+          "stars": 1,
+          "gain": 0,
+          "oneLine": "MS-HVED는 다양한 방향의 뇌 MRI 스택을 효과적으로 고해상도화하는 시퀀스 무관한 프레임워크",
+          "points": [
+            "다양한 방향의 MRI 스택 처리",
+            "고해상도화",
+            "외부 클리닉스 일반화"
+          ],
+          "why": "MRI 스택의 부분적 중첩 문제 해결, 클리닉스 일반화 향상",
+          "overview": "MS-HVED는 다양한 방향의 뇌 MRI 스택을 고해상도화하는 시퀀스 무관한 프레임워크로, 멀티스케일 가우시안 포스트라이터리와 물리학적 지식을 활용하여 이미지 재구성과 조직 분할을 개선합니다.",
+          "features": [
+            "다양한 방향의 MRI 스택 처리",
+            "고해상도화",
+            "외부 클리닉스 일반화",
+            "물리학적 지식 활용",
+            "필드 오브 뷰 인식",
+            "영역별 가우시안 곱"
+          ],
+          "how": "MRI 스택을 멀티스케일 가우시안 포스트라이터리로 인코딩하고, 필드 오브 뷰 인식된 곱으로 병합하여 이미지 재구성합니다.",
+          "useCases": [
+            "부분적으로 중첩된 뇌 MRI 스택의 고해상도화",
+            "외부 클리닉스에서의 뇌 MRI 이미지 일반화",
+            "MRI 이미지의 재구성 및 조직 분할 향상"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_paper_2611_17780",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 46,
+          "score": 12.5,
+          "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+          "url": "https://huggingface.co/papers/2611.17780",
+          "arxiv": "https://arxiv.org/abs/2611.17780",
+          "code": "https://github.com/IAMIbrahimmemon/luthorsql",
+          "stars": 1,
+          "gain": 4,
+          "oneLine": "LuthorSQL은 로컬 하드웨어를 활용해 빠르게 SQL 쿼리를 생성하는 텍스트-SQL 변환 모델입니다.",
+          "points": [
+            "비효율적인 클라우드 기반 모델 대체",
+            "로컬 하드웨어 활용",
+            "빠른 응답 시간"
+          ],
+          "why": "클라우드 기반 모델의 성능을 유지하면서 비용과 보안을 개선할 수 있습니다.",
+          "overview": "LuthorSQL은 비효율적인 클라우드 기반 텍스트-SQL 변환 모델을 대체하는 로컬 하드웨어 기반 모델입니다. 이 모델은 단일 패스로 SQL 쿼리를 생성하고, 여러 후보 쿼리를 컴파일하고 실행하여 최적의 결과를 선택합니다.",
+          "features": [
+            "비효율적인 클라우드 기반 모델 대체",
+            "로컬 하드웨어 활용",
+            "빠른 응답 시간",
+            "정확한 SQL 생성",
+            "다양한 데이터베이스에 대한 zero-shot 성능",
+            "클라우드 API 비용 절감"
+          ],
+          "how": "LuthorSQL은 단일 패스로 SQL 쿼리를 생성하고, 여러 후보 쿼리를 컴파일하고 실행하여 최적의 결과를 선택합니다.",
+          "useCases": [
+            "기업 내부의 데이터베이스 쿼리 자동화",
+            "클라우드 비용 절감",
+            "보안 강화"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_paper_2611_09825",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 8,
+          "score": 12.43,
+          "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+          "url": "https://huggingface.co/papers/2611.09825",
+          "arxiv": "https://arxiv.org/abs/2611.09825",
+          "code": "https://github.com/OpenBitSys/BitDecoding-FP4",
+          "stars": 49,
+          "gain": 3,
+          "oneLine": "FP4 KV 캐시 디코딩을 위한 알고리즘-시스템 공동 설계",
+          "points": [
+            "정확성 향상",
+            "높은 처리량",
+            "장기 맥락 지원"
+          ],
+          "why": "대규모 언어 모델의 성능 향상과 효율성 향상",
+          "overview": "BitDecoding-FP4는 FP4 정밀도를 유지하면서도 높은 처리량과 정확성을 제공하는 KV 캐시 디코딩 알고리즘-시스템 공동 설계입니다.",
+          "features": [
+            "Dual-Residual Query Quantization: 쿼리 로짓 오류를 60%에서 1%로 감소시킵니다.",
+            "Underflow-Aware Probability Scaling: E4M3 스케일이 장기 확률을 0으로 반올림하는 것을 방지합니다.",
+            "Outlier-Aware Key Quantization: 토큰별 스케일링 하에 키 아웃라이어를 억제합니다.",
+            "Transposed Softmax with Fused Probability Quantization: 소프트맥스 볼트leneck을 제거합니다.",
+            "Stacked Query MMA on Paged KV Caches: 페이지화된 KV 캐시에서 쿼리 MMA를 쌓습니다.",
+            "BF16 KV 정확성과 유사한 성능을 유지합니다."
+          ],
+          "how": "알고리즘과 시스템 설계를 공동으로 진행하여 FP4 KV 디코딩을 최적화합니다.",
+          "useCases": [
+            "대규모 언어 모델의 성능 향상",
+            "효율적인 높은 처리량 제공",
+            "장기 맥락을 지원하는 디코딩"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_paper_2611_18330",
+          "date": "2026-11-18",
+          "kind": "paper",
+          "rank": 3,
+          "score": 11.93,
+          "title": "Marimba: A System One Model for Speech",
+          "url": "https://huggingface.co/papers/2611.18330",
+          "arxiv": "https://arxiv.org/abs/2611.18330",
+          "code": "https://github.com/Charcot-AI/marimba-api",
+          "stars": 10,
+          "gain": 3,
+          "oneLine": "Marimba는 음성 데이터에서 단어 존재, 대화 종료, 언어, 발언자 변경, 개인 정보 결정을 하는 시스템입니다.",
+          "points": [
+            "단어 존재, 대화 종료, 언어, 발언자 변경, 개인 정보 결정",
+            "Qwen3-ASR 기반",
+            "자료형 음성 인식"
+          ],
+          "why": "음성 응용 프로그램에서 중요한 결정을 내리는데 도움이 됩니다.",
+          "overview": "Marimba는 음성 데이터에서 단어 존재, 대화 종료, 언어, 발언자 변경, 개인 정보를 자동으로 결정하는 시스템입니다. Qwen3-ASR 기반으로 작동하며, 음성 인식 결과를 기반으로 결정을 내립니다.",
+          "features": [
+            "단어 존재, 대화 종료, 언어, 발언자 변경, 개인 정보 결정",
+            "Qwen3-ASR 기반의 음성 인식",
+            "자료형 음성 인식을 사용한 결정",
+            "AUROC 0.80-0.97의 성능",
+            "발언자 변경 감지 AUROC 0.966-0.980",
+            "개인 정보 감지 F1 0.904"
+          ],
+          "how": "Qwen3-ASR 기반의 음성 인식 결과를 기반으로 단어 존재, 대화 종료, 언어, 발언자 변경, 개인 정보를 자동으로 결정합니다.",
+          "useCases": [
+            "음성 인식 응용 프로그램",
+            "대화 분석",
+            "개인 정보 보안"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_trending_2611_18397",
+          "date": "2026-11-18",
+          "kind": "trending",
+          "rank": 4,
+          "score": 21.22,
+          "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+          "url": "https://huggingface.co/papers/2611.18397",
+          "arxiv": "https://arxiv.org/abs/2611.18397",
+          "code": "https://github.com/RainBowLuoCS/Gamer",
+          "stars": 492,
+          "gain": 118,
+          "oneLine": "Gamer: 복잡한 인터랙티브 환경에서 장기적인 실시간 게임 에이전트를 위한 일반화된 시각-언어-행동 기반 모델",
+          "points": [
+            "일반화된 에이전트 프레임워크",
+            "장기적인 태스크",
+            "복잡한 환경"
+          ],
+          "why": "복잡한 게임 환경에서의 효율적인 에이전트 개발에 관심이 있다면 이 논문을 읽어보세요.",
+          "overview": "Gamer는 복잡한 인터랙티브 환경에서 장기적인 태스크를 수행할 수 있는 일반화된 에이전트 프레임워크입니다. 이 모델은 시각, 메모리 관리, 다단계 사고를 통합하여 효율적인 실시간 상호작용을 지원합니다.",
+          "features": [
+            "일반화된 에이전트 프레임워크",
+            "장기적인 태스크 지원",
+            "시각-언어-행동 통합",
+            "효율적인 실시간 상호작용",
+            "복잡한 환경에서의 성능",
+            "스칼라 데이터와 알고리즘의 효과적인 학습"
+          ],
+          "how": "장기적인 태스크를 위한 연속적인 사전 학습, 스파스한 사고 지침 튜닝, 다턴 강화 학습을 통해 에이전트를 훈련하고, 클라우드-엣지 인프라를 통해 실시간 상호작용을 지원합니다.",
+          "useCases": [
+            "복잡한 게임 환경에서의 에이전트 개발",
+            "실시간 게임 플레이의 효율성 향상",
+            "다양한 게임 플랫폼에서의 에이전트 활용"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_trending_2412_20138",
+          "date": "2026-11-18",
+          "kind": "trending",
+          "rank": 5,
+          "score": 16.75,
+          "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+          "url": "https://huggingface.co/papers/2412.20138",
+          "arxiv": "https://arxiv.org/abs/2412.20138",
+          "code": "https://github.com/tauricresearch/tradingagents",
+          "stars": 122955,
+          "gain": 169,
+          "oneLine": "TradingAgents는 대형 언어 모델을 활용한 다중 에이전트 금융 거래 프레임워크",
+          "points": [
+            "다중 에이전트 시스템",
+            "대형 언어 모델",
+            "실제 거래 기업의 동작 모방"
+          ],
+          "why": "실제 거래 환경에서의 성능 향상과 협업적 거래 전략의 연구",
+          "overview": "TradingAgents는 대형 언어 모델을 활용한 다중 에이전트 시스템으로, 실무에서의 금융 거래를 모방하여 성능을 향상시킵니다.",
+          "features": [
+            "분석가, 감성 분석가, 기술 분석가, 리스크 프로파일이 다양한 에이전트",
+            "시장 조건 평가, 리스크 관리, 정보 통합 및 의사결정",
+            "동적, 협업적 거래 환경 모방",
+            "누적 수익률, 샤르피 레이토, 최대 드로다운 향상"
+          ],
+          "how": "대형 언어 모델이 각 에이전트의 역할을 수행하며, 시장 조건과 히스토리 데이터를 분석하여 거래 결정을 내립니다.",
+          "useCases": [
+            "금융 회사의 거래 전략 개발",
+            "실제 거래 환경에서의 성능 테스트",
+            "리스크 관리와 정보 통합"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_trending_2604_05018",
+          "date": "2026-11-18",
+          "kind": "trending",
+          "rank": 1,
+          "score": 13.16,
+          "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
+          "url": "https://huggingface.co/papers/2604.05018",
+          "arxiv": "https://arxiv.org/abs/2604.05018",
+          "code": "https://github.com/google-research/paper-orchestra",
+          "stars": 2616,
+          "gain": 7,
+          "oneLine": "PaperOrchestra는 자동화된 AI 연구 논문 작성에 사용되는 다중 에이전트 프레임워크",
+          "points": [
+            "다중 에이전트 기반",
+            "논문 자동화",
+            "문헌 합성"
+          ],
+          "why": "연구 자료를 효과적으로 논문으로 변환하여 과학적 발전에 기여할 수 있음",
+          "overview": "PaperOrchestra는 자동화된 AI 연구 논문 작성에 사용되는 다중 에이전트 프레임워크로, 불구조화된 연구 자료를 포함한 문헌 합성과 시각적 요소를 통해 완성된 LaTeX 논문을 생성합니다.",
+          "features": [
+            "다중 에이전트 기반으로 유연한 전처리",
+            "문헌 합성과 시각적 요소 생성",
+            "LaTeX 형식의 최적화된 논문 생성",
+            "첫 번째 표준화된 반영된 원시 자료 벤치마크 제공"
+          ],
+          "how": "다중 에이전트가 불구조화된 자료를 처리하고, 문헌 합성과 시각적 요소를 생성하여 최종 LaTeX 논문을 생성합니다.",
+          "useCases": [
+            "연구 자료를 빠르게 논문으로 변환",
+            "AI 연구의 과학적 발전을 지원",
+            "연구자들의 시간 절약"
+          ],
+          "caveats": ""
+        },
+        {
+          "id": "2026-11-18_trending_2610_22732",
+          "date": "2026-11-18",
+          "kind": "trending",
+          "rank": 2,
+          "score": 13.03,
+          "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
+          "url": "https://huggingface.co/papers/2610.22732",
+          "arxiv": "https://arxiv.org/abs/2610.22732",
+          "code": "https://github.com/microsoft/TokenEconomizer",
+          "stars": 7452,
+          "gain": 17,
+          "oneLine": "TokenEconomizer는 코드 에이전트의 토큰 비용을 줄이는 데 도움이 되는 외부 제어기입니다.",
+          "points": [
+            "환경에 따라 변하는 토큰 비용 줄이기",
+            "미필요한 도구 제거",
+            "실패 루프 인터럽트"
+          ],
+          "why": "AI 도우미 소프트웨어 엔지니어링의 토큰 비용이 높아지고 있어 이를 현실적인 작업 환경에서 줄이는 방법이 필요하다는 이유",
+          "overview": "TokenEconomizer는 코드 에이전트의 토큰 비용을 줄이기 위해 외부 제어기를 제안합니다. 이 제어기는 미필요한 도구를 제거하고, 적절한 미세 기술을 삽입하며, 실패 루프를 인터럽트하여 토큰 비용을 효과적으로 줄입니다.",
+          "features": [
+            "환경에 따라 변하는 토큰 비용 줄이기",
+            "미필요한 도구 제거",
+            "실패 루프 인터럽트",
+            "다양한 도메인에서 적용 가능",
+            "실제 작업 환경에서 토큰 비용 감소"
+          ],
+          "how": "TokenEconomizer는 코드 에이전트와 함께 작동하여, 미필요한 도구를 제거하고, 적절한 미세 기술을 삽입하며, 실패 루프를 인터럽트하여 토큰 비용을 줄입니다.",
+          "useCases": [
+            "클라우드 코드, 코덱스, GitHub Copilot CLI와 함께 사용하여 토큰 비용을 18.4-30.9% 줄임",
+            "웹 개발 및 보안 검토와 같은 다양한 도메인에서 적용하여 토큰 비용을 6.4-21.2% 줄임"
+          ],
+          "caveats": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 ---
-// 책상 위 종이 네 장. 좌우 버튼·탭·키보드(←/→)·스와이프로 넘긴다.
+// 책상 위 종이 다섯 장. 좌우 버튼·탭·키보드(←/→)·스와이프로 넘긴다.
 // 자바스크립트가 없어도 탭·화살표가 각 종이 주소로 가는 링크라서 그대로 동작한다.
 import Sprite from './Sprite.astro';
 import DiaryPaper from './papers/DiaryPaper.astro';
 import JobsPaper from './papers/JobsPaper.astro';
 import PortfolioPaper from './papers/PortfolioPaper.astro';
+import TechPaper from './papers/TechPaper.astro';
 import TrendsPaper from './papers/TrendsPaper.astro';
 import profile from '../../config/profile.mjs';
 import { SECTIONS, type SectionKey } from '../lib/sections';
@@ -51,6 +52,9 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
       </section>
       <section class="paper paper-trends" data-paper="trends" aria-label="게임 트렌드" hidden={active !== 'trends'}>
         <TrendsPaper />
+      </section>
+      <section class="paper paper-tech" data-paper="tech" aria-label="기술 트렌드" hidden={active !== 'tech'}>
+        <TechPaper />
       </section>
     </div>
 

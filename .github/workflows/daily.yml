@@ -1,6 +1,6 @@
 name: Daily update
 
-# 매일 아침: 채용 공고 수집 + AI 추천, 스팀 게임 트렌드 분석 → 바뀐 게 있으면 커밋하고 배포
+# 매일 아침: 채용 공고 수집 + AI 추천, 스팀 게임 트렌드 분석, 기술 트렌드 카드뉴스 → 바뀐 게 있으면 커밋하고 배포
 on:
   schedule:
     - cron: '0 22 * * *' # 매일 07:00 KST (GitHub 사정으로 몇 분~수십 분 늦을 수 있음)
@@ -48,6 +48,10 @@ jobs:
         id: trends
         continue-on-error: true
         run: npm run trends -- ${{ inputs.force_ai && '--force-ai' || '' }} ${{ inputs.force_majors && '--force-majors' || '' }}
+
+      - name: 기술 트렌드 카드뉴스
+        continue-on-error: true
+        run: npm run technews
 
       - name: 바뀐 데이터 커밋 후 배포
         env:

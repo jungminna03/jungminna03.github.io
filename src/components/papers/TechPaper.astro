@@ -1,0 +1,167 @@
+---
+// 기술 트렌드 — 오늘의 GitHub 트렌딩 저장소·AI 논문 카드뉴스. 데이터: scripts/technews (매일)
+// 카드를 누르면 아래에서 종이가 올라와 자세한 내용을 보여준다 (Sheet.astro).
+import Sprite from '../Sprite.astro';
+import { KIND_LABELS, technews, type TechCard, type TechKind } from '../../lib/technews';
+
+const { days } = technews;
+const KINDS = Object.keys(KIND_LABELS) as TechKind[];
+const weekday = (date: string) => '일월화수목금토'[new Date(`${date}T00:00:00+09:00`).getDay()];
+const short = (date: string) => `${date.slice(5).replace('-', '.')} (${weekday(date)})`;
+const compact = (n: number) => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}K` : String(n));
+const links = (c: TechCard) =>
+  [
+    [c.url, c.kind === 'repo' ? 'GitHub' : 'HF Papers'],
+    [c.arxiv, 'arXiv'],
+    [c.code, '코드'],
+  ].filter((l): l is [string, string] => Boolean(l[0]));
+---
+
+<header class="paper-head">
+  <Sprite name="bulb" scale={3} />
+  <div>
+    <h2>기술 트렌드</h2>
+  </div>
+</header>
+
+{
+  days.length === 0 ? (
+    <div class="empty-note">
+      <p class="empty-title">아직 카드가 없어요</p>
+    </div>
+  ) : (
+    <>
+      <nav class="tech-dates" aria-label="날짜">
+        {days.map((day, i) => (
+          <button class="chip" type="button" data-tech-date={day.date} aria-pressed={i === 0 ? 'true' : 'false'}>
+            {short(day.date)}
+          </button>
+        ))}
+      </nav>
+
+      {days.map((day, i) => (
+        <div class="tech-day" data-tech-day={day.date} hidden={i !== 0}>
+          {KINDS.map((kind) => {
+            const cards = day.cards.filter((c) => c.kind === kind);
+            return (
+              cards.length > 0 && (
+                <section>
+                  <h3 class="sec-title">
+                    {KIND_LABELS[kind]} <span class="count">{cards.length}</span>
+                  </h3>
+                  <div class="tech-grid">
+                    {cards.map((c) => (
+                      <a class="tech-card" href={c.url ?? '#'} target="_blank" rel="noopener" data-sheet={`tech-${c.id}`}>
+                        <p class="meta">
+                          {c.rank != null && `${c.rank}위`}
+                          {c.lang && ` · ${c.lang}`}
+                          {c.stars != null && ` · ★${compact(c.stars)}`}
+                          {c.gain ? ` (+${compact(c.gain)})` : ''}
+                        </p>
+                        <h4>{c.title}</h4>
+                        {c.oneLine && <p>{c.oneLine}</p>}
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )
+            );
+          })}
+        </div>
+      ))}
+
+      {days.flatMap((day) =>
+        day.cards.map((c) => (
+          <template data-sheet-body={`tech-${c.id}`}>
+            <header class="post-head">
+              <p class="meta">
+                {KIND_LABELS[c.kind]} · {short(c.date)}
+                {c.rank != null && ` · ${c.rank}위`}
+                {c.lang && ` · ${c.lang}`}
+                {c.stars != null && ` · ★${compact(c.stars)}`}
+                {c.gain ? ` (+${compact(c.gain)})` : ''}
+              </p>
+              <h1>{c.title}</h1>
+              {c.oneLine && <p class="tech-oneline">{c.oneLine}</p>}
+            </header>
+            <div class="prose">
+              {c.points.length > 0 && (
+                <ul>
+                  {c.points.map((p) => (
+                    <li>{p}</li>
+                  ))}
+                </ul>
+              )}
+              {c.why && (
+                <aside class="highlight">
+                  <strong>왜 중요한지</strong>
+                  <p>{c.why}</p>
+                </aside>
+              )}
+              {c.overview && (
+                <>
+                  <h2>개요</h2>
+                  <p>{c.overview}</p>
+                </>
+              )}
+              {c.features.length > 0 && (
+                <>
+                  <h2>{c.kind === 'repo' ? '주요 기능' : '주요 기여'}</h2>
+                  <ul>
+                    {c.features.map((f) => (
+                      <li>{f}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {c.how && (
+                <>
+                  <h2>{c.kind === 'repo' ? '작동 방식' : '방법'}</h2>
+                  <p>{c.how}</p>
+                </>
+              )}
+              {c.useCases.length > 0 && (
+                <>
+                  <h2>활용 예</h2>
+                  <ul>
+                    {c.useCases.map((u) => (
+                      <li>{u}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {c.caveats && (
+                <>
+                  <h2>주의할 점</h2>
+                  <p>{c.caveats}</p>
+                </>
+              )}
+            </div>
+            {links(c).length > 0 && (
+              <p class="tech-links">
+                {links(c).map(([href, label]) => (
+                  <a class="px-btn" href={href} target="_blank" rel="noopener">
+                    {label} ↗
+                  </a>
+                ))}
+              </p>
+            )}
+          </template>
+        )),
+      )}
+    </>
+  )
+}
+
+<script>
+  // 날짜 칩 → 그날 카드만 보이기
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-tech-date]');
+  const daysEl = document.querySelectorAll<HTMLElement>('[data-tech-day]');
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      const date = button.dataset.techDate;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+      daysEl.forEach((d) => (d.hidden = d.dataset.techDay !== date));
+    }),
+  );
+</script>
