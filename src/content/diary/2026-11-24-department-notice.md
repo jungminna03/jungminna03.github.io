@@ -3,11 +3,12 @@ title: 학과 공지사항 웹/앱
 date: 2026-11-24
 project: 학과 공지사항 웹/앱
 period: Emotive Play Lab
+team: 1인 개발
 skills: [TypeScript, Tailwind CSS, Instant DB, Electron]
 highlight: 학생들이 공지를 안 읽는 문제를 복도 디스플레이·실습실 위젯 앱으로 풀고, Electron 위젯에 자동 업데이트를 붙임
 ---
 
-Emotive Play Lab에서 학과 대상으로 만든 서비스. 학생들이 공지사항을 잘 읽지 않는 문제를 해결하려고 시작했다. 복도 디스플레이와 실습실 컴퓨터에 띄울 위젯 앱을 만들었다.
+Emotive Play Lab에서 학과 대상으로 혼자 만든 서비스. 학생들이 공지사항을 잘 읽지 않는 문제를 해결하려고 시작했다. 복도 디스플레이와 실습실 컴퓨터에 띄울 위젯 앱을 만들었다.
 
 ## 구성
 

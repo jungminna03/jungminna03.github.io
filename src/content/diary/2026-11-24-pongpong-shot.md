@@ -3,6 +3,7 @@ title: 퐁퐁샷
 date: 2026-11-24
 project: 퐁퐁샷
 period: 2026.03 – 진행 중
+team: 1인 개발
 skills: [JavaScript, Phaser, Claude Code]
 highlight: Claude Code로 1인 개발하며 AI에 맡길 일(기획서·프로토타입·자료 조사)과 직접 할 일(재미 검증·최적화·구조 설계)을 구분
 ---
