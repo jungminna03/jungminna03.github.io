@@ -641,6 +641,7 @@ code {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
 }
 .project {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -648,21 +649,37 @@ code {
   overflow: hidden;
   background: var(--paper-2);
   box-shadow: 0 0 0 3px var(--paper-3);
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
 }
 .project:hover,
-.project:focus-visible {
+.project:has(.project-open:focus-visible) {
   transform: translateY(-4px);
   box-shadow: 0 0 0 3px var(--ink), 6px 8px 0 3px var(--paper-3);
+}
+.project:has(.project-open:focus-visible) {
+  outline: 3px dashed var(--accent);
+  outline-offset: 5px;
 }
 .project > :not(.project-cover) {
   margin-right: 18px;
   margin-left: 18px;
+}
+/* 카드 어디를 눌러도 상세 종이가 열리게 제목 링크를 카드 크기로 늘린다. 결과물 링크(.project-foot a)만 그 위에서 따로 눌린다 */
+.project-open {
+  color: inherit;
+}
+.project-open:hover {
+  text-decoration: none;
+}
+.project-open:focus-visible {
+  outline: none;
+}
+.project-open::after {
+  content: '';
+  position: absolute;
+  inset: 0;
 }
 .project-cover {
   display: block;
@@ -686,21 +703,50 @@ code {
   margin-top: 2px;
   margin-bottom: 0;
 }
+.project-summary,
 .project-highlight {
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 14.5px;
   line-height: 1.6;
 }
+.project-summary {
+  color: var(--ink);
+}
+.project-summary + .project-highlight {
+  margin-top: 6px;
+}
 .project .chips {
   margin-top: 12px;
 }
-.project-more {
+.project-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
   margin-top: auto;
-  padding-top: 12px;
-  color: var(--accent-text);
+  margin-bottom: 0;
+  padding-top: 14px;
   font-family: var(--pixel);
   font-size: 12px;
+  line-height: 1.6;
+}
+.project-foot a {
+  position: relative;
+  z-index: 1;
+  padding: 3px 9px 1px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 13px;
+  box-shadow: 0 0 0 2px var(--ink);
+}
+.project-foot a:hover {
+  background: var(--brass-light);
+  text-decoration: none;
+}
+.project-more {
+  margin-left: auto;
+  color: var(--accent-text);
 }
 
 /* 자세히 보기 — 책상 아래에서 종이 한 장이 올라와 놓인다 (Sheet.astro) */
@@ -1382,6 +1428,17 @@ html:has(.sheet[open]) {
 .post-head .stamp {
   margin-left: 8px;
 }
+.post-summary {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 17px;
+}
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 26px;
+}
 .highlight {
   margin: 0 0 30px;
   padding: 14px 18px;
@@ -1620,5 +1677,9 @@ html:has(.sheet[open]) {
     padding: 0;
     background: #fff !important;
     box-shadow: none;
+  }
+  /* PDF 에서는 제목만 링크로 — 카드 전체를 덮으면 결과물 링크와 겹친다 */
+  .project-open::after {
+    content: none;
   }
 }

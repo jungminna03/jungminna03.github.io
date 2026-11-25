@@ -30,19 +30,35 @@ export const AnswersSchema = z.object({
 const ymd = (date) => date.toISOString().slice(0, 10);
 const ym = (date) => ymd(date).slice(0, 7);
 
+/** { Steam: 'https://…' } → 한 줄 (링크가 없으면 '') */
+const joinLinks = (links, format, sep) =>
+  Object.entries(links ?? {})
+    .map(([label, href]) => format(label, href))
+    .join(sep);
+
 export function diaryForPrompt(entries) {
   return entries
-    .map((entry) =>
-      [
+    .map((entry) => {
+      const links = joinLinks(entry.links, (label, href) => `${label} ${href}`, ', ');
+      return [
         `### ${ymd(entry.date)} · ${entry.title}`,
-        [entry.project && `프로젝트: ${entry.project}`, entry.skills.length > 0 && `기술: ${entry.skills.join(', ')}`, entry.highlight && `성과: ${entry.highlight}`]
+        [
+          entry.project && `프로젝트: ${entry.project}`,
+          entry.summary && `개요: ${entry.summary}`,
+          entry.period && `기간: ${entry.period}`,
+          entry.team && `팀: ${entry.team}`,
+          entry.role && `역할: ${entry.role}`,
+          entry.skills.length > 0 && `기술: ${entry.skills.join(', ')}`,
+          entry.highlight && `성과: ${entry.highlight}`,
+          links && `링크: ${links}`,
+        ]
           .filter(Boolean)
           .join(' | '),
         entry.body,
       ]
         .filter(Boolean)
-        .join('\n'),
-    )
+        .join('\n');
+    })
     .join('\n\n');
 }
 
@@ -94,7 +110,7 @@ export function buildPortfolioPrompt({ profile, diaryText, job, lang }) {
 구성:
 1. 한 줄 소개와 요약 (3문장 이내)
 2. 기술 스택 — 기록에서 확인되는 것만, 어디에 썼는지와 함께
-3. 프로젝트별: 개요 / 맡은 역할 / 문제와 해결 과정 / 결과 / 사용 기술
+3. 프로젝트별: 한 줄 개요 / 기간·팀 규모·맡은 역할 / 문제와 해결 과정 / 결과 / 사용 기술 / 링크 (기록에 있는 것만, 주소는 그대로)
 4. 그 밖에 배운 것 (짧게)
 ${RULES}`,
   };
@@ -147,9 +163,20 @@ export function renderBasePortfolio(profile, portfolio, date) {
   }
   for (const [i, project] of portfolio.projects.entries()) {
     if (i === 0) out.push('## 프로젝트', '');
-    out.push(`### ${project.name}`, '', `- 기간: ${project.period ?? `${ym(project.from)} – ${ym(project.to)}`}`);
-    if (project.skills.length) out.push(`- 기술: ${project.skills.join(', ')}`);
-    out.push(...project.entries.map((e) => `- ${ymd(e.date)} ${e.title}${e.highlight ? ` — ${e.highlight}` : ''}`), '');
+    const links = joinLinks(project.links, (label, href) => `[${label}](${href})`, ' · ');
+    out.push(`### ${project.name}`, '');
+    if (project.summary) out.push(project.summary, '');
+    out.push(
+      ...[
+        `- 기간: ${project.period ?? `${ym(project.from)} – ${ym(project.to)}`}`,
+        project.team && `- 팀: ${project.team}`,
+        project.role && `- 역할: ${project.role}`,
+        project.skills.length > 0 && `- 기술: ${project.skills.join(', ')}`,
+        links && `- 링크: ${links}`,
+      ].filter(Boolean),
+      ...project.entries.map((e) => `- ${ymd(e.date)} ${e.title}${e.highlight ? ` — ${e.highlight}` : ''}`),
+      '',
+    );
   }
   const groups = groupSkills(profile.skillGroups ?? [], portfolio.skills);
   if (groups.length) {

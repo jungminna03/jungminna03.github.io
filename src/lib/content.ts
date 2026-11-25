@@ -13,7 +13,11 @@ export const toPortfolioEntry = ({ id, data }: CollectionEntry<'diary'>) => ({
   date: data.date,
   tags: data.tags,
   project: data.project,
+  summary: data.summary,
   period: data.period,
+  team: data.team,
+  role: data.role,
+  links: data.links,
   skills: data.skills,
   highlight: data.highlight,
 });

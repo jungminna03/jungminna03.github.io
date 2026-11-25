@@ -5,7 +5,7 @@
 | 종이 | 하는 일 | 데이터 |
 | --- | --- | --- |
 | 기술 일기 (첫 화면) | 마크다운으로 쓰는 일기 | `src/content/diary/*.md` |
-| 포트폴리오 | 일기의 `project`·`skills`·`highlight` 로 자동 구성, PDF 저장 | 빌드할 때마다 |
+| 포트폴리오 | 일기의 frontmatter(`project`·`summary`·`role`·`links`·`skills`·`highlight` 등)로 자동 구성, PDF 저장 | 빌드할 때마다 |
 | 채용 추천 | 일본·해외 게임사 공고마다 **적합도(잘 맞음·검토·안 맞음)와 이유**, AI 가 적정·상향·관심 3곳 추천 | `src/data/jobs.json` (매일) |
 | 게임 트렌드 | 스팀 신작 장르 분석·추정 매출·유튜브 화제성 + 전체 시장, AI 가 "만들어 볼 게임" 제안 | `src/data/trends.json` (매일) |
 
@@ -51,6 +51,19 @@ highlight: 풀링 도입으로 GC Alloc 2.1KB → 0B, 프레임 드랍 해결   
 ---
 
 문제 → 시도 → 결과 순서로 쓰면 자소서로 잘 바뀐다.
+```
+
+프로젝트의 첫 노트에는 프로젝트 소개도 함께 적는다. 포트폴리오의 프로젝트 카드에 그대로 나온다 (모두 선택).
+
+```yaml
+summary: 탄막을 스치면 점수가 오르는 2D 슈팅 게임   # 한 줄 정의
+period: 2026.09 – 진행 중
+team: 1인 개발                                     # 팀 규모
+role: 프로그래밍 전반                               # 내가 맡은 일
+cover: ./images/shooting/cover.png                 # 카드 이미지
+links:                                             # 결과물 링크 (카드와 상세 종이에 버튼으로)
+  Steam: https://store.steampowered.com/app/…
+  영상: https://youtu.be/…
 ```
 
 - 이미지는 `src/content/diary/images/<프로젝트>/` 에 넣고 `![설명](./images/<프로젝트>/파일.png)` 로 쓴다. 빌드할 때 WebP 로 줄어든다.

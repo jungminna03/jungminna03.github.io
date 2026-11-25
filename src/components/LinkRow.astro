@@ -1,0 +1,20 @@
+---
+// 결과물 링크 버튼 줄 — 일기 frontmatter 의 links ({ Steam: 'https://…' }). 새 탭으로 연다.
+interface Props {
+  links: Record<string, string>;
+}
+
+const items = Object.entries(Astro.props.links);
+---
+
+{
+  items.length > 0 && (
+    <p class="link-row">
+      {items.map(([label, href]) => (
+        <a class="px-btn" href={href} target="_blank" rel="noopener">
+          {label} ↗
+        </a>
+      ))}
+    </p>
+  )
+}

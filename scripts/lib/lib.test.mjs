@@ -71,6 +71,22 @@ test('parseEntry: frontmatter 와 본문 분리, id 는 소문자 슬러그', ()
   assert.equal(entry.draft, false);
 });
 
+test('parseEntry: 프로젝트 카드 항목(summary·team·role·links)을 읽는다', () => {
+  const entry = parseEntry(
+    'shooting.md',
+    '---\ntitle: 슈팅\ndate: 2026-11-24\nproject: 슈팅\nsummary: 전등 탑다운 슈팅\nteam: 3인\nrole: 프로그래밍\nlinks:\n  Steam: https://store.steampowered.com/app/1/\n  영상: https://youtu.be/x\n---\n본문\n',
+  );
+  assert.equal(entry.summary, '전등 탑다운 슈팅');
+  assert.equal(entry.team, '3인');
+  assert.equal(entry.role, '프로그래밍');
+  assert.deepEqual(entry.links, { Steam: 'https://store.steampowered.com/app/1/', 영상: 'https://youtu.be/x' });
+});
+
+test('parseEntry: links 를 안 적으면 빈 객체', () => {
+  const entry = parseEntry('plain.md', '---\ntitle: 메모\ndate: 2026-11-24\n---\n본문');
+  assert.deepEqual(entry.links, {});
+});
+
 test('markdownToText: 코드·링크·헤더 정리', () => {
   assert.equal(markdownToText('## 제목\n[링크](http://x) 와 `code`\n```js\nlet a\n```'), '제목 링크 와 code [코드]');
 });
@@ -104,6 +120,26 @@ test('buildPortfolio: 진행 중 → 끝난 시점 최신순, 날짜 없는 peri
     entry('e', '짧게', '2025.07 – 2025.12'),
   ]);
   assert.deepEqual(portfolio.projects.map((p) => p.name), ['최근', '길게', '짧게', '옛날', '동아리']);
+});
+
+test('buildPortfolio: 프로젝트의 summary·team·role 은 그 값이 있는 가장 오래된 노트에서, links 는 오래된 순으로 합친다', () => {
+  const entry = (id, date, extra) => ({ id, title: id, date: new Date(date), tags: [], skills: [], project: '슈팅', ...extra });
+  const [project] = buildPortfolio([
+    entry('c', '2026-03-01', { summary: '나중 노트의 정의', links: { 영상: 'https://v/2', GitHub: 'https://g' } }),
+    entry('b', '2026-02-01', { team: '3인', role: '프로그래밍' }),
+    entry('a', '2026-01-01', { summary: '전등 탑다운 슈팅', links: { Steam: 'https://s', 영상: 'https://v/1' } }),
+  ]).projects;
+  assert.equal(project.summary, '전등 탑다운 슈팅');
+  assert.equal(project.team, '3인');
+  assert.equal(project.role, '프로그래밍');
+  // 같은 이름의 링크는 나중 노트가 덮어쓰고, 자리는 처음 나온 순서 그대로
+  assert.deepEqual(Object.entries(project.links), [['Steam', 'https://s'], ['영상', 'https://v/2'], ['GitHub', 'https://g']]);
+});
+
+test('buildPortfolio: 링크를 안 적은 프로젝트의 links 는 빈 객체', () => {
+  const [project] = buildPortfolio([{ id: 'a', title: 'a', date: new Date('2026-01-01'), tags: [], skills: [], project: '메모장' }]).projects;
+  assert.deepEqual(project.links, {});
+  assert.equal(project.summary, undefined);
 });
 
 test('groupSkills: 분야 순서대로, 분야에 없는 일기 기술은 기타로', async () => {

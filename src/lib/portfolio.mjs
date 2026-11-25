@@ -2,10 +2,10 @@
 /**
  * 기술 일기 → 포트폴리오 데이터. /portfolio 페이지와 export 스크립트가 함께 쓴다.
  *
- * @typedef {{ id: string, title: string, date: Date, tags: string[], project?: string, period?: string, skills: string[], highlight?: string }} Entry
+ * @typedef {{ id: string, title: string, date: Date, tags: string[], project?: string, summary?: string, period?: string, team?: string, role?: string, links?: Record<string, string>, skills: string[], highlight?: string }} Entry
  * @typedef {{ name: string, count: number }} Tally
  * @typedef {{ text: string, entry: Entry }} Highlight
- * @typedef {{ name: string, entries: Entry[], from: Date, to: Date, period?: string, skills: string[], highlights: Highlight[] }} Project
+ * @typedef {{ name: string, entries: Entry[], from: Date, to: Date, summary?: string, period?: string, team?: string, role?: string, links: Record<string, string>, skills: string[], highlights: Highlight[] }} Project
  */
 
 /**
@@ -63,7 +63,13 @@ export function buildPortfolio(entries, extraSkills = []) {
       entries: sorted,
       from: sorted[0].date,
       to: sorted[sorted.length - 1].date,
+      // 프로젝트 소개 항목은 그 값을 적은 가장 오래된 노트(프로젝트 노트)에서 가져온다
+      summary: sorted.find((e) => e.summary)?.summary,
       period: sorted.find((e) => e.period)?.period,
+      team: sorted.find((e) => e.team)?.team,
+      role: sorted.find((e) => e.role)?.role,
+      // 링크는 모든 노트의 것을 합친다 (같은 이름이면 나중 노트가 덮어씀)
+      links: Object.assign({}, ...sorted.map((e) => e.links)),
       skills: tally(sorted.map((e) => e.skills)).map((t) => t.name),
       highlights: sorted.flatMap(highlightOf),
     };

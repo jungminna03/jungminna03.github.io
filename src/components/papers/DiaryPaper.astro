@@ -1,6 +1,7 @@
 ---
 // 기술 일기 — 줄 공책
 import { render } from 'astro:content';
+import LinkRow from '../LinkRow.astro';
 import Sprite from '../Sprite.astro';
 import { getDiary } from '../../lib/content';
 import { formatDate, url } from '../../lib/site';
@@ -57,12 +58,14 @@ for (const entry of entries) {
 {
   entries.map((entry) => {
     const Body = bodies.get(entry.id)!;
-    const { title, date, period, highlight, skills } = entry.data;
+    const { title, date, summary, period, team, role, links, highlight, skills } = entry.data;
     return (
       <template data-sheet-body={`diary-${entry.id}`}>
         <header class="post-head">
-          <p class="meta">{period ?? formatDate(date)}</p>
+          <p class="meta">{[period ?? formatDate(date), team, role].filter(Boolean).join(' · ')}</p>
           <h1>{title}</h1>
+          {summary && <p class="post-summary">{summary}</p>}
+          <LinkRow links={links} />
         </header>
         {highlight && (
           <aside class="highlight">

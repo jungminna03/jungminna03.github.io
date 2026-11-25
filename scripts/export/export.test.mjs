@@ -23,6 +23,26 @@ test('renderBasePortfolio: 프로필·성과·프로젝트·기술 섹션', () =
   assert.match(md, /기술 일기 2개에서 자동 생성 · 2026-11-24$/);
 });
 
+const projectNote = {
+  id: 'a', title: '슈팅', date: new Date('2026-11-24'), tags: [], project: '슈팅', period: '2022.07 – 2022.08', skills: ['Unity'],
+  summary: '전등 탑다운 슈팅', team: '3인', role: '프로그래밍', highlight: 'Steam 출시', links: { Steam: 'https://s/app', 영상: 'https://v' }, body: '본문',
+};
+
+test('renderBasePortfolio: 프로젝트마다 한 줄 정의·팀·역할·링크', () => {
+  const md = renderBasePortfolio(profile, buildPortfolio([projectNote]), '2026-11-24');
+  assert.match(
+    md,
+    /### 슈팅\n\n전등 탑다운 슈팅\n\n- 기간: 2022\.07 – 2022\.08\n- 팀: 3인\n- 역할: 프로그래밍\n- 기술: Unity\n- 링크: \[Steam\]\(https:\/\/s\/app\) · \[영상\]\(https:\/\/v\)\n- 2026-11-24 슈팅 — Steam 출시\n/,
+  );
+});
+
+test('diaryForPrompt: 프로젝트의 정의·기간·팀·역할·링크가 AI 에게 전달된다', () => {
+  assert.equal(
+    diaryForPrompt([projectNote]),
+    '### 2026-11-24 · 슈팅\n프로젝트: 슈팅 | 개요: 전등 탑다운 슈팅 | 기간: 2022.07 – 2022.08 | 팀: 3인 | 역할: 프로그래밍 | 기술: Unity | 성과: Steam 출시 | 링크: Steam https://s/app, 영상 https://v\n본문',
+  );
+});
+
 test('renderBasePortfolio: 일기가 없어도 프로필만으로 만든다', () => {
   const md = renderBasePortfolio(profile, buildPortfolio([]), '2026-11-24');
   assert.doesNotMatch(md, /## 프로젝트/);

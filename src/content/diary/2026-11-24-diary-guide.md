@@ -21,6 +21,7 @@ draft: true
 | `project` | | 포트폴리오에서 프로젝트별로 묶임 |
 | `skills` | | 기술 스택 집계, 채용 공고 매칭 |
 | `highlight` | | 포트폴리오 '핵심 성과', 자소서 근거 |
+| `summary` · `period` · `team` · `role` · `cover` · `links` | | 프로젝트 소개 — 프로젝트의 첫 노트에 적으면 포트폴리오 카드에 나옴 |
 | `draft` | | `true` 면 비공개 |
 
 `project` · `skills` · `highlight` 는 선택이지만, 적어둘수록 포트폴리오와 자소서가 정확해져요.

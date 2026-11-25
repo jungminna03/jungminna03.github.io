@@ -1,6 +1,7 @@
 ---
 // 일기 한 편 — 책상 위에 종이 한 장
 import { render, type CollectionEntry } from 'astro:content';
+import LinkRow from '../../components/LinkRow.astro';
 import Sprite from '../../components/Sprite.astro';
 import Desk from '../../layouts/Desk.astro';
 import { getDiary } from '../../lib/content';
@@ -17,7 +18,7 @@ interface Props {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const { title, date, project, skills, highlight, description, draft } = entry.data;
+const { title, date, project, summary, links, skills, highlight, description, draft } = entry.data;
 ---
 
 <Desk title={title} description={description ?? highlight}>
@@ -32,6 +33,8 @@ const { title, date, project, skills, highlight, description, draft } = entry.da
           {draft && <span class="stamp maybe">초안</span>}
         </p>
         <h1>{title}</h1>
+        {summary && <p class="post-summary">{summary}</p>}
+        <LinkRow links={links} />
       </header>
       {
         highlight && (

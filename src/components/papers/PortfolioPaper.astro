@@ -2,6 +2,7 @@
 // 포트폴리오 — 기술 일기에서 자동으로 정리된 서류
 import { render } from 'astro:content';
 import { Image } from 'astro:assets';
+import LinkRow from '../LinkRow.astro';
 import Sprite from '../Sprite.astro';
 import profile from '../../../config/profile.mjs';
 import { getDiary, toPortfolioEntry } from '../../lib/content';
@@ -18,6 +19,9 @@ const bodies = new Map(
 );
 const month = (date: Date) => formatDate(date).slice(0, 7);
 const period = (from: Date, to: Date) => (month(from) === month(to) ? month(from) : `${month(from)} – ${month(to)}`);
+// 기간 · 팀 규모 · 내 역할
+const metaOf = (project: (typeof portfolio.projects)[number]) =>
+  [project.period ?? period(project.from, project.to), project.team, project.role].filter(Boolean).join(' · ');
 const links = Object.entries(profile.links).filter(([, href]) => href);
 
 // 기술 스택: 프로필의 분야별로, 주력 기술은 진하게
@@ -135,7 +139,7 @@ const skillGroups = groupSkills(profile.skillGroups, portfolio.skills);
           <h3 class="sec-title">프로젝트</h3>
           <div class="project-grid">
             {portfolio.projects.map((project, i) => (
-              <a class="project" href={url(`/diary/${project.entries[project.entries.length - 1].id}/`)} data-sheet={`project-${i}`}>
+              <article class="project">
                 {(() => {
                   const cover = coverOf(project.entries);
                   return cover ? (
@@ -146,8 +150,13 @@ const skillGroups = groupSkills(profile.skillGroups, portfolio.skills);
                     </span>
                   );
                 })()}
-                <h4>{project.name}</h4>
-                <p class="meta">{project.period ?? period(project.from, project.to)}</p>
+                <h4>
+                  <a class="project-open" href={url(`/diary/${project.entries[project.entries.length - 1].id}/`)} data-sheet={`project-${i}`}>
+                    {project.name}
+                  </a>
+                </h4>
+                <p class="meta">{metaOf(project)}</p>
+                {project.summary && <p class="project-summary">{project.summary}</p>}
                 {project.highlights[0] && <p class="project-highlight">{project.highlights[0].text}</p>}
                 {project.skills.length > 0 && (
                   <ul class="chips">
@@ -156,15 +165,23 @@ const skillGroups = groupSkills(profile.skillGroups, portfolio.skills);
                     ))}
                   </ul>
                 )}
-                <span class="project-more no-print">자세히 보기 ▲</span>
-              </a>
+                <p class="project-foot">
+                  {Object.entries(project.links).map(([label, href]) => (
+                    <a href={href} target="_blank" rel="noopener">
+                      {label} ↗
+                    </a>
+                  ))}
+                  <span class="project-more no-print">자세히 보기 ▲</span>
+                </p>
+              </article>
             ))}
           </div>
           {portfolio.projects.map((project, i) => (
             <template data-sheet-body={`project-${i}`}>
               <header class="post-head">
-                <p class="meta">{project.period ?? period(project.from, project.to)}</p>
+                <p class="meta">{metaOf(project)}</p>
                 <h1>{project.name}</h1>
+                {project.summary && <p class="post-summary">{project.summary}</p>}
                 {project.skills.length > 0 && (
                   <ul class="chips">
                     {project.skills.map((skill) => (
@@ -172,6 +189,7 @@ const skillGroups = groupSkills(profile.skillGroups, portfolio.skills);
                     ))}
                   </ul>
                 )}
+                <LinkRow links={project.links} />
               </header>
               {project.highlights.map((h) => (
                 <aside class="highlight">
