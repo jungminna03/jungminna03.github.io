@@ -8,7 +8,7 @@ team: 4인 팀
 role: 프로그래밍 전반
 cover: ./images/portfolio/deadlands.png
 skills: [Unity, C#, ScriptableObject, Unity Ads, Unity IAP]
-highlight: Google Play 출시 후 3개월 운영. SO·추상화로 코드를 다 몰라도 새 적·강화를 추가할 수 있게 설계해 후배에게 운영을 넘김
+highlight: Google Play 출시 후 3개월 운영. SO·추상화로 코드를 다 몰라도 새 적·강화를 추가할 수 있게 설계해, 인수인계 없이 넘겨받은 후임이 업데이트 2건을 무리 없이 진행
 links:
   App Store: https://apps.apple.com/kr/app/deadlands-idle-defense/id6479624100
 ---
@@ -27,7 +27,11 @@ Google Play에 출시해 3개월간 서비스했다. 지금은 Google Play에서
 
 ### 강화 카드: Abstract 클래스 + 프리팹 상속
 
-모양·상호작용은 같고 강화 로직만 다르다. 기본 Abstract 클래스를 만들고 프리팹 상속으로 구현하게 했다. 새 카드는 이렇게 추가한다.
+모양·상호작용은 같고 강화 로직만 다르다. 기본 Abstract 클래스를 만들고 프리팹 상속으로 구현하게 했다.
+
+![강화 카드 구조](./images/deadlands/card-structure.svg)
+
+새 카드는 이렇게 추가한다.
 
 1. Abstract 프리팹을 놓는다.
 2. 엔진에서 그래픽을 갈아 끼운다.
@@ -39,9 +43,22 @@ Google Play에 출시해 3개월간 서비스했다. 지금은 Google Play에서
 
 행동은 모두 같고 이동 속도·모양만 다르다. 그래서 SO로 분리했다. SO 하나 만들고 적 생성 팩토리만 손보면 새 적이 추가된다.
 
+### 결과
+
+군입대 때문에 인수인계를 하지 못했다. 그래도 후임은 업데이트 2건을 무리 없이 진행했고, 보자마자 어떻게 작성해야 할지 파악할 수 있었다고 말해 줬다.
+
 ## 막혔던 것: 카드에 정보 넘겨주기
 
 카드마다 필요한 정보가 전부 달랐다. 그 정보를 누가, 어떻게 가져와서 카드에게 넘겨줄지를 짜는 코드가 어려웠다.
+
+| 카드 | 필요한 정보 |
+| --- | --- |
+| 공격 속도 증가 | `PlayerData` 인스턴스. 가져와서 그 안의 숫자만 바꾸면 됐다 |
+| 분열탄 | 각 화살의 분열 효과를 가진 SO 인스턴스. `ArrowFactory` 에 있어서 거기서 가져와야 했다 |
+
+그래서 데이터 컨테이너를 만들 때 `ArrowFactory` 와 `PlayerData` 를 인수로 넘겨받는 괴상한 함수를 만들었다. 새로운 인수가 필요해질 때마다, 그 함수를 쓰는 곳마다 `null` 을 넣어 주는 처리를 해야 했다.
+
+![카드에 정보를 넘겨주는 구조](./images/deadlands/card-data-flow.svg)
 
 - 이미 있는 정보를 조합하는 것은 쉬웠다.
 - 새로운 정보를 추가하려고 하면 개발하기가 매우 어려웠다.

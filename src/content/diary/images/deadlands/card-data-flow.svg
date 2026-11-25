@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" width="600" height="660" role="img" aria-labelledby="title">
+  <title id="title">카드에 정보를 넘겨주는 구조: ArrowFactory 와 PlayerData 를 인수로 받는 함수가 데이터 컨테이너를 만들어 카드에게 넘긴다. 새 정보가 필요해질 때마다 함수를 쓰는 곳마다 null 을 넣어야 했다</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#3b2418" />
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif; fill: #3b2418; text-anchor: middle; }
+    .code { font-family: Consolas, 'SF Mono', Menlo, 'Courier New', monospace; }
+    .b { font-weight: 700; }
+    .sub { font-size: 14.5px; fill: #6b5246; }
+    .sub .code { fill: #3b2418; }
+    .box { stroke: #3b2418; stroke-width: 3; }
+    .line { stroke: #3b2418; stroke-width: 3; fill: none; }
+    .warn { fill: #9a3f2a; }
+  </style>
+
+  <!-- 정보가 있는 곳 -->
+  <rect class="box" x="21.5" y="17.5" width="262" height="70" fill="#f2e5c4" />
+  <text class="code b" x="152.5" y="47" font-size="17">PlayerData</text>
+  <text class="sub" x="152.5" y="71">공격 속도 등의 숫자</text>
+
+  <rect class="box" x="316.5" y="17.5" width="262" height="70" fill="#f2e5c4" />
+  <text class="code b" x="447.5" y="47" font-size="17">ArrowFactory</text>
+  <text class="sub" x="447.5" y="71">각 화살의 분열 효과를 가진 SO</text>
+
+  <line class="line" x1="152.5" y1="89" x2="152.5" y2="118" marker-end="url(#arrow)" />
+  <line class="line" x1="447.5" y1="89" x2="447.5" y2="118" marker-end="url(#arrow)" />
+  <text class="sub" x="300" y="113">인수로 넘긴다</text>
+
+  <!-- 데이터 컨테이너를 만드는 함수 -->
+  <rect class="box" x="21.5" y="133.5" width="557" height="76" fill="#f6e6b8" />
+  <text class="b" x="300" y="164" font-size="17">데이터 컨테이너를 만드는 함수</text>
+  <text class="code" x="300" y="191" font-size="15.5">함수( ArrowFactory, PlayerData )</text>
+
+  <line class="line" x1="300" y1="211" x2="300" y2="236" marker-end="url(#arrow)" />
+
+  <rect class="box" x="181.5" y="251.5" width="237" height="48" fill="#f3d78a" />
+  <text class="b" x="300" y="282" font-size="17">데이터 컨테이너</text>
+
+  <!-- 카드에게 -->
+  <path class="line" d="M300 301 V336 H152.5 V352" marker-end="url(#arrow)" />
+  <path class="line" d="M300 336 H447.5 V352" marker-end="url(#arrow)" />
+  <text class="sub" x="364" y="324">카드에게 넘긴다</text>
+
+  <rect class="box" x="21.5" y="367.5" width="262" height="98" fill="#f5dfc7" />
+  <text class="b" x="152.5" y="398" font-size="17">공격 속도 증가 카드</text>
+  <text class="sub" x="152.5" y="424"><tspan class="code">PlayerData</tspan> 의 숫자만</text>
+  <text class="sub" x="152.5" y="446">바꾸면 된다</text>
+
+  <rect class="box" x="316.5" y="367.5" width="262" height="98" fill="#f5dfc7" />
+  <text class="b" x="447.5" y="398" font-size="17">분열탄 카드</text>
+  <text class="sub" x="447.5" y="424"><tspan class="code">ArrowFactory</tspan> 에 있는</text>
+  <text class="sub" x="447.5" y="446">분열 효과 SO 를 가져와야 한다</text>
+
+  <!-- 문제 -->
+  <rect x="21.5" y="491.5" width="557" height="152" fill="#fbeae3" stroke="#b5533c" stroke-width="3" stroke-dasharray="8 6" />
+  <text class="b warn" x="300" y="522" font-size="16">새로운 정보가 필요한 카드가 생길 때마다</text>
+  <text class="code" x="300" y="554" font-size="15.5">함수( ArrowFactory, PlayerData, <tspan class="b warn">새 인수</tspan> )</text>
+  <text x="300" y="584" font-size="15">이 함수를 쓰는 곳마다 <tspan class="code">null</tspan> 을 넣어 줘야 했다</text>
+  <g font-size="13.5">
+    <rect x="45" y="600" width="160" height="28" fill="#fff" stroke="#b5533c" stroke-width="2" />
+    <text class="code" x="125" y="619">함수( …, null )</text>
+    <rect x="220" y="600" width="160" height="28" fill="#fff" stroke="#b5533c" stroke-width="2" />
+    <text class="code" x="300" y="619">함수( …, null )</text>
+    <rect x="395" y="600" width="160" height="28" fill="#fff" stroke="#b5533c" stroke-width="2" />
+    <text class="code" x="475" y="619">함수( …, null )</text>
+  </g>
+</svg>
