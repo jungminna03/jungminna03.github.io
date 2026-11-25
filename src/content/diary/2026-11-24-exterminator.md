@@ -4,6 +4,7 @@ date: 2026-11-24
 project: Exterminator
 summary: 전등이 비추는 정면 60도 안의 적만 보이는 탑다운 슈팅 게임
 period: 2022.07 – 2022.08
+team: 3인 팀
 role: 프로그래밍
 cover: ./images/portfolio/exterminator.png
 skills: [Unity, C#]
@@ -14,7 +15,7 @@ links:
 
 ![Exterminator](./images/portfolio/exterminator.png)
 
-처음 만들고, 처음 출시한 탑다운 슈팅 게임. 프로그래밍을 맡았고, 프로그래밍 자체도 이때 처음 해 봤다.
+처음 만들고, 처음 출시한 탑다운 슈팅 게임. 기획자 1명, 프로그래머 1명, 그래픽 1명이 작업했다. 프로그래밍을 맡았고, 프로그래밍 자체도 이때 처음 해 봤다.
 
 ## 전등
 
