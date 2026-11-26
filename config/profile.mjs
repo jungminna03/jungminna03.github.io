@@ -41,8 +41,8 @@ const profile = {
   ],
   languages: [
     { name: '한국어', level: '모국어' },
-    { name: '日本語', level: '비즈니스 (N1~N2)' },
-    // { name: 'English', level: 'TOEIC 850' },
+    { name: '日本語', level: 'JLPT N1' },
+    { name: 'English', level: '통역병·통역 아르바이트 경험' },
   ],
   skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 진하게 강조
   skillGroups: [
