@@ -259,6 +259,19 @@ code {
 .desk-footer a {
   color: var(--brass-light);
 }
+.motion-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--brass-light);
+  font: inherit;
+  text-shadow: inherit;
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+.motion-toggle[hidden] {
+  display: none;
+}
 
 /* ───────── 탭 · 화살표 · 버튼 ───────── */
 .stack,
@@ -844,13 +857,13 @@ html:has(.sheet[open]) {
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sheet[open] .sheet-paper,
-  .sheet.is-closing .sheet-paper,
-  .sheet[open]::backdrop,
-  .sheet.is-closing::backdrop {
+  :root:not([data-motion='on']) .sheet[open] .sheet-paper,
+  :root:not([data-motion='on']) .sheet.is-closing .sheet-paper,
+  :root:not([data-motion='on']) .sheet[open]::backdrop,
+  :root:not([data-motion='on']) .sheet.is-closing::backdrop {
     animation: none;
   }
-  .project {
+  :root:not([data-motion='on']) .project {
     transition: none;
   }
 }
@@ -1403,7 +1416,7 @@ html:has(.sheet[open]) {
   margin: 28px 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .tech-card {
+  :root:not([data-motion='on']) .tech-card {
     transition: none;
   }
 }
@@ -1497,6 +1510,14 @@ html:has(.sheet[open]) {
   margin: 1.8em 0 0.6em;
   color: var(--accent-text);
   font-size: 18px;
+}
+.prose h4 {
+  margin: 1.5em 0 0.5em;
+  font-size: 17.5px;
+}
+.prose h4::before {
+  content: '▸ ';
+  color: var(--accent-text);
 }
 .prose :is(p, ul, ol, blockquote, pre, table) {
   margin: 0 0 1.2em;
@@ -1644,8 +1665,9 @@ html:has(.sheet[open]) {
   animation: paper-out-right 0.4s cubic-bezier(0.5, 0, 0.75, 0.3) both;
   pointer-events: none;
 }
+/* 움직임 줄이기를 켠 컴퓨터는 애니메이션을 끈다. 사이트의 '애니메이션 켜기' 버튼을 누르면 html[data-motion=on] 이 붙어 다시 켜진다 */
 @media (prefers-reduced-motion: reduce) {
-  .paper {
+  :root:not([data-motion='on']) .paper {
     animation: none !important;
   }
 }

@@ -65,6 +65,8 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
 </div>
 
 <script>
+  import { reduceMotion } from '../lib/motion';
+
   type Section = { key: string; href: string; label: string; title: string };
 
   const stack = document.querySelector<HTMLElement>('[data-stack]');
@@ -74,7 +76,7 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
     const tabs = Array.from(stack.querySelectorAll<HTMLAnchorElement>('[data-tab]'));
     const prevLink = stack.querySelector<HTMLAnchorElement>('[data-go="-1"]')!;
     const nextLink = stack.querySelector<HTMLAnchorElement>('[data-go="1"]')!;
-    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
     let current = stack.dataset.active!;
     let busy = false;
 
@@ -104,8 +106,8 @@ const sections = SECTIONS.map((s) => ({ ...s, href: url(s.path), title: `${s.lab
       document.title = section.title;
 
       to.hidden = false;
-      if (stack.getBoundingClientRect().top < 0) stack.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
-      if (reduceMotion) {
+      if (stack.getBoundingClientRect().top < 0) stack.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth' });
+      if (reduceMotion()) {
         from.hidden = true;
         return;
       }

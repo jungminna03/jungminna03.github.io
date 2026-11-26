@@ -14,15 +14,16 @@ import Sprite from './Sprite.astro';
 </dialog>
 
 <script>
+  import { reduceMotion } from '../lib/motion';
+
   const dialog = document.querySelector<HTMLDialogElement>('[data-sheet-dialog]');
   const content = dialog?.querySelector<HTMLElement>('[data-sheet-content]');
   if (dialog && content && typeof dialog.showModal === 'function') {
-    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
     let closing = false;
 
     const close = () => {
       if (!dialog.open || closing) return;
-      if (reduceMotion) return dialog.close();
+      if (reduceMotion()) return dialog.close();
       closing = true;
       dialog.classList.add('is-closing');
       setTimeout(() => {

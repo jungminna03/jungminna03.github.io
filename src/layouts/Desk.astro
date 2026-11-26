@@ -30,6 +30,11 @@ const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle
     <meta property="og:description" content={description} />
     <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      try {
+        if (localStorage.getItem('motion') === 'on') document.documentElement.dataset.motion = 'on';
+      } catch {}
+    </script>
   </head>
   <body class="desk">
     <header class="nameplate">
@@ -51,6 +56,26 @@ const pageTitle = title ? `${title} · ${profile.siteTitle}` : profile.siteTitle
     <footer class="desk-footer">
       {profile.email && <a href={`mailto:${profile.email}`}>{profile.email}</a>}
       {profile.phone && <a href={`tel:${profile.phone.replaceAll('-', '')}`}>{profile.phone}</a>}
+      <button class="motion-toggle" type="button" data-motion-toggle hidden>애니메이션 켜기</button>
     </footer>
+
+    <script>
+      import { prefersReducedMotion, motionForced, setMotionForced } from '../lib/motion';
+
+      // 움직임 줄이기를 켠 컴퓨터에서만 보인다
+      const button = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
+      if (button && prefersReducedMotion()) {
+        const sync = () => {
+          button.textContent = motionForced() ? '애니메이션 끄기' : '애니메이션 켜기';
+          button.setAttribute('aria-pressed', String(motionForced()));
+        };
+        sync();
+        button.hidden = false;
+        button.addEventListener('click', () => {
+          setMotionForced(!motionForced());
+          sync();
+        });
+      }
+    </script>
   </body>
 </html>
