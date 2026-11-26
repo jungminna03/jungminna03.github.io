@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" role="img" aria-labelledby="title">
+  <title id="title">인게임 화면 구성: 위아래 바는 Svelte 5, 가운데 게임 화면은 Phaser 가 그린다. 둘은 phaserBridge 를 거쳐 이벤트로 주고받는다</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#3b2418" />
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif; fill: #3b2418; text-anchor: middle; }
+    .b { font-weight: 700; }
+    .sub { font-size: 14px; fill: #6b5246; }
+    .box { stroke: #3b2418; stroke-width: 3; }
+    .line { stroke: #3b2418; stroke-width: 3; fill: none; }
+  </style>
+
+  <!-- 인게임 화면 -->
+  <rect class="box" x="21.5" y="21.5" width="237" height="66" fill="#f3d78a" />
+  <text class="b" x="140" y="50" font-size="16">Svelte 5</text>
+  <text class="sub" x="140" y="73">점수 · EXP 바</text>
+
+  <rect class="box" x="21.5" y="87.5" width="237" height="150" fill="#f5dfc7" />
+  <text class="b" x="140" y="157" font-size="17">Phaser</text>
+  <text class="sub" x="140" y="182">브릭 · 공 · 패들 · 이펙트</text>
+
+  <rect class="box" x="21.5" y="237.5" width="237" height="66" fill="#f3d78a" />
+  <text class="b" x="140" y="266" font-size="16">Svelte 5</text>
+  <text class="sub" x="140" y="289">이동 · 발사 버튼</text>
+
+  <!-- phaserBridge -->
+  <rect class="box" x="371.5" y="129.5" width="207" height="66" fill="#f2e5c4" />
+  <text class="b" x="475" y="158" font-size="17">phaserBridge</text>
+  <text class="sub" x="475" y="181">이벤트로 주고받는다</text>
+
+  <line class="line" x1="273" y1="162" x2="357" y2="162" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+  <text class="sub" x="315" y="150">game.events</text>
+
+  <path class="line" d="M475 128 V54 H273" marker-end="url(#arrow)" />
+  <text class="sub" x="370" y="44">표시 갱신</text>
+
+  <path class="line" d="M260 270 H475 V211" marker-end="url(#arrow)" />
+  <text class="sub" x="370" y="259">버튼 입력</text>
+</svg>

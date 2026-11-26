@@ -47,7 +47,7 @@ const profile = {
   skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 진하게 강조
   skillGroups: [
     { name: '언어', skills: ['C#', 'C++', 'JavaScript', 'TypeScript', 'Kotlin'] },
-    { name: '엔진·라이브러리', skills: ['Unity', 'Siv3D', 'EnTT', 'R3', 'Phaser'] },
+    { name: '엔진·라이브러리', skills: ['Unity', 'Siv3D', 'EnTT', 'R3', 'Phaser', 'Svelte', 'GSAP'] },
     { name: '설계·테스트', skills: ['ECS', 'ScriptableObject', 'MVVM', 'Unity Test Framework'] },
     { name: '출시·서비스', skills: ['Unity Ads', 'Unity IAP', 'Electron', 'Instant DB', 'Tailwind CSS', 'Tailscale Funnel', 'OrangeUI'] },
     { name: 'AI 활용', skills: ['Claude Code', 'ComfyUI', 'TTS'] },

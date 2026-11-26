@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320" role="img" aria-labelledby="title">
+  <title id="title">퍽 구조: 퍽 파일은 레지스트리(PERK_MAP)에 자동 등록되고, GameScene 은 장착한 퍽의 훅을 레지스트리에서 찾아 호출한다</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#3b2418" />
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif; fill: #3b2418; text-anchor: middle; }
+    .b { font-weight: 700; }
+    .sub { font-size: 14px; fill: #6b5246; }
+    .end { text-anchor: end; }
+    .box { stroke: #3b2418; stroke-width: 3; }
+    .line { stroke: #3b2418; stroke-width: 3; fill: none; }
+  </style>
+
+  <!-- GameScene → PERK_MAP -->
+  <rect class="box" x="21.5" y="31.5" width="197" height="78" fill="#f2e5c4" />
+  <text class="b" x="120" y="64" font-size="17">GameScene</text>
+  <text class="sub" x="120" y="89">개별 퍽 로직은 모른다</text>
+
+  <line class="line" x1="220" y1="70" x2="327" y2="70" marker-end="url(#arrow)" />
+  <text class="sub" x="276" y="58">훅 호출</text>
+
+  <rect class="box" x="341.5" y="31.5" width="237" height="78" fill="#f3d78a" />
+  <text class="b" x="460" y="64" font-size="17">PERK_MAP</text>
+  <text class="sub" x="460" y="89">perks/registry.js</text>
+
+  <!-- 자동 등록 -->
+  <path class="line" d="M105 150 H495 M105 150 V188 M300 150 V188 M495 150 V188" />
+  <line class="line" x1="460" y1="150" x2="460" y2="125" marker-end="url(#arrow)" />
+  <text class="sub end" x="448" y="138">import.meta.glob 으로 자동 등록</text>
+
+  <rect class="box" x="21.5" y="189.5" width="167" height="66" fill="#f5dfc7" />
+  <text class="b" x="105" y="228" font-size="16">magnetBar.js</text>
+
+  <rect class="box" x="216.5" y="189.5" width="167" height="66" fill="#f5dfc7" />
+  <text class="b" x="300" y="228" font-size="16">mine.js</text>
+
+  <rect class="box" x="411.5" y="189.5" width="167" height="66" fill="#fff" stroke-dasharray="8 6" />
+  <text class="b" x="495" y="228" font-size="16">새 퍽.js</text>
+  <text class="sub" x="495" y="281">파일 하나 + 메타데이터</text>
+  <text class="sub" x="495" y="301">GameScene 은 고치지 않는다</text>
+</svg>
