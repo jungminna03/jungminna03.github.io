@@ -2,7 +2,7 @@
 title: 퐁퐁샷
 date: 2026-11-24
 project: 퐁퐁샷
-period: 2026.03 – 진행 중
+period: 2026.03 – 2026.11
 team: 1인 개발
 cover: ./images/portfolio/pongpong-shot.png
 skills: [JavaScript, Phaser, Claude Code]
@@ -13,7 +13,7 @@ links:
 
 ![퐁퐁샷](./images/portfolio/pongpong-shot.png)
 
-Emotive Play Lab에서 두 번째로 시작한 프로젝트. 1인 개발이고 Google Play·iOS 출시를 준비하고 있다.
+Emotive Play Lab에서 두 번째로 시작한 프로젝트. 1인 개발이고 Google Play에 출시했다. 최신 업데이트를 끝으로 개발을 마쳤다.
 
 ## AI 활용
 
