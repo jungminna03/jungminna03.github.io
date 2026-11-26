@@ -15,9 +15,9 @@ description: 노션 포트폴리오를 기술 일기로 옮기고 프로젝트�
 | [STARSHIP : THE TRINITY](../2026-11-24-starship-the-trinity/) | 2025.07 ~ 2025.12 | 프레임워크(SO 기반)·시스템 개발 |
 | [Deadlands : idle defense](../2026-11-24-deadlands-idle-defense/) | 2023.03 ~ 2023.12 | 프로그래밍 전반, Google Play 출시·3개월 운영 |
 | [Exterminator](../2026-11-24-exterminator/) | 2022.07 ~ 2022.08 | 프로그래밍, Steam 무료 출시 |
-| [HSC Senior](../2026-11-24-hsc-senior/) | | 시니어용 앱·성과보고용 웹 |
-| [학과 공지사항 웹/앱](../2026-11-24-department-notice/) | | 웹·위젯 앱 |
-| [AI 이미지 생성 서비스](../2026-11-24-ai-image-service/) | | 서버 공개·프론트 개선 |
+| [HSC Senior](../2026-11-24-hsc-senior/) | 2026.06 ~ 진행 중 | 시니어용 앱·성과보고용 웹 |
+| [학과 공지사항 웹/앱](../2026-11-24-department-notice/) | 2026.03 ~ 진행 중 | 웹·위젯 앱 |
+| [AI 이미지 생성 서비스](../2026-11-24-ai-image-service/) | 2026.09 ~ 진행 중 | 서버 공개·프론트 개선 |
 
 ## 막혔던 것: 맵 이동이 느림 (2026.07.16)
 

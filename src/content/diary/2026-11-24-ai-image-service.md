@@ -2,7 +2,7 @@
 title: AI 이미지 생성 서비스
 date: 2026-11-24
 project: AI 이미지 생성 서비스
-period: Emotive Play Lab
+period: 2026.09 – 진행 중
 skills: [ComfyUI, Tailscale Funnel, OrangeUI]
 highlight: 연구실 서버의 ComfyUI를 Tailscale Funnel로 공개하고, OrangeUI에 ComfyUI 앱 모드를 직접 렌더링해 프롬프트 입력의 한계를 보완
 ---

@@ -2,7 +2,7 @@
 title: 학과 공지사항 웹/앱
 date: 2026-11-24
 project: 학과 공지사항 웹/앱
-period: Emotive Play Lab
+period: 2026.03 – 진행 중
 team: 1인 개발
 cover: ./images/portfolio/department-notice.png
 skills: [TypeScript, Tailwind CSS, Instant DB, Electron]

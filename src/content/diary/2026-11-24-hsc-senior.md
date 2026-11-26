@@ -2,7 +2,7 @@
 title: HSC Senior
 date: 2026-11-24
 project: HSC Senior
-period: 교내 창업 동아리 HSC
+period: 2026.06 – 진행 중
 skills: [Kotlin, MVVM, TTS]
 highlight: 토큰 상한 설정과 프롬프트 엔지니어링으로 AI API 토큰 사용량을 6배 줄임
 ---
