@@ -10,7 +10,7 @@ description: 노션 포트폴리오를 기술 일기로 옮기고 프로젝트�
 
 | 프로젝트 | 기간 | 역할 |
 | --- | --- | --- |
-| [퐁퐁샷](../2026-11-24-pongpong-shot/) | 2026.03 ~ 2026.11 | 1인 개발 (Google Play 출시) |
+| [퐁퐁샷](../2026-11-24-pongpong-shot/) | 2026.03 ~ 2026.11 | 1인 개발 (Google Play·App Store 출시) |
 | [Project Arimu](../2026-11-24-project-arimu/) | 2025.06 ~ 진행 중 | 1인 개발 |
 | [STARSHIP : THE TRINITY](../2026-11-24-starship-the-trinity/) | 2025.07 ~ 2025.12 | 프레임워크(SO 기반)·시스템 개발 |
 | [Deadlands : idle defense](../2026-11-24-deadlands-idle-defense/) | 2023.03 ~ 2023.12 | 프로그래밍 전반, Google Play 출시·3개월 운영 |
