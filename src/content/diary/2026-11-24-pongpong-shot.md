@@ -8,7 +8,7 @@ team: 1인 개발
 role: 코드 리뷰·품질 개선
 cover: ./images/portfolio/pongpong-shot.png
 skills: [JavaScript, Phaser, Svelte, Tailwind CSS, GSAP, Claude Code]
-highlight: Claude Code로 1인 개발하며 AI에 맡길 일(기획서·프로토타입·자료 조사)과 직접 할 일(재미 검증·최적화·구조 설계)을 구분
+highlight: Claude Code가 GameScene(2,403줄) 곳곳에 흩어 놓은 퍽 22개를 파일 하나씩으로 나눠, 이후 카드 헤비 볼·지뢰는 GameScene 수정 없이 추가
 links:
   Google Play: https://play.google.com/store/apps/details?id=com.firstorder.game
   App Store: https://apps.apple.com/kr/app/id6762454343
@@ -112,7 +112,7 @@ Claude Code로 게임을 만들면서 경계가 보였다.
 
 | 맡길 수 있음 | 맡기기 어려움 |
 | --- | --- |
-| 기획서 작성, 프로토타입 개발, 브레인스토밍, 자료 조사 | 재미 검증, 최적화, 코드 구조 설계 |
+| 기획서 작성, 프로토타입 개발, 브레인스토밍, 자료 조사 | 재미 검증, 코드 구조 설계 |
 
 ## 추가 경험
 
