@@ -42,7 +42,7 @@ const profile = {
   languages: [
     { name: '한국어', level: '모국어' },
     { name: '日本語', level: 'JLPT N1' },
-    { name: 'English', level: '통역병·통역 아르바이트 경험' },
+    { name: 'English', level: '통역병으로 해외 기업 협업 전투기 성능 개량 사업의 해외 직원 인솔·통번역 1년 6개월, 국제행사 해외팀 인솔·번역 1일' },
   ],
   skills: ['Unity', 'C#', 'C++', 'R3', 'Unity Test Framework', 'ScriptableObject', 'EnTT', 'Siv3D'], // 주력 기술 — 포트폴리오에서 진하게 강조
   skillGroups: [
