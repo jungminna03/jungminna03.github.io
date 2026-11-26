@@ -9,11 +9,12 @@ skills: [JavaScript, Phaser, Claude Code]
 highlight: Claude Code로 1인 개발하며 AI에 맡길 일(기획서·프로토타입·자료 조사)과 직접 할 일(재미 검증·최적화·구조 설계)을 구분
 links:
   Google Play: https://play.google.com/store/apps/details?id=com.firstorder.game
+  App Store: https://apps.apple.com/kr/app/id6762454343
 ---
 
 ![퐁퐁샷](./images/portfolio/pongpong-shot.png)
 
-Emotive Play Lab에서 두 번째로 시작한 프로젝트. 1인 개발이고 Google Play에 출시했다. 최신 업데이트를 끝으로 개발을 마쳤다.
+Emotive Play Lab에서 두 번째로 시작한 프로젝트. 1인 개발이고 Google Play와 App Store에 출시했다. 최신 업데이트를 끝으로 개발을 마쳤다.
 
 ## AI 활용
 
