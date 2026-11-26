@@ -3,14 +3,15 @@ title: 'STARSHIP : THE TRINITY'
 date: 2026-11-24
 project: 'STARSHIP : THE TRINITY'
 period: 2025.07 – 2025.12
+team: 6인 팀
 cover: ./images/portfolio/starship.png
 skills: [Unity, C#, ScriptableObject]
-highlight: 9인 이상 팀에서 SO 기반 프레임워크를 맡아, DI 누락 문제를 DI 라이브러리 도입으로 해결
+highlight: 6인 팀에서 SO 기반 프레임워크를 맡아, DI 누락 문제를 DI 라이브러리 도입으로 해결
 ---
 
 ![STARSHIP : THE TRINITY](./images/portfolio/starship.png)
 
-9명 이상의 팀원과 협업해 전시회·공모전에 도전한 게임. 2025.12에 하차했다.
+기획자 1명, 프로그래머 3명, 그래픽 2명이 협업해 전시회·공모전에 도전한 게임. 2025.12에 하차했다.
 
 ## 맡은 일
 
