@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-26T04:04:53.214Z",
+  "generatedAt": "2026-11-27T04:03:06.225Z",
   "window": {
     "days": 30,
-    "from": "2026-10-27",
-    "to": "2026-11-26",
+    "from": "2026-10-28",
+    "to": "2026-11-27",
     "complete": true
   },
   "method": {
@@ -11,22 +11,22 @@
     "priceRealization": 0.7,
     "tractionReviews": 10
   },
-  "total": 6214,
+  "total": 6136,
   "indie": {
-    "releases": 2138,
-    "paid": 1969,
-    "free": 169,
-    "withTraction": 352,
+    "releases": 2120,
+    "paid": 1953,
+    "free": 167,
+    "withTraction": 357,
     "genres": [
       {
         "id": 599,
         "name": "시뮬레이션",
         "en": "Simulation",
-        "releases": 592,
-        "traction": 128,
-        "revenue": 4577989,
+        "releases": 586,
+        "traction": 130,
+        "revenue": 4841702,
         "median": 105,
-        "perRelease": 7733,
+        "perRelease": 8262,
         "positive": 83,
         "youtube": 0,
         "top": {
@@ -40,30 +40,30 @@
         "id": 9,
         "name": "전략",
         "en": "Strategy",
-        "releases": 575,
+        "releases": 567,
         "traction": 78,
-        "revenue": 2104026,
+        "revenue": 2111307,
         "median": 0,
-        "perRelease": 3659,
-        "positive": 85,
+        "perRelease": 3724,
+        "positive": 86,
         "youtube": 0,
         "top": {
           "appid": 5133900,
           "name": "Can 'Em All",
           "url": "https://store.steampowered.com/app/5133900/",
-          "revenue": 598463
+          "revenue": 617986
         }
       },
       {
         "id": 1664,
         "name": "퍼즐",
         "en": "Puzzle",
-        "releases": 405,
+        "releases": 398,
         "traction": 61,
-        "revenue": 892318,
+        "revenue": 946974,
         "median": 0,
-        "perRelease": 2203,
-        "positive": 90,
+        "perRelease": 2379,
+        "positive": 91,
         "youtube": 0,
         "top": {
           "appid": 4088360,
@@ -76,119 +76,119 @@
         "id": 1773,
         "name": "아케이드",
         "en": "Arcade",
-        "releases": 300,
+        "releases": 297,
         "traction": 30,
-        "revenue": 313251,
+        "revenue": 319691,
         "median": 0,
-        "perRelease": 1044,
-        "positive": 90,
+        "perRelease": 1076,
+        "positive": 89,
         "youtube": 0,
         "top": {
           "appid": 3739580,
           "name": "KORRIDOR",
           "url": "https://store.steampowered.com/app/3739580/",
-          "revenue": 82553
+          "revenue": 87251
         }
       },
       {
         "id": 3959,
         "name": "로그라이트",
         "en": "Roguelite",
-        "releases": 252,
+        "releases": 247,
         "traction": 35,
-        "revenue": 1251552,
-        "median": 21,
-        "perRelease": 4966,
+        "revenue": 1314224,
+        "median": 42,
+        "perRelease": 5321,
         "positive": 87,
         "youtube": 0,
         "top": {
           "appid": 3669620,
           "name": "Warhammer Survivors",
           "url": "https://store.steampowered.com/app/3669620/",
-          "revenue": 955732
+          "revenue": 1011270
         }
       },
       {
         "id": 97376,
         "name": "아늑함",
         "en": "Cozy",
-        "releases": 246,
-        "traction": 51,
-        "revenue": 932136,
+        "releases": 244,
+        "traction": 53,
+        "revenue": 1034068,
         "median": 105,
-        "perRelease": 3789,
-        "positive": 89,
+        "perRelease": 4238,
+        "positive": 90,
         "youtube": 0,
         "top": {
-          "appid": 4521650,
-          "name": "Farm & Feast",
-          "url": "https://store.steampowered.com/app/4521650/",
-          "revenue": 259072
-        }
-      },
-      {
-        "id": 615955,
-        "name": "아이들러",
-        "en": "Idler",
-        "releases": 218,
-        "traction": 40,
-        "revenue": 430428,
-        "median": 105,
-        "perRelease": 1974,
-        "positive": 81,
-        "youtube": 0,
-        "top": {
-          "appid": 5472080,
-          "name": "SHRED A BILLION",
-          "url": "https://store.steampowered.com/app/5472080/",
-          "revenue": 89689
+          "appid": 3687090,
+          "name": "Dice Hoarder",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "revenue": 289317
         }
       },
       {
         "id": 122,
         "name": "RPG",
         "en": "RPG",
-        "releases": 216,
+        "releases": 215,
         "traction": 45,
-        "revenue": 1485746,
+        "revenue": 1518912,
         "median": 63,
-        "perRelease": 6878,
+        "perRelease": 7065,
         "positive": 83,
         "youtube": 0,
         "top": {
           "appid": 3669620,
           "name": "Warhammer Survivors",
           "url": "https://store.steampowered.com/app/3669620/",
-          "revenue": 955732
+          "revenue": 1011270
+        }
+      },
+      {
+        "id": 615955,
+        "name": "아이들러",
+        "en": "Idler",
+        "releases": 213,
+        "traction": 44,
+        "revenue": 539929,
+        "median": 105,
+        "perRelease": 2535,
+        "positive": 82,
+        "youtube": 0,
+        "top": {
+          "appid": 5472080,
+          "name": "SHRED A BILLION",
+          "url": "https://store.steampowered.com/app/5472080/",
+          "revenue": 179671
         }
       },
       {
         "id": 1716,
         "name": "로그라이크",
         "en": "Roguelike",
-        "releases": 210,
-        "traction": 30,
-        "revenue": 1320050,
-        "median": 53,
-        "perRelease": 6286,
-        "positive": 89,
+        "releases": 204,
+        "traction": 31,
+        "revenue": 1393021,
+        "median": 42,
+        "perRelease": 6829,
+        "positive": 90,
         "youtube": 0,
         "top": {
           "appid": 3669620,
           "name": "Warhammer Survivors",
           "url": "https://store.steampowered.com/app/3669620/",
-          "revenue": 955732
+          "revenue": 1011270
         }
       },
       {
         "id": 3968,
         "name": "물리",
         "en": "Physics",
-        "releases": 159,
-        "traction": 37,
-        "revenue": 1523849,
-        "median": 21,
-        "perRelease": 9584,
+        "releases": 157,
+        "traction": 38,
+        "revenue": 1537844,
+        "median": 47,
+        "perRelease": 9795,
         "positive": 87,
         "youtube": 0,
         "top": {
@@ -202,11 +202,11 @@
         "id": 1667,
         "name": "공포",
         "en": "Horror",
-        "releases": 159,
-        "traction": 32,
-        "revenue": 202145,
-        "median": 105,
-        "perRelease": 1271,
+        "releases": 157,
+        "traction": 31,
+        "revenue": 202309,
+        "median": 104,
+        "perRelease": 1289,
         "positive": 86,
         "youtube": 0,
         "top": {
@@ -220,54 +220,54 @@
         "id": 12472,
         "name": "경영",
         "en": "Management",
-        "releases": 150,
+        "releases": 151,
         "traction": 35,
-        "revenue": 1671042,
-        "median": 125,
-        "perRelease": 11140,
+        "revenue": 1735531,
+        "median": 126,
+        "perRelease": 11494,
         "positive": 81,
         "youtube": 0,
         "top": {
           "appid": 940230,
           "name": "Geoplanetical",
           "url": "https://store.steampowered.com/app/940230/",
-          "revenue": 364729
+          "revenue": 371027
         }
       },
       {
         "id": 1666,
         "name": "카드 게임",
         "en": "Card Game",
-        "releases": 141,
-        "traction": 18,
-        "revenue": 259789,
+        "releases": 136,
+        "traction": 16,
+        "revenue": 255541,
         "median": 0,
-        "perRelease": 1842,
+        "perRelease": 1879,
         "positive": 93,
         "youtube": 0,
         "top": {
           "appid": 2483700,
           "name": "HARMA",
           "url": "https://store.steampowered.com/app/2483700/",
-          "revenue": 66288
+          "revenue": 69289
         }
       },
       {
         "id": 42804,
         "name": "액션 로그라이크",
         "en": "Action Roguelike",
-        "releases": 127,
+        "releases": 121,
         "traction": 16,
-        "revenue": 1131177,
+        "revenue": 1192883,
         "median": 0,
-        "perRelease": 8907,
-        "positive": 83,
+        "perRelease": 9859,
+        "positive": 84,
         "youtube": 0,
         "top": {
           "appid": 3669620,
           "name": "Warhammer Survivors",
           "url": "https://store.steampowered.com/app/3669620/",
-          "revenue": 955732
+          "revenue": 1011270
         }
       },
       {
@@ -275,17 +275,17 @@
         "name": "샌드박스",
         "en": "Sandbox",
         "releases": 115,
-        "traction": 33,
-        "revenue": 1730798,
+        "traction": 32,
+        "revenue": 1794918,
         "median": 210,
-        "perRelease": 15050,
-        "positive": 80,
+        "perRelease": 15608,
+        "positive": 82,
         "youtube": 0,
         "top": {
           "appid": 4707700,
           "name": "Gold Mining Simulator - Definitive Edition",
           "url": "https://store.steampowered.com/app/4707700/",
-          "revenue": 445089
+          "revenue": 466083
         }
       },
       {
@@ -293,28 +293,28 @@
         "name": "심리적 공포",
         "en": "Psychological Horror",
         "releases": 115,
-        "traction": 29,
-        "revenue": 152223,
-        "median": 126,
-        "perRelease": 1324,
-        "positive": 85,
+        "traction": 28,
+        "revenue": 157249,
+        "median": 105,
+        "perRelease": 1367,
+        "positive": 84,
         "youtube": 0,
         "top": {
           "appid": 5051090,
           "name": "The Cozy Funemployment",
           "url": "https://store.steampowered.com/app/5051090/",
-          "revenue": 24111
+          "revenue": 25932
         }
       },
       {
         "id": 1625,
         "name": "플랫폼",
         "en": "Platformer",
-        "releases": 103,
-        "traction": 20,
-        "revenue": 170074,
+        "releases": 104,
+        "traction": 21,
+        "revenue": 172622,
         "median": 0,
-        "perRelease": 1651,
+        "perRelease": 1660,
         "positive": 91,
         "youtube": 0,
         "top": {
@@ -328,72 +328,72 @@
         "id": 1774,
         "name": "슈팅",
         "en": "Shooter",
-        "releases": 102,
-        "traction": 10,
-        "revenue": 786305,
+        "releases": 100,
+        "traction": 11,
+        "revenue": 814317,
         "median": 0,
-        "perRelease": 7709,
-        "positive": 96,
+        "perRelease": 8143,
+        "positive": 94,
         "youtube": 0,
         "top": {
           "appid": 5133900,
           "name": "Can 'Em All",
           "url": "https://store.steampowered.com/app/5133900/",
-          "revenue": 598463
+          "revenue": 617986
         }
       },
       {
         "id": 1741,
         "name": "턴제 전략",
         "en": "Turn-Based Strategy",
-        "releases": 100,
+        "releases": 99,
         "traction": 10,
-        "revenue": 145923,
+        "revenue": 99906,
         "median": 0,
-        "perRelease": 1459,
-        "positive": 87,
+        "perRelease": 1009,
+        "positive": 89,
         "youtube": 0,
         "top": {
-          "appid": 3929570,
-          "name": "General Tactics: An Shi Rebellion",
-          "url": "https://store.steampowered.com/app/3929570/",
-          "revenue": 40373
-        }
-      },
-      {
-        "id": 32322,
-        "name": "덱빌딩",
-        "en": "Deckbuilding",
-        "releases": 97,
-        "traction": 15,
-        "revenue": 211892,
-        "median": 42,
-        "perRelease": 2184,
-        "positive": 93,
-        "youtube": 0,
-        "top": {
-          "appid": 2483700,
-          "name": "HARMA",
-          "url": "https://store.steampowered.com/app/2483700/",
-          "revenue": 66288
+          "appid": 972450,
+          "name": "The Zibbo Show",
+          "url": "https://store.steampowered.com/app/972450/",
+          "revenue": 28546
         }
       },
       {
         "id": 3843,
         "name": "온라인 협동",
         "en": "Online Co-Op",
-        "releases": 91,
-        "traction": 21,
-        "revenue": 363617,
-        "median": 210,
-        "perRelease": 3996,
+        "releases": 95,
+        "traction": 22,
+        "revenue": 469627,
+        "median": 189,
+        "perRelease": 4943,
         "positive": 84,
         "youtube": 0,
         "top": {
-          "appid": 4715160,
-          "name": "Finals Week ✍🏻",
-          "url": "https://store.steampowered.com/app/4715160/",
-          "revenue": 98996
+          "appid": 5472080,
+          "name": "SHRED A BILLION",
+          "url": "https://store.steampowered.com/app/5472080/",
+          "revenue": 179671
+        }
+      },
+      {
+        "id": 32322,
+        "name": "덱빌딩",
+        "en": "Deckbuilding",
+        "releases": 92,
+        "traction": 15,
+        "revenue": 218775,
+        "median": 63,
+        "perRelease": 2378,
+        "positive": 93,
+        "youtube": 0,
+        "top": {
+          "appid": 2483700,
+          "name": "HARMA",
+          "url": "https://store.steampowered.com/app/2483700/",
+          "revenue": 69289
         }
       },
       {
@@ -402,9 +402,9 @@
         "en": "Party Game",
         "releases": 84,
         "traction": 11,
-        "revenue": 129909,
+        "revenue": 130368,
         "median": 0,
-        "perRelease": 1547,
+        "perRelease": 1552,
         "positive": 90,
         "youtube": 0,
         "top": {
@@ -418,36 +418,36 @@
         "id": 255534,
         "name": "자동화",
         "en": "Automation",
-        "releases": 82,
-        "traction": 16,
-        "revenue": 926681,
-        "median": 122,
-        "perRelease": 11301,
+        "releases": 83,
+        "traction": 17,
+        "revenue": 1052315,
+        "median": 127,
+        "perRelease": 12678,
         "positive": 89,
         "youtube": 0,
         "top": {
           "appid": 5160800,
           "name": "Find The Needle",
           "url": "https://store.steampowered.com/app/5160800/",
-          "revenue": 335566
+          "revenue": 345325
         }
       },
       {
         "id": 10235,
         "name": "생활 시뮬레이션",
         "en": "Life Sim",
-        "releases": 81,
-        "traction": 18,
-        "revenue": 182103,
+        "releases": 83,
+        "traction": 19,
+        "revenue": 212523,
         "median": 104,
-        "perRelease": 2248,
-        "positive": 81,
+        "perRelease": 2561,
+        "positive": 80,
         "youtube": 0,
         "top": {
-          "appid": 1167820,
-          "name": "Airport Contraband",
-          "url": "https://store.steampowered.com/app/1167820/",
-          "revenue": 40720
+          "appid": 4990940,
+          "name": "PC Store Together",
+          "url": "https://store.steampowered.com/app/4990940/",
+          "revenue": 52103
         }
       },
       {
@@ -456,28 +456,28 @@
         "en": "Hidden Object",
         "releases": 79,
         "traction": 21,
-        "revenue": 351524,
-        "median": 126,
-        "perRelease": 4450,
+        "revenue": 393322,
+        "median": 136,
+        "perRelease": 4979,
         "positive": 85,
         "youtube": 0,
         "top": {
           "appid": 3687090,
           "name": "Dice Hoarder",
           "url": "https://store.steampowered.com/app/3687090/",
-          "revenue": 249316
+          "revenue": 289317
         }
       },
       {
         "id": 5716,
         "name": "미스터리",
         "en": "Mystery",
-        "releases": 78,
+        "releases": 75,
         "traction": 16,
-        "revenue": 405049,
+        "revenue": 406703,
         "median": 105,
-        "perRelease": 5193,
-        "positive": 86,
+        "perRelease": 5423,
+        "positive": 85,
         "youtube": 0,
         "top": {
           "appid": 4088360,
@@ -487,32 +487,14 @@
         }
       },
       {
-        "id": 701,
-        "name": "스포츠",
-        "en": "Sports",
-        "releases": 75,
-        "traction": 10,
-        "revenue": 40625,
-        "median": 0,
-        "perRelease": 542,
-        "positive": 86,
-        "youtube": 0,
-        "top": {
-          "appid": 5168120,
-          "name": "Football Academy Simulator",
-          "url": "https://store.steampowered.com/app/5168120/",
-          "revenue": 9275
-        }
-      },
-      {
         "id": 1084988,
         "name": "오토 배틀러",
         "en": "Auto Battler",
-        "releases": 73,
-        "traction": 14,
-        "revenue": 101284,
-        "median": 105,
-        "perRelease": 1387,
+        "releases": 75,
+        "traction": 16,
+        "revenue": 105412,
+        "median": 168,
+        "perRelease": 1405,
         "positive": 87,
         "youtube": 0,
         "top": {
@@ -523,39 +505,57 @@
         }
       },
       {
+        "id": 701,
+        "name": "스포츠",
+        "en": "Sports",
+        "releases": 74,
+        "traction": 10,
+        "revenue": 40772,
+        "median": 0,
+        "perRelease": 551,
+        "positive": 86,
+        "youtube": 0,
+        "top": {
+          "appid": 5168120,
+          "name": "Football Academy Simulator",
+          "url": "https://store.steampowered.com/app/5168120/",
+          "revenue": 9275
+        }
+      },
+      {
+        "id": 1698,
+        "name": "포인트 앤드 클릭",
+        "en": "Point & Click",
+        "releases": 73,
+        "traction": 11,
+        "revenue": 84769,
+        "median": 0,
+        "perRelease": 1161,
+        "positive": 90,
+        "youtube": 0,
+        "top": {
+          "appid": 5035380,
+          "name": "BALL PICKER - Clean Up the Golf Yard",
+          "url": "https://store.steampowered.com/app/5035380/",
+          "revenue": 28932
+        }
+      },
+      {
         "id": 1645,
         "name": "타워 디펜스",
         "en": "Tower Defense",
         "releases": 73,
-        "traction": 6,
-        "revenue": 66183,
+        "traction": 7,
+        "revenue": 67883,
         "median": 0,
-        "perRelease": 907,
-        "positive": 78,
+        "perRelease": 930,
+        "positive": 81,
         "youtube": 0,
         "top": {
           "appid": 5295330,
           "name": "Water TD",
           "url": "https://store.steampowered.com/app/5295330/",
           "revenue": 37972
-        }
-      },
-      {
-        "id": 3799,
-        "name": "비주얼 노벨",
-        "en": "Visual Novel",
-        "releases": 72,
-        "traction": 21,
-        "revenue": 120151,
-        "median": 126,
-        "perRelease": 1669,
-        "positive": 89,
-        "youtube": 0,
-        "top": {
-          "appid": 4102120,
-          "name": "Resequence: The Orchard",
-          "url": "https://store.steampowered.com/app/4102120/",
-          "revenue": 18264
         }
       }
     ],
@@ -566,16 +566,16 @@
         "en": "City Builder",
         "releases": 24,
         "traction": 7,
-        "revenue": 431394,
-        "median": 105,
-        "perRelease": 17975,
+        "revenue": 445982,
+        "median": 210,
+        "perRelease": 18583,
         "positive": 77,
         "youtube": 0,
         "top": {
           "appid": 2860490,
           "name": "Warota: I Live Next to The Demon King's Castle LOL",
           "url": "https://store.steampowered.com/app/2860490/",
-          "revenue": 203094
+          "revenue": 212540
         }
       },
       {
@@ -584,34 +584,34 @@
         "en": "Bullet Hell",
         "releases": 61,
         "traction": 5,
-        "revenue": 1014474,
+        "revenue": 1070915,
         "median": 0,
-        "perRelease": 16631,
+        "perRelease": 17556,
         "positive": 88,
         "youtube": 0,
         "top": {
           "appid": 3669620,
           "name": "Warhammer Survivors",
           "url": "https://store.steampowered.com/app/3669620/",
-          "revenue": 955732
+          "revenue": 1011270
         }
       },
       {
         "id": 220585,
         "name": "개척 시뮬레이션",
         "en": "Colony Sim",
-        "releases": 17,
+        "releases": 18,
         "traction": 5,
-        "revenue": 281697,
-        "median": 241,
-        "perRelease": 16570,
+        "revenue": 298358,
+        "median": 105,
+        "perRelease": 16575,
         "positive": 77,
         "youtube": 0,
         "top": {
           "appid": 2860490,
           "name": "Warota: I Live Next to The Demon King's Castle LOL",
           "url": "https://store.steampowered.com/app/2860490/",
-          "revenue": 203094
+          "revenue": 212540
         }
       },
       {
@@ -619,35 +619,35 @@
         "name": "샌드박스",
         "en": "Sandbox",
         "releases": 115,
-        "traction": 33,
-        "revenue": 1730798,
+        "traction": 32,
+        "revenue": 1794918,
         "median": 210,
-        "perRelease": 15050,
-        "positive": 80,
+        "perRelease": 15608,
+        "positive": 82,
         "youtube": 0,
         "top": {
           "appid": 4707700,
           "name": "Gold Mining Simulator - Definitive Edition",
           "url": "https://store.steampowered.com/app/4707700/",
-          "revenue": 445089
+          "revenue": 466083
         }
       },
       {
         "id": 255534,
         "name": "자동화",
         "en": "Automation",
-        "releases": 82,
-        "traction": 16,
-        "revenue": 926681,
-        "median": 122,
-        "perRelease": 11301,
+        "releases": 83,
+        "traction": 17,
+        "revenue": 1052315,
+        "median": 127,
+        "perRelease": 12678,
         "positive": 89,
         "youtube": 0,
         "top": {
           "appid": 5160800,
           "name": "Find The Needle",
           "url": "https://store.steampowered.com/app/5160800/",
-          "revenue": 335566
+          "revenue": 345325
         }
       }
     ],
@@ -659,8 +659,8 @@
         "released": "2026-11-10",
         "free": false,
         "price": 7.99,
-        "reviews": 5696,
-        "positive": 75,
+        "reviews": 6027,
+        "positive": 76,
         "developer": "Auroch Digital",
         "earlyAccess": false,
         "tags": [
@@ -669,7 +669,7 @@
           "로그라이크",
           "액션 로그라이크"
         ],
-        "revenue": 955732
+        "revenue": 1011270
       },
       {
         "appid": 5266240,
@@ -698,7 +698,7 @@
         "released": "2026-10-30",
         "free": false,
         "price": 6.99,
-        "reviews": 4077,
+        "reviews": 4210,
         "positive": 97,
         "developer": "LuisDev",
         "earlyAccess": false,
@@ -708,7 +708,7 @@
           "액션",
           "전략"
         ],
-        "revenue": 598463,
+        "revenue": 617986,
         "owners": "100,000 ~ 200,000"
       },
       {
@@ -718,8 +718,8 @@
         "released": "2026-11-17",
         "free": false,
         "price": 39.99,
-        "reviews": 530,
-        "positive": 76,
+        "reviews": 555,
+        "positive": 77,
         "developer": "Code Horizon",
         "earlyAccess": false,
         "tags": [
@@ -728,7 +728,7 @@
           "전략",
           "샌드박스"
         ],
-        "revenue": 445089
+        "revenue": 466083
       },
       {
         "appid": 940230,
@@ -737,7 +737,7 @@
         "released": "2026-10-28",
         "free": false,
         "price": 24.99,
-        "reviews": 695,
+        "reviews": 707,
         "positive": 81,
         "developer": "Polytale Games",
         "earlyAccess": true,
@@ -747,7 +747,7 @@
           "샌드박스",
           "자본주의"
         ],
-        "revenue": 364729
+        "revenue": 371027
       },
       {
         "appid": 5160800,
@@ -756,7 +756,7 @@
         "released": "2026-11-06",
         "free": false,
         "price": 14.99,
-        "reviews": 1066,
+        "reviews": 1097,
         "positive": 84,
         "developer": "Needless Games",
         "earlyAccess": true,
@@ -766,7 +766,7 @@
           "자동화",
           "물리"
         ],
-        "revenue": 335566,
+        "revenue": 345325,
         "owners": "100,000 ~ 200,000"
       },
       {
@@ -810,14 +810,33 @@
         "owners": "50,000 ~ 100,000"
       },
       {
+        "appid": 3687090,
+        "name": "Dice Hoarder",
+        "url": "https://store.steampowered.com/app/3687090/",
+        "released": "2026-11-13",
+        "free": false,
+        "price": 5.99,
+        "reviews": 2300,
+        "positive": 97,
+        "developer": "DieCorp Games",
+        "earlyAccess": false,
+        "tags": [
+          "캐주얼",
+          "정리",
+          "릴랙싱",
+          "컬렉터톤"
+        ],
+        "revenue": 289317
+      },
+      {
         "appid": 4521650,
         "name": "Farm & Feast",
         "url": "https://store.steampowered.com/app/4521650/",
         "released": "2026-11-11",
         "free": false,
         "price": 14.99,
-        "reviews": 823,
-        "positive": 93,
+        "reviews": 884,
+        "positive": 94,
         "developer": "dummy dino",
         "earlyAccess": true,
         "tags": [
@@ -826,27 +845,8 @@
           "시뮬레이션",
           "아늑함"
         ],
-        "revenue": 259072,
+        "revenue": 278274,
         "owners": "50,000 ~ 100,000"
-      },
-      {
-        "appid": 3687090,
-        "name": "Dice Hoarder",
-        "url": "https://store.steampowered.com/app/3687090/",
-        "released": "2026-11-13",
-        "free": false,
-        "price": 5.99,
-        "reviews": 1982,
-        "positive": 96,
-        "developer": "DieCorp Games",
-        "earlyAccess": false,
-        "tags": [
-          "캐주얼",
-          "정리",
-          "릴랙싱",
-          "아늑함"
-        ],
-        "revenue": 249316
       },
       {
         "appid": 2860490,
@@ -855,7 +855,7 @@
         "released": "2026-11-12",
         "free": false,
         "price": 24.99,
-        "reviews": 387,
+        "reviews": 405,
         "positive": 94,
         "developer": "One or Eight",
         "earlyAccess": true,
@@ -865,7 +865,7 @@
           "액션",
           "개척 시뮬레이션"
         ],
-        "revenue": 203094
+        "revenue": 212540
       },
       {
         "appid": 5088440,
@@ -874,8 +874,8 @@
         "released": "2026-10-30",
         "free": false,
         "price": 6.99,
-        "reviews": 1262,
-        "positive": 83,
+        "reviews": 1320,
+        "positive": 84,
         "developer": "Cybernetic Walrus",
         "earlyAccess": false,
         "tags": [
@@ -884,8 +884,27 @@
           "시뮬레이션",
           "정리"
         ],
-        "revenue": 185249,
+        "revenue": 193763,
         "owners": "50,000 ~ 100,000"
+      },
+      {
+        "appid": 5472080,
+        "name": "SHRED A BILLION",
+        "url": "https://store.steampowered.com/app/5472080/",
+        "released": "2026-11-24",
+        "free": false,
+        "price": 6.99,
+        "reviews": 1224,
+        "positive": 96,
+        "developer": "ImSoTiredStudio",
+        "earlyAccess": false,
+        "tags": [
+          "캐주얼",
+          "인크리멘탈",
+          "아이들러",
+          "협동"
+        ],
+        "revenue": 179671
       },
       {
         "appid": 5185750,
@@ -894,7 +913,7 @@
         "released": "2026-11-16",
         "free": false,
         "price": 14.99,
-        "reviews": 474,
+        "reviews": 490,
         "positive": 68,
         "developer": "Onramp Games",
         "earlyAccess": false,
@@ -904,7 +923,7 @@
           "도시 건설",
           "건설"
         ],
-        "revenue": 149210
+        "revenue": 154247
       },
       {
         "appid": 4715160,
@@ -927,32 +946,13 @@
         "owners": "20,000 ~ 50,000"
       },
       {
-        "appid": 5472080,
-        "name": "SHRED A BILLION",
-        "url": "https://store.steampowered.com/app/5472080/",
-        "released": "2026-11-24",
-        "free": false,
-        "price": 6.99,
-        "reviews": 611,
-        "positive": 96,
-        "developer": "ImSoTiredStudio",
-        "earlyAccess": false,
-        "tags": [
-          "캐주얼",
-          "인크리멘탈",
-          "아이들러",
-          "협동"
-        ],
-        "revenue": 89689
-      },
-      {
         "appid": 3739580,
         "name": "KORRIDOR",
         "url": "https://store.steampowered.com/app/3739580/",
         "released": "2026-11-18",
         "free": false,
         "price": 7.99,
-        "reviews": 492,
+        "reviews": 520,
         "positive": 84,
         "developer": "TinyToad",
         "earlyAccess": false,
@@ -962,7 +962,7 @@
           "탄막 천국",
           "스코어 어택"
         ],
-        "revenue": 82553
+        "revenue": 87251
       },
       {
         "appid": 4528040,
@@ -971,8 +971,8 @@
         "released": "2026-11-16",
         "free": false,
         "price": 13.99,
-        "reviews": 242,
-        "positive": 78,
+        "reviews": 272,
+        "positive": 79,
         "developer": "yeetgench",
         "earlyAccess": true,
         "tags": [
@@ -981,7 +981,26 @@
           "기지 건설",
           "크래프팅"
         ],
-        "revenue": 71097
+        "revenue": 79911
+      },
+      {
+        "appid": 2483700,
+        "name": "HARMA",
+        "url": "https://store.steampowered.com/app/2483700/",
+        "released": "2026-11-17",
+        "free": false,
+        "price": 12.99,
+        "reviews": 254,
+        "positive": 97,
+        "developer": "IndirectShine",
+        "earlyAccess": true,
+        "tags": [
+          "로그라이크 덱빌딩",
+          "카드 게임",
+          "카드 배틀",
+          "로그라이크"
+        ],
+        "revenue": 69289
       },
       {
         "appid": 4430260,
@@ -1003,32 +1022,13 @@
         "revenue": 68309
       },
       {
-        "appid": 2483700,
-        "name": "HARMA",
-        "url": "https://store.steampowered.com/app/2483700/",
-        "released": "2026-11-17",
-        "free": false,
-        "price": 12.99,
-        "reviews": 243,
-        "positive": 97,
-        "developer": "IndirectShine",
-        "earlyAccess": true,
-        "tags": [
-          "로그라이크 덱빌딩",
-          "카드 게임",
-          "카드 배틀",
-          "로그라이크"
-        ],
-        "revenue": 66288
-      },
-      {
         "appid": 4555040,
         "name": "Sushiamo",
         "url": "https://store.steampowered.com/app/4555040/",
         "released": "2026-11-04",
         "free": false,
         "price": 14.99,
-        "reviews": 184,
+        "reviews": 191,
         "positive": 98,
         "developer": "Panello Games",
         "earlyAccess": false,
@@ -1038,7 +1038,7 @@
           "로그라이크 덱빌딩",
           "아늑함"
         ],
-        "revenue": 57921
+        "revenue": 60125
       }
     ]
   },
@@ -1096,7 +1096,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 14929,
+        "reviews": 15357,
         "positive": 48,
         "tags": [
           "스포츠",
@@ -1140,7 +1140,7 @@
         "indie": false,
         "earlyAccess": true,
         "isNew": true,
-        "reviews": 118553,
+        "reviews": 123719,
         "positive": 49,
         "tags": [
           "멀티플레이어",
@@ -1162,7 +1162,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 53241,
+        "reviews": 53877,
         "positive": 54,
         "tags": [
           "무료 플레이",
@@ -1184,7 +1184,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 1081255,
+        "reviews": 1081871,
         "positive": 67,
         "tags": [
           "무료 플레이",
@@ -1228,7 +1228,7 @@
         "indie": false,
         "earlyAccess": true,
         "isNew": false,
-        "reviews": 75498,
+        "reviews": 75912,
         "positive": 81,
         "tags": [
           "1인칭 슈팅",
@@ -1250,7 +1250,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 235353,
+        "reviews": 236766,
         "positive": 84,
         "tags": [
           "오픈 월드",
@@ -1272,7 +1272,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 22692,
+        "reviews": 22700,
         "positive": 92,
         "tags": [
           "릴랙싱",
@@ -1337,7 +1337,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 124712,
+        "reviews": 125593,
         "positive": 84,
         "tags": [
           "오픈 월드",
@@ -1381,7 +1381,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 771002,
+        "reviews": 771118,
         "positive": 97,
         "tags": [
           "운전",
@@ -1462,7 +1462,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 428732,
+        "reviews": 428993,
         "positive": 74,
         "tags": [
           "무료 플레이",
@@ -1484,7 +1484,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 95235,
+        "reviews": 95330,
         "positive": 90,
         "tags": [
           "전략",
@@ -1506,7 +1506,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 98907,
+        "reviews": 99965,
         "positive": 81,
         "tags": [
           "레이싱",
@@ -1576,7 +1576,7 @@
           "RPG",
           "액션",
           "어드벤처",
-          "JRPG"
+          "오픈 월드"
         ]
       },
       {
@@ -1591,8 +1591,8 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 33,
-        "positive": 81,
+        "reviews": 34,
+        "positive": 79,
         "tags": [
           "액션",
           "어드벤처",
@@ -1635,7 +1635,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 305479,
+        "reviews": 305781,
         "positive": 62,
         "tags": [
           "멀티플레이어",
@@ -1657,7 +1657,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 685780,
+        "reviews": 685364,
         "positive": 78,
         "tags": [
           "공포",
@@ -1679,7 +1679,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": true,
-        "reviews": 3153,
+        "reviews": 3242,
         "positive": 83,
         "tags": [
           "축구",
@@ -1692,7 +1692,7 @@
     "mostPlayed": [
       {
         "rank": 1,
-        "peak": 1207614,
+        "peak": 1140407,
         "lastWeekRank": 1,
         "appid": 730,
         "name": "Counter-Strike 2",
@@ -1714,7 +1714,7 @@
       },
       {
         "rank": 2,
-        "peak": 752777,
+        "peak": 741985,
         "lastWeekRank": 3,
         "appid": 578080,
         "name": "PUBG: BATTLEGROUNDS",
@@ -1736,7 +1736,7 @@
       },
       {
         "rank": 3,
-        "peak": 756213,
+        "peak": 768271,
         "lastWeekRank": 2,
         "appid": 570,
         "name": "Dota 2",
@@ -1758,7 +1758,7 @@
       },
       {
         "rank": 4,
-        "peak": 109719,
+        "peak": 108937,
         "lastWeekRank": 5,
         "appid": 431960,
         "name": "Wallpaper Engine",
@@ -1780,7 +1780,7 @@
       },
       {
         "rank": 5,
-        "peak": 414459,
+        "peak": 388351,
         "lastWeekRank": 4,
         "appid": 4262460,
         "name": "ROB RUN",
@@ -1791,7 +1791,7 @@
         "indie": false,
         "earlyAccess": true,
         "isNew": true,
-        "reviews": 118553,
+        "reviews": 123719,
         "positive": 49,
         "tags": [
           "멀티플레이어",
@@ -1802,7 +1802,7 @@
       },
       {
         "rank": 6,
-        "peak": 186875,
+        "peak": 190514,
         "lastWeekRank": 6,
         "appid": 1422450,
         "name": "Deadlock",
@@ -1823,7 +1823,7 @@
       },
       {
         "rank": 7,
-        "peak": 237971,
+        "peak": 236719,
         "lastWeekRank": 8,
         "appid": 1172470,
         "name": "Apex Legends™",
@@ -1834,7 +1834,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 1081255,
+        "reviews": 1081871,
         "positive": 67,
         "tags": [
           "무료 플레이",
@@ -1845,7 +1845,7 @@
       },
       {
         "rank": 8,
-        "peak": 131046,
+        "peak": 127698,
         "lastWeekRank": 7,
         "appid": 2868840,
         "name": "Slay the Spire 2",
@@ -1856,8 +1856,8 @@
         "indie": true,
         "earlyAccess": true,
         "isNew": false,
-        "reviews": 207331,
-        "positive": 64,
+        "reviews": 210613,
+        "positive": 65,
         "tags": [
           "로그라이크",
           "카드 게임",
@@ -1867,7 +1867,7 @@
       },
       {
         "rank": 9,
-        "peak": 124385,
+        "peak": 126179,
         "lastWeekRank": 12,
         "appid": 3240220,
         "name": "Grand Theft Auto V Enhanced",
@@ -1878,7 +1878,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 235353,
+        "reviews": 236766,
         "positive": 84,
         "tags": [
           "오픈 월드",
@@ -1889,7 +1889,7 @@
       },
       {
         "rank": 10,
-        "peak": 88578,
+        "peak": 94158,
         "lastWeekRank": 10,
         "appid": 1938090,
         "name": "Call of Duty®",
@@ -1911,7 +1911,29 @@
       },
       {
         "rank": 11,
-        "peak": 157941,
+        "peak": 100578,
+        "lastWeekRank": 11,
+        "appid": 1973530,
+        "name": "Limbus Company",
+        "url": "https://store.steampowered.com/app/1973530/",
+        "released": "2023-02-26",
+        "free": true,
+        "price": 0,
+        "indie": false,
+        "earlyAccess": false,
+        "isNew": false,
+        "reviews": 129681,
+        "positive": 88,
+        "tags": [
+          "풍부한 스토리",
+          "깊은 세계관",
+          "무료 플레이",
+          "턴제 전투"
+        ]
+      },
+      {
+        "rank": 12,
+        "peak": 146104,
         "lastWeekRank": 9,
         "appid": 4115450,
         "name": "Phantom Blade Zero",
@@ -1932,31 +1954,9 @@
         ]
       },
       {
-        "rank": 12,
-        "peak": 62949,
-        "lastWeekRank": 21,
-        "appid": 381210,
-        "name": "Dead by Daylight",
-        "url": "https://store.steampowered.com/app/381210/",
-        "released": "2016-06-14",
-        "free": false,
-        "price": 15.38,
-        "indie": false,
-        "earlyAccess": false,
-        "isNew": false,
-        "reviews": 685780,
-        "positive": 78,
-        "tags": [
-          "공포",
-          "멀티플레이어",
-          "생존 공포",
-          "유혈"
-        ]
-      },
-      {
         "rank": 13,
-        "peak": 67242,
-        "lastWeekRank": 13,
+        "peak": 70741,
+        "lastWeekRank": 14,
         "appid": 236390,
         "name": "War Thunder",
         "url": "https://store.steampowered.com/app/236390/",
@@ -1966,7 +1966,7 @@
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 806017,
+        "reviews": 806842,
         "positive": 71,
         "tags": [
           "무료 플레이",
@@ -1977,8 +1977,8 @@
       },
       {
         "rank": 14,
-        "peak": 62157,
-        "lastWeekRank": 17,
+        "peak": 62312,
+        "lastWeekRank": 15,
         "appid": 322170,
         "name": "Geometry Dash",
         "url": "https://store.steampowered.com/app/322170/",
@@ -1999,117 +1999,117 @@
       },
       {
         "rank": 15,
-        "peak": 68448,
-        "lastWeekRank": 11,
-        "appid": 1091500,
-        "name": "Cyberpunk 2077",
-        "url": "https://store.steampowered.com/app/1091500/",
-        "released": "2020-12-10",
+        "peak": 58337,
+        "lastWeekRank": 23,
+        "appid": 381210,
+        "name": "Dead by Daylight",
+        "url": "https://store.steampowered.com/app/381210/",
+        "released": "2016-06-14",
         "free": false,
-        "price": 59.99,
+        "price": 15.38,
         "indie": false,
         "earlyAccess": false,
         "isNew": false,
-        "reviews": 910816,
-        "positive": 87,
+        "reviews": 685364,
+        "positive": 78,
         "tags": [
-          "사이버펑크",
-          "오픈 월드",
-          "신체 노출",
-          "RPG"
+          "공포",
+          "멀티플레이어",
+          "생존 공포",
+          "유혈"
         ]
       }
     ],
     "mobileJP": [
       {
         "rank": 1,
-        "name": "プロ野球スピリッツＡ",
-        "publisher": "KONAMI",
-        "url": "https://apps.apple.com/jp/app/%E3%83%97%E3%83%AD%E9%87%8E%E7%90%83%E3%82%B9%E3%83%94%E3%83%AA%E3%83%83%E3%83%84%EF%BD%81/id940320341?uo=2"
-      },
-      {
-        "rank": 2,
         "name": "eFootball™",
         "publisher": "KONAMI",
         "url": "https://apps.apple.com/jp/app/efootball/id1117270703?uo=2"
       },
       {
+        "rank": 2,
+        "name": "ホロライブドリームス",
+        "publisher": "QualiArts, Inc.",
+        "url": "https://apps.apple.com/jp/app/%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96%E3%83%89%E3%83%AA%E3%83%BC%E3%83%A0%E3%82%B9/id6756641135?uo=2"
+      },
+      {
         "rank": 3,
+        "name": "プロ野球スピリッツＡ",
+        "publisher": "KONAMI",
+        "url": "https://apps.apple.com/jp/app/%E3%83%97%E3%83%AD%E9%87%8E%E7%90%83%E3%82%B9%E3%83%94%E3%83%AA%E3%83%83%E3%83%84%EF%BD%81/id940320341?uo=2"
+      },
+      {
+        "rank": 4,
         "name": "ホワイトアウト・サバイバル",
         "publisher": "Century Games Pte. Ltd.",
         "url": "https://apps.apple.com/jp/app/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A2%E3%82%A6%E3%83%88-%E3%82%B5%E3%83%90%E3%82%A4%E3%83%90%E3%83%AB/id6443575749?uo=2"
       },
       {
-        "rank": 4,
-        "name": "ゴシップハーバー：マージ & ストーリー",
-        "publisher": "Microfun Limited",
-        "url": "https://apps.apple.com/jp/app/%E3%82%B4%E3%82%B7%E3%83%83%E3%83%97%E3%83%8F%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B8-%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/id1623318294?uo=2"
+        "rank": 5,
+        "name": "デュエル・マスターズ プレイス",
+        "publisher": "TOMY Company,Ltd.",
+        "url": "https://apps.apple.com/jp/app/%E3%83%87%E3%83%A5%E3%82%A8%E3%83%AB-%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA-%E3%83%97%E3%83%AC%E3%82%A4%E3%82%B9/id1478829750?uo=2"
       },
       {
-        "rank": 5,
+        "rank": 6,
+        "name": "にゃんこ大戦争",
+        "publisher": "ponos corporation",
+        "url": "https://apps.apple.com/jp/app/%E3%81%AB%E3%82%83%E3%82%93%E3%81%93%E5%A4%A7%E6%88%A6%E4%BA%89/id547145938?uo=2"
+      },
+      {
+        "rank": 7,
         "name": "モンスターハンターアウトランダーズ",
         "publisher": "Level Infinite",
         "url": "https://apps.apple.com/jp/app/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%A2%E3%82%A6%E3%83%88%E3%83%A9%E3%83%B3%E3%83%80%E3%83%BC%E3%82%BA/id6444520814?uo=2"
       },
       {
-        "rank": 6,
-        "name": "Fate/Grand Order",
-        "publisher": "Aniplex Inc.",
-        "url": "https://apps.apple.com/jp/app/fate-grand-order/id1015521325?uo=2"
-      },
-      {
-        "rank": 7,
-        "name": "勝利の女神：NIKKE",
-        "publisher": "Level Infinite",
-        "url": "https://apps.apple.com/jp/app/%E5%8B%9D%E5%88%A9%E3%81%AE%E5%A5%B3%E7%A5%9E-nikke/id1585915174?uo=2"
-      },
-      {
         "rank": 8,
-        "name": "雀魂 -じゃんたま-",
-        "publisher": "Yostar, Inc.",
-        "url": "https://apps.apple.com/jp/app/%E9%9B%80%E9%AD%82-%E3%81%98%E3%82%83%E3%82%93%E3%81%9F%E3%81%BE/id1469186379?uo=2"
-      },
-      {
-        "rank": 9,
-        "name": "ホロライブ麻雀 -ホロじゃん-",
-        "publisher": "Aiming Inc.",
-        "url": "https://apps.apple.com/jp/app/%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96%E9%BA%BB%E9%9B%80-%E3%83%9B%E3%83%AD%E3%81%98%E3%82%83%E3%82%93/id6762111285?uo=2"
-      },
-      {
-        "rank": 10,
-        "name": "マビノギモバイル",
-        "publisher": "NEXON Co., Ltd.",
-        "url": "https://apps.apple.com/jp/app/%E3%83%9E%E3%83%93%E3%83%8E%E3%82%AE%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB/id6775403879?uo=2"
-      },
-      {
-        "rank": 11,
         "name": "パズル＆ドラゴンズ",
         "publisher": "GungHo Online Entertainment, Inc.",
         "url": "https://apps.apple.com/jp/app/%E3%83%91%E3%82%BA%E3%83%AB-%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%82%BA/id493470467?uo=2"
       },
       {
+        "rank": 9,
+        "name": "ゴシップハーバー：マージ & ストーリー",
+        "publisher": "Microfun Limited",
+        "url": "https://apps.apple.com/jp/app/%E3%82%B4%E3%82%B7%E3%83%83%E3%83%97%E3%83%8F%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%9E%E3%83%BC%E3%82%B8-%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/id1623318294?uo=2"
+      },
+      {
+        "rank": 10,
+        "name": "Fate/Grand Order",
+        "publisher": "Aniplex Inc.",
+        "url": "https://apps.apple.com/jp/app/fate-grand-order/id1015521325?uo=2"
+      },
+      {
+        "rank": 11,
+        "name": "七つの大罪 光と闇の交戦 : グラクロ",
+        "publisher": "Netmarble Corporation",
+        "url": "https://apps.apple.com/jp/app/%E4%B8%83%E3%81%A4%E3%81%AE%E5%A4%A7%E7%BD%AA-%E5%85%89%E3%81%A8%E9%97%87%E3%81%AE%E4%BA%A4%E6%88%A6-%E3%82%B0%E3%83%A9%E3%82%AF%E3%83%AD/id1268959718?uo=2"
+      },
+      {
         "rank": 12,
-        "name": "キングショット",
-        "publisher": "Century Games Pte. Ltd.",
-        "url": "https://apps.apple.com/jp/app/%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88/id6739554056?uo=2"
+        "name": "雀魂 -じゃんたま-",
+        "publisher": "Yostar, Inc.",
+        "url": "https://apps.apple.com/jp/app/%E9%9B%80%E9%AD%82-%E3%81%98%E3%82%83%E3%82%93%E3%81%9F%E3%81%BE/id1469186379?uo=2"
       },
       {
         "rank": 13,
-        "name": "Pokémon GO",
-        "publisher": "Scopely Explore, Inc.",
-        "url": "https://apps.apple.com/jp/app/pok%C3%A9mon-go/id1094591345?uo=2"
+        "name": "ONE PIECE バウンティラッシュ - アクションゲーム",
+        "publisher": "Bandai Namco Entertainment Inc.",
+        "url": "https://apps.apple.com/jp/app/one-piece-%E3%83%90%E3%82%A6%E3%83%B3%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5-%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B2%E3%83%BC%E3%83%A0/id1322310031?uo=2"
       },
       {
         "rank": 14,
-        "name": "ブルーアーカイブ",
-        "publisher": "Yostar, Inc.",
-        "url": "https://apps.apple.com/jp/app/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96/id1515877221?uo=2"
+        "name": "ロイヤルマッチ（Royal Match)",
+        "publisher": "Dream Games",
+        "url": "https://apps.apple.com/jp/app/%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%AB%E3%83%9E%E3%83%83%E3%83%81-royal-match/id1482155847?uo=2"
       },
       {
         "rank": 15,
-        "name": "アークナイツ：エンドフィールド",
-        "publisher": "GRYPH FRONTIER PTE.LTD.",
-        "url": "https://apps.apple.com/jp/app/%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84-%E3%82%A8%E3%83%B3%E3%83%89%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89/id6752642477?uo=2"
+        "name": "ホロライブ麻雀 -ホロじゃん-",
+        "publisher": "Aiming Inc.",
+        "url": "https://apps.apple.com/jp/app/%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96%E9%BA%BB%E9%9B%80-%E3%83%9B%E3%83%AD%E3%81%98%E3%82%83%E3%82%93/id6762111285?uo=2"
       }
     ],
     "summary": {
