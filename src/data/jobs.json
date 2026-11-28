@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-11-27T04:02:00.284Z",
+  "updatedAt": "2026-11-28T03:48:37.659Z",
   "jobs": [
+    {
+      "id": "greenhouse:sonyinteractiveentertainmentglobal:6262298004",
+      "title": "PlayStation オンラインサービス ソーシャル機能サーバー開発ソフトウェアエンジニア",
+      "location": "Japan, Tokyo",
+      "url": "https://job-boards.greenhouse.io/sonyinteractiveentertainmentglobal/jobs/6262298004",
+      "department": "Future Technology Group",
+      "postedAt": "2026-11-27T09:20:17.000Z",
+      "source": "greenhouse",
+      "company": "Sony Interactive Entertainment",
+      "companyKey": "greenhouse:sonyinteractiveentertainmentglobal",
+      "firstSeenAt": "2026-11-28T03:48:37.659Z",
+      "fit": {
+        "level": "low",
+        "score": 1,
+        "family": "server",
+        "reason": "서버·인프라"
+      }
+    },
     {
       "id": "hrmos:bandainamcoent:101102210",
       "title": "ゲームプロデュース／IP軸でのスマートフォン向け新規ゲームアプリ開発運営",
